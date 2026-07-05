@@ -1,0 +1,957 @@
+{
+ "ranked": [
+  {
+   "name": "BidSense — cash upgrade-auction bid oracle",
+   "pain": "100+ airlines run blind Plusgrade-style CASH upgrade auctions, and travelers bid blind: no data on clearing bids, no view of premium-cabin load, and the 72h bidding window routinely missed because the airline's one email got buried. Frequent long-haul flyers face this on nearly every trip: overbidding wastes $200-400 per won auction; underbidding or missing the window forfeits a lie-flat that costs $1,500+ as a fare difference.",
+   "mechanism": "Inbox parsing flags every flight with an active upgrade-auction program and its exact window. Server polls premium-cabin availability daily via Duffel/Amadeus Self-Service to estimate cabin load and trend. A winning-bid outcomes database is seeded by LLM-parsing thousands of public FlyerTalk/Reddit bid-result threads and grows via one-tap in-app outcome reporting (the StatusMatcher crowd-database mechanic — not a marketplace). Output: 'LH FRA→SIN, cabin 62% full and emptying — bid €430, ~78% historical win rate; or wait 3 days, load trend says bids clear lower.' Push if the cabin suddenly fills (bid now/higher) or empties (lower your bid).",
+   "ios_form": "Trip timeline with an 'auction radar' badge per flight; bidding-window countdown notifications; bid slider showing the win-probability curve against the database; daily cabin-load sparkline; post-flight 'did your bid win, at what amount?' prompt feeding the moat; widget with days-to-window and recommended bid.",
+   "offer_pricing": "€11.99/mo or €89/yr. ROI: one data-calibrated $400 winning bid vs a $1,900 cash fare gap = $1,500 of value in a single flight; merely avoiding one $250 overbid per year covers the subscription ~3x. Target user flies long-haul 6+ times/yr, so the oracle prices multiple auctions annually.",
+   "curator_note": "Ranked last but kept: it's pure cash (not points), global, and closes a pain nothing else in the shortlist touches — and the crowd-outcomes database is unscrapeable by a follower. Two diligence flags: cold-start depends on the FlyerTalk/Reddit seeding actually yielding usable volume, and cabin-load estimation via self-service availability APIs (rather than true seat maps on foreign PNRs) needs a technical spike before funding. Killed elsewhere in the batch: Deadweight (membership auditor — closest to a vitamin, weakest recurring urgency) and FinePrint/FirstTracks as standalones (folded into RebookEU and TripShift respectively).",
+   "validation": {
+    "pain_score": 56,
+    "novelty_score": 78,
+    "feasibility_score": 42,
+    "wtp_score": 45,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "ExpertFlyer",
+      "url": "https://www.expertflyer.com/",
+      "how_close": "adjacent — the incumbent data tool ($4.99-9.99/mo) every bidding guide recommends: premium-cabin availability lookups and seat alerts used to inform bids, but no bid outcomes, no win-probability, no auction-window tracking"
+     },
+     {
+      "name": "SeatBoost",
+      "url": "https://seatboost.com/",
+      "how_close": "adjacent — airline-partnered live upgrade-auction app (it IS the auction platform, competing with Plusgrade), not an independent bid advisor"
+     },
+     {
+      "name": "Flight Upgrade Tracker (iOS)",
+      "url": "https://apps.apple.com/us/app/flight-upgrade-tracker/id6758466207",
+      "how_close": "partial — monitors American Airlines paid-upgrade prices and alerts on drops; single airline, fixed-price upsells not auctions, but proves the 'upgrade price radar' app pattern exists"
+     },
+     {
+      "name": "FlyerTalk airline bid mega-threads (LH MyOffer 70+ pages, SAS master thread 60+ pages, Air Canada 50+ pages)",
+      "url": "https://www.flyertalk.com/forum/lufthansa-austrian-swiss-brussels-lot-ita-other-partners-miles-more/1629909-lufthansa-myoffer-plusgrade-bidding-upgrade-pe-c-f-70.html",
+      "how_close": "partial — free crowdsourced bid-outcome datapoints; unstructured, but it is BidSense's exact seed corpus AND its free substitute, used by exactly the audience most likely to pay"
+     },
+     {
+      "name": "Plusgrade bid-strength meter / Instant Upgrade Upsell",
+      "url": "https://www.plusgrade.com/industries/air/",
+      "how_close": "partial (platform-side) — the auction operator already shows min/max ranges and an offer-strength meter, and is shifting airlines toward dynamic instant upsells that could obsolete the blind-auction format BidSense depends on"
+     },
+     {
+      "name": "Content guides teaching the free 20-40%-of-fare-gap heuristic (TPG, Frommers, Kudos, Going)",
+      "url": "https://www.frommers.com/tips/airfare/upgrade-bidding-tips-how-to-game-airline-seat-auctions-so-youll-win/",
+      "how_close": "adjacent — free good-enough advice layer that caps perceived value of a paid oracle"
+     },
+     {
+      "name": "SeatSpy",
+      "url": "https://www.seatspy.com/",
+      "how_close": "adjacent — premium-cabin seat availability alerting subscription (BA/Virgin focus), same data-signal mechanic without any bid layer"
+     }
+    ],
+    "pain_evidence": "Documented and recurring among a niche: FlyerTalk SAS master thread — user bid $320 then raised to $375 on SK936 SFO-CPH with 16/32 business seats open 36h out, rejected at T-6h; another winner rated 'STRONG' was told he 'appears that you may have overpaid... the bidding system was inducing people to bid over $1000 during live auction while they were offering the last 2 seats for $670 at check-in'; LH MyOffer thread datapoint: min bid EUR205, bid 215 raised to 265, still unsuccessful; Air Canada thread: $1510 bid rejected. Frommers quotes journalist Michael Trager: carriers 'prefer to stay rather elusive on purpose... they want you to bid higher and they want you to assume that bidding higher will give you a better chance — which is not always the case.' The existence of 60-80-page airline-specific FlyerTalk threads where users trade datapoints proves people actively DIY-solve this. CAVEATS: I found no evidence at all for the 'missed the 72h window because the email got buried' sub-pain (searches came back empty); the pain is episodic (only when invited to bid, only on ~100 non-US carriers — AA/DL/UA run no bid auctions, per TPG), and general-audience subs (r/Flights, r/travel) show near-zero indexed complaint volume vs. the FlyerTalk enthusiast core.",
+    "apple_policy_risks": "No App Store blockers: it's a data/advice subscription (standard IAP, guideline 3.1.1 compliant), not gambling under 5.3 since no wagers are placed in-app — actual bidding happens on airline sites. Needs 5.1.1/5.1.2 privacy disclosures and account deletion for inbox access, all routine (TripIt/Flighty precedent). The real platform-policy costs are outside Apple: Gmail restricted-scope access requires annual Google CASA assessment ($500-$4,500+/yr, with reports of far higher for Tier 3); Apple Mail has no API so a mail-forwarding fallback is mandatory; FlyerTalk seeding violates forum ToS (Internet Brands) and Reddit's post-2023 API pricing makes licensed access costly — the seed corpus is legally grey; Duffel's commercial model is booking-based and sustained availability-polling without bookings likely requires a special agreement (unconfirmed — flag for the spike).",
+    "verdict": "Kill as currently spec'd, revive only if a technical spike passes: the two load-bearing mechanisms are broken — self-service availability APIs (Amadeus Flight Availabilities Search) cap seat counters at 9 per fare class so 'cabin 62% full and emptying' is undeliverable, and route-level win-probability curves from sparse scraped forum datapoints across 100+ airlines x routes x seasons would be extrapolation presented as data, an accuracy-theater liability aimed at the one audience (FlyerTalk regulars) most able to catch it. The niche is genuinely empty and the opacity pain is real, but it's episodic, non-US-carrier-only, and served well enough by free FlyerTalk datapoints plus the free 20-40%-of-fare-gap heuristic, while the ROI claim is inherently unprovable in-app because clearing prices are unobservable counterfactuals. If the spike shows a coarse-but-honest signal (near-full detection + airline-level win-rate bands) still converts on a waitlist test, rebuild around per-trip pricing rather than the €89/yr subscription, because usage is 2-6 auctions a year and subscribe-for-one-trip churn will gut annual economics."
+   }
+  },
+  {
+   "name": "SlotRadar — official-ticket cancellation and release sniper for sold-out marquee attractions",
+   "pain": "Official timed-entry tickets for Sagrada Família (centenary crush), Alhambra, Anne Frank Huis, Last Supper, Colosseum underground, Uffizi, Park Güell, Machu Picchu, Ghibli Museum sell out weeks-to-months out — then trickle back via cancellation returns and batch releases on documented daily patterns nobody watches. Locked-out travelers pay €90-150/person for 'skip-the-line' tour wrappers around a €26 ticket, or skip the anchor experience of the trip. A family city-trip hits 2-3 such walls, €150-400 of markup each.",
+   "mechanism": "Server-side monitors on ~50 official ticketing endpoints (the public availability JSON behind their booking calendars) polled every 30-60s for user-pinned attraction + dates + party size. On a return or batch release: push within seconds, deep-linking straight into the OFFICIAL checkout at face value — no resale, no inventory, no marketplace. ML layer learns each venue's drop cadence from accumulated observations ('83% of 2-person slots appear 08:00-08:20 CET, 3-9 days out') to pre-warm polling and set honest expectations; structured release-schedule intel per venue ('Alhambra opens the next batch on the 20th at 9:00'); user-reported got-it/missed-it outcomes sharpen the odds, StatusMatcher-style.",
+   "ios_form": "Trip-based watchlists ('Barcelona, Apr 2-6, 2+2: Sagrada towers + Park Güell'); time-critical push with one-tap official-checkout deep link; per-venue drop-pattern intel cards; Live Activity during known release windows so the user is looking at their phone at the right second.",
+   "offer_pricing": "€8.99/mo cancel-anytime (users subscribe around trips, 3-5 months/yr — churn priced in) or €49/yr for frequent travelers. ROI: one sniped Sagrada booking for a family of four = €104 official vs €440 reseller tours, 37x one month's fee; a two-city trip commonly recovers €500+.",
+   "merged_from": "SlotRadar + DropSniper (verbatim-duplicate concepts from two agents)",
+   "curator_note": "Two agents independently converged on identical venues, drop times, and pricing — strong signal. GetYourGuide/Tiqets profit from the markup and content sites monetize reseller affiliate links, so the incumbents are structurally against solving it; 50 bespoke breakage-prone scrapers is exactly small-team-shaped work with zero enterprise appeal. The per-venue release-pattern dataset is invisible from outside and compounds.",
+   "validation": {
+    "pain_score": 68,
+    "novelty_score": 55,
+    "feasibility_score": 40,
+    "wtp_score": 52,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "Visualping (generic page-change monitor, explicitly marketed for ticket tracking)",
+      "url": "https://visualping.io/blog/ticket-tracking-monitor-availability",
+      "how_close": "partial — horizontal DIY substitute that already does this job today, free tier included; no travel UX, no drop-pattern intel"
+     },
+     {
+      "name": "Campnab / CampScanner (sold-out campsite cancellation snipers, $10-30/mo or $10-20 per scan)",
+      "url": "https://campnab.com/",
+      "how_close": "adjacent — identical business model in a different vertical; proves the model and could expand"
+     },
+     {
+      "name": "MouseWatcher / MouseDining / MagicTable (Disney dining + reservation alerts, ~$19/mo)",
+      "url": "https://mousewatcher.com/",
+      "how_close": "adjacent — same cancellation-alert mechanics against a hostile ticketing system, proven WTP"
+     },
+     {
+      "name": "Appointment Scanner / TTPTracker (Global Entry interview cancellation alerts)",
+      "url": "https://appointmentscanner.com/",
+      "how_close": "adjacent — same 'monitor official site, deep-link to official checkout' pattern, ~$29 price point"
+     },
+     {
+      "name": "Kwork freelance custom ticket bots (Ghibli Museum, Queue-it bypass, football)",
+      "url": "https://kwork.com/chatbots/30085801/football-ticket-bot-queue-it-ghibli-museum-liverpool-tickets-bot",
+      "how_close": "partial — gray-market per-venue substitutes at ~$500/build; proves demand AND proves the target sites deploy Queue-it/anti-bot"
+     },
+     {
+      "name": "Tiqets / GetYourGuide separate inventory allocations",
+      "url": "https://www.tiqets.com/en/sagrada-familia-tickets-l133161/",
+      "how_close": "partial — not a monitor, but the incumbent escape valve: when official is 'sold out' they often have tickets at +€7-40 markup, undercutting the €150-400 markup narrative"
+     },
+     {
+      "name": "TicketSwap / Twickets ticket alerts",
+      "url": "https://apps.apple.com/us/app/ticketswap-buy-sell-tickets/id932337449",
+      "how_close": "adjacent — availability alerts for events/concerts resale, not official attraction inventory"
+     }
+    ],
+    "pain_evidence": "Tripadvisor Granada forum has a steady stream of threads: 'Alhambra sold out in May????? That's it??', 'Alhambra tickets sold out! What to do?', 'Weird pattern for Alhambra tickets online!?'. Documented user behavior matches the concept exactly: 'If you are online at midnight, you might spot a few tickets suddenly become available for a few timeslots that same day. They are usually sold-out again in the first two minutes' and a success report: 'I just checked back for Dec 23rd and 7 tickets were freed up! I only needed 3. And it was at the time we wanted to go 11am. It really can happen!' (tripadvisor.com Granada forum). Anne Frank Huis: 80% of tickets drop exactly 6 weeks out and 'sell out within minutes', 20% same-day at 09:00 — travel blogs coach people to wake at 4am and 'refresh often for cancellations' (ginaonaplane.com, skiptheline.tickets). Ghibli: buyers report being 'person 4400 in line' in Lawson's virtual queue and pay freelancers ~$500 on Kwork to build private bots. Colosseum: Italy's AGCM fined CoopCulture €7M and six resellers (incl. GetYourGuide, Tiqets) €13M more because bots hoarded official tickets, 'forcing regular visitors to third-party platforms reselling at inflated prices disguised as skip-the-line packages' (ilsole24ore.com, firstonline.info, ecc-netitalia.it). Rick Steves forum: 'Problem buying tickets to Sagrada Familia and Alhambra'. Caveat: pain is episodic (1-2 trips/yr) and partially relieved by reseller allocations at modest markups, not always €150+ tour wrappers.",
+    "apple_policy_risks": "No hard blocker, but real exposure: (1) Guideline 5.2.2 — displaying/monetizing data from third-party services without authorization; the entire product is unauthorized scraping of venue ticketing systems, and a single complaint from a venue (Italian operators are litigious post-AGCM) can trigger removal — precedent exists with unauthorized-access rejections. (2) The €8.99/mo subscription must use Apple IAP (15-30% cut), squeezing already churn-priced margins; ticket purchase itself is exempt (real-world service, completed on the venue's website via deep link — same pattern Appointment Scanner/MouseWatcher use without issue). (3) Practical rather than policy: 'push within seconds' depends on APNs delivery priority and user notification settings; Live Activities for release windows are compliant. (4) Reputational review risk: an app whose marketing says 'sniper' for tickets in jurisdictions (Italy, Spain, Japan) actively legislating against ticket bots invites App Review scrutiny even though no resale occurs — naming and positioning matter.",
+    "verdict": "Build-with-changes, close to the kill line. The pain is genuinely documented, the white space is real (no direct clone exists; Campnab/MouseWatcher/Appointment Scanner prove people pay $10-30/mo for exactly this mechanic), and the no-marketplace design is clean. But the concept as written oversells feasibility: its highest-ROI anchor venues (Colosseum underground, Ghibli) sit behind Queue-it virtual queues, IP bans, and a post-€20M-fine system built specifically to kill automated polling — 30-60s polling across 50 hostile endpoints with seconds-level checkout deep-links will not survive contact with those targets, and Tiqets/GYG separate allocations mean the true saved delta is often €10-40, not €300. Launch only with the 8-12 bot-tolerant venues (Sagrada, Alhambra, Anne Frank, Uffizi, Park Güell), honest minutes-level alerts, published snipe-success rates, and kill it if sustained success rate can't stay above ~20% or if two flagship venues block monitoring within the first year."
+   }
+  },
+  {
+   "name": "GapShield — risk ops for self-transfer hacker fares",
+   "pain": "Separate-ticket itineraries save 30-60% vs through-fares, but one late inbound means a €300-900 walk-up fare and zero protection — the June 2026 EC261 reform explicitly kept the single-booking rule. Frequent Europe-based travelers face this monthly and either eat the tail risk, pad savings-killing 6-hour buffers, or forgo hacker fares entirely. The pain is not finding the fare — it's owning the risk after booking, and nobody sits on the traveler's side across two unrelated PNRs.",
+   "mechanism": "LLM parses both PNRs into one virtual itinerary. Risk engine scores each gap from historical on-time distributions per flight number/airport/hour (Eurocontrol CODA, AeroAPI historical) plus a terminal-change/immigration/bag-recheck time model per airport. Pre-departure it keeps a live 'Plan B ladder' of backup flights refreshed via Duffel/Amadeus. Day-of: live inbound-aircraft position → P(miss) recomputed every few minutes → threshold push: 'Inbound 40 min late, 62% miss risk. Backup LH1134 17:40, €94, tap to book.' On an actual miss it auto-drafts the refund/EU261 claim for the disrupted leg and files the unused-segment tax recovery on the missed one.",
+   "ios_form": "Itinerary inbox; per-trip risk score at booking time ('this 90-min Bergamo gap = 11% miss risk, expected cost €41 — still €210 cheaper than the through-fare'); lock-screen Live Activity on travel day with gap countdown and P(miss); one-tap backup booking; post-disruption claim wizard.",
+   "offer_pricing": "€9.99/mo or €79/yr, unlimited trips. ROI: the app's existence unlocks €200-800/mo of hacker-fare savings the user wouldn't otherwise dare capture; one avoided walk-up rebooking (€300+) pays for 3+ years. The purest pay-20%-get-80% Pareto product in the batch.",
+   "curator_note": "Kiwi will never protect competitors' tickets (protection is its funnel moat), insurers won't underwrite without live-ops infrastructure, corporate tools only cover single-PNR managed travel — the assembly gap is real and every component (Duffel, AeroAPI, LLM parsing) is self-service today. The gap-outcome dataset (actual transfer minutes per airport/terminal pair) compounds toward a future parametric gap-guarantee upsell.",
+   "validation": {
+    "pain_score": 66,
+    "novelty_score": 55,
+    "feasibility_score": 55,
+    "wtp_score": 35,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "Kiwi.com Guarantee / Disruption Protection",
+      "url": "https://www.kiwi.com/stories/self-connecting-flights-a-fast-no-nonsense-survival-guide/",
+      "how_close": "partial — direct on the job (risk transfer for self-transfers) but only for Kiwi-booked itineraries; €5-25/leg opt-in, 2026 'Instant Credit' pays in vouchers; widely distrusted (horror stories on Reddit/MoneySavingExpert). Confirms it won't protect outside bookings, but also anchors what the market thinks this protection costs."
+     },
+     {
+      "name": "Flighty Pro (Connection Assistant)",
+      "url": "https://apps.apple.com/us/app/flighty-live-flight-tracker/id1358823008",
+      "how_close": "partial but dangerously close on the core monitoring layer — imports ALL flights from email regardless of PNR, rates every connection Risky/Tight/Normal/Relaxed using airport layout + customs + real-time performance, tracks inbound aircraft, Live Activities on lock screen, early miss-risk alerts. ~$49/yr. Missing only the tap-to-book backup and claims wizard, both of which it could bolt on via affiliate links. This is GapShield's day-of experience at half the price with a beloved brand."
+     },
+     {
+      "name": "TripIt Pro",
+      "url": "https://www.tripit.com/web/pro",
+      "how_close": "partial — cross-PNR itinerary inbox from email parsing, delay alerts, and an Alternate Flights finder ('unbiased re-booking options across all available airlines'). $49/yr. No P(miss) quantification or in-app booking."
+     },
+     {
+      "name": "AirHelp+ missed connection insurance",
+      "url": "https://www.airhelp.com/en-int/missed-connection-insurance/",
+      "how_close": "adjacent — parametric €200 auto-payout for missed connections plus EU261 claim automation, €39-90/yr, but EXPLICITLY excludes separate confirmation numbers. Proves an insurer with live-ops infrastructure looked at this exact gap and chose not to underwrite it — either adverse selection is unmanageable or demand is too thin."
+     },
+     {
+      "name": "Dohop ConnectSure / Protected Connection (Worldwide by easyJet, 17+ airlines)",
+      "url": "https://www.dohop.com/press-media/worldwide-by-easyjet",
+      "how_close": "adjacent — B2B virtual interlining that sells self-connect itineraries WITH rebooking + hotel protection at booking time. Shrinks GapShield's TAM structurally: every airline that adopts Dohop converts unprotected hacker fares into protected ones upstream."
+     },
+     {
+      "name": "Vueling Connection Guarantee (BCN)",
+      "url": "https://www.airhelp.com/en-int/blog/what-are-your-rights-for-self-connecting-flights/",
+      "how_close": "adjacent — €8-15 airline-side opt-in guarantee for separately booked Vueling-Vueling connections; another supply-side nibble at the gap."
+     },
+     {
+      "name": "Kayak Hacker Fares / Google Flights self-transfer listings",
+      "url": "https://www.going.com/guides/google-flights-self-transfer",
+      "how_close": "adjacent — they create and label the risky itineraries but offer zero post-booking protection; natural owners of this feature if it proves valuable, with the booking funnel GapShield lacks."
+     },
+     {
+      "name": "AirGlitch",
+      "url": "https://airglitch.com/airglitch-notes",
+      "how_close": "adjacent — AI hacker-fare search (20-60% savings claims); self-transfer 'not yet included but may be incorporated' — a search-side player publicly signaling intent to move into this space."
+     },
+     {
+      "name": "Hopper (flight disruption guarantee)",
+      "url": "https://truescho.com/en/blog/flight-booking-hacks-save-money-2026",
+      "how_close": "adjacent — paid any-reason rebooking protection, but only on Hopper's own bookings, US-centric."
+     }
+    ],
+    "pain_evidence": "The pain is real, sharp, and documented — but the dominant coping mechanism is exit, not tooling. FlyerTalk 'Connecting flights on different tickets' megathread: 'many times distraught travellers argue/beg gate agents to let them board because their connection was late. They learn the hard and expensive way that they never had a connection.' Buffer advice in the same community: 'I only book separate tickets with a day's buffer, or at least 12 hours'; others want '6 hours minimum in good weather, 8+ in winter/school holidays' — directly confirming the concept's savings-killing-buffer framing. MoneySavingExpert (2025): traveler with a 50-min Kiwi self-transfer missed it and 'had to pay £300 for an alternative flight,' with Kiwi's guarantee 'vague... trying to pass responsibility to the airline.' Kiwi Guarantee horror stories are abundant on Reddit/Google — the community that opts in feels betrayed, and if they self-buy an onward flight they void the cover. Euronews (Dec 2025): EU Entry/Exit System biometric queues are already causing missed flights that insurance won't cover, making transfer-time risk worse and more salient. The June 2026 EC261 provisional deal verifiably kept the single-booking rule (flight-delayed.com, 12 Jun 2026), so the regulatory premise holds. CAVEAT the concept glosses over: forum consensus advice is overwhelmingly 'don't book self-transfers' or 'use overnight buffers' — most sufferers abandon the behavior after one burn rather than shop for a monitoring tool, and a dedicated FlyerTalk thread 'Self-transfer flights: how do you manage the risk?' shows management via buffers/hand-luggage-only, with no one asking for or naming a paid monitoring app. Sources: flyertalk.com/forum/travelbuzz/1863870, flyertalk.com/forum/travelbuzz/2216335, forums.moneysavingexpert.com/discussion/6614320, euronews.com/travel/2025/12/15, flight-delayed.com/en/news/2026/06/12.",
+    "apple_policy_risks": "No hard App Store blocker for the specced product. Flight bookings are real-world services exempt from IAP (Guideline 3.1.5(a) — Uber-style physical services), so tap-to-book backup flights with a card is fine; the €9.99/mo app subscription goes through StoreKit as normal. Three genuine risks sit adjacent: (1) the curator's roadmap 'parametric gap-guarantee upsell' is regulated insurance — Apple requires regulated financial-services functionality to come from (or document) the licensed entity, and an unlicensed guarantee would also breach EU insurance-distribution law, so the compounding-dataset endgame is NOT reachable without an underwriting partner; (2) auto-FILING EU261 claims on the user's behalf for consideration is FCA-regulated claims-management activity in the UK (drafting for self-service is fine — the wizard must stay self-service in UK); (3) selling a backup flight linked to an existing trip can constitute a Linked Travel Arrangement under the EU Package Travel Directive, triggering insolvency-protection duties, though Duffel-as-merchant-of-record largely absorbs this. Separately, a de facto platform risk bigger than Apple: Ryanair — dominant at the exact airports hacker fares live (Bergamo, Charleroi, Stansted) — is absent from Duffel, won a CFAA screen-scraping verdict against Booking.com (2024), and only offers a restrictive approved-partner API (Apr 2025). The 'tap to book' backup breaks into a deep-link handoff precisely where the product's flagship example is set.",
+    "verdict": "Kill in its current form; the salvageable core needs a different business model. The bundle is genuinely un-cloned, but it disintegrates under pressure: Flighty Pro already ships cross-PNR connection risk ratings, inbound-aircraft tracking, and lock-screen Live Activities at $49/yr, so GapShield's differentiators reduce to (a) a backup-booking flow that doesn't work on Ryanair — the dominant carrier of European hacker fares — and (b) a claims wizard that yields little in the typical miss (a 40-60-min-late inbound triggers no EU261 cash, only €20-50 tax recovery), while the thing burned travelers actually want — indemnity — is exactly what the product doesn't provide and can't legally bolt on without an underwriter. Layer on the fatal WTP self-selection (people assembling Bergamo itineraries to save €60 are the least likely to pay €120/yr for analytics that still leave them holding the €300 loss), and the honest paths are per-trip pricing (€3-6/trip) or selling the risk engine B2B to Dohop-style platforms/insurers — not this consumer subscription."
+   }
+  },
+  {
+   "name": "ChargeRight — currency-of-payment optimizer at every checkout",
+   "pain": "Every cross-border payment moment — OTA currency toggles, airline POS currency choice, hotel-desk and restaurant DCC prompts, foreign ATMs — hides a 2-12% spread. The blog rule 'always pay in local currency' is wrong often enough to cost money, because the right answer depends on the merchant's specific markup AND the user's specific cards. A traveler spending €1,500-3,000/month abroad silently loses €40-150/month, on literally every transaction of every trip — the highest-frequency leak in the portfolio.",
+   "mechanism": "On-device OCR + LLM parses a shared screenshot of any checkout or a live camera view of a POS terminal, extracts offered amounts/currencies, and verdicts in under 2 seconds against mid-market rates (ECB reference feeds) and the user's stored card-fee profiles: 'Decline DCC — pay 1,240 MXN on your Wise card: saves €11.20.' OTA mode measures each merchant's currency-spread fingerprint (Booking's markup on USD display, Agoda's on THB, each airline's POS currency) from anonymized user screenshots, recommending the display currency BEFORE payment. Every decision logs to a monthly savings ledger.",
+   "ios_form": "Share-sheet extension over any app or Safari checkout; live camera scan for terminals and ATMs; card wallet with per-card FX profiles; 'traveling now' lock-screen widget and Action-button shortcut; geofenced push ('You've landed in Mexico — DCC cheat card ready').",
+   "offer_pricing": "€3.99/mo or €34.99/yr. ROI: one dodged hotel-desk DCC trap (4-8% on €300 = €12-24) covers months; €2,000/month foreign spend recovering 2% banks €40/month — 10x the fee, tallied live.",
+   "curator_note": "Kept despite the low price point because frequency is its own moat: it's the product members touch daily, anchoring retention for a future bundle with FarePassport (they share the card-FX engine). Verified whitespace — banks and networks earn the DCC spread so they'll never build it, and converter apps don't read checkouts or know your cards. The crowd-measured merchant FX-spread database compounds with every user.",
+   "validation": {
+    "pain_score": 45,
+    "novelty_score": 68,
+    "feasibility_score": 58,
+    "wtp_score": 22,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "Wise / Revolut travel cards (in-app DCC education, real-time rate alerts, 0% FX)",
+      "url": "https://help.revolut.com/en-US/help/card-payments-withdrawals/getting-started-with-card-payments/what-is-dynamic-currency-conversion-dcc/",
+      "how_close": "adjacent — they don't read checkouts, but they eliminate the underlying loss for exactly this concept's target user, reducing the app's verdict to a constant ('always decline DCC')"
+     },
+     {
+      "name": "EU Regulation 2019/518 (CBPR2) mandatory DCC markup disclosure at ATM/POS",
+      "url": "https://www.osborneclarke-fintech.com/2019/07/10/the-impact-of-cbpr2-on-the-payment-industry-part-2-transparency-rules/",
+      "how_close": "partial (regulatory substitute) — since 2020 every EU terminal/ATM must display the DCC percentage markup over ECB rates before payment, doing the app's core POS job for free in its home market"
+     },
+     {
+      "name": "TravelRate: Currency Converter (built-in Exchange Fee Calculator showing loss vs real rate)",
+      "url": "https://apps.apple.com/gb/app/travelrate-currency-converter/id6754509690",
+      "how_close": "partial — computes fee loss vs mid-market but no OCR, no card profiles, no DCC verdict"
+     },
+     {
+      "name": "Converty / RateX AI (AR camera & AI receipt scanning currency converters)",
+      "url": "https://apps.apple.com/us/app/currency-converter-converty/id6759520648",
+      "how_close": "partial — camera/OCR conversion of prices exists on the App Store already; missing only the card-fee verdict layer"
+     },
+     {
+      "name": "CardPointers (Travel focus mode filters out cards with FX fees; per-card recommendations)",
+      "url": "https://cardpointers.com/",
+      "how_close": "adjacent — 'which card to use' engine with FTF awareness, no checkout parsing"
+     },
+     {
+      "name": "Live Currency Converter Pro (0–5% fee slider to simulate card/bank fees)",
+      "url": "https://apps.apple.com/us/app/live-currency-converter-pro/id953573530",
+      "how_close": "partial — manual version of the card-fee-profile math"
+     },
+     {
+      "name": "ITA Matrix (free: choose sale city/currency for airfare pricing)",
+      "url": "https://thepointsguy.com/airline/save-money-on-international-flights/",
+      "how_close": "adjacent — free power tool already covers airline POS-currency arbitrage for the enthusiast segment"
+     },
+     {
+      "name": "CheaperThere / BuyLo browser extensions",
+      "url": "https://chrome-stats.com/d/ickdpignpmjcahkjfbmfljhiglmcmchn",
+      "how_close": "adjacent — auto price-match at OTA checkout, not currency-spread specific"
+     }
+    ],
+    "pain_evidence": "DCC pain is real, documented for a decade, and quantified: FlyerTalk hosts a 150+ page DCC megathread (2014-2025) full of forced-DCC stories and Visa reason-code-76 chargebacks — one user reported 'Chase wiped off a $1000+ charge when a hotel gave them a receipt in Yuan but charged them in dollars.' One Mile at a Time documented a Westin Gurgaon guest charged at 63 INR/USD vs ~70 market — a ~10% overcharge on a $1,355 bill — and a Hilton Queenstown auto-billing USD instead of NZD with a printed '2.05% commission'; another case: 1,163 NZD charged as $806.96 vs $762.57 at market rate (5.8% / $44.39 lost). The Points Guy runs a whole 'I fell for dynamic currency conversion' reader-mistake genre. On the OTA side, Rick Steves forum users report Agoda adding ~5% at payment whenever display currency doesn't match the hotel's currency, and Wise's own research found airlines charge 2.8-9.5% extra when paying in home currency. HOWEVER — every one of these threads ends with the same free, permanent fix: 'get a no-FTF card and always press local currency.' The pain is a one-time education gap, not a recurring tool gap; victims are people who don't know the rule (and won't know to buy this app), while people who would find this app already know the rule.",
+    "apple_policy_risks": "No hard App Store blocker: share-sheet extensions, live camera OCR, geofenced push, and lock-screen widgets are all standard, and a fee calculator/recommender doesn't trigger Guideline 3.2.1 (no money movement, no banking function). Two moderate risks: (1) the crowd-sourced 'merchant FX-spread fingerprint' database requires uploading users' checkout screenshots — financial data that often contains names, card fragments, and booking details — inviting 5.1.1/5.1.2 privacy scrutiny, strict App Privacy labels, consent flows, and GDPR exposure; anonymization claims will be tested at review. (2) On-device LLM parsing of arbitrary checkouts must not misstate amounts — a wrong verdict that costs a user money invites 1-star review storms rather than rejection, but Apple may require disclaimers that it is not financial advice. Practical (non-Apple) friction: pointing a phone camera at a POS terminal mid-payment is socially awkward and merchants may object; the moment of decision is 3 seconds long with a waiter holding the terminal.",
+    "verdict": "Kill. The mechanism is genuinely novel (no direct clone found), but the whitespace is illusory: the core premise — 'the always-pay-local rule is wrong often enough' — is factually shaky, since foreign-transaction fees apply by merchant location regardless of currency, making DCC and FTF additive and 'decline DCC' correct essentially always; meanwhile EU law already forces terminals to display the DCC markup, and the ideal customer (€2-3k/month foreign spend) already carries a Wise/Revolut/no-FTF card that reduces the app's output to a constant. What survives (Agoda's 5% display-currency trap, airline POS-currency arbitrage) is a one-time tip worth a blog post or a free feature inside a bigger travel-money product — not a €34.99/yr subscription with counterfactual 'savings' as its only retention proof."
+   }
+  },
+  {
+   "name": "Firesale Radar — one instant-alert layer for all perishable premium travel inventory",
+   "pain": "Premium inventory that must move sells at 60-90% off across 30+ obscure regional sites: repositioning cruises ($30-60/night vs $150-300), €1/day vehicle and campervan relocations (Imoova, Movacar, Transfercar, roadsurfer + a dozen fleet-operator relocation pages), empty-leg jets, Seatfrog first-class auctions, day-use 5-star rooms. The traveler with capital and date flexibility would take these — but discovery requires knowing the sites exist, and the best deals die in minutes. Each miss on a road-trip or crossing costs €700-2,500 vs retail.",
+   "mechanism": "Scraper/poller fleet + affiliate feeds normalize every listing into one schema: origin, destination, date window, price, and computed discount-vs-reference (references from Booking/cruise-OTA affiliate APIs). User profile: home airports/ports, date-flexibility windows, party size, categories; saved corridors ('anything Munich→Iberia, Sep 10-25, sleeps 2+'). Matching engine pushes within ~60 seconds of a listing appearing, deep-linking to the operator's own checkout — supply never touched, nobody onboarded. Historical listing database powers seasonal supply prediction ('Brisbane→Cairns relocations spike first week of May — plan around it') and urgency scoring ('this deal class dies in 40 minutes').",
+   "ios_form": "Personalized deal feed ranked by discount depth and fit; hard push with 'minutes-old' badge; saved-corridor radars; map view of relocation routes from your city; calendar overlay showing which of your flexible weeks have live firesales; Live Activity while a watched corridor is hot.",
+   "offer_pricing": "€7.99/mo or €69/yr — instant alerts for members, free tier delayed 24h (speed IS the product). ROI: one repositioning cruise saves €1,000-2,500/person; one relocation campervan week €400-900; members realistically land 2-6 hits/yr — a single hit funds 1-3 years.",
+   "merged_from": "Firesale Radar + RelocRadar (relocations become the deepest vertical inside the unified layer, keeping RelocRadar's sub-minute push and seasonal-prediction machinery)",
+   "curator_note": "Directly productizes research finding #5: inventory exists, discovery is the pain, deals die in minutes. Aggregation has no booking commission in most verticals, so OTA economics reject it — it only pencils as a paid speed/unification membership, which is precisely this model. One caution for diligence: value delivery is lumpy (few big hits/yr vs monthly drip), so the free-delayed-tier funnel and prediction calendar matter for retention.",
+   "validation": {
+    "pain_score": 55,
+    "novelty_score": 45,
+    "feasibility_score": 45,
+    "wtp_score": 38,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "Imoova (app + waitlist push/SMS/email alerts)",
+      "url": "https://apps.apple.com/us/app/imoova/id1188803490",
+      "how_close": "direct clone (within the deepest vertical): the supply source itself already sends free instant push the moment a relocation appears on chosen routes/locations — the exact paid feature Firesale Radar sells"
+     },
+     {
+      "name": "Movacar (route alerts, €1 one-way cars/campers EU)",
+      "url": "https://www.movacar.com/app",
+      "how_close": "direct clone within vertical: free in-app route alerts 'as soon as a suitable offer becomes available'"
+     },
+     {
+      "name": "Transfercar (route email notifications, AU/NZ/US)",
+      "url": "https://www.transfercarus.com/",
+      "how_close": "direct within vertical: free route-based new-listing notifications, marketed as 'get ahead of the competition'"
+     },
+     {
+      "name": "JetASAP TripMatch ($79.99/mo, $799/yr)",
+      "url": "https://privatejetcardcomparisons.com/2023/03/31/jetasap-launches-tripmatch-discounted-private-jet-flight-notifications/",
+      "how_close": "direct within jet vertical: paid corridor-based alerts for empty legs/one-ways/must-moves — proves the paid-speed model but already owns it"
+     },
+     {
+      "name": "Villiers / Jettly empty-leg search + alerts",
+      "url": "https://www.villiers.ai/empty-legs",
+      "how_close": "partial: free empty-leg browsing and alert setup"
+     },
+     {
+      "name": "CruisePlum (free repositioning-cruise search engine + price alerts)",
+      "url": "https://www.cruiseplum.com/repositioning-cruise-search",
+      "how_close": "direct within cruise vertical: free dedicated repositioning search, $/night sorting, watchlists and alerts"
+     },
+     {
+      "name": "CruiseWatch / ChooseCruise 'Cruise Deals & AI Price Alerts' (iOS)",
+      "url": "https://apps.apple.com/us/app/cruise-deals-ai-price-alerts/id6572296779",
+      "how_close": "partial: free real-time cruise price-drop alerts incl. repositioning/last-minute categories"
+     },
+     {
+      "name": "Seatfrog (own instant alerts; auctions tied to your held ticket)",
+      "url": "https://seatfrog.com/how-it-works/",
+      "how_close": "partial — and structurally un-aggregatable: upgrades require the user's existing ticket in Seatfrog's app, so a third-party alert layer adds ~nothing"
+     },
+     {
+      "name": "HolidayPirates / TravelPirates (26M+ users, free push deal alerts)",
+      "url": "https://www.holidaypirates.com/",
+      "how_close": "adjacent: multi-category curated travel-deal push at zero price, occasionally covers relocations/repositioning; sets the free-price anchor"
+     },
+     {
+      "name": "Going (ex-Scott's, $49-199/yr) / Secret Flying / travel-dealz.com",
+      "url": "https://www.going.com/",
+      "how_close": "adjacent: paid deal-alert memberships in flights; travel-dealz already publishes RV-relocation deal posts free"
+     },
+     {
+      "name": "PageCrawl.io (generic page monitor marketed for cruise repositioning + last-minute alerts)",
+      "url": "https://pagecrawl.io/blog/cruise-repositioning-last-minute-deal-alerts",
+      "how_close": "adjacent DIY substitute for the power-user persona most likely to pay"
+     },
+     {
+      "name": "Dayuse.com / HotelsByDay",
+      "url": "https://www.dayuse.com/",
+      "how_close": "adjacent: day-use rooms are a stable marketplace category, not minutes-perishable firesale inventory — weakens that vertical's inclusion"
+     }
+    ],
+    "pain_evidence": "Pain is real but already being serviced at the source, and it is trip-episodic rather than monthly. Evidence: (1) Tripadvisor NZ forum ('Hiring a relocation campervan'): you can only get one 'if you are very lucky or very flexible'; deals 'only come up a short time in advance' with ~3 days to complete the relocation (tripadvisor.co.nz/ShowTopic-g255104-i125-k6906964). (2) Travel blog barryandsandra.com ('Our Failed Free Campervan Relocation Adventure', 2023): after a cancellation, 'there's no chance of you getting another one for ages' — misses hurt. (3) Thrifty Nomads RV-relocation guide: 'Most relocation rentals are listed no more than a week or two before the necessary pick-up date — and the lucrative incentives usually don't appear until a day or two before' — confirms the discovery/timing pain. (4) FlyerTalk 'Wheels Up Connect Membership' thread: lower-tier members get empty-leg push alerts and booking access 15 minutes after higher tiers, so 'attractive flights can be booked by others before they even become available' — proof that minutes matter and that suppliers already monetize speed themselves. (5) Transfercar's own help pages sell notifications as a way to 'get ahead of the competition,' and Imoova built waitlists with 'instant push notifications' — incumbents built these features because users demanded them, which is simultaneously pain evidence and evidence the pain is patched. Caveat: Reddit is blocked to the crawler, so direct r/travel-style quotes could not be pulled; forum/blog evidence above is the proxy. Savings claims check out (Cruise Critic: repositioning fares ~$53-75/person/day vs $150-300 typical), but nobody was found asking for a cross-vertical unifier — complaints live inside single verticals.",
+    "apple_policy_risks": "No hard blocker, one moderate risk: Guideline 5.2.2 (Third-Party Sites/Services) requires that an app displaying third-party content be 'specifically permitted to do so under the service's terms of use' — this app is 100% scraped/unlicensed third-party listings, and rejections under 5.2.2 for aggregators are documented (developer.apple.com/forums/thread/105345). Risk is amplified because the scraped parties (Imoova, Movacar, Seatfrog) have their own competing iOS apps and a motive to complain; a single takedown letter can also kill a data vertical outright. Subscription via IAP and opt-in marketing push (3.2.2/4.5.4) are fine. Related non-Apple feasibility drag: Booking.com terminated thousands of small affiliates in June 2025 and now onboards via affiliate networks (skift.com/2025/05/30), so the concept's 'discount-vs-reference from Booking affiliate API' leg is shaky for a new small team; there is no self-service cruise-pricing API (Widgety/Traveltek/Revelex are partner-gated — CruisePlum proves scraping is possible but grindy); Avinode (the real empty-leg exchange) is B2B-closed, leaving broker-site scraping; Duffel/Amadeus Self-Service/FlightAware/FR24 are accessible but cover none of these five verticals; Seatfrog auctions require the user's own booked ticket inside Seatfrog's account, making that vertical effectively un-aggregatable.",
+    "verdict": "Kill as specified. The unified bundle is novel only because the persona is a fiction — jet flyers, transatlantic cruisers, and $1-campervan backpackers are different customers on different trip cadences, and within each vertical the supply sources themselves (Imoova, Movacar, Transfercar, Seatfrog, JetASAP) already push free or native instant alerts, so the €7.99/mo product is reselling speed that incumbents give away while depending on scraping those same incumbents against their ToS and Apple's 5.2.2. Worse, the model self-destructs at scale: relocation listings are often 1-2 vehicles, so every marginal paying member lowers every other member's hit rate. Salvageable pivot if desperate: a free, affiliate/ad-funded cross-site relocation map for the AU/NZ/EU road-trip niche, or sell the historical/seasonal-supply prediction data — but the paid instant-alert membership as designed should not be built."
+   }
+  },
+  {
+   "name": "StrandedCash — duty-of-care and out-of-pocket recovery autopilot for disrupted trips",
+   "pain": "When a flight cancels or delays overnight, travelers spend €80-500 on hotels, meals, taxis and bag-replacement essentials. Airlines legally owe ALL of it back — EU261 Art 9 duty of care applies even in 'extraordinary circumstances' (weather, ATC strikes) where the fixed compensation doesn't; Montreal Convention covers baggage essentials to ~€1,900 — but receipts get lost, portals are hostile, and 21-day deadlines expire. A 25+ segment/yr flyer eats €150-400/event, 1-3 events/yr, and the commission claim industry structurally ignores this receipt-based, variable money.",
+   "mechanism": "Flight monitoring (AeroAPI/AeroDataBox) on parsed itineraries. At 2h+ delay or cancellation the app flips to stranded mode: a rights engine states what to spend right now (meals from 2h, hotel + transfers overnight, with reasonable-cost caps from case law; rail equivalent under Art 20 of 2021/782; Montreal essentials with the 21-day countdown). Camera receipt capture with LLM extraction. Auto-compiled reimbursement dossier submitted through the airline's own expense portal via RPA with registered-email fallback; tracks the 2-month statutory response window; auto-generates the escalation to the national enforcement body or ADR scheme if ignored. The EU261 cash claim files alongside — user keeps 100%.",
+   "ios_form": "Stranded-mode Live Activity with a real-time 'you may spend up to €X' meter and nearest in-cap hotel suggestions; receipt camera; per-trip recovery ledger with claim statuses; deadline pushes ('9 days left to file baggage essentials').",
+   "offer_pricing": "€49.99/yr or €6.99/mo toggled on for heavy seasons. ROI: one stranded night recovers €150-250, one delayed-bag claim €100-300 — first event pays for years; keeping 100% of one €250-600 EU261 claim vs a 30% commission service saves €75-180 by itself.",
+   "curator_note": "The 'spend with confidence while stranded' real-time meter is the killer differentiator — it changes behavior in the moment, not just recovery after. After claim volume accumulates, the app can pre-approve spending ('this €142 hotel will be reimbursed by KLM with 96% confidence'), which no newcomer can state. Distinct pain from RailRepay (rail statutory %) and Salvage (dead bookings): this is live-disruption out-of-pocket money.",
+   "validation": {
+    "pain_score": 58,
+    "novelty_score": 38,
+    "feasibility_score": 45,
+    "wtp_score": 40,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "AirHelp / AirHelp+ (Smart €39.99/yr, Pro €99.99/yr)",
+      "url": "https://www.airhelp.com/en/airhelp-plus/",
+      "how_close": "partial — the dominant incumbent, one feature away: same subscription shape with flight monitoring, auto-filed EU261 claims (member keeps 100%), AirPayout €100 parametric instant payout on 3h+ delay/cancellation, AirLuggage €100-150 on delayed/lost bags, and lounge access when stranded. It does NOT compile duty-of-care receipt dossiers (extra expenses 'pursued separately', no warranty) — but its no-receipts €100 payout is a simpler substitute for chasing €150 of receipts, at the same price, with brand, litigation muscle, and a new app launched May 2025 explicitly about 'new ways to get reimbursed' (Bloomberg/Fortune coverage)."
+     },
+     {
+      "name": "Fluggastrechte – Money Back! (iOS)",
+      "url": "https://apps.apple.com/us/app/fluggastrechte-money-back/id6741719801",
+      "how_close": "direct clone of the core loop — scans boarding pass, shows entitlements instantly, 'captures receipts and costs for replacement flights or hotels organized at your own expense', auto-generates claim PDF/text sent to the airline. Missing the monitoring/RPA/escalation autopilot and Live Activity polish; German-market, low traction."
+     },
+     {
+      "name": "AirAdvisor",
+      "url": "https://airadvisor.com/en-us/airline-reimbursement",
+      "how_close": "partial-direct — explicitly files additional-expense reimbursement claims (hotel, meals, transport, essentials, with receipts) alongside EU261 compensation, on a 30% no-win-no-fee commission. Directly falsifies the 'commission industry structurally ignores receipt-based money' premise."
+     },
+     {
+      "name": "My Bag Claim",
+      "url": "https://mybagclaim.com",
+      "how_close": "direct on the baggage slice — AI-powered Montreal Convention claim automation: deadline calculation/tracking (21-day essentials window), airline-specific guidance, demand letters citing Montreal Convention and DOT rules; freemium web."
+     },
+     {
+      "name": "Flight & Train Claim (iOS, 2025)",
+      "url": "https://apps.apple.com/de/app/flight-train-claim/id6748158725",
+      "how_close": "partial — multimodal (flight + rail 2021/782) entitlement calculator and complaint-letter generator, DIY, covers the same rail wedge the concept claims as differentiation."
+     },
+     {
+      "name": "Flighty ($49/yr)",
+      "url": "https://flighty.com/",
+      "how_close": "adjacent but strategically dangerous — best-in-class delay prediction, aircraft-rotation cascade view, 2026 Airport Intelligence disruption scores; owns the stranded-moment attention and the exact paying demographic; no claims yet, trivially could add a rights card."
+     },
+     {
+      "name": "Flightright / Skycop / Compensair / ClaimCompass / RefundMe AI",
+      "url": "https://www.flightright.com/costs",
+      "how_close": "adjacent — commission-based EU261 fixed-compensation services (Flightright 36-50% fees, explicitly does not file expense claims); RefundMe is an AI claims app of unknown expense support."
+     },
+     {
+      "name": "Substitute channel: premium credit-card trip-delay insurance and travel insurers (Chase Sapphire/Amex $500 per trip after 6-12h; Faye; parametric Blink/AirPayout)",
+      "url": "https://www.chase.com/personal/credit-cards/education/basics/chase-trip-delay-insurance-what-to-know",
+      "how_close": "adjacent substitute — for the exact 25+ segment/yr affluent target, the same hotel/meal receipts go to the card insurer with far higher payout reliability than fighting an airline; corporate travelers' duty-of-care costs are eaten by employer/TMC, removing personal WTP for the biggest-spend events."
+     }
+    ],
+    "pain_evidence": "Real and documented, but lower frequency and more substituted than the pitch claims. FlyerTalk 'During delays or cancellations at what point can you just get a hotel reimbursed?' (travelbuzz/2167634): travelers self-book and submit receipts after the fact, with one frequent flyer reporting reimbursement succeeds only 'about 50% of the time', and advice to book a 'Hampton Inn over a Grand Hyatt' to survive the reasonableness test. FlyerTalk Ryanair thread 'Compensation for missed hotel night' (2167070): 'After 20 days, Ryanair responded, stating they don't reimburse prepaid expenses' — confusion between prepaid trip costs (not owed) and duty-of-care costs (owed) is rampant. The Points Guy documents an Azores Airlines claimant who sent follow-ups for six months receiving only auto-replies, then escalated to Portugal's NEB (ANAC) and got a form letter saying ANAC 'was unable to assign refunds to passengers' — proving both the pain AND that the app's promised escalation lever is often toothless. Tripadvisor: 'American Airlines failed reimburse cancelled flights' thread. Counter-evidence: US airlines increasingly auto-issue hotel/meal vouchers in-app per the DOT dashboard commitments, and the June 2026 EU261 reform agreement pushes airlines toward standardized/automated reimbursement handling — the pain is real today but structurally shrinking at the margin.",
+    "apple_policy_risks": "No hard App Store blocker: claims apps (AirHelp, Fluggastrechte, RefundMe) are precedented; subscription via IAP, Live Activities, and camera receipt capture are all standard. Real risks are adjacent: (1) the '96% confidence this €142 hotel will be reimbursed' pre-approval meter flirts with insurance/financial-promise territory — EU insurance-distribution and consumer-protection regulators, not Apple, but Apple 5.1.1/5.6 exposure if it looks like a guarantee; (2) Gmail itinerary parsing requires Google restricted-scope verification + annual CASA security assessment (cost and lead time for a small team) or falls back to manual email-forwarding friction; (3) the RPA auto-submission runs server-side so Apple doesn't care, but Germany's RDG (fines up to €50,000 per case since Jan 2025 for unauthorized legal services) means filing/escalating 'on behalf of' users likely requires Inkasso registration — the safe Smartlaw-precedent posture is a self-help document generator where the user files in their own name, which guts the 'autopilot' marketing claim in the app's largest natural market.",
+    "verdict": "Kill as specced; at most rebuild narrower. The founding premise is falsified — AirAdvisor already files receipt-based expense claims, AirHelp+ sells the same-priced subscription with a zero-receipt €100 parametric payout plus lounge access (a simpler answer to the same stranded night), and Fluggastrechte already ships the receipt-to-claim-dossier loop on iOS — while the two genuine differentiators are the weakest parts: the RPA/escalation autopilot is legally constrained (German RDG, non-binding NEBs) and operationally fragile across dozens of hostile airline portals, and the rights engine faces churn from the June 2026 EU261 reform that will also push airlines to automate care. The only defensible fragment is the real-time 'spend with confidence' stranded-mode meter — but that is a feature Flighty or AirHelp can copy in a quarter, sold to a customer whose biggest events are already covered by premium-card insurance or their employer, at 1-3 monetizable events per year."
+   }
+  },
+  {
+   "name": "RailRepay — pan-European train delay compensation autopilot",
+   "pain": "EU rail passengers are legally owed 25% of fare at 60+ min delay, 50% at 120+ (EU 2021/782; UK Delay Repay from 15 min), and strikes/weather are NOT valid excuses for most national operators. With DB long-distance punctuality at ~64%, a weekly rail traveler hits 4-12 qualifying delays/yr at €15-60 each — and almost nobody files, because every operator hides the money behind a local-language 15-minute claim form. Billions in mandated refunds go unclaimed; commission claim-farms ignore it because €30 claims don't support a 30% cut.",
+   "mechanism": "Tickets ingest via inbox OAuth + PKPass/PDF parsing (UIC 918-3 barcode decode for exact legs). Each leg matched to real-time and historical run data: DB RIS + bahn.expert archives, ViaggiaTreno, SNCF GTFS-RT, UK Darwin HSP, opentransportdata.swiss. Delay computed at final destination including missed connections (through-ticket rule). If eligible: headless-browser RPA auto-fills the operator's claim channel (DB Fahrgastrechte, SNCF G30, Trenitalia indennizzo, Renfe Compromiso, UK Delay Repay portals), attaches an archived evidence snapshot of the actual train run, tracks payout and 1-year deadlines. User does nothing.",
+   "ios_form": "Auto-filling ticket wallet; Live Activity during the journey showing the euro amount accruing ('71 min late = €33.50 owed'); push on claim filed and claim paid; monthly recovered ledger. Onboarding hook: retro-scan 12 months of tickets and file every still-claimable delay in the first session.",
+   "offer_pricing": "€4.99/mo or €39.99/yr; free tier files 1 claim to prove the loop. ROI: one 60-min delay on a €120 cross-border ticket returns €30 — one claim covers most of the year; frequent rail users recover €150-500/yr. Flat fee vs AirHelp-style 30% commission is the positioning.",
+   "curator_note": "Verified whitespace: DB auto-claims only its own digital tickets, UK tools are UK-only, no pan-EU consumer iOS product exists. Commission-uneconomic unit sizes are exactly why this is subscription-software-shaped and why incumbents won't follow. The per-operator RPA connector library and the proprietary train-run evidence archive are honest operational moats. Rides the structural EU rail-volume growth trend.",
+   "validation": {
+    "pain_score": 52,
+    "novelty_score": 50,
+    "feasibility_score": 35,
+    "wtp_score": 42,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "Railed (gotrailed.co.uk)",
+      "url": "https://gotrailed.co.uk/",
+      "how_close": "direct clone (UK-only): forward tickets, auto-detects delays, auto-files Delay Repay, 10% commission"
+     },
+     {
+      "name": "RailGuard",
+      "url": "https://railguard.co.uk/",
+      "how_close": "direct clone (UK-only): automatically claims whenever a listed journey is disrupted; operator claims DfT 'blessing' but legality debated on RailUK forums"
+     },
+     {
+      "name": "trainhero (iOS)",
+      "url": "https://trainhero.uk/app",
+      "how_close": "partial (UK): iOS app to file Delay Repay plus taxi/meal costs 'in seconds'"
+     },
+     {
+      "name": "Train Delays Repay",
+      "url": "https://www.traindelaysrepay.co.uk/",
+      "how_close": "partial (UK): season-ticket holders auto-compensated, no subscription fee"
+     },
+     {
+      "name": "refundrebel",
+      "url": "https://www.refundrebel.com/",
+      "how_close": "partial (Germany): commission claim service; fully automated B2B rail-compensation via Atlatos travel-platform integration — disproves the 'commission players ignore rail' premise"
+     },
+     {
+      "name": "Lametrain / Zug-verspätung.de / Robinzug / fahrkartenerstattung.de",
+      "how_close": "partial (Germany): commission-based DB compensation filing services"
+     },
+     {
+      "name": "DB Navigator / bahn.de in-account claims",
+      "url": "https://www.bahn.de/service/informationen-buchung/fahrgastrechte",
+      "how_close": "first-party partial: one-click digital Fahrgastrechte for any ticket in a DB account; 76% of claims now digital, half processed in 2 days — Business Insider already asked whether this kills the German startups"
+     },
+     {
+      "name": "SNCF automatic G30 compensation",
+      "url": "https://www.sncf-connect.com/en-en/help/delay-train",
+      "how_close": "first-party solves France: 1h+ TGV/Intercités delays compensated automatically via SMS, no request needed"
+     },
+     {
+      "name": "UK operator Automatic Delay Repay (LNER one-click, TPE, Lumo, Avanti, SWR, Northern, TfW, Thameslink/GN)",
+      "url": "https://www.lner.co.uk/support/delay-repay/",
+      "how_close": "first-party partial: auto or one-click compensation for direct-purchased/advance tickets, expanding under new rules targeting the £80m unclaimed pool"
+     },
+     {
+      "name": "Trainline Delay Repay tracking",
+      "url": "https://www.thetrainline.com/trains/great-britain/delay-repay",
+      "how_close": "partial: auto-tracks delays and notifies eligibility in-app (UK), EU claim guidance"
+     },
+     {
+      "name": "Choo Choo (iOS)",
+      "url": "https://apps.apple.com/us/app/choo-choo-cheap-train-tickets/id6744600420",
+      "how_close": "adjacent (UK): delay-repay eligibility alerts inside a ticketing app"
+     },
+     {
+      "name": "Railwise – Dein Bahn Tracker (iOS)",
+      "url": "https://apps.apple.com/de/app/railwise-dein-bahn-tracker/id6760189801",
+      "how_close": "adjacent (Germany): free train tracker with compensation hints, no auto-filing"
+     },
+     {
+      "name": "AirHelp",
+      "url": "https://apps.apple.com/de/app/airhelp-flugradar/id6736442533",
+      "how_close": "adjacent: flight-only claim farm; its absence from rail supports the unit-economics thesis but also shows the funded incumbent could enter"
+     }
+    ],
+    "pain_evidence": "Macro evidence is solid, verbatim micro evidence is moderate. ORR/Transport Focus data: only 47% of UK passengers claimed for their most recent delay and 54% of DR30-eligible claimed, with 'millions of pounds unclaimed each year'; a DfT study found 25% of eligible passengers didn't know they could claim (dataportal.orr.gov.uk; consumervoice.uk cites £80m/yr missed). RailUK Forums thread 'Delay repay. Do you bother?' (railforums.co.uk/threads/228691) documents the exact behavior: members say sub-£5 compensation isn't worth the form. Eurail community threads show cross-border claim friction: users told to compute their own delay-at-destination, expense requests 'ignored', proof-of-delay demanded though EU law doesn't require it (community.eurail.com). DB paid out record compensation in 2025 with long-distance punctuality ~62-64% (wiwo.de), confirming delay frequency. Counter-evidence: claim rates are RISING (up 8-10pp since 2020) as operators automate — SNCF now compensates 1h+ delays automatically by SMS with no request, and 76% of DB claims are already filed digitally in-app — so the underserved pool is concentrated in third-party-retailer bookings, paper tickets, Interrail and multi-operator cross-border trips: a real but narrow and shrinking niche.",
+    "apple_policy_risks": "No hard App Store blocker. Real items: (1) subscription must use IAP, so Apple takes 15-30% of an already thin €4.99/mo; (2) Gmail/Outlook inbox ingestion is a Google-side problem, not Apple — restricted-scope Gmail API requires annual CASA security assessment (roughly $540-$4,500/yr Tier 2 at best, historically quoted up to $15k-75k) plus verification friction; (3) Guideline 5.1.1 data-use disclosure and account-deletion requirements are routine but the app reads users' entire inboxes and stores operator-portal credentials for RPA — a privacy-label and review-friction magnet; (4) latent legal-compliance risk (Guideline 5 requires legality in each storefront): if a German regulator deems auto-filing on users' behalf an unregistered legal service under the RDG, or DB/TOCs complain about automated claim submission violating their terms, Apple removes on complaint. The RPA itself runs server-side, outside Apple review, but that just relocates the risk to the operators, who deploy CAPTCHAs, require account logins, and (e.g. Thameslink) explicitly prohibit third-party claims.",
+    "verdict": "Kill as specced, pivot if pursued. The 'verified whitespace' is real only in the narrow sense that no pan-EU consumer iOS autopilot exists — but the UK already has direct clones (Railed, RailGuard) plus expanding operator auto-repay, Germany has four commission services plus DB's own one-click digital claims, France is auto-compensated by SNCF, and the regulatory trend is operators paying automatically, so the moat-shaped hole is shrinking on exactly the timescale a small team would need to build 10+ legally-gray RPA connectors on top of a German data source (RIS/bahn.expert) that has just been shut behind contract-gated APIs. The surviving niche — cross-border, Interrail, and third-party-retailer tickets — is too small and too low-ticket to support €4.99/mo at scale, and the honest defensible version of this business (B2B travel-platform integration) is already occupied by refundrebel/Atlatos."
+   }
+  },
+  {
+   "name": "Salvage — dead-booking cash recovery autopilot (unused-ticket taxes, expiring credits, unpaid refunds — 0% commission)",
+   "pain": "When plans change, travelers eat the loss — but dead bookings still contain legally recoverable cash: government taxes/fees on any unused nonrefundable ticket (UK APD £90-200+/pax, German taxes per BGH case law; airlines refund 'upon request' and count on nobody asking), eCredits/vouchers that expire unredeemed, hotel deposits and partial-refund clauses nobody reads, and refunds promised 'in 7 days' that simply never post — the #1 DOT/EU complaint category. A frequent traveler kills 2-5 bookings/yr and forfeits €300-1,500 of recoverable money; claim-farms ignore it all because €40-150 units don't support their 25-50% cut.",
+   "mechanism": "The app already holds every parsed confirmation. When a trip dies (user tap, calendar conflict, or unflown-segment detection), the recovery tree runs: (1) computes the refundable tax/fee portion from the fare breakdown via a per-airline/per-country refundability table and auto-files the claim (web-form RPA or templated letter with statute citations), tracked to payout with escalation timers; (2) registers every voucher/eCredit with expiry countdowns and 'this credit covers the route you searched' matches; (3) LLM-parses hotel/rail T&Cs for partial-refund and saved-expenses clauses (EU/German doctrine: if the hotel resold your room — verified by scraping the listing — it owes you) and drafts the demand; (4) optional read-only PSD2 bank connection (Tink/GoCardless) reconciles every promised refund against actual card credits via a merchant-descriptor mapping DB, auto-escalating to regulator complaint or chargeback when money doesn't land. All claims filed from the user's own identity — pure software, no assignment-of-claim.",
+   "ios_form": "'Dead bookings' vault showing recoverable € per item with one-tap filing; a single 'Owed to you' balance on home screen and lock-screen widget; wallet-style credit cards with expiry countdowns; push when a claim pays out ('Iberia paid €318 — 12 days late'); annual recovered-money report. Paywall shows your current owed balance from a free scan before asking for payment.",
+   "offer_pricing": "€49/yr flat, user keeps 100% of every recovery — a direct attack on AirHelp's 35% cut. ROI: one unused short-haul EU ticket returns €25-60 in taxes, one ex-UK long-haul £90-200, one rescued expiring credit ~€150, one caught unpaid refund €100-300 — any single event beats the fee; frequent travelers trigger several per year.",
+   "merged_from": "Residual + Salvage (near-duplicates) + OwedBack (its PSD2 bank-reconciliation and voucher-expiry engine absorbed as the verification layer)",
+   "curator_note": "Three agents independently found this pocket, which validates it; merged into one 'collections department for your travel money.' Distinct from FareRights (that's pre-departure rights on live tickets; this is post-mortem cash on dead ones). The per-airline tax-refundability tables plus payment-latency/outcome data are grunt-work moats no VC-backed claim-farm will build because flat-fee cannibalizes their commission model.",
+   "validation": {
+    "pain_score": 55,
+    "novelty_score": 35,
+    "feasibility_score": 48,
+    "wtp_score": 42,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "AirHelp+ (subscription tier)",
+      "url": "https://www.airhelp.com/en-int/airhelp-plus/",
+      "how_close": "partial — kills the core positioning: an established player already sells 'pay annual fee (€29.99-99.99/yr), keep 100% of compensation, 0% commission'. Scope is disruption compensation, not dead-booking taxes/credits, but the 'nobody will do flat-fee' moat claim is factually false."
+     },
+     {
+      "name": "Autopilot (withautopilot.com)",
+      "url": "https://www.withautopilot.com/",
+      "how_close": "partial-to-direct — 'Automatic Flight & Hotel Refunds': monitors booked flights/hotels post-purchase and automatically pursues refunds and credits (price-drop focus, US carriers). $9.99/mo or $99/yr Pro, or 25% commission. Same category ('recover money from bookings you already made'), different lead pillar."
+     },
+     {
+      "name": "Gyro Autopilot",
+      "url": "https://www.producthunt.com/products/gyro-autopilot",
+      "how_close": "partial-to-direct — 'scans your inbox for unclaimed flight money from delays, cancellations, overbookings and more, finds what you're owed and claims it automatically.' Identical mechanism (inbox parse → owed balance → auto-claim); disruption-focused rather than dead-booking-focused."
+     },
+     {
+      "name": "RefundMe AI travel claims (iOS)",
+      "url": "https://apps.apple.com/us/app/refundme-ai-travel-claims/id6746415139",
+      "how_close": "partial — AI preps and files claims for flights, hotels and bags from the App Store; overlapping mechanism and surface, disruption-claim scope."
+     },
+     {
+      "name": "AwardWallet",
+      "url": "https://awardwallet.com/",
+      "how_close": "partial — tracks vouchers, certificates, credits and expiry dates with push/email alerts and calendar sync at $49.99/yr, the exact same price point as this concept, with a large installed base. Covers the voucher-expiry pillar (manual entry)."
+     },
+     {
+      "name": "JetBack / Paiback",
+      "url": "https://apps.apple.com/us/app/jetback-flight-price-savings/id6744909694",
+      "how_close": "adjacent — 2025 apps that auto-file for airline eCredits on price drops; proof the 'automated travel money recovery' niche is being rushed, not empty."
+     },
+     {
+      "name": "Geld-fuer-flug.de / myflyright / TicketRefund / SkyRefund",
+      "url": "https://myflyright.com/services/ticket-refund/",
+      "how_close": "direct on the tax pillar (EU/DE) — Stornodienste that buy or prosecute unused-ticket tax/fee claims; Geld-fuer-flug pays instantly at a haircut. Germany-centric, commission-based."
+     },
+     {
+      "name": "Free DIY infrastructure: MoneySavingExpert APD guide, Finanztip, Verbraucherzentrale Musterbrief, smartlaw generator, flugrecht.de templates",
+      "url": "https://www.moneysavingexpert.com/travel/missed-or-cancelled-a-flight-claim-air-passenger-duty-refund/",
+      "how_close": "adjacent substitute — the exact letters and step-by-step claims processes are free, widely publicized, and rank first in search; the paid product must beat free templates plus airline web forms."
+     },
+     {
+      "name": "DoNotPay",
+      "url": "https://donotpay.com/learn/chargebacks-and-refunds/",
+      "how_close": "partial — consumer-claims automation incl. travel refunds and chargebacks; also a cautionary tale (FTC action over overstated AI-lawyer claims)."
+     },
+     {
+      "name": "Corporate unused-ticket recovery (CTM Banx, ITILITE, GetGoing)",
+      "url": "https://us.travelctm.com/technology/unused-tickets/",
+      "how_close": "adjacent — the identical value prop is a mature, solved B2B feature in corporate travel; validates the mechanism, confirms the consumer gap, and shows where the buyers with real volume already went."
+     }
+    ],
+    "pain_evidence": "Category-level pain is real and documented, but individual-event pain is episodic and often sub-€50. Evidence FOR: PIRG 'Plane Truth 2025' — refunds, cancellations/delays and baggage have been the top DOT complaint categories for years, ~3/4 of all complaints; US complaints rose ~9% in 2024 vs 4% passenger growth; EU consumer centres processed a record ~165,000 travel questions/complaints in 2025. Consumer Rescue documented a traveler whose $7,762 American Airlines flight credit expired unnoticed ('confusion over the terms of vouchers caused the passenger to ignore visible expiration dates'). Corporate travel data: '5 to 11% of corporate air spend is forfeited in expired flight credits each year' (ITILITE). Marketplace.org: a 2010 GAO report found 'few consumers request' the refundable TSA fee because 'airlines are not required to inform consumers'; Travel Weekly: 'airlines don't refund unless consumers raise a stink about it.' Live gripe threads exist on exactly these topics: FlyerTalk 'eCredit about to expire, how to use?', Tripadvisor 'Ryanair refusing to refund tax on unused flight', MoneySavingExpert forum 'Tax refund on unused flights - Ryanair'. Evidence AGAINST the magnitude claim: on US domestic nonrefundable tickets only the $5.60/$11.20 TSA fee is refundable — the 7.5% excise tax is not (IRS 1989 ruling; class actions preempted by the Airline Deregulation Act), gutting the tax pillar in the biggest app-paying market; in UK/EU short-haul, admin fees eat the claim (Ryanair charges ~£20/pax to process an APD refund of £13-15 — MoneySavingExpert: 'pointless applying'); and the 2024 DOT rule now mandates automatic cash refunds and 5-year credit validity, structurally shrinking the 'unpaid refund' and 'expiring credit' pillars in the US over time. The €300-1,500/yr-per-user forfeiture claim found no independent support; the big recoveries (ex-UK long-haul APD £90-200/pax) are real but rare events per traveler.",
+    "apple_policy_risks": "No hard blocker, but real friction: (1) the €49/yr subscription is a digital service → mandatory IAP, Apple takes 15-30% of an already thin flat fee (in the EU, alternative payment options mitigate this); (2) full-inbox Gmail scanning requires Google's restricted-scope verification + annual CASA assessment ($540-$4,500+/yr and yearly revalidation) — avoidable via TripIt-style email forwarding at the cost of onboarding friction; (3) 'we recover money you're owed' marketing claims invite App Review scrutiny under 2.3.1/5.1.1 and regulator attention (DoNotPay was fined by the FTC for overstating automated legal claims); (4) open-banking linking via Tink/GoCardless is store-permissible (precedented) but adds privacy-label and data-handling review weight; (5) any server-side RPA that logs into airline sites on users' behalf risks the app being characterized as facilitating ToS-violating automation — Ryanair won a CFAA jury verdict against Booking.com (2024) and an Irish injunction against scraper Flightbox, and uses verification/facial-recognition walls specifically to break third-party automation. The 'auto-file' mechanism would likely degrade to 'we draft the letter/deep-link the form, you press send.'",
+    "verdict": "Kill as spec'd; a narrower EU/UK pivot is defensible but small. The concept's three load-bearing claims each failed diligence: the flat-fee-vs-commission moat already exists (AirHelp+ at €29.99-99.99/yr keep-100%, Autopilot Pro at $99/yr, AwardWallet at the identical $49.99), the recoverable amounts are gutted in the largest market (US: $5.60 TSA fee, non-refundable excise tax) and eaten by admin fees on EU short-haul (Ryanair £20 fee vs £13-15 APD), and the headline mechanisms — RPA auto-filing on airline sites and hotel-resale scraping — sit directly on legally hostile ground Ryanair is actively litigating (CFAA verdict, injunctions). What survives is a niche 'owed-money ledger' for UK/DE frequent travelers (credit-expiry tracking + open-banking refund reconciliation + statute-cited letter generator), but that is a €49/yr lumpy-value product with post-recovery churn, shrinking pillars under the 2024 DOT auto-refund/5-year-credit rules, and four 2025-vintage inbox-scanning competitors one pivot away from cloning it."
+   }
+  },
+  {
+   "name": "FareRights — schedule-change rights arbitrage autopilot for flights (Europe's only legal refare)",
+   "pain": "Airlines retime, re-equip or renumber 20-30% of flights booked 60+ days out. Each significant change silently unlocks rights on ANY fare, even nonrefundable basic: full cash refund (EU261 Art 5/8, US DOT 3h/6h rule, per-airline CoC thresholds of 60-180 min), free rebooking to better flights, and EU261 compensation when notified under 14 days. Travelers never notice the 40-minute-retime email, so they eat €100-600 per triggered event, 2-4 events/yr for a 10+ flight traveler — and anyone who wants OUT of a nonrefundable ticket misses the loophole the airline just handed them.",
+   "mechanism": "Inbox parsing extracts PNR, segments, fare basis, jurisdiction. Daily schedule diff via AeroDataBox/FlightAware AeroAPI/Duffel against ticketed times. A versioned rules engine — LLM-maintained, human-verified database of ~60 airlines' Conditions of Carriage change/refund thresholds plus EU261 and DOT law — computes exactly which right just unlocked, then prices the same route via Duffel/Amadeus Self-Service to compute the best financial play: keep, free-move to a better flight, or refund-and-rebook cheaper ('LH moved you 2h05 → full refund unlocked; same route now €89 cheaper — pocket the difference'). Generates the exact demand text in the airline's language citing the CoC clause, deep-links into manage-booking, auto-flags <14-day cancellations for EU261.",
+   "ios_form": "Trips list with per-segment rights-status badge; critical-style push the moment a retiming crosses a threshold (the window to decline the rebooking is the whole game); rights-decision screen with computed € value per option; copy-paste claim script; annual 'money freed' ledger. Onboarding hook: scan existing future bookings and show already-unlocked rights in 60 seconds, pre-paywall.",
+   "offer_pricing": "€59/yr or €6.99/mo, unlimited tickets; free tier tracks one trip to demonstrate the first unlocked right. ROI: one refund-and-rebook on a now-cheaper flight averages €80-150; one rescued nonrefundable ticket €300-600; a 10-flight/yr traveler statistically triggers 2-4 events — first event pays 1.5-5x the fee.",
+   "merged_from": "FareRights + FreeMove (near-identical duplicates) + ExitRow's schedule-change escape-hatch core (ExitRow's tax-recovery fallback moved to Salvage)",
+   "curator_note": "Works on any fare worldwide, unlike US refare startups (Autopilot/JetBack) that structurally can't leave US carriers — this IS the European/global flight-refare wedge, and it's rights-based so it monetizes nonrefundable tickets the whole industry has written off. The CoC policy graph plus outcome telemetry ('Wizz retimes 41% of flights booked 90+ days out; honors X% of claims via channel Y') compounds into an unreplicable asset. Cleanest complement to RebookEU: different trigger, different vertical, same member.",
+   "validation": {
+    "pain_score": 55,
+    "novelty_score": 38,
+    "feasibility_score": 38,
+    "wtp_score": 45,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "Autopilot (withautopilot.com)",
+      "url": "https://www.withautopilot.com/",
+      "how_close": "partial — automatic price-drop refare (email/Gmail scan, auto-reprices), AA/DL/UA only, 25% of savings or $99/yr Pro; price-drop trigger not schedule-change rights, US carriers only"
+     },
+     {
+      "name": "Refare (refare.com)",
+      "url": "https://www.refare.com/",
+      "how_close": "partial — AI price-drop refunds at 25% of savings; already supports Emirates and KLM, directly eroding the 'US refare can't leave US carriers' wedge claim"
+     },
+     {
+      "name": "JetBack",
+      "url": "https://getjetback.com/",
+      "how_close": "partial — $100/yr unlimited automatic airfare price-drop credits, iOS/Android, major US airlines"
+     },
+     {
+      "name": "pAiback",
+      "url": "https://www.paiback.app/",
+      "how_close": "partial — forward confirmation email, AI monitors 24/7, auto-files claims for eCredit, 20% commission; AA/AS/DL/UA"
+     },
+     {
+      "name": "TripIt Pro Fare Tracker",
+      "url": "https://www.tripit.com/web/blog/news-culture/get-money-back-fare-tracker",
+      "how_close": "partial — $49/yr, email-parsing itinerary ingestion + fare-refund eligibility alerts, mainstream distribution; the ingestion+monitoring layer of this concept already at scale"
+     },
+     {
+      "name": "ExpertFlyer Flight Schedule Alerts",
+      "url": "https://www.expertflyer.com/features/flight-schedule-alerts",
+      "how_close": "partial — $9.99/mo, monitors published schedules and alerts on retimings down to 1 minute, days before airlines notify; the exact trigger without the rights engine"
+     },
+     {
+      "name": "AirHelp / AirHelp+",
+      "url": "https://www.airhelp.com/",
+      "how_close": "partial/adjacent — EU rights incumbent: inbox connection to auto-spot eligible flights, real-time monitoring, push alert when a flight qualifies for EU261 up to €600, subscription tiers; one sprint away from adding CoC schedule-change refund alerts"
+     },
+     {
+      "name": "myflyright / Flightright / Compensair / Skycop",
+      "url": "https://myflyright.com/",
+      "how_close": "adjacent — contingency-fee EU261 claim agencies that already handle schedule-change refund/compensation cases after the fact"
+     },
+     {
+      "name": "FlightRights / Flight Rights Tracker (App Store)",
+      "url": "https://apps.apple.com/us/app/flightrights/id6761951094",
+      "how_close": "adjacent — passenger-rights guidance app with gate/schedule change notifications and refund/rebooking info; occupies the App Store rights-education slot"
+     },
+     {
+      "name": "Flighty",
+      "url": "https://flighty.com/",
+      "how_close": "adjacent — $48/yr premium flight-alerting with best-in-class push; owns the exact iOS power-traveler audience and could add pre-departure rights alerts"
+     },
+     {
+      "name": "Junova",
+      "url": "https://thepointsguy.com/news/fare-tracking-tools/",
+      "how_close": "partial — forward confirmation email, auto-tracks flights and requests trip-credit refunds on price drops"
+     }
+    ],
+    "pain_evidence": "Direct Reddit/FlyerTalk/Tripadvisor page fetches were blocked (403/robots) so first-person quotes could not be extracted verbatim; evidence is from thread titles, search summaries, and secondary coverage. Still substantial: (1) FlyerTalk hosts a 192+ page megathread 'Schedule Change (Back to 2hrs)/Cancellation Refund, New DOT ruling, UA resisting refunds' (flyertalk.com thread 2011867) documenting years of users fighting United over its threshold flip-flop (2h → 25h → back to 2h) and airlines resisting owed refunds — proof both of pain and of sophisticated DIY. (2) Tripadvisor Air Travel forum threads 'Flight changes = refund & rebook?', 'American Airlines Schedule Change', 'Cancel non-refundable ticket' show travelers successfully refunding nonrefundable tickets after changes as small as 61 minutes — and others not knowing they could. (3) The loophole is codified folk knowledge: TPG ('Here's what you should do when an airline changes your flight'), Thrifty Traveler, Cook Travel ('check if the schedule changed, then call and request a refund') all teach it, implying most travelers don't know it. (4) Category validation: five startups (Autopilot, JetBack, pAiback, Junova, Refare) launched 2024–2026 on the adjacent price-drop version of this pain, and DOT's 2024 automatic-refund rulemaking was driven by complaint volume. Counter-evidence: for most travelers a 40-minute retiming on a trip they still intend to take is a non-event; the recurring-pain framing (2-4 monetizable events/yr) overstates realized loss — the acute pain is episodic (wanting OUT of a nonrefundable ticket) rather than recurring.",
+    "apple_policy_risks": "No rejection-level Apple blockers: subscription via IAP is standard (TripIt, Flighty, AirHelp precedents); email-parsing travel apps are established on the App Store provided 5.1.1/5.1.2 privacy disclosure. Two real caveats: (a) 'critical-style push' as described is not obtainable — Apple's Critical Alerts entitlement is restricted to health/safety/home-security and will be denied for flight retimings; the app must rely on standard/time-sensitive notifications, weakening the 'window to decline is the whole game' mechanic. (b) The bigger platform risk is Google, not Apple: automated Gmail scanning uses restricted OAuth scopes requiring an annual CASA Tier 2/3 security assessment (roughly $500–$4,500+/yr plus engineering burden, quotes up to $15k+ from some vendors) once past 100 users — the email-forwarding model (plans@ style) avoids this but adds onboarding friction. Also note the rules engine gives money-consequential quasi-legal guidance; not an App Store issue but an accuracy/trust liability if the LLM-maintained CoC database is wrong.",
+    "verdict": "Kill in its current 'European refare autopilot' form; a narrower build-with-changes path exists but is a feature, not a company. The concept's unique wedge sits exactly where the ground is worst: the highest-retiming EU carriers (Ryanair, Wizz, easyJet) are unreachable via Duffel/GDS and litigate scrapers successfully (Ryanair's 2024 CFAA jury win over Booking.com), their low fares cap the refund upside, Amadeus Self-Service — a named data source — shuts down July 17 2026, and both regulators are legislating away the information asymmetry (DOT's 2024 automatic-refund mandate; the June 2026 EU261 agreement forcing airlines to proactively notify passengers of their rights from ~2027). What remains defensible — schedule-change rights alerts on full-service carriers with a copy-paste claim script — is genuinely unbuilt but is one sprint away for AirHelp (inbox scan + rights alerts + EU brand) or Flighty (the iOS audience), and the subscription faces a 'no trigger during trial → no conversion' problem that the US incumbents' success-fee model sidesteps."
+   }
+  },
+  {
+   "name": "TripShift — whole-trip date-shift engine with a 'your dates are cursed' collision oracle",
+   "pain": "Google Flights optimizes the flight; nobody optimizes the TRIP. The cheapest flight day is often the most expensive hotel week — because of MWC, Salone del Mobile, Oktoberfest, F1, stadium concerts, and Europe's staggered school holidays — and the true total-cost optimum across a ±14-day window is invisible. Flexible travelers (remote workers, retirees, couples) leave 20-40% of trip cost on the table (€500-1,000 on a €2,500 city break) and hit 2-4 undetected event collisions/yr at €300-800 each in surge pricing or a degraded trip.",
+   "mechanism": "Trip composer: origin, destination, length, flexibility window, hotel tier. Engine pulls flight offers across the window (Duffel/Amadeus calendar endpoints) + nightly hotel rates (Amadeus Hotel Search/Xotelo), computes the full start-date × duration total-cost matrix, and overlays a city-date surge index built from trade-fair calendars (10times, convention bureaus), Songkick/Bandsintown, sports fixtures, and OpenHolidays school/public-holiday data, calibrated against live rate calendars to quantify the actual price multiple per city-week. Output: 'shift departure 4 days: total €1,714 vs €2,490 — save 31%, same hotel tier, and you dodge the medical congress.' Watched trips recompute daily; booked trips keep being re-scanned as NEW mega-events are announced ('Coldplay ×2 nights just announced over your Milan dates — hotels already +90%, shift now').",
+   "ios_form": "Pinch-through two-axis total-cost heatmap (start date × length) with per-cell flight/hotel/event breakdown; 12-month per-city collision calendar; 'check these dates' share-sheet usable inside any booking app; calendar-synced trip watchlist; push on newly announced collisions with pre-computed 'shift by N days saves €X'.",
+   "offer_pricing": "€9.99/mo or €89/yr plus affiliate commission on booked trips. ROI: median realized shift-saving on a flexible European city break is €300-700/trip; two optimized trips/yr returns 7-15x; one avoided trade-fair collision alone is 4-10x.",
+   "merged_from": "TripShift + CollisionRadar (TripShift already embedded the event layer; the collision oracle becomes its intelligence core and pre-booking hook). FirstTracks killed as standalone — too seasonal/narrow — but its holiday-collision matrix survives here as a winter module.",
+   "curator_note": "The only pre-booking concept in the shortlist, deliberately: it feeds every post-booking product with parsed trips. Structural gap is real — everyone with the data (Kayak/Hopper/Booking) is paid per booking today and will never advise 'wait and shift'; PredictHQ sells this exact data AGAINST travelers. Watch API-cost economics in diligence (dates × durations × properties multiplies query volume).",
+   "validation": {
+    "pain_score": 55,
+    "novelty_score": 40,
+    "feasibility_score": 42,
+    "wtp_score": 32,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "KAYAK Best Time to Travel",
+      "url": "https://www.kayak.com/best-time-to-travel",
+      "how_close": "partial — free tool combining predicted FLIGHT + HOTEL prices, crowds and weather by month for a destination; monthly granularity only, no day-level shift math, no named-event collision layer, but it occupies the exact 'when should I go' slot at $0"
+     },
+     {
+      "name": "Hopper",
+      "url": "https://apps.apple.com/us/app/hopper-flights-hotels-cars/id904052407",
+      "how_close": "partial — color-coded cheapest-dates calendars and price watch for both flights and hotels with push alerts; optimizes each vertical separately, no joint total-cost matrix, no event attribution; 100M+ installs and booking-incentivized"
+     },
+     {
+      "name": "Google Flights date grid + Google Hotels price calendar",
+      "url": "https://www.google.com/travel/flights",
+      "how_close": "partial — free date grid/price graph for flights, per-property price tracking (expanded April 2026) and 'prices higher than usual' flags for hotels; covers most of the flexible-dates savings for a diligent user, just not joined into one matrix"
+     },
+     {
+      "name": "Avoid Crowds",
+      "url": "https://avoid-crowds.com/",
+      "how_close": "partial (direct clone of the collision-oracle half) — daily crowd/price-pressure calendars for European cities built from school vacations, public holidays, events, cruise arrivals and hotel occupancy; exactly the 'your dates are cursed' layer, free with a Pro tier"
+     },
+     {
+      "name": "AffordTrip",
+      "url": "https://apps.apple.com/us/app/affordtrip/id6763780732",
+      "how_close": "partial — iOS app, $6.99/mo Pro, price calendar for cheapest dates plus full trip-cost breakdown (flights, hotel, food); no event layer; near-zero traction, which is itself a WTP warning"
+     },
+     {
+      "name": "Hotel Alerts",
+      "url": "https://www.hotelalerts.app/",
+      "how_close": "adjacent — event-aware hotel availability/price alerts around conventions, festivals, F1, concerts; attacks the same event-collision moment from the availability side"
+     },
+     {
+      "name": "Fortrip Stay Optimizer",
+      "url": "https://fortrip.ai/stay-optimizer",
+      "how_close": "partial — AI optimizer that tests nearby date windows for cheaper/better hotel availability with trade-off explanations; hotels only"
+     },
+     {
+      "name": "Skyscanner whole-month / PanFlights",
+      "url": "https://panflights.com/",
+      "how_close": "partial — flexible-date fare calendars, flights only"
+     },
+     {
+      "name": "PredictHQ",
+      "url": "https://www.predicthq.com/",
+      "how_close": "adjacent (B2B) — the exact event-impact-on-demand dataset, sold from $75/mo but priced per location; owns the data moat TripShift would need and could enable any incumbent to ship this feature in a quarter"
+     },
+     {
+      "name": "Layla / Stardrift AI trip planners",
+      "url": "https://layla.ai/",
+      "how_close": "adjacent — VC-funded AI agents already claiming live flight+hotel price comparison and itinerary cost optimization; will absorb 'find me the cheapest week' as a prompt"
+     }
+    ],
+    "pain_evidence": "The phenomenon is real and quantified, but the evidence skews toward advice-literature rather than masses of burning complaint threads. Strongest finds: (1) FlyerTalk thread 'Frankfurt last week of January - high hotel prices?' (flyertalk.com/forum/germany/2143367) — traveler baffled by extreme Jan 24-30 rates until another user identifies the Ambiente trade fair and explains the German term 'Messerate': special, incredibly high, non-refundable trade-fair rates. (2) MWC Barcelona: hotel prices average +307% vs the prior week (~€553/night), 95% occupancy, guides explicitly advise 'if you can shift your dates a few days before or after, you'll have more alternatives' (apartool.com, catalannews.com). (3) Las Vegas canon: Frommers and LVCVA tell tourists to check vegasmeansbusiness.com convention calendar — 'if 50,000+ conventioneers are descending, change your dates'; hotel-hack guides state a single convention like CES or F1 'can triple hotel rates overnight' and that dodging one 'can cut your hotel bill in half' (vogo.com, hermoney.com). (4) The existence of Avoid Crowds, Hotel Alerts, and Trade Fair Trips (100k+ clients for Messe-week hotel help) proves demand for the collision layer. CAVEAT: targeted searches for raw r/travel 'my trip got wrecked by an event I didn't know about' threads returned thin results in this run; the pain is episodic (once every 1-2 years per leisure traveler) and the known workaround — googling the city's event calendar — is free and takes two minutes once you've been burned.",
+    "apple_policy_risks": "No hard App Store blocker. The €9.99/mo subscription unlocks digital features, so Guideline 3.1.1 forces Apple IAP — a 15-30% margin cut on already-thin unit economics (US external-link relief post-Epic ruling helps only on the US storefront). Affiliate hand-off to booking sites is fine under 3.1.5(a) since travel is a real-world service. The real platform risks are data-source ToS, not Apple: Songkick's API is closed to new keys and non-commercial only; Bandsintown data is non-commercial without written approval; Xotelo is an unofficial TripAdvisor scraper (fragile, ToS-exposed for a paid app); 10times scraping violates its terms. An app whose 'intelligence core' rides on scraped/non-commercial data invites both legal letters and silent data breakage, and Apple reviewers occasionally flag third-party content rights (5.2.2) if a complaint lands. Also note the share-sheet 'check these dates inside any booking app' works via iOS share extensions but cannot deep-integrate into competitors' apps.",
+    "verdict": "Kill as a standalone €9.99/mo consumer app. The differentiated core — a joint flight+hotel date matrix with an event-collision overlay — is real and unclaimed, but it stands on the weakest available data (no accessible API gives ±14-day nightly hotel-rate calendars cheaply; Amadeus hotel content is thin, Xotelo is a scraper, Booking.com purged small affiliates in June 2025, and Songkick/Bandsintown forbid commercial use), while free incumbents (Google date grid + hotel price flags, Kayak Best Time to Travel, Avoid Crowds) already deliver 70-80% of the value at the exact decision moment, and the purchase frequency (1-3 flexible trips/yr) plus unprovable counterfactual savings make subscription retention implausible — Going sustains $49/yr only with weekly provable deals, and consumer predecessors (Yapta, Waylo) all died or fled to B2B. Salvageable variants: a one-off €5-15 'date audit' report or share-extension, or licensing the collision index B2B — but the concept as specified should not be built."
+   }
+  },
+  {
+   "name": "Railhead — pan-European rail fare oracle: release-day sniper, bucket-depletion curves, and sleeper-cabin returns",
+   "pain": "European advance rail fares are a 3-7x game with hidden rules: DB Super Sparpreis €17.90 at release vs €130+ later, SNCF/Trenitalia/Eurostar buckets behave the same, booking horizons differ per operator (SNCF ~120-150 days with staggered sale openings, DB/Eurostar/Nightjet ~180), and the cheap buckets empty in days. Night-train private cabins sell out weeks ahead then reappear randomly from cancellations. Regular intra-EU rail users overpay €60-110/journey booking 'when they remembered' — €600-2,000/yr at 10-20 journeys — and sleeper misses cost €100-250 each (fare delta plus the hotel night the berth would have replaced). The intel today is a static seat61 page.",
+   "mechanism": "Track horizons and live fares via db-vendo-client endpoints, SNCF open data + Connect scraping, Trenitalia LeFrecce, OeBB/Renfe/Eurostar scraping, plus the public booking-widget JSON of Nightjet/European Sleeper/Intercités de Nuit/Caledonian Sleeper. User pins routes ('Paris-Milan any Friday in October'; 'Vienna-Amsterdam private compartment for 2'). Three loops: (1) release-day sniper — push when sales open for your dates, with historical bucket-lifetime intel; (2) fare-bucket depletion curves from continuous polling giving buy-now-vs-wait calls; (3) cancellation-return alerts when a sold-out cabin or cheap bucket reappears. Deep-link into operator checkout — booking stays official, no inventory touched.",
+   "ios_form": "Route watchlist; per-route fare calendar with depletion curves; release-countdown pushes; critical-style alert the second a watched cabin returns; horizon calendar showing when each route's window opens; 'this route, cheapest 4 weeks' widget.",
+   "offer_pricing": "€5.99/mo or €44/yr. ROI: one Sparpreis-vs-Flexpreis delta (€80-110) covers 2 years; one sniped sleeper cabin (€99 vs €249 + saved hotel night) is ~€270 on one trip; a 10-journey rail household saves €400-900/yr.",
+   "merged_from": "Railhead + BerthRadar (same pain — rail fare/availability timing — day and night trains unified)",
+   "curator_note": "Trainline/Omio earn per ticket and will never say 'wait 3 weeks and book direct with DB' — subscription independence is the structural unlock. The longitudinal bucket-depletion dataset can't be backfilled by a copycat, and the night-train boom grows the TAM through 2028. Distinct from RailRepay: this is pre-purchase timing, that is post-journey compensation.",
+   "validation": {
+    "pain_score": 55,
+    "novelty_score": 40,
+    "feasibility_score": 30,
+    "wtp_score": 35,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "SNCF Connect alerts (official, free)",
+      "url": "https://www.sncf-connect.com/aide/creer-des-alertes",
+      "how_close": "partial — but covers ALL THREE Railhead loops for France free: 'alerte ouverture à la vente' (release-day alert per train), 'alerte petits prix' (budget price alert), and 'full train alert' (notifies when a sold-out train gets seats back)"
+     },
+     {
+      "name": "Train Price Tracker (trainpricetracker.com)",
+      "url": "https://www.trainpricetracker.com/",
+      "how_close": "direct clone of the mechanism (daily price polling, 30-day price history, low/typical/high assessment, price-drop alerts) but Eurostar-only and free"
+     },
+     {
+      "name": "Trainline Price Prediction + Ticket Alert",
+      "url": "https://www.thetrainline.com/price-prediction",
+      "how_close": "partial — historical-trend 'book now vs wait' predictions and email ticket-release alerts; UK-centric prediction but sells 270 operators incl. DB/SNCF/Trenitalia; free"
+     },
+     {
+      "name": "Bahn-Preisalarm.de",
+      "url": "https://bahn-preisalarm.de/",
+      "how_close": "partial direct — free hourly DB price monitoring with email alert at user's max price"
+     },
+     {
+      "name": "Rail Europe app booking alerts",
+      "url": "https://help.raileurope.com/article/41696-setting-or-managing-booking-alerts",
+      "how_close": "partial — sale-opening (booking horizon) alerts and cheapest-ticket alerts across European operators, free"
+     },
+     {
+      "name": "bahn.guru (archived)",
+      "url": "https://github.com/juliuste/bahn.guru",
+      "how_close": "partial — DB best-price calendar, ARCHIVED after DB killed the unofficial API in late 2024; cautionary precedent, still not back up"
+     },
+     {
+      "name": "Hourrail Club",
+      "url": "https://www.hourrail.voyage/fr/blog/ouverture-ventes-billets-train-sncf-europe-2026",
+      "how_close": "partial — French community/service with sale-opening and promo alerts plus curated booking-horizon calendar for SNCF/Europe"
+     },
+     {
+      "name": "DB Bestpreissuche (DB Navigator)",
+      "url": "https://int.bahn.de/en/booking-information/best-price-finder",
+      "how_close": "partial — official cheapest-fare-per-day calendar for DB, free, no alerting"
+     },
+     {
+      "name": "UK operator ticket alerts (LNER, Avanti, SWR, TPE)",
+      "url": "https://www.lner.co.uk/travel-information/early-bird-ticket-alerts/",
+      "how_close": "partial — free Advance-ticket release alerts, UK only"
+     },
+     {
+      "name": "Omio / Liligo price alerts",
+      "url": "https://www.omio.com/trains",
+      "how_close": "partial — fare-drop alerts across European rail, free, commission-funded"
+     },
+     {
+      "name": "Save a Train",
+      "url": "https://www.phocuswire.com/Startup-pitch-Save-a-Train-brings-price-drop-alerts-to-rail",
+      "how_close": "adjacent — post-purchase price-drop rebooking rather than pre-purchase timing"
+     },
+     {
+      "name": "night-train-apis + hobby Nightjet checker scripts (GitHub)",
+      "url": "https://github.com/MartinLangbecker/night-train-apis",
+      "how_close": "adjacent/DIY — documented Nightjet widget APIs and scripts exist, but no commercial sleeper-return sniper found; this niche is genuinely open"
+     }
+    ],
+    "pain_evidence": "Documented and real, but concentrated in trip-planning moments rather than a daily burn. Night trains: Rick Steves forum (Austria/Nightjet thread): \"Nightjet sells out so get on it early... they pretty much sell out very soon after they go on sale because locals buy them six months ahead of time when they get posted.\" Eurail community: \"ÖBB in theory open bookings 6 months/180 days in advance but it is rarely the case, mainly due to engineering works... For later dates you can only check regularly on nightjet.com\" — i.e., users manually poll, which is exactly the pain; also thread \"ÖBB Nightjet Milan to Vienna in June showing Tickets not available.\" A rail-advocacy Substack headline captures it: \"Night sleeper trains to Western Europe: Sold out, or very expensive. Or both.\" Release-date chaos: Rick Steves France forum reports SNCF's own published summer sale-opening date slipped from March 6 to March 13 (\"so it could change again\"), and seat61 maintains an entire page (\"When do European train bookings open?\") because horizons differ per operator — validating that the intel today is a static page. Counter-evidence the concept ignores: the heaviest users (10-20 journeys/yr) mostly hold BahnCard 25/50, SNCF Avantage, ÖBB Vorteilscard etc., which flatten the fare delta and mute the claimed €600-2,000/yr loss; and SNCF Connect's free alerts already absorb the French share of the pain.",
+    "apple_policy_risks": "Guideline 5.2.2 is the live risk: the app \"uses, accesses, or monetizes access to\" DB/SNCF/Trenitalia/Eurostar/ÖBB content via unofficial endpoints and scraping, without permission under those services' terms — a known rejection/removal vector, and any single operator complaint to Apple can take the app down. The pitched \"critical-style alert the second a watched cabin returns\" cannot use Apple's Critical Alerts entitlement (reserved for health/safety/home-security); Time Sensitive notifications are the ceiling and are user-mutable, weakening the core sniper promise. Price-tracking apps per se are allowed (Hopper/Flighty precedent) and subscription via IAP is clean; no ATT/data issues. Net: not an automatic blocker, but a scraping-fed rail app monetized as a subscription sits squarely in 5.2.2 gray space with ongoing takedown exposure rather than a one-time approval hurdle.",
+    "verdict": "Kill as specced. The three loops already exist free where the money is — SNCF Connect officially ships release-day, low-price, and sold-out-train-reappearance alerts; Trainline does price prediction; Bahn-Preisalarm and Train Price Tracker give free tracking — while the data plan is a permanent scraping war against DataDome-defended SNCF/Eurostar and endpoint churn that already killed the better-connected bahn.guru (still dead 18+ months later), all feeding a price-hunter audience with weak subscription appetite and subscribe-for-one-trip churn. The single defensible wedge — night-train cabin release/return sniping via the open Nightjet/European Sleeper widget JSONs, where no commercial product exists and pain is loudest — could be rebuilt as a narrow one-off \"trip pass\" or cheap seasonal product, but it is a small tool, not a €44/yr pan-European oracle."
+   }
+  },
+  {
+   "name": "StrikeShield — the European strike radar that converts strikes into free rebookings and cash",
+   "pain": "Europe runs several major transport strikes monthly (Italy 2+ national strike days/month, French ATC grounding even overflights, Verdi closing German airports on 48h notice), all pre-announced in local-language official registries travelers never read. They learn at the airport and pay panic prices: €150-400 rebooking deltas, lost hotel nights, missed meetings — 1-4 times/yr for a 10+ trip European traveler.",
+   "mechanism": "Scrape the official pre-announcement registries where strikes are legally declared days ahead: Italy CGSSE + MIT scioperi + ENAC guaranteed-flights lists, France DGAC abatement notices, Spain's huelga register, German union feeds via LLM news parsing, Eurocontrol NOP for ATC regulations. Match against parsed itineraries including ATC-overflight exposure from great-circle routing. T-14 to T-2: push risk score plus playbook — the airline's live waiver policy (free-change windows open during strikes), guaranteed-flight status, one-tap alternates via Duffel + rail fallback. Post-impact: flags EU261 compensability (airline-staff strikes are payable per ECJ C-28/20) and hands the evidence pack to the claim flow.",
+   "ios_form": "14-day strike map overlaid on your trips; risk score at booking time ('fly Tue not Thu — national strike declared for the 21st'); push with 'rebook free now' deep links inside the waiver window; Live Activity on strike day showing guaranteed-flight status; strike-aware date picker for future bookings.",
+   "offer_pricing": "€49.99/yr. ROI: one pre-strike free rebooking saves €150-400 vs day-of fares; one correctly-flagged compensable strike claim is €250-600; in-app 'saved so far' counter makes it explicit.",
+   "curator_note": "Kept standalone rather than merged into the disruption concepts: its value is FOREKNOWLEDGE and avoidance, a different moment from compensation-after. The multilingual official-registry scraper network plus the only historical dataset linking declared strikes to actual cancellation rates per airport/carrier is a genuinely original data moat — verified no consumer product does this. Also the most viral/PR-able product in the portfolio (strike maps get shared).",
+   "validation": {
+    "pain_score": 55,
+    "novelty_score": 18,
+    "feasibility_score": 60,
+    "wtp_score": 30,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "Strike Tracker: Work & Travel (striketracker.app)",
+      "url": "https://apps.apple.com/us/app/strike-tracker-work-travel/id6751948513",
+      "how_close": "direct clone — iOS app + web covering Italy, France, Germany, Spain, Belgium, NL, UK, Norway with impact ratings (Critical/Major/Minor/Low), push notifications 1-5 days before strikes, add-to-calendar export, in-app subscriptions; AI-agent-gathered data from official sources; even publishes a 'Q1 2026 European Strike Report (458 strikes, 8 countries)'. It is StrikeShield's core minus waiver playbook and EU261 flagging."
+     },
+     {
+      "name": "C'è Sciopero: Italian Strikes",
+      "url": "https://apps.apple.com/de/app/c%C3%A8-sciopero-streiks-italien/id6742243477",
+      "how_close": "direct clone for Italy (the highest-frequency market) — free iOS app with real-time push for Italian strikes incl. air travel, live map of current and planned strikes, region and sector filters. Free, undercutting any paid Italy-centric offering."
+     },
+     {
+      "name": "Flighty — Airport Intelligence (Mar 2026 update)",
+      "url": "https://flighty.com/",
+      "how_close": "partial but distribution-dominant — $49/yr, real-time alerts for airport strikes, low staffing, congestion across 14,000 airports, AI delay forecasts, itinerary-native. Covers the strike-day moment (not T-14 foreknowledge) inside the app frequent flyers already pay for at StrikeShield's exact price point."
+     },
+     {
+      "name": "TripIt Pro Risk Alerts",
+      "url": "https://www.tripit.com/web/blog/news-culture/tripit-pro-risk-alerts",
+      "how_close": "partial-strong — $49/yr, itinerary-matched advance push alerts explicitly covering airline/pilot/baggage-handler strikes 'even before they result in a flight delay', across flights, rail, hotels. Covers the foreknowledge moment for its large installed base."
+     },
+     {
+      "name": "AirHelp+ (Lite/Smart/Pro)",
+      "url": "https://www.airhelp.com/en-int/airhelp-plus/",
+      "how_close": "partial — €29.99-99.99/yr; owns the post-impact cash conversion StrikeShield monetizes: 0% commission EU261 claims, €100 instant delay insurance payouts, disruption alerts, email/calendar itinerary sync, lounge access during disruptions."
+     },
+     {
+      "name": "AirAdvisor European Airport Strikes Tracker",
+      "url": "https://airadvisor.com/en/airport-strikes-tracker",
+      "how_close": "partial — free live tracker of confirmed/planned airport, ground-handling and ATC strikes built from the same official registries (national strike registers, CAAs, unions), updated on announcement/cancellation; lead-gen for their claim business."
+     },
+     {
+      "name": "AirportStrikes.eu",
+      "url": "https://airportstrikes.eu/",
+      "how_close": "partial — free live map of European airport labour strikes, updated every 8 hours; the 'viral strike map' PR angle already exists as a free product."
+     },
+     {
+      "name": "Free strike calendars (Wego strike map, Dolcevia monthly Italy strike dates, ItaliaRail, TheLocal, Timeout lists)",
+      "url": "https://blog.wego.com/europe-airport-strikes-summer-2026/",
+      "how_close": "adjacent — free, SEO-dominant content continuously updated with strike dates and guaranteed-hours guidance; captures the 'check before you fly' search intent StrikeShield needs for acquisition."
+     }
+    ],
+    "pain_evidence": "Macro pain is verifiable and large: the 3-4 July 2025 French ATC strike alone cancelled ~3,000 flights and delayed 7,400+, affecting 1M+ passengers with ~200,000 unable to fly; Eurocontrol put industry cost at €120M; Ryanair cancelled 170 flights/30,000 pax and noted most disrupted passengers were merely OVERFLYING France (Euronews, Irish Times, Ryanair corporate, 2025). Italy runs firm national aviation strike dates monthly (5 and 21 July 2026 currently declared). Individual-level evidence: TripAdvisor's Italy forum has recurring monthly panic threads — a Toronto traveler on the Sept 26 national strike 'worried that their return flight from Rome that morning would be cancelled'; a Canadian couple 'heard about a nationwide airline strike but couldn't get clear information from their airline, WestJet'; an easyJet Malpensa-Naples passenger 'expressed frustration finding precise information about the scheduled air strike on September 6' (tripadvisor.com Italy forum threads k15429431, k15432096, k15416268). CAVEAT that cuts against the thesis: these threads show travelers DO learn of strikes days ahead via news/forums, and free community answers (ENAC guaranteed-flight bands 07:00-10:00/18:00-21:00, 'most Italian strikes are work-to-rule') resolve much of the anxiety without a paid product. I could not surface Reddit threads of people asking 'is there an app for this' — the discovery gap the concept assumes was not evidenced.",
+    "apple_policy_risks": "No hard blockers. Precedents exist for every risky element: EU261 claim-facilitation apps (AirHelp, Flightright) and strike-alert apps (Strike Tracker, C'è Sciopero) are live on the App Store. Flight ticket sales via Duffel are physical services, exempt from IAP (Guideline 3.1.5(a)); the €49.99 subscription itself is digital and must use IAP, costing 15-30% of revenue (or EU alternative terms with Core Technology Fee complexity). Minor risks: Guideline 2.1/4.2 if reviewers see it as a thin scraped-news aggregator — mitigated by itinerary matching; scraped government registries are public-sector data (EU open-data directive) so 5.2.2 IP risk is low; push notifications must stay non-promotional per 4.5.4. Real non-Apple risk is accuracy liability: one missed strike or false all-clear destroys trust in a product whose entire promise is foreknowledge.",
+    "verdict": "Kill as a standalone €49.99/yr subscription. The core premise 'verified no consumer product does this' is factually wrong — Strike Tracker: Work & Travel is a near-exact clone already on iOS, C'è Sciopero covers Italy for free, and in 2026 strike/disruption alerts were commoditized into the incumbents travelers already pay $49/yr for (Flighty Airport Intelligence, TripIt Pro Risk Alerts) while AirHelp+ owns the cash-conversion end at a lower price with actual insurance payouts. The remaining differentiators are either overstated (Duffel cannot execute free waiver rebookings on airline-held tickets; most strikes are ATC/airport/ground-handling and thus NOT EU261-compensable under the extraordinary-circumstances rule, so the €250-600 'cash' applies to a minority of events) or gated (Eurocontrol NM B2B data is restricted to operational stakeholders). If pursued at all, it should be a free, affiliate/claims-funded strike map for PR distribution or a feature pitched to Flighty/TripIt — not a venture-worthy standalone app."
+   }
+  },
+  {
+   "name": "RebookEU — EU-native post-purchase repricing autopilot + cancellation-deadline guardian (hotels, cars, POS-aware)",
+   "pain": "European travelers hold stacks of free-cancellable bookings (Booking.com hotels, EU car hire at €300-600/week, flexible rail) and leak money twice: prices for the identical room/car drop 10-57% before check-in/pickup and nobody re-searches their own bookings across brokers, country editions and languages; and free-cancel deadlines get silently missed, converting refundable money into nonrefundable loss. A 15-night + 2-3-rental household loses €300-800/yr. Pruvo sold to WebBeds and went B2B; AutoSlash refuses to leave US/CA; US email tools are English-only and ignore deadlines entirely.",
+   "mechanism": "Gmail/Outlook OAuth or forward-address; LLM parses confirmations in all EU languages, extracting property/supplier, exact room-rate-plan or ACRISS car class + insurance terms, price, and the free-cancellation deadline as a first-class object. Repricing loop every 6-12h: same unit re-quoted via Booking/Expedia Rapid/Agoda/Trip.com affiliate APIs across ~25 country POS (net of the user's card FX profile), car segments via DiscoverCars/CarTrawler/EconomyBookings feeds plus direct-supplier sites with LLM insurance-terms normalization for like-for-like comparison. On a >7% beat: push with book-first deep link, then guided cancel verified by parsing the new confirmation. Deadline guardian: T-72/24/2h audit pushes with keep/rebook/cancel verdicts (including cross-signals like 'your inbound flight cancelled — cancel the hotel now'). Pre-purchase FinePrint module reads any rate's fine print via share-sheet and scores refundability before the user books.",
+   "ios_form": "Unified trip timeline where every booking card shows a live 'overpaying by €X' delta and a deadline countdown ring; Live Activities inside 48h of any deadline; lock-screen widget for next deadline; share-sheet import from Mail/Booking/airline apps; year-to-date recovered-money ledger; family sharing.",
+   "offer_pricing": "€7.99/mo or €69/yr, unlimited bookings, all verticals. ROI: median hotel catch €50-90, median EU car-hire catch €40-120; 6 stays + 2 rentals/yr = €300-500 recovered vs €69 (4-7x), itemized in the ledger. Affiliate commission on rebookings (Booking/DiscoverCars pay 25-70% rev-share) subsidizes CAC on top of subscription.",
+   "merged_from": "RebookEU + DeadlineGuard + SwapNight + HireLoop + WheelSwap (+ FinePrint folded in as the pre-purchase hook rather than a standalone product)",
+   "curator_note": "Five of the 30 raw concepts closed this single pain — the strongest signal in the batch. Merged into one EU-native flagship: the deadline-as-first-class-object framing (DeadlineGuard/RebookEU) plus cross-POS room-level entity matching (SwapNight) plus the car-hire insurance-normalization stack (HireLoop/WheelSwap). Flights deliberately excluded — voluntary refare doesn't exist in Europe; that money is captured by FareRights via rights arbitrage instead. Anchor product of the portfolio; multilingual parsing corpus and per-property price-decay curves are the compounding moat.",
+   "validation": {
+    "pain_score": 55,
+    "novelty_score": 28,
+    "feasibility_score": 38,
+    "wtp_score": 32,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "OneAir",
+      "url": "https://www.oneair.ai/",
+      "how_close": "direct clone (hotel half): forward confirmation email, 24/7 monitoring of existing hotel bookings globally incl. Europe, guided/auto rebooking, iOS app, $59.99/yr; flights US/CA-only but hotels work worldwide"
+     },
+     {
+      "name": "Gondola (AutoSave)",
+      "url": "https://www.gondola.ai/",
+      "how_close": "direct clone of the repricing loop for direct hotel (Marriott/Hyatt/IHG) and flight bookings — fully automatic and FREE; claims avg $413/yr saved"
+     },
+     {
+      "name": "RatePunk",
+      "url": "https://www.ratepunk.com/",
+      "how_close": "direct clone (alerts): EU-based (Lithuania), free extension + iOS app, price-drop rebooking alerts on free-cancellation hotels, plus cross-country POS price checks — the concept's claimed moat, free"
+     },
+     {
+      "name": "HotelSlash",
+      "url": "https://www.hotelslash.com/",
+      "how_close": "direct clone (hotel half): $29.95/yr price-drop monitoring of hotel reservations from the AutoSlash team"
+     },
+     {
+      "name": "Pruvo / PruvoAI",
+      "url": "https://www.pruvoai.com/",
+      "how_close": "was the direct clone; exited B2C entirely, sold to Web Travel Group (WebBeds) for ~$17.4M as a B2B repricing tool — evidence B2C economics failed; its room/rate-mapping tech is now a competitor asset inside the supply chain"
+     },
+     {
+      "name": "DreamCheaper (dead)",
+      "url": "https://techcrunch.com/2015/03/10/dreamcheaper/",
+      "how_close": "was exactly this concept, EU-native (Berlin), success-fee auto-rebooking; bankrupt/absorbed 2018 — prior-failure signal for the same market"
+     },
+     {
+      "name": "Plot Travel",
+      "url": "https://www.plot.travel/",
+      "how_close": "partial: forward confirmation, tracks price until check-in, sends savings amount + recommended action"
+     },
+     {
+      "name": "Otto the Agent",
+      "url": "https://www.ottotheagent.com/",
+      "how_close": "partial: monitors its own bookings for lower refundable rates and emails rebooking prompts"
+     },
+     {
+      "name": "Rebookey",
+      "url": "https://www.rebookey.com/",
+      "how_close": "partial: hotel rate tracker for existing reservations"
+     },
+     {
+      "name": "AutoSlash",
+      "url": "https://www.autoslash.com/track",
+      "how_close": "adjacent: the model for the car-hire half; US/CA-focused and does not track EU rentals — this is the one genuinely open gap the concept identifies"
+     },
+     {
+      "name": "Booking.com native features",
+      "url": "https://www.booking.com/genius.html",
+      "how_close": "adjacent: We Price Match guarantee, price alerts, and automatic free-cancellation-deadline reminder emails — erodes the deadline-guardian value prop at zero cost"
+     },
+     {
+      "name": "TripIt Pro",
+      "url": "https://www.tripit.com/web/pro/pricing",
+      "how_close": "adjacent: parses confirmation emails into a trip timeline with reminders (no confirmed deadline-countdown or repricing), $49/yr, huge installed base that could ship both features quickly"
+     }
+    ],
+    "pain_evidence": "The pain is real and documented, mostly in UK/EU money-saving communities rather than as spontaneous complaint threads. Which? published \"Cancel and rebook your car hire this summer to save as much as £160\" (which.co.uk), noting most brokers allow penalty-free cancellation to 48h before pickup and prices in Spain/France/Cyprus fell up to 38% after booking. MoneySavingExpert actively solicited stories (\"Have you cancelled and rebooked a hotel OR a car rental to take advantage of a lower price?\") and readers reported: an 18-day car hire booked at £954 re-found at £487 two weeks out (\"cancelled and rebooked saving over £450\") and a hotel rebook saving \"nearly £1000\". MSE's standing travel tip: \"book with free cancellation... monitor prices, and cancel and rebook if it drops.\" Tripadvisor threads exist on both verticals (\"Car rental price drop ~ call or cancel & rebook?\", \"Booking.com price drop and re-booking\"), and the industry stat (used by Pruvo/OneAir marketing) is that ~57% of reservations see a price drop before check-in. Deadline-miss pain shows up as \"forgot to cancel / nonrefundable\" threads on Tripadvisor, FlyerTalk and Bogleheads, but OTAs (Booking.com, Hotels.com) already send free-cancellation reminder emails, which blunts it. Caveat: no evidence was found of people asking specifically for a paid EU tool; the loss is invisible to mainstream travelers, and those aware of it (MSE/FlyerTalk types) already solve it manually or with free tools.",
+    "apple_policy_risks": "No hard blocker. Booking travel via external affiliate deep links is permitted (physical goods/services, Guideline 3.1.5(a)); the €7.99/mo subscription for the tool itself goes through IAP as standard. Real but manageable risks: (1) email-scanning requires prominent privacy disclosure and Google restricted-scope OAuth with an annual CASA Tier 2 assessment ($500-$4,500/yr) if Gmail OAuth is used — forward-address sidesteps this; (2) Guideline 5.2.2 (third-party data provenance) exposure if pricing comes from scraping OTA country editions rather than licensed APIs, and Apple can demand evidence of authorized data access; (3) Live Activities/widgets are fine. The bigger platform risk is not Apple but the OTAs: cross-POS quoting isn't offered by any affiliate API, so it requires geo-IP scraping that violates Booking.com's ToS, and affiliate accounts used to cannibalize the OTA's own bookings (cancel-and-rebook churn) risk termination — the revenue model depends on partners who lose money every time the product works.",
+    "verdict": "Kill as specified. The hotel-repricing anchor is a crowded, partially-free market (OneAir, Gondola free, RatePunk free and EU-based, HotelSlash) with a graveyard proving the B2C economics fail — DreamCheaper (the exact EU-native version) went bankrupt and Pruvo fled to B2B — while the pitched mechanism (Booking Demand API, Expedia Rapid, 25-country POS) is gated behind partner programs that reject small teams, and the affiliate revenue model is structurally adversarial to the OTAs it depends on. The one defensible insight inside the bundle is the EU car-hire gap (AutoSlash refuses Europe, DiscoverCars' API is genuinely accessible at 70% rev-share, Which?/MSE prove £150-450 catches): if anything survives, rebuild as a narrow \"AutoSlash for Europe\" car-hire tracker with deadline reminders at ~€20-30/yr — not this €69/yr five-concept flagship."
+   }
+  },
+  {
+   "name": "FarePassport — point-of-sale price-discrimination engine for flights and hotels, net of your cards, no VPN",
+   "pain": "The identical flight, room or car is priced 10-40% apart depending on which country's site edition and currency you buy through (RatePunk's data and ITA PowerTools prove the spread). Capturing it today means desktop extensions, VPN hopping airlines now detect and punish, and manual currency toggling — impossible on mobile, where frequent travelers actually book. €50-300 lost per long-haul, €20-80 per intra-EU ticket, 5-25% per hotel stay.",
+   "mechanism": "Server-side POS fan-out through channels that legitimately expose the POS/currency dimension: Kiwi Tequila (market parameter), Travelpayouts/Aviasales per-market locales, Trip.com country editions, Amadeus Self-Service currency variants, Booking Demand API + Agoda/Expedia Rapid/ZenHotels for hotels — deduped by property/itinerary and normalized to NET LANDED COST using mid-market FX plus the user's stored card-fee profile (Revolut weekend markup, Amex 2.5%, no-FX cards). Ranks only LEGAL purchase paths — prefers foreign-OTA checkout where the OTA is merchant of record (no ToS exposure, no VPN) and flags carriers that prohibit POS misrepresentation. Share any booking link → 20 seconds → ranked table ('€612 on lufthansa.de → €531 via Kiwi MX net of your Revolut'). Watch mode monitors the POS matrix on planned routes and pushes when any POS dips below target.",
+   "ios_form": "Share-sheet target over any booking page; POS heatmap per itinerary; card wallet with per-card FX profiles; route watchlists with push; cumulative savings ledger; home-screen widget showing the live best POS for your next watched trip. Checkout completes on the OTA's site — physical services outside IAP; the subscription is the IAP.",
+   "offer_pricing": "€9.99/mo or €89/yr. ROI: median captured POS spread on one long-haul is €80-250 — one booking pays the year; a monthly international traveler banks €600-1,500/yr (6-15x). Affiliate commissions on redirected bookings subsidize CAC.",
+   "merged_from": "FareGate (flights, card-FX normalization, legal-path ranking) + FarePassport (hotels, share-sheet UX); post-booking POS re-watching ceded to RebookEU to keep pains distinct",
+   "curator_note": "Productizes research finding #4 mobile-first and de-risks the legal gray zone by ranking merchant-of-record OTA paths instead of VPN geo-spoofing — the durable version of a hack airlines are actively killing. OTAs can't copy it (cannibalizes margin, breaks rate-parity contracts); RatePunk won't (affiliate conflict). The longitudinal POS-spread dataset per route/chain trains 'which POS wins' predictions nobody else has.",
+   "validation": {
+    "pain_score": 42,
+    "novelty_score": 28,
+    "feasibility_score": 20,
+    "wtp_score": 28,
+    "no_marketplace_ok": true,
+    "competitors_found": [
+     {
+      "name": "RatePunk (extension + iOS/Android app + Flights Premium)",
+      "url": "https://www.ratepunk.com/",
+      "how_close": "direct clone (partial) — the closest threat. Compares hotel rates across OTAs from the booking page, and its location-change feature explicitly tells you WHICH COUNTRY to VPN into for a cheaper regional price (cybernews.com review 2026). Now also does flights; RatePunk Flights Premium is ~$23.92/yr — a quarter of FarePassport's €89/yr. The curator note's claim 'RatePunk won't build this (affiliate conflict)' is already falsified: they shipped the country-suggestion feature and monetize via affiliate + cheap subscription."
+     },
+     {
+      "name": "Travel Arrow / TripChipper",
+      "url": "https://www.travelarrow.io/",
+      "how_close": "partial — free Chrome extension marketed as 'travel hack like the pros': cross-site fare re-search (Expedia→Kayak/Skyscanner), geo/currency price tricks, hotel deal reveals. Free, desktop-only, no net-of-card-fee math."
+     },
+     {
+      "name": "Skyscanner / Kayak country & currency settings",
+      "url": "https://www.skyscanner.net/",
+      "how_close": "partial — the manual version of the core value prop is free and works on mobile: changing Skyscanner's country setting exposes POS spreads (documented example: Madrid→Atlanta $1,057 vs $756, saving $301). Free anchor that caps willingness to pay."
+     },
+     {
+      "name": "WayAway (Travelpayouts' own consumer app)",
+      "url": "https://apps.apple.com/us/app/cheap-flights-wayaway/id606870241",
+      "how_close": "adjacent — flight meta + cashback subscription from the very affiliate network FarePassport would depend on; shows the channel owner competes downstream with its own partners."
+     },
+     {
+      "name": "Lighthouse (rate-shopping with POS functionality)",
+      "url": "https://www.mylighthouse.com/resources/blog/hotel-rate-shopping-tool",
+      "how_close": "adjacent (B2B) — hotel rate-shopping tools already fan out rates across country domains (.co.uk/.fr/.es) per channel for hoteliers. Proves the data plumbing exists, but it's sold to hotels at B2B prices, not consumers, and its existence means chains actively monitor and close POS leakage."
+     },
+     {
+      "name": "Skiplagged",
+      "url": "https://apps.apple.com/ca/app/skiplagged-flight-booking/id823443083",
+      "how_close": "adjacent — gray-zone fare-hack app; relevant as Apple-policy precedent (still on App Store despite AA lawsuit) and as evidence the 'hack app' niche monetizes via booking fees, not subscriptions."
+     }
+    ],
+    "pain_evidence": "Real but niche and contested. FOR: an 18-page FlyerTalk thread 'Different pricing/fare buckets depending on billing country / point of sale' (flyertalk.com/forum/united-airlines-mileageplus/1696708) shows enthusiasts tracking POS fare buckets for years; TPG, MapHappy and Cranky Flier all document the technique; a documented Skyscanner country-toggle example saved $301 on MAD-ATL ($1,057 → $756); RatePunk found enough demand to ship a 'which country to VPN to' feature for hotels. AGAINST (this is the killer nuance): The Alviator's 2025 teardown reports 'tons of Reddit posts about whether VPN-for-cheaper-flights is true, but exactly zero customer success stories' — most of the flight spread is ORIGIN-airport-based fare filing, not buyer-POS-based, so a POS fan-out can't capture it without repositioning; FlyerTalk itself notes 'most carrier websites do not adjust fare based on point of sale' (United being an exception). Foreign-POS bookings also carry real downside pain: card-verification-at-check-in requirements (OMAAT, Triptipedia) and refund/servicing friction when a foreign OTA is merchant of record. Net: the pain exists for a small FlyerTalk-grade segment, is episodic (a few long-hauls a year), and the 10-40% 'identical itinerary' spread claim is at the optimistic tail, not the median.",
+    "apple_policy_risks": "Low-to-moderate, and NOT the binding constraint. The architecture is policy-compliant: travel is a physical service so checkout can complete on the OTA's site outside IAP (Guideline 3.1.5(a)), and selling the subscription via IAP is exactly what Apple wants. Precedent: Skiplagged has stayed on the App Store for a decade despite an American Airlines lawsuit, so 'facilitates ToS-gray booking' is not a takedown trigger in practice. Residual risks: (1) share-sheet extension that parses competitors' booking pages may draw 5.2.2 (third-party content without permission) complaints from OTAs/airlines, the same lever AA used against Skiplagged in court; (2) push-based 'watch mode' requires server-side polling of sources the team has no API license for — the legal exposure is scraping/ToS, not Apple; (3) storing per-card FX fee profiles is fine (no PAN storage). The real policy risk sits with airline/OTA legal departments, not Cupertino.",
+    "verdict": "Kill. The mechanism's named data channels are all effectively closed to a small team as of 2024-2025 — Kiwi Tequila stopped onboarding public API partners (May 2024), Aviasales/Travelpayouts Search API requires 50,000 MAU before access, Booking.com paused Demand API applications and culled thousands of affiliates (May 2025), Expedia Rapid explicitly prioritizes high-volume partners, and Amadeus Self-Service fixes point of sale at account registration (currencyCode only converts display currency, it does not re-file fares per POS) — so the 'legal POS fan-out' collapses into scraping country editions, which contradicts the concept's own legality positioning and its watch-mode economics. Meanwhile the value prop is already served cheaper: RatePunk (free + ~$24/yr premium, with a country-suggestion feature) and free tools (Travel Arrow, Skyscanner's country toggle) cap WTP far below €9.99/mo, and the flight-side spread is mostly origin-based fare filing that no POS engine can capture. The only salvageable kernel — net-landed-cost ranking after card FX fees across whatever OTAs an affiliate network will still admit — is a feature, not a €89/yr product."
+   }
+  }
+ ],
+ "raw_count": 30
+}

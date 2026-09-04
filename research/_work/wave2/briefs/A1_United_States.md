@@ -1,0 +1,15 @@
+# Бриф верификатора: A1 - United States
+
+Ниже - ТОЛЬКО утверждения и URL. Заметок сборщика нет. Дата доступа сборщика: 2026-09-04.
+
+| id | утверждение | значение | единица | год/период | определение метрики | страна | название источника | URL |
+|---|---|---|---|---|---|---|---|---|
+| A1-025 | Ожирение в США в 2006 г. - 29.7% | 29.7 | % | 2006 | age-std, 18+, both | United States | S1 | https://github.com/dominicroye/obesity (файл share-of-adults-defined-as-obese.csv; raw: https://raw.githubusercontent.com/dominicroye/obesity/master/share-of-adults-defined-as-obese.csv или .../main/...) |
+| A1-026 | Ожирение в США в 2016 г. - 36.2% | 36.2 | % | 2016 | то же | United States | S1 | https://github.com/dominicroye/obesity (файл share-of-adults-defined-as-obese.csv; raw: https://raw.githubusercontent.com/dominicroye/obesity/master/share-of-adults-defined-as-obese.csv или .../main/...) |
+| A1-027 | США делят 6-е место: +6.5 п.п. (+21.9%) | 6.5 | п.п. | 2006-2016 | разность | United States | расчёт | https://github.com/dominicroye/obesity (файл share-of-adults-defined-as-obese.csv; raw: https://raw.githubusercontent.com/dominicroye/obesity/master/share-of-adults-defined-as-obese.csv или .../main/...) |
+| A1-043 | Население США в 2023 г. - 336 806 231 | 336806231 | человек | 2023 | Population, total | United States | S3 | https://github.com/datasets/population (raw: https://raw.githubusercontent.com/datasets/population/main/data/population.csv или .../master/...) |
+| A1-057 | ПРОГНОЗ: США - Atlas 2025: 44% (2025); Atlas 2023: 58% (2035), 2.1%/год; Atlas 2022: 46.9% (2030; Men 46.58, Women 47.13) | 44; 58; 46.9 | % | 2025; 2035; 2030 | как выше | United States | Atlas 2025 стр. 254; Atlas 2023 стр. 216; Atlas 2022 стр. 270 | Atlas 2025: https://s3-eu-west-1.amazonaws.com/wof-files/World_Obesity_Atlas_2025_rev1.pdf, Atlas 2023: https://s3-eu-west-1.amazonaws.com/wof-files/World_Obesity_Atlas_2023_Report.pdf, Atlas 2022: https://s3-eu-west-1.amazonaws.com/wof-files/World_Obesity_Atlas_2022.pdf |
+| A1-074 | NHANES: age-adjusted ожирение среди взрослых США 20+ - 34.3% в 2005-2006 и 39.6% в 2015-2016 | 34.3; 39.6 | % | 2005-2006; 2015-2016 | BMI>=30, 20+, age-adjusted к населению США 2000 г. | United States | CDC/NCHS Health E-Stats, Table 1 | https://www.cdc.gov/nchs/data/hestat/obesity-adult-17-18/obesity-adult.htm |
+| A1-075 | NHANES 2017-2018: age-adjusted ожирение среди взрослых США 42.4% (crude 42.5%) | 42.4 | % | 2017-2018 | BMI>=30, 20+, age-adjusted | United States | CDC/NCHS Data Brief 360 | https://www.cdc.gov/nchs/products/databriefs/db360.htm |
+| A1-076 | NHANES Aug 2021-Aug 2023: ожирение среди взрослых США 40.3% | 40.3 | % | 2021-2023 | BMI>=30, 20+ | United States | CDC/NCHS Data Brief 508 | https://www.cdc.gov/nchs/products/databriefs/db508.htm |
+| A1-077 | NCD-RisC 2024 (2022, 20+): ожирение в США Men 43%, Women 45.9% | 43; 45.9 | % | 2022 | BMI>=30, 20+, по полам | United States | GOO Report card - adults: United States | https://data.worldobesity.org/country/united-states-227/report-card-adults-DA.pdf |

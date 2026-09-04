@@ -166,3 +166,24 @@ idf11.to_csv(f'{OUT}/a2_idf11_country_2024.csv', index=False)
 print('\nIDF 11th parsed rows:', len(idf11), '| regions:', idf11[idf11['country_idf'].isin(REGION_CODES)]['country_idf'].tolist())
 print('IDF 11th region totals sum (1000s):', idf11[idf11['country_idf'].isin(REGION_CODES)]['n_adults_1000s_2024'].sum())
 print(idf11[idf11['footnote'] != ''][['country_idf', 'footnote']].head(20).to_string(index=False))
+
+# ---------- 4. Integrity check of the GitHub mirror vs. published NCD-RisC 2016 global figures ----------
+# Published (PMC5081106 abstract, opened 2026-09-04 via firecrawl_research_search_papers): global age-standardised
+# diabetes prevalence men 4.3% (1980) -> 9.0% (2014); women 5.0% (1980) -> 7.9% (2014).
+# The mirror file has no World row, so we approximate the global value as the World Bank total-population-weighted
+# mean of the 200 country values (weights = total population of the same year; adult population not available).
+chk = []
+for y in (1980, 2014):
+    py = pop[pop['Year'] == y][['Country Code', 'Value']].rename(columns={'Country Code': 'iso', 'Value': 'w'})
+    for s in ('Men', 'Women'):
+        d = dm[(dm['year'] == y) & (dm['sex'] == s)].merge(py, on='iso', how='inner')
+        chk.append({'year': y, 'sex': s, 'n_countries_with_pop': len(d), 'pop_weighted_mean_pct': round(float(np.average(d['prev'], weights=d['w']) * 100), 2),
+                    'unweighted_mean_pct': round(float(d['prev'].mean() * 100), 2), 'min_pct': round(float(d['prev'].min() * 100), 2), 'max_pct': round(float(d['prev'].max() * 100), 2),
+                    'published_ncdrisc_2016_pct': {(1980, 'Men'): 4.3, (1980, 'Women'): 5.0, (2014, 'Men'): 9.0, (2014, 'Women'): 7.9}[(y, s)]})
+chk = pd.DataFrame(chk)
+chk.to_csv(f'{OUT}/a2_integrity_check.csv', index=False)
+print('\n=== Integrity check (mirror vs published global) ===')
+print(chk.to_string(index=False))
+top14 = dm[dm['year'] == 2014].sort_values('prev', ascending=False).head(6)[['country', 'sex', 'prev']]
+top14['prev'] = (top14['prev'] * 100).round(1)
+print('Highest 2014 values in file:\n', top14.to_string(index=False))

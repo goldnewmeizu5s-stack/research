@@ -1,0 +1,173 @@
+=== 1. ЦЕЛОСТНОСТЬ (OWID both sexes vs mean(Men,Women) NCD-RisC 2017), в п.п. ===
+  n_pairs_2006_2016: 380
+  n_countries_matched: 190
+  max_abs_diff_pp_2006_2016: 4.3831
+  median_abs_diff_pp_2006_2016: 0.6065
+  mean_abs_diff_pp_2006_2016: 0.6420
+  n_over_tol_2006_2016: 22
+  n_countries_over_tol_2006_2016: 12
+  share_pairs_within_tol_2006_2016: 0.9421
+  n_signed_diff_negative_2006_2016: 368
+  max_abs_diff_pp_all_years: 4.4402
+  median_abs_diff_pp_all_years: 0.3333
+  n_pairs_all_years: 7980
+  страны с |diff| > 1.5 п.п. (2006/2016):
+              Entity Code  Year  obesity_pct  ncd_men_pct  ncd_women_pct  ncd_mean_MW_pct  signed_diff_pp  abs_diff_pp
+             Bahrain  BHR  2006         25.0        20.93          34.03            27.48           -2.48         2.48
+             Bahrain  BHR  2016         29.8        26.46          38.19            32.33           -2.53         2.53
+        Cook Islands  COK  2006         49.9        46.69          56.24            51.47           -1.57         1.57
+        Cook Islands  COK  2016         55.9        53.97          60.85            57.41           -1.51         1.51
+              Kuwait  KWT  2006         32.5        28.08          43.05            35.56           -3.06         3.06
+              Kuwait  KWT  2016         37.9        34.28          47.08            40.68           -2.78         2.78
+    Marshall Islands  MHL  2016         52.9        49.85          59.02            54.43           -1.53         1.53
+Micronesia (country)  FSM  2016         45.8        41.48          53.17            47.33           -1.53         1.53
+                Oman  OMN  2006         20.5        16.78          28.64            22.71           -2.21         2.21
+                Oman  OMN  2016         27.0        23.77          34.97            29.37           -2.37         2.37
+               Palau  PLW  2006         48.9        45.31          55.50            50.40           -1.50         1.50
+               Palau  PLW  2016         55.3        53.15          60.48            56.81           -1.51         1.51
+               Qatar  QAT  2006         29.1        26.62          39.91            33.27           -4.17         4.17
+               Qatar  QAT  2016         35.1        33.46          44.60            39.03           -3.93         3.93
+               Samoa  WSM  2006         40.8        33.90          50.97            42.43           -1.63         1.63
+               Samoa  WSM  2016         47.3        41.28          56.62            48.95           -1.65         1.65
+        Saudi Arabia  SAU  2006         29.0        24.50          38.36            31.43           -2.43         2.43
+        Saudi Arabia  SAU  2016         35.4        31.73          43.74            37.73           -2.33         2.33
+              Tuvalu  TUV  2006         43.9        39.34          51.49            45.41           -1.51         1.51
+              Tuvalu  TUV  2016         51.6        48.47          57.85            53.16           -1.56         1.56
+United Arab Emirates  ARE  2006         25.0        21.74          37.03            29.38           -4.38         4.38
+United Arab Emirates  ARE  2016         31.7        28.44          42.46            35.45           -3.75         3.75
+  только в OWID (нет в NCD-RisC): []
+  только в NCD-RisC (нет в OWID): ['ASM', 'BMU', 'GRL', 'HKG', 'PRI', 'PSE', 'PYF', 'SDN', 'TKL', 'TWN']
+  сущности OWID: 191, с кодом: 190; NCD-RisC: 200
+
+=== 2. Полная таблица: N = 191 ; членов ООН в файле: 188 ; членов ООН без данных в файле: ['LIE', 'MCO', 'SDN', 'SMR', 'SSD']
+   членов ООН в файле без населения 2023: Empty DataFrame
+Columns: [Entity, Code, pop_last_year, pop_last]
+Index: []
+   N после фильтра (член ООН и население >= 5 млн): 122
+
+=== 3a. ТОП-8 по абсолютному изменению (строк: 9; ничьи по method=min) ===
+ rank_abs               Entity Code  y2006  y2016  abs_change_pp  rel_change_pct  annual_pp_per_year    pop_2023  rank_rel  ncd_meanMW_abs_change_pp  rank_ncd_meanMW                                 Region
+        1                Haiti  HTI   14.7   22.7            8.0            54.4                0.80  11637398.0        33                      8.29                1                          The Caribbean
+        2   Dominican Republic  DOM   20.0   27.6            7.6            38.0                0.76  11331265.0        55                      7.84                2                          The Caribbean
+        3           Costa Rica  CRI   18.6   25.7            7.1            38.2                0.71   5105525.0        54                      7.28                3                  Central Latin America
+        4 United Arab Emirates  ARE   25.0   31.7            6.7            26.8                0.67  10483751.0        77                      6.07               14           Middle East and north Africa
+        5              Algeria  DZA   20.8   27.4            6.6            31.7                0.66  46164219.0        63                      6.83                4           Middle East and north Africa
+        6                 Oman  OMN   20.5   27.0            6.5            31.7                0.65   5049269.0        63                      6.66                8           Middle East and north Africa
+        6                Syria  SYR   21.3   27.8            6.5            30.5                0.65  23594623.0        67                      6.55                9           Middle East and north Africa
+        6                Egypt  EGY   25.5   32.0            6.5            25.5                0.65 114535772.0        79                      6.69                6           Middle East and north Africa
+        6        United States  USA   29.7   36.2            6.5            21.9                0.65 336806231.0        99                      6.70                5 High-income English-speaking countries
+
+=== 3b. ТОП-8 по относительному изменению ===
+ rank_rel       Entity Code  y2006  y2016  abs_change_pp  rel_change_pct  annual_pp_per_year  rank_abs     pop_2023
+        1      Vietnam  VNM    1.0    2.1            1.1           110.0                0.11       121  100352192.0
+        2         Laos  LAO    2.7    5.3            2.6            96.3                0.26        97    7664993.0
+        3   Bangladesh  BGD    1.9    3.6            1.7            89.5                0.17       116  171466990.0
+        4     Thailand  THA    5.4   10.0            4.6            85.2                0.46        44   71702435.0
+        5        China  CHN    3.4    6.2            2.8            82.4                0.28        91 1410710000.0
+        6    Indonesia  IDN    3.8    6.9            3.1            81.6                0.31        81  281190067.0
+        7      Myanmar  MMR    3.2    5.8            2.6            81.2                0.26        97   54133798.0
+        8 Burkina Faso  BFA    3.1    5.6            2.5            80.6                0.25        99   23025776.0
+
+=== 3c. Кто близко: места 6-10 (абсолютное) ===
+ rank_abs        Entity Code  y2006  y2016  abs_change_pp  rel_change_pct  annual_pp_per_year    pop_2023  rank_rel  ncd_meanMW_abs_change_pp  rank_ncd_meanMW                                 Region
+        6          Oman  OMN   20.5   27.0            6.5            31.7                0.65   5049269.0        63                      6.66                8           Middle East and north Africa
+        6         Syria  SYR   21.3   27.8            6.5            30.5                0.65  23594623.0        67                      6.55                9           Middle East and north Africa
+        6         Egypt  EGY   25.5   32.0            6.5            25.5                0.65 114535772.0        79                      6.69                6           Middle East and north Africa
+        6 United States  USA   29.7   36.2            6.5            21.9                0.65 336806231.0        99                      6.70                5 High-income English-speaking countries
+       10        Turkey  TUR   25.7   32.1            6.4            24.9                0.64  85325965.0        82                      6.69                7           Middle East and north Africa
+       10  Saudi Arabia  SAU   29.0   35.4            6.4            22.1                0.64  33702731.0        96                      6.31               11           Middle East and north Africa
+
+=== 3d. места 11-15 ===
+ rank_abs  Entity Code  y2006  y2016  abs_change_pp  rel_change_pct  annual_pp_per_year   pop_2023  rank_rel  ncd_meanMW_abs_change_pp  rank_ncd_meanMW                                 Region
+       12 Morocco  MAR   19.8   26.1            6.3            31.8                0.63 37712505.0        62                      6.53               10           Middle East and north Africa
+       13    Iran  IRN   19.7   25.8            6.1            31.0                0.61 90608707.0        66                      6.09               13           Middle East and north Africa
+       14 Ireland  IRL   19.3   25.3            6.0            31.1                0.60  5311538.0        65                      6.25               12 High-income English-speaking countries
+       14   Libya  LBY   26.5   32.5            6.0            22.6                0.60  7305659.0        94                      5.68               26           Middle East and north Africa
+
+=== 3e. Чувствительность: Топ-10 по изменению среднего Men/Women NCD-RisC 2017 (тот же фильтр) ===
+ rank_ncd_meanMW             Entity Code  ncd_meanMW_abs_change_pp  ncd_men_abs_change_pp  ncd_women_abs_change_pp  abs_change_pp  rank_abs
+               1              Haiti  HTI                      8.29                   8.17                     8.41            8.0         1
+               2 Dominican Republic  DOM                      7.84                   7.88                     7.80            7.6         2
+               3         Costa Rica  CRI                      7.28                   7.25                     7.31            7.1         3
+               4            Algeria  DZA                      6.83                   6.71                     6.94            6.6         5
+               5      United States  USA                      6.70                   7.18                     6.22            6.5         6
+               6              Egypt  EGY                      6.69                   6.45                     6.94            6.5         6
+               7             Turkey  TUR                      6.69                   6.88                     6.51            6.4        10
+               8               Oman  OMN                      6.66                   6.98                     6.34            6.5         6
+               9              Syria  SYR                      6.55                   6.47                     6.62            6.5         6
+              10            Morocco  MAR                      6.53                   6.33                     6.72            6.3        12
+
+=== 4. Малые государства (< 5 млн, члены ООН), в Топ-5 без фильтра ===
+ rank_abs_unfiltered               Entity Code  y2006  y2016  abs_change_pp  rel_change_pct  annual_pp_per_year  pop_2023
+                   2               Tuvalu  TUV   43.9   51.6            7.7            17.5                0.77    9816.0
+                   4 Micronesia (country)  FSM   38.6   45.8            7.2            18.7                0.72  112630.0
+
+   Топ-10 без фильтра по населению (только члены ООН):
+ rank_abs_unfiltered               Entity Code  y2006  y2016  abs_change_pp   pop_2023  pop_ge_5m
+                   1                Haiti  HTI   14.7   22.7            8.0 11637398.0       True
+                   2               Tuvalu  TUV   43.9   51.6            7.7     9816.0      False
+                   3   Dominican Republic  DOM   20.0   27.6            7.6 11331265.0       True
+                   4 Micronesia (country)  FSM   38.6   45.8            7.2   112630.0      False
+                   5           Costa Rica  CRI   18.6   25.7            7.1  5105525.0       True
+                   6                Tonga  TON   41.3   48.2            6.9   104597.0      False
+                   7 United Arab Emirates  ARE   25.0   31.7            6.7 10483751.0       True
+                   8              Algeria  DZA   20.8   27.4            6.6 46164219.0       True
+                   9                 Oman  OMN   20.5   27.0            6.5  5049269.0       True
+                   9                Syria  SYR   21.3   27.8            6.5 23594623.0       True
+
+=== Исключённые (не члены ООН / без кода) ===
+        Entity Code  y2006  y2016  abs_change_pp  rank_abs_all  pop_2023                                       reason
+          Niue  NIU   42.1   50.0            7.9           2.0       NaN      не член ООН (территория / непризнанное)
+  Cook Islands  COK   49.9   55.9            6.0          23.0       NaN      не член ООН (территория / непризнанное)
+Sudan (former)  NaN    4.3    8.6            4.3          86.0       NaN нет ISO-кода в файле (историческая сущность)
+
+   Сущности только в NCD-RisC 2017 (нет в файле WHO/OWID), среднее Men/Women:
+Code                    ncd_country  ncd_meanMW_2006  ncd_meanMW_2016  ncd_meanMW_abs_change_pp  un_member
+ ASM                 American Samoa            58.55            62.04                      3.48      False
+ BMU                        Bermuda            31.92            36.54                      4.62      False
+ GRL                      Greenland            19.24            23.69                      4.45      False
+ HKG          China (Hong Kong SAR)             8.97            11.06                      2.09      False
+ PRI                    Puerto Rico            30.59            35.30                      4.71      False
+ PSE Occupied Palestinian Territory            27.76            33.69                      5.94      False
+ PYF               French Polynesia            47.33            52.90                      5.57      False
+ SDN                          Sudan             5.82             8.44                      2.62       True
+ TKL                        Tokelau            38.21            46.79                      8.58      False
+ TWN                         Taiwan             5.58             7.95                      2.37      False
+
+=== 5. Атлас: распарсено строк по редакциям ===
+                            n  n_iso
+edition                             
+World Obesity Atlas 2022  200    196
+World Obesity Atlas 2023  161    161
+World Obesity Atlas 2025  199    199
+   не сопоставлены с ISO:
+                 edition  page                                  country_atlas
+World Obesity Atlas 2022    82                           American Samoa|Samoa
+World Obesity Atlas 2022   128 Democratic Republic of Congo|Republic of Congo
+World Obesity Atlas 2022   136                       Equatorial Guinea|Guinea
+World Obesity Atlas 2022   218                        Papua New Guinea|Guinea
+   дубликаты Code внутри редакции (исключены из wide): []
+Code               Entity  y2016  atlas2025_adult_highBMI_2025_pct  atlas2025_adult_obesity_2025_pct  atlas2025_obese_adults_2015_thousands  atlas2025_obese_adults_2030_thousands  atlas2023_annual_increase_adult_obesity_2020_2035_pct  atlas2023_adult_obesity_2035_pct  atlas2022_adult_obesity_2030_pct  atlas2022_annual_increase_adult_obesity_2010_2030_pct  atlas2022_men_obesity_2030_pct  atlas2022_women_obesity_2030_pct        country_atlas  page_atlas2022  page_atlas2023  page_atlas2025  is_top8
+ HTI                Haiti   22.7                              32.0                              12.0                                  546.0                                 1000.0                                                    3.9                              51.0                              34.0                                                    3.1                           28.22                             39.37                Haiti           157.0           110.0           141.0     True
+ DOM   Dominican Republic   27.6                              68.0                              32.0                                 1610.0                                 2900.0                                                    2.9                              51.0                              39.2                                                    2.5                           31.63                             46.46   Dominican Republic           132.0            86.0           116.0     True
+ CRI           Costa Rica   25.7                              70.0                              34.0                                  927.0                                 1530.0                                                    3.1                              50.0                              36.6                                                    2.5                           31.19                             41.81           Costa Rica           122.0            77.0           106.0     True
+ ARE United Arab Emirates   31.7                              73.0                              35.0                                 2180.0                                 3310.0                                                    1.9                              45.0                              40.6                                                    2.0                           37.01                             49.82 United Arab Emirates           268.0           214.0           252.0     True
+ DZA              Algeria   27.4                              62.0                              26.0                                 5300.0                                 9190.0                                                    2.7                              49.0                              37.4                                                    2.2                           29.06                             45.82              Algeria            81.0            40.0            66.0     True
+ OMN                 Oman   27.0                              71.0                              36.0                                  810.0                                 1570.0                                                    3.0                              52.0                              35.2                                                    2.1                           31.87                             42.72                 Oman           213.0           163.0           196.0     True
+ SYR                Syria   27.8                              74.0                              36.0                                 3010.0                                 7210.0                                                    NaN                               NaN                              37.4                                                    2.1                           29.58                             44.94 Syrian Arab Republic           252.0             NaN           236.0     True
+ EGY                Egypt   32.0                              76.0                              48.0                                23150.0                                40130.0                                                    2.0                              49.0                              41.6                                                    1.8                           31.41                             51.69                Egypt           134.0            88.0           118.0     True
+ USA        United States   36.2                              75.0                              44.0                                94870.0                               129380.0                                                    2.1                              58.0                              46.9                                                    1.7                           46.58                             47.13        United States           270.0           216.0           254.0     True
+ TUV               Tuvalu   51.6                              88.0                              67.0                                    3.5                                    3.2                                                    NaN                               NaN                              64.1                                                    1.4                           61.07                             67.06               Tuvalu           265.0             NaN           249.0    False
+ FSM Micronesia (country)   45.8                              74.0                              50.0                                   28.0                                   37.0                                                    NaN                               NaN                              57.2                                                    1.4                           52.33                             62.04           Micronesia           194.0             NaN           125.0    False
+
+NCD-RisC 2017 по полам для Топ-8:
+              Entity  ncd_men_2006  ncd_women_2006  ncd_men_2016  ncd_women_2016  ncd_meanMW_2006  ncd_meanMW_2016  ncd_meanMW_abs_change_pp
+               Haiti         10.46           19.66         18.63           28.07            15.06            23.35                      8.29
+  Dominican Republic         13.89           27.62         21.77           35.42            20.75            28.59                      7.84
+          Costa Rica         14.58           24.22         21.83           31.53            19.40            26.68                      7.28
+United Arab Emirates         21.74           37.03         28.44           42.46            29.38            35.45                      6.07
+             Algeria         13.96           29.28         20.67           36.22            21.62            28.44                      6.83
+                Oman         16.78           28.64         23.77           34.97            22.71            29.37                      6.66
+               Syria         15.17           29.47         21.64           36.09            22.32            28.87                      6.55
+               Egypt         17.05           35.54         23.50           42.48            26.30            32.99                      6.69
+       United States         29.29           31.95         36.47           38.16            30.62            37.32                      6.70

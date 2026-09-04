@@ -60,3 +60,18 @@ IDF 11th region totals sum (1000s): 588800.0
 Empty DataFrame
 Columns: [country_idf, footnote]
 Index: []
+
+=== Integrity check (mirror vs published global) ===
+ year   sex  n_countries_with_pop  pop_weighted_mean_pct  unweighted_mean_pct  min_pct  max_pct  published_ncdrisc_2016_pct
+ 1980   Men                   195                   4.16                 4.89     1.01    24.66                         4.3
+ 1980 Women                   195                   4.93                 5.55     1.52    25.40                         5.0
+ 2014   Men                   196                   8.99                 9.87     4.24    30.82                         9.0
+ 2014 Women                   196                   8.22                 9.76     2.83    32.86                         7.9
+Highest 2014 values in file:
+        country   sex  prev
+American Samoa Women  32.9
+American Samoa   Men  30.8
+         Nauru   Men  30.1
+         Nauru Women  28.4
+  Cook Islands   Men  28.3
+          Niue Women  27.3

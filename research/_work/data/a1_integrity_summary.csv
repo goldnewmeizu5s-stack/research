@@ -5,6 +5,9 @@ max_abs_diff_pp_2006_2016,4.3830964266281995
 median_abs_diff_pp_2006_2016,0.6064790844687007
 mean_abs_diff_pp_2006_2016,0.6420012484042329
 n_over_tol_2006_2016,22.0
+n_countries_over_tol_2006_2016,12.0
+share_pairs_within_tol_2006_2016,0.9421052631578948
+n_signed_diff_negative_2006_2016,368.0
 max_abs_diff_pp_all_years,4.440158694915354
 median_abs_diff_pp_all_years,0.3332824617923569
 n_pairs_all_years,7980.0

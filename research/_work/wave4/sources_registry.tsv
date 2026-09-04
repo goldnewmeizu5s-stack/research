@@ -1,0 +1,751 @@
+S#	url	source_names	tiers	n_claims	claim_ids
+S1	https://github.com/dominicroye/obesity	WHO GHO via OWID (S1)	T1	1	A1-001
+S2	тот же	GOO таблица ; S1 ; S3	T1,T2	29	A1-002,A1-005,A1-007,A1-008,A1-010,A1-011,A1-013,A1-014,A1-016,A1-017,A1-019,A1-020,A1-022,A1-023,A1-025,A1-026,A1-036,A1-037,A1-038,A1-039,A1-040,A1-041,A1-042,A1-043,A1-044
+S3	data/a1_top8_abs.csv	расчёт ; расчёт скрипта	T1,T1 (производное)	9	A1-003,A1-006,A1-009,A1-012,A1-015,A1-018,A1-021,A1-024,A1-027
+S4	github.com/dominicroye/obesity	S1	T1	1	A1-004
+S5	data/a1_ranking_filtered.csv	S1 / расчёт	T1	1	A1-028
+S6	data/a1_small_states.csv	S1 / расчёт	T1	2	A1-029,A1-030
+S7	data/a1_excluded.csv	S1 ; S1 / расчёт	T1	3	A1-031,A1-032,A1-033
+S8	data/a1_ncdrisc_only_entities.csv	NCD-RisC 2017 (S2)	T1	1	A1-034
+S9	https://github.com/datasets/population	World Bank (S3) ; World Bank population (datahub mirror github.com/datasets/population)	T1,T1 (зеркало)	9	A1-035,A2-010,A2-020,A2-030,A2-040,A2-050,A2-060,A2-070,A2-080
+S10	data/a1_integrity_summary.csv	расчёт скрипта	T1 (производное)	1	A1-045
+S11	https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations	Wikipedia, Member states of the United Nations	T3,T3 (сверено с A1: 193=193)	2	A1-046,A2-160
+S12	https://s3-eu-west-1.amazonaws.com/wof-files/World_Obesity_Atlas_2025_rev1.pdf	World Obesity Atlas 2025 (WOF), стр. 141	T2	1	A1-047
+S13	https://s3-eu-west-1.amazonaws.com/wof-files/World_Obesity_Atlas_2023_Report.pdf	World Obesity Atlas 2023, стр. 110	T2	1	A1-048
+S14	https://s3-eu-west-1.amazonaws.com/wof-files/World_Obesity_Atlas_2022.pdf	World Obesity Atlas 2022, стр. 157	T2	1	A1-049
+S15	как выше	Atlas 2025 стр. 106; Atlas 2023 стр. 77; Atlas 2022 стр. 122 ; Atlas 2025 стр. 116; Atlas 2023 стр. 86; Atlas 2022 стр. 132 ; Atlas 2025 стр. 118; Atlas 2023 стр. 88; Atlas 2022 стр. 134	T2	10	A1-050,A1-051,A1-052,A1-053,A1-054,A1-055,A1-056,A1-057,A1-058,A1-059
+S16	https://data.worldobesity.org/tables/prevalence-of-adult-overweight-obesity-2/	GOO таблица ; Global Obesity Observatory, таблица Prevalence of adult overweight & obesity	T2,T2 (воспроизводит нацобследование)	5	A1-060,A1-063,A1-067,A1-071,A1-078
+S17	https://pmc.ncbi.nlm.nih.gov/articles/PMC9581236/	Dade E. et al., "High prevalence of obesity among women in urban Haiti", Front Public Heal	T1	1	A1-061
+S18	https://data.worldobesity.org/country/haiti-90/report-card-adults-HR.pdf	GOO Report card - adults: Haiti	T2 (воспроизводит T1 NCD-RisC)	1	A1-062
+S19	https://pmc.ncbi.nlm.nih.gov/articles/PMC8606788/	"Anthropometric Profile of Latin American Population: Results From the ELANS Study" (PMC86	T1	1	A1-065
+S20	https://data.worldobesity.org/country/costa-rica-49/report-card-adults.pdf	GOO Report card - adults: Costa Rica	T2	1	A1-066
+S21	https://pmc.ncbi.nlm.nih.gov/articles/PMC9884894/	"Prevalence and associated risk factors of overweight and obesity among adult population i	T1	1	A1-068
+S22	https://data.worldobesity.org/country/oman-165/	GOO таблица и страница Oman	T2	1	A1-070
+S23	https://pubmed.ncbi.nlm.nih.gov/41839719/	El-Kassas M., Esmat G., Arab J Gastroenterol (pmid:41839719) ; pmid:41839719	T1	2	A1-073,B7-118
+S24	https://www.cdc.gov/nchs/data/hestat/obesity-adult-17-18/obesity-adult.htm	CDC/NCHS Health E-Stats, Table 1	T1	1	A1-074
+S25	https://www.cdc.gov/nchs/products/databriefs/db360.htm	CDC/NCHS Data Brief 360	T1	1	A1-075
+S26	https://www.cdc.gov/nchs/products/databriefs/db508.htm	CDC/NCHS Data Brief 508	T1	1	A1-076
+S27	https://data.worldobesity.org/country/united-states-227/report-card-adults-DA.pdf	GOO Report card - adults: United States	T2	1	A1-077
+S28	https://pubmed.ncbi.nlm.nih.gov/38810531/	"Temporal trends of food consumption patterns in Tuvalu..." (pmid:38810531)	T1	1	A1-079
+S29	https://pmc.ncbi.nlm.nih.gov/articles/PMC1533815/	"Overweight in the Pacific: links between foreign dependence, global food trade, and obesi	T1	1	A1-081
+S30	https://github.com/banerjeemdx/Data-Visualisation-with-Tableau---NCD_RisC-dataset-on-BMI-Body-Mass-index-Diabetes-and-Blood-Pre	NCD-RisC, Worldwide trends in diabetes since 1980 (Lancet 2016), country file	T1 (зеркало GitHub, целостность проверена),T1 (расчёт)	87	A2-001,A2-002,A2-003,A2-004,A2-005,A2-006,A2-007,A2-008,A2-009,A2-011,A2-012,A2-013,A2-014,A2-015,A2-016,A2-017,A2-018,A2-019,A2-021,A2-022,A2-023,A2-024,A2-025,A2-026,A2-027
+S31	https://pmc.ncbi.nlm.nih.gov/articles/PMC5081106/	NCD-RisC Lancet 2016 (PMC5081106), абстракт	T1	4	A2-096,A2-097,A2-098,A2-099
+S32	https://international-diabetes-federation.s3.eu-west-1.amazonaws.com/media/uploads/sites/3/2025/10/IDF_Diabetes_Atlas_11th_Edition_2025_WEB.pdf	IDF Diabetes Atlas 11th edition (2025), country summary tables	T1	8	A2-100,A2-104,A2-108,A2-112,A2-116,A2-120,A2-124,A2-128
+S33	s3 bucket IDF (см. S5)	IDF Diabetes Atlas 11th edition (2025), Table 3.4 ; IDF Diabetes Atlas 11th edition (2025), country summary tables ; IDF Diabetes Atlas 11th edition (2025), стр. 15	T1	14	A2-101,A2-105,A2-109,A2-113,A2-117,A2-121,A2-125,A2-129,A2-133,A2-135,A2-137,A2-138,A2-140,A2-141
+S34	https://www.ncbi.nlm.nih.gov/books/NBK582202/table/appendices.tu3/	IDF Diabetes Atlas 10th edition (2021), Country summary tables, NCBI Bookshelf	T1	4	A2-102,A2-106,A2-114,A2-122
+S35	см. выше	IDF 10th (NCBI) и 11th (PDF) ; WHO news release 13.11.2024	T1,T1 (расчёт)	10	A2-103,A2-107,A2-111,A2-115,A2-119,A2-123,A2-127,A2-131,A2-144,A2-145
+S36	https://www.ncbi.nlm.nih.gov/books/n/idfatlas10e/appendices.s1/	IDF Diabetes Atlas 10th edition (2021), Country summary tables, NCBI Bookshelf	T1	4	A2-110,A2-118,A2-126,A2-130
+S37	https://pmc.ncbi.nlm.nih.gov/articles/PMC11057359/	Sun et al. 2022, PMC11057359, Table 5 ; Sun et al. 2022, PMC11057359, абстракт	T1	2	A2-132,A2-134
+S38	https://www.ncbi.nlm.nih.gov/books/NBK581940/	IDF 10th, Chapter 3 (NBK581940) ; IDF 10th, Chapter 3 (NBK581940) и Table 4 PMC11057359	T1	2	A2-136,A2-139
+S39	https://pmc.ncbi.nlm.nih.gov/articles/PMC7616842/	NCD-RisC Lancet 2024 (PMC7616842), абстракт	T1	1	A2-142
+S40	https://www.who.int/news/item/13-11-2024-urgent-action-needed-as-global-diabetes-cases-increase-four-fold-over-past-decades	WHO news release 13.11.2024	T1	1	A2-143
+S41	https://www.imperial.ac.uk/news/258217/diabetes-rate-doubles-800-million-adults/	Imperial College London news 258217	T2 (ссылается на T1)	1	A2-146
+S42	https://pmc.ncbi.nlm.nih.gov/articles/PMC9684960/	Pengpid & Peltzer 2022, BMJ Open, PMC9684960 (абстракт)	T1	1	A2-147
+S43	https://pmc.ncbi.nlm.nih.gov/articles/PMC9515107/	Pengpid & Peltzer 2022, Sci Rep, PMC9515107 (абстракт)	T1	1	A2-148
+S44	https://pubmed.ncbi.nlm.nih.gov/12714863/	pmid:12714863 (абстракт)	T1	1	A2-149
+S45	https://pubmed.ncbi.nlm.nih.gov/25005850/	Costanian et al. 2014, Diabetes Res Clin Pract, pmid:25005850 (абстракт)	T1	1	A2-150
+S46	https://pmc.ncbi.nlm.nih.gov/articles/PMC6233908/	PMC6233908 (абстракт)	T1 (вторичная цитата)	1	A2-151
+S47	https://pubmed.ncbi.nlm.nih.gov/30056190/	pmid:30056190 (абстракт)	T1	1	A2-152
+S48	https://pmc.ncbi.nlm.nih.gov/articles/PMC8212402/	AlSawahli et al. 2021, BMJ Open, PMC8212402 (абстракт)	T1	1	A2-153
+S49	https://pubmed.ncbi.nlm.nih.gov/27108148/	Hegazi et al. 2015, Ann Glob Health, pmid:27108148 (абстракт)	T1 (обзор)	1	A2-154
+S50	https://pubmed.ncbi.nlm.nih.gov/15339127/	Gunaid 2002, pmid:15339127 (абстракт)	T1	1	A2-155
+S51	https://pubmed.ncbi.nlm.nih.gov/18557451/	pmid:18557451 (абстракт)	T1	1	A2-156
+S52	https://pubmed.ncbi.nlm.nih.gov/8208193/	pmid:8208193 (абстракт)	T1	1	A2-157
+S53	https://pubmed.ncbi.nlm.nih.gov/7000592/	pmid:7000592 (абстракт)	T1	1	A2-158
+S54	https://pubmed.ncbi.nlm.nih.gov/23867899/	pmid:23867899 (абстракт)	T1	1	A2-159
+S55	не найдено ни одного аналога с обязательным для страховщиков ежегодным скринингом метаболического синдрома для широкой возрастной группы - наша оценка, поиск аналогов не завершён	laws.e-gov.go.jp (закон 357AC0000000080, T1)	ДА	1	B1-01
+S56	не найдено аналогов	laws.e-gov.go.jp (постановление 419M60000100140, T1)	ДА	1	B1-02
+S57	наша оценка - не найдено аналога среди развитых стран с явным BMI как формальным инструментом иммиграционного медосмотра	immigration.govt.nz (news-centre + Operational Manual A4.10, T1)	ДА	1	B1-03
+S58	не найдено страны с обязательной 4-уровневой grade-системой + прямым запретом рекламы худшей категории для напитков	sso.agc.gov.sg, Food Regulations Cap. 283 Rg 1 (T1)	ДА	1	B1-04
+S59	Тонга - аналог по логике (иной продукт)	ielp.worldtradelaw.net (T2), Civil Beat/NPR (T2), PMC10498917 (T1: тариф 300% после отмены	ДА (историческая)	1	B1-05
+S60	Фиджи - запрет продажи того же продукта (см. B1-07)	PMC10498917 (T1); repository.fnu.ac.fj / Food Policy journal (T1)	пограничная (>=2 страны региона)	1	B1-06
+S61	Тонга - см. B1-06	repository.fnu.ac.fj / Food Policy journal, Thow et al. (T1)	пограничная	1	B1-07
+S62	ставка 30% и охват "всех сладких продуктов" (не только напитков) - высока по обоим параметрам, сравнение не завершено	FIZZ.org.nz PDF (T2/T3) + SPC (Pacific Community) discussion paper (T2, региональная межпр	ДА	1	B1-08
+S63	наша оценка - единственная юрисдикция региона с (почти) полным НЕналоговым запретом сладких напитков	PMC6670018 (T1) vs PMC10647377 (T1) - расхождение зафиксировано	ДА, но не суверенное государство	1	B1-09
+S64	не найдено аналога - директива с жёстким дедлайном по созданию спец. клиник в гос. больницах	nhc.gov.cn (T1, официальное уведомление НКЗ КНР)	ДА	1	B1-10
+S65	двусторонняя обязательность (работодатель проводит + работник обязан явиться) - наша оценка, редко встречается в такой формулировке	laws.e-gov.go.jp (закон 347AC0000000057, T1)	ДА	1	B1-11
+S66	Индия - FSSAI зона 50 м (иной радиус); наша оценка >=2 аналога в мире (Индия, частично Мексика)	law.go.kr (국가법령정보센터, T1)	пограничная (есть аналоги, но радиус 200 м - один из крупнейших)	1	B1-12
+S67	наша оценка - редкая конструкция (законодательно определённая категория "высококалорийный-низкопитательный продукт" + фиксированное окно ТВ-рекламы) - прямых аналогов в открытых источниках этой сессии не найдено	law.go.kr (시행령 어린이 식생활안전관리 특별법, T1)	ДА	1	B1-13
+S68	распространено (многие страны субсидируют GLP-1 только при диабете) - наша оценка, НЕ аномалия по факту ограничения, но статус "рассмотрение равного доступа, решение отложено" - специфичен	pbs.gov.au (T1: "Two GLP-1s are listed on the PBS for the treatment of type 2 diabetes... 	пограничная (ограничение обычное, но публичный процесс пересмотра - зафиксирован детально)	1	B1-14
+S69	наша оценка - редкая мера (полный запрет компаундирования целого класса препаратов для похудения/диабета на национальном уровне); частичные аналоги в США (FDA removed shortage designation, ограничивавшее компаундирование) - не проверено в этой сессии	tga.gov.au (T1, официальные медиарелизы регулятора)	ДА	1	B1-15
+S70	наиболее близкий аналог в регионе - Новая Зеландия (B1-03); за пределами региона отдельно не проверено	austlii.edu.au (текст Schedule 4, T1); immi.homeaffairs.gov.au (текущее офиц. разъяснение,	пограничная (общий критерий, не диабет-специфичный по тексту, но диабет - частый триггер по T2/T3 источникам)	1	B1-16
+S71	наша оценка - единственный найденный налог на напитки, вдвое повышающий ставку ИМЕННО за использование одного конкретного подсластителя (HFCS), а не за общий уровень сахара	dof.gov.ph (Департамент финансов, T1); текст закона - gosupra.com/lawyerly.ph (репозитории	ДА	1	B1-17
+S72	наша оценка - редкая конструкция: заранее прописанное в законе многолетнее расписание автоматического повышения ставки (стимул к переформулированию продукта) без необходимости повторного законодательного акта	apps.fas.usda.gov (USDA FAS GAIN report, T1 - официальный отчёт агентства США со ссылкой н	ДА	1	B1-18
+S73	https://laws.e-gov.go.jp/law/357AC0000000080	高齢者の医療の確保に関する法律 (e-Gov 法令検索) ; 高齢者の医療の確保に関する法律 (e-Gov)	T1	2	B1-001,B7-001
+S74	https://laws.e-gov.go.jp/law/419M60000100157	特定健康診査及び特定保健指導の実施に関する基準 (e-Gov) ; 特定健康診査及び特定保健指導の実施に関する基準 (省令419M60000100157)	T1	3	B1-002,B7-002,B7-003
+S75	https://laws.e-gov.go.jp/law/419M60000100140	高齢者の医療の確保に関する法律による保険者の前期高齢者交付金等に関する政令	T1	1	B1-003
+S76	https://www.immigration.govt.nz/about-us/news-centre/acceptable-standard-of-health/	Immigration NZ - Acceptable Standard of Health ; Immigration New Zealand ; Immigration New Zealand, "Acceptable Standard of Health"	T1	4	B1-004,B6-083,B7-009,B7-010
+S77	https://blogs.loc.gov/law/2013/07/how-big-is-too-big-for-new-zealand/	Law Library of Congress, In Custodia Legis ; Library of Congress blog; ibwlaw.co.nz	T2,T2/T3	2	B1-005,B7-013
+S78	https://sso.agc.gov.sg/SL/SFA1973-RG1?ProvIds=pr184A-	Food Regulations (Cap. 283, Rg 1), reg. 184F	T1	1	B1-006
+S79	https://www.civilbeat.org/2013/05/samoa-lifts-ban-on-tasty-turkey-tails/	Honolulu Civil Beat	T2	1	B1-007
+S80	https://pmc.ncbi.nlm.nih.gov/articles/PMC10498917/	PMC10498917 (журнальная статья)	T1	2	B1-008,B1-010
+S81	https://ielp.worldtradelaw.net/2011/11/trade-agreements-and-fatty-foods/	ielp.worldtradelaw.net "Trade in Everything: Turkey Tails"	T2	1	B1-009
+S82	https://repository.fnu.ac.fj/3169/1/1-s2.0-S0306919210000771-main.pdf	Food Policy 2010 (PDF, репозиторий FNU) ; Food Policy journal (Thow et al.), FNU repository PDF	T1	2	B1-011,B6-055
+S83	https://www.fizz.org.nz/pdf/research/7%2520Sugar%2520Sweetened%2520Beverages%2520in%2520Pacific%2520Island%2520Countries%2520and%2520Territories.pdf	FIZZ.org.nz PDF	T2/T3	1	B1-012
+S84	https://spccfpstore1.blob.core.windows.net/digitallibrary-docs/files/97/976c8073f210178f0f38651cdcc073da.pdf	SPC (Pacific Community) discussion paper ; SPC discussion paper (PDF)	T2	3	B1-013,B6-045,B6-058
+S85	https://pmc.ncbi.nlm.nih.gov/articles/PMC6670018/	PMC6670018	T1	1	B1-014
+S86	https://pmc.ncbi.nlm.nih.gov/articles/PMC10647377/	PMC10647377	T1	1	B1-015
+S87	https://www.nhc.gov.cn/wjw/c100378/202504/f94979ff66e0418aa5d610d12a12c848.shtml	НКЗ КНР, "关于做好健康体重管理门诊设置与管理工作的通知" (国卫办医政函〔2025〕113号) ; 国家卫生健康委员会	T1	2	B1-016,B7-031
+S88	https://www.nhc.gov.cn/ylyjs/gzdt/202406/41c64b9fd9774352af22f5274c1e831d.shtml	НКЗ КНР, "关于印发'体重管理年'活动实施方案的通知" ; 国家卫生健康委员会	T1	5	B1-017,B1-018,B7-028,B7-029,B7-030
+S89	https://laws.e-gov.go.jp/law/347AC0000000057	労働安全衛生法 (e-Gov 法令検索) ; 労働安全衛生法 (e-Gov 法令検索), ст.66	T1	2	B1-019,B1-020
+S90	http://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=98630	어린이 식생활안전관리 특별법 (국가법령정보센터)	T1	1	B1-021
+S91	https://www.law.go.kr/LSW/cgmExpcInfoP.do?cgmExpcDatSeq=459738&mode=2&ofiClsCd=350116	law.go.kr, разъяснение (1차 해석)	T1	1	B1-022
+S92	https://www.law.go.kr/LSW/lsInfoP.do?urlMode=lsInfoP&lsId=010937	어린이 식생활안전관리 특별법 시행령 (국가법령정보센터)	T1	1	B1-023
+S93	https://www.pbs.gov.au/info/reviews/PBAC-advice-equitable-access-to-GLP-1-obesity-treatments	PBS - PBAC advice on equitable access to GLP-1 obesity treatments ; PBS, "PBAC advice on equitable access to GLP-1 obesity treatments"	T1	2	B1-024,B7-079
+S94	https://www.pbs.gov.au/news/2026/03/pbac-advice-on-equitable-access-to-glp-1-obesity-treatments-17-march-2026	PBS news, "PBAC advice on equitable access to GLP-1 obesity treatments"	T1	1	B1-025
+S95	https://www.tga.gov.au/news/media-releases/your-solution-compounding-pharmacy-undertakes-comply-advertising-rules-weight-loss-medicines	TGA media release	T1	1	B1-026
+S96	https://www.tga.gov.au/news/media-releases/update-glucagon-peptide-1-receptor-agonists-glp-1-ras-pharmacy-compounding-changes	TGA media release	T1	2	B1-027,B7-082
+S97	http://www.austlii.edu.au/au//legis/cth/consol_reg/mr1994227/sch4.html	AustLII, Migration Regulations 1994, Schedule 4	T1	1	B1-028
+S98	https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/health/protecting-health-care-and-community-services	Dept of Home Affairs ; immi.homeaffairs.gov.au, "Protecting health care and community services"	T1	2	B1-029,B6-082
+S99	https://www.aph.gov.au/Parliamentary_Business/Committees/Joint/Completed_Inquiries/mig/disability/chapter3	Parliament of Australia, "Chapter 3 The Migration Health Requirement"	T1	1	B1-030
+S100	https://lawyerly.ph/laws/view/l13aaf	Republic Act No. 10963 (текст закона)	T2/T3,T2/T3 (правовая база, текст закона)	2	B1-031,B1-032
+S101	https://www.dof.gov.ph/asean-members-cite-trains-sweetened-beverage-tax-as-successful-policy-dof/	dof.gov.ph, "ASEAN members cite TRAIN's sweetened beverage tax as successful policy"	T1	1	B1-033
+S102	https://apps.fas.usda.gov/newgainapi/api/report/downloadreportbyfilename?filename=Thai+Excise+Department+Implements+New+Sugar+Tax+on+Beverages_Bangkok_Thailand_10-17-2017.pdf	USDA FAS GAIN report, "Thai Excise Department Implements New Sugar Tax on Beverages"	T1	1	B1-034
+S103	https://pmc.ncbi.nlm.nih.gov/articles/PMC8084227/	PMC8084227, "Impacts of a sugar sweetened beverage tax on body mass index"	T1	1	B1-035
+S104	https://www.imf.org/-/media/files/news/seminars/2021/11-imfjapan-highlevel-tax-conference-for-asian-countries-day-2-presentation-mr-utensute.pdf	IMF presentation, "Sugar Sweetened Beverages Tax in Thailand"	T1 (презентация МВФ с офиц. данными Таиланда)	1	B1-036
+S105	https://www.tobaccofreekids.org/press-releases/2025_06_18_government-of-viet-nam-approves-life-saving-taxes-on-tobacco-and-sugar-sweetened-beverages	Campaign for Tobacco-Free Kids, "Government of Viet Nam Approves Life-Saving Taxes"	T2 (профильная НКО, ссылается на офиц. закон)	1	B1-037
+S106	https://theconversation.com/logika-keliru-penundaan-cukai-minuman-manis-cegah-penyakit-tak-bisa-tunggu-ekonomi-tumbuh-272707	The Conversation (Indonesia edition)	T2/T3 (аналитическая статья на индонезийском СМИ)	1	B1-038
+S107	https://www.moh.gov.sg/newsroom/update-on-the-war-on-diabetes/	moh.gov.sg, "Update on the War on Diabetes"	T1	1	B1-039
+S108	https://www.law.go.kr/LSW/lumLsLinkPop.do?lspttninfSeq=69419&ancYnChk=0&chrClsCd=010202	국민건강보험법 시행령 ; 국민건강보험법 시행령 (국가법령정보센터), ст.25	T1	2	B1-040,B6-014
+S109	https://www.cnn.com/2013/07/19/health/dubai-gold-diet	CNN	T2	2	B2-001,B7-024
+S110	https://www.facebook.com/factsweird/posts/in-2013-dubai-municipality-launched-a-short-term-health-initiative-called-your-w/1594758608682436/	Facebook-репост со ссылкой на офиц. цифры участия	T3	1	B2-002
+S111	https://u.ae/en/information-and-services/finance-and-investment/taxation/excise-tax	u.ae — The Official Platform of the UAE Government	T1	1	B2-003
+S112	https://tax.gov.ae/en/media.centre/news/federal.tax.authority.clarifies.new.aspx	tax.gov.ae — Federal Tax Authority	T1	1	B2-004
+S113	https://www.emro.who.int/emhj-volume-30-2024/volume-30-issue-11/situation-analysis-of-sugar-sweetened-beverages-taxation-in-eastern-mediterranean-region.html	WHO EMRO, East Mediterr Health J. 2024;30(11):720-729	T1	1	B2-005
+S114	https://www.isahd.ae/content/docs/employer%20information%20pack%20v5.0%20010715.pdf	ISAHD — Insurance Standards Advisory Health Dubai, "Employer information pack"	T1	1	B2-006
+S115	https://www.isahd.ae/content/docs/employer%20information%20pack%20v4.4%20011014%20(1	ISAHD, "Employer information pack"	T1	1	B2-007
+S116	https://www.doh.gov.ae/-/media/9F8611EF0B7841F28E2AAE4614327F59.ashx	DoH Abu Dhabi, "Thiqa reimbursement policy for obesity medications"	T1	2	B2-008,B2-009
+S117	https://pmc.ncbi.nlm.nih.gov/articles/PMC10757599/	PMC10757599 (рецензируемая статья)	T1	1	B2-010
+S118	https://www.sfda.gov.sa/en/news/17639	SFDA, новость №17639	T1	2	B2-011,B2-012
+S119	https://documents1.worldbank.org/curated/en/099445109262219336/pdf/P17590704b392c0de0be310ab2c8407e779.pdf	World Bank, "Public Disclosure Authorized" (документ)	T1	1	B2-013
+S120	https://sis.gov.eg/en/media-center/news/health-minister-100-million-healthy-lives-initiatives-deliver-289-million-services/	SIS 31.08.2026 ; State Information Service Egypt (sis.gov.eg)	T1	3	B2-014,B7-122,B7-123
+S121	https://www.aile.gov.tr/eyhgm/mevzuat/ulusal-mevzuat/yonetmelikler/surucu-adaylari-ve-suruculerde-aranacak-saglik-sartlari-ile-muayenelerine-dair-yonetmelik/	aile.gov.tr — Aile ve Sosyal Hizmetler Bakanlığı	T1	1	B2-015
+S122	https://www.foodnavigator.com/Article/2020/01/27/Israel-introduces-mandatory-HFSS-warnings-front-of-pack/	foodnavigator.com	T2	1	B2-016
+S123	https://mushlam.clalit.co.il/he/content_worlds/diabetes/Pages/Mounjaro.aspx	Clalit (mushlam.clalit.co.il)	T2	1	B2-017
+S124	https://pmc.ncbi.nlm.nih.gov/articles/PMC10755473/	PMC10755473, "Israel's repeal of a sweet beverages tax harms public health"	T1	1	B2-018
+S125	https://eurohealthobservatory.who.int/monitors/health-systems-monitor/updates/hspm/israel-2015/sugar-beverage-tax-cancelled-after-one-year-of-implementation	WHO Europe Health Systems and Policies Monitor (eurohealthobservatory.who.int)	T1	1	B2-019
+S126	https://www.ircmj.com/article_195623_df4ba1c7e005e50fad45902249b1dce1.pdf	ircmj.com, "Nutritional Traffic Light Labeling and Taxation on Unhealthy Food Products in 	T1	1	B2-020
+S127	https://pmc.ncbi.nlm.nih.gov/articles/PMC11581873/	PMC11581873 ; PMC11581873, "Global overview of government-endorsed nutrition labeling policies of packag	T1	2	B2-021,B2-022
+S128	https://www.saglik.gov.tr/TR-52851/okullarda-satisi-yapilabilecek-yiyecek-ve-icecekler-icin-logo-uygulamasi-01012019.html	Sağlık Bakanlığı (saglik.gov.tr)	T1	1	B2-023
+S129	https://www.tarimorman.gov.tr/GKGM/Belgeler/DB_Gida_Isletmeleri/Okul_Gidasi_SB_Bilim_Kurulu_Karar_Tutanagi.pdf	Tarım ve Orman Bakanlığı (tarimorman.gov.tr), PDF	T1	1	B2-024
+S130	https://www.sciencedirect.com/science/article/pii/S1550728921003129	ScienceDirect, "Bariatric surgery in the Middle East and North Africa: narrative review"	T1	1	B2-025
+S131	https://pmc.ncbi.nlm.nih.gov/articles/PMC7685619/	PMC7685619 ; PMC7685619, "Results from the first Kuwait National Bariatric Surgery Report"	T1	2	B2-026,B7-115
+S132	https://www.moph.gov.qa/english/strategies/Supporting-Strategies-and-Frameworks/nationaldiabetesstrategy/Pages/default.aspx	moph.gov.qa vs pubmed.ncbi.nlm.nih.gov/40549421	T1 (оба источника T1, расхождение между ними)	1	B2-027
+S133	https://www.retsinformation.dk/eli/lta/2011/247/pdf	Retsinformation ; Retsinformation, Lov nr. 247 af 30/03/2011	T1	2	B3-001,B7-064
+S134	https://arxiv.org/abs/2312.11481	Dahl et al., Nudging Nutrition (arXiv 2312.11481) ; Dahl et al., arXiv 2312.11481	T2	3	B3-002,B3-004,B3-006
+S135	https://pubmed.ncbi.nlm.nih.gov/25840733/	Bødker et al., Health Policy 2015 (pmid:25840733)	T1,T1 (абстракт)	2	B3-003,B7-068
+S136	https://www.retsinformation.dk/eli/lta/2014/708/dan/pdf	Retsinformation, BEK 2014/708 (ссылка)	T1	1	B3-005
+S137	https://www.dst.dk/nytpdf/48869	Danmarks Statistik, Nationalregnskab 2021–2024	T1	1	B3-007
+S138	https://www.dst.dk/nyt/52231	Danmarks Statistik NYT 52231	T1	1	B3-008
+S139	https://www.dst.dk/nytpdf/52231	Danmarks Statistik, Nationalregnskab (år) 2023-2025 ; Danmarks Statistik, Nationalregnskab 2023–2025	T1	2	B3-009,B7-070
+S140	https://www.retsinformation.dk/eli/lta/2015/131	Retsinformation BEK 2015/131	T1	1	B3-010
+S141	https://www.retsinformation.dk/api/pdf/175931	Retsinformation BEK 1427/2015	T1	1	B3-011
+S142	https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R0649	Commission Regulation (EU) 2019/649	T1	1	B3-012
+S143	https://njt.hu/jogszabaly/2011-103-00-00	Nemzeti Jogszabálytár ; Nemzeti Jogszabálytár, 2011. évi CIII. tv.	T1	2	B3-013,B7-074
+S144	https://njt.hu/jogszabaly/2011-103-00-00.1	Nemzeti Jogszabálytár (ред. .1) ; njt.hu 3. §	T1	2	B3-014,B7-075
+S145	https://njt.hu/jogszabaly/2011-103-00-00.8	njt.hu ставки	T1	1	B3-015
+S146	https://pubmed.ncbi.nlm.nih.gov/37086420/	Csákvári et al., CEJPH 2023 (pmid:37086420) ; pmid:37086420	T1,T1 (абстракт)	2	B3-016,B7-078
+S147	https://pubmed.ncbi.nlm.nih.gov/29166954/	Jensen & Smed, Proc Nutr Soc 2018 (pmid:29166954) ; Smed & Jensen? (pmid:29166954)	T1,T1 (абстракт)	2	B3-017,B7-067
+S148	https://www.legislation.gov.uk/ukpga/2017/10/section/29/data.xht	Finance Act 2017 s.29	T1	1	B3-018
+S149	https://www.legislation.gov.uk/ukpga/2017/10/part/2/crossheading/charging-of-the-soft-drinks-industry-levy	Finance Act 2017 s.30	T1	1	B3-019
+S150	https://www.gov.uk/government/news/soft-drinks-industry-levy-comes-into-effect	HM Treasury news	T1	2	B3-020,B3-021
+S151	https://pmc.ncbi.nlm.nih.gov/articles/PMC12142870/	PMC12142870	T1 (абстракт)	1	B3-022
+S152	https://pubmed.ncbi.nlm.nih.gov/39903599/	pmid:39903599	T1 (абстракт)	1	B3-023
+S153	https://www.legislation.gov.uk/ukdsi/2021/9780348223538	Calorie Labelling (OHS) (England) Regs 2021	T1	1	B3-024
+S154	https://pmc.ncbi.nlm.nih.gov/articles/PMC11015320/	PMC11015320	T1 (абстракт)	1	B3-025
+S155	https://pmc.ncbi.nlm.nih.gov/articles/PMC7352298/	PMC7352298	T1 (абстракт)	1	B3-026
+S156	https://pubmed.ncbi.nlm.nih.gov/30261242/	pmid:30261242	T1 (абстракт)	1	B3-027
+S157	https://www.gov.uk/government/publications/restricting-advertising-of-less-healthy-food-or-drink-on-tv-and-online-products-in-scope/restricting-advertising-of-less-healthy-food-or-drink-on-tv-and-online-products-in-scope	DHSC guidance	T1	1	B3-028
+S158	https://www.gov.uk/government/collections/less-healthy-food-or-drink-advertising-and-promotions-restrictions	GOV.UK collection ; gov.uk collection	T1	3	B3-029,B3-030,B6-076
+S159	https://www.gov.uk/government/news/childrens-health-further-protected-with-energy-drinks-ban	GOV.UK news; consultation outcome ; gov.uk news ; gov.uk news 16.07.2026	T1	3	B3-031,B3-032,B6-065
+S160	https://www.gov.uk/guidance/diabetes-mellitus-assessing-fitness-to-drive	DVLA guidance ; GOV.UK ; GOV.UK Diabetes mellitus: assessing fitness to drive	T1	5	B3-033,B3-034,B6-087,B7-088,B7-089
+S161	https://pubmed.ncbi.nlm.nih.gov/18421936/	pmid:18421936	T1,T1 (абстракт)	2	B3-035,B7-097
+S162	https://www.gesetze-im-internet.de/fev_2010/anlage_4.html	FeV Anlage 4 Nr. 5.4	T1	1	B3-036
+S163	https://www.caa.co.uk/aeromedical/medical-standards/pilots/medical-conditions/metabolic-and-endocrinology/metabolic-and-endocrinology-guidance-material-gm/	CAA guidance material	T1	1	B3-037
+S164	https://www.caa.co.uk/media/0mbg1zz5/20260511-ara-med-330-protocol-uk-v-51.pdf	CAA ARA MED 330 protocol	T1	1	B3-038
+S165	https://pubmed.ncbi.nlm.nih.gov/34142412/	pmid:34142412	T1 (абстракт)	1	B3-039
+S166	https://pubmed.ncbi.nlm.nih.gov/31331425/	pmid:31331425	T1 (абстракт)	1	B3-040
+S167	https://www.nice.org.uk/guidance/ta875	NICE TA875	T1	1	B3-041
+S168	https://www.nice.org.uk/guidance/ta875/chapter/1-Recommendations	NICE TA875 rec. 1.1 ; NICE TA875, 1.1	T1	2	B3-042,B7-083
+S169	https://www.nice.org.uk/guidance/ta875/resources/semaglutide-for-managing-overweight-and-obesity-pdf-82613674831813	NICE TA875 PDF	T1	1	B3-043
+S170	https://pmc.ncbi.nlm.nih.gov/articles/PMC12705252/	PMC12705252	T1 (абстракт)	1	B3-044
+S171	https://www.nice.org.uk/guidance/ta1152	NICE TA1152	T1	1	B3-045
+S172	https://www.nhsbsa.nhs.uk/help-nhs-prescription-costs/medical-exemption-certificates	NHSBSA	T1	1	B3-046
+S173	https://www.gov.uk/government/publications/better-health-rewards-summary-of-pilot-results/better-health-rewards-pilot-summary-of-results	DHSC summary	T1	1	B3-047
+S174	https://www.england.nhs.uk/diabetes/treatment-care/diabetes-remission/	NHS England	T1	1	B3-048
+S175	https://pmc.ncbi.nlm.nih.gov/articles/PMC9160476/	PMC9160476	T1 (абстракт)	1	B3-049
+S176	https://pmc.ncbi.nlm.nih.gov/articles/PMC7115827/	PMC7115827	T1 (абстракт)	1	B3-050
+S177	https://www.gesetze-im-internet.de/sgb_5/__34.html	Gesetze im Internet, §34 SGB V ; SGB V § 34	T1	2	B3-051,B7-084
+S178	https://www.g-ba.de/presse/pressemitteilungen-meldungen/1170/	G-BA Meldung 1170	T1	2	B3-052,B3-053
+S179	https://pubmed.ncbi.nlm.nih.gov/40388976/	pmid:40388976	T1 (абстракт)	1	B3-054
+S180	https://www.gesetze-im-internet.de/sgb_5/__65a.html	SGB V § 65a	T1	2	B3-055,B3-056
+S181	https://infocuria.curia.europa.eu/tabs/redirect/juris/document/document.jsf?docid=160935&doclang=EN	InfoCuria C-354/13 § 58 ; InfoCuria, Kaltoft	T1	2	B3-057,B7-098
+S182	https://infocuria.curia.europa.eu/tabs/redirect/juris/document/document_print.jsf?docid=160935&doclang=EN	InfoCuria C-354/13 (резолютивная часть)	T1	1	B3-058
+S183	https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031918053	CSP art. L3232-9	T1	1	B3-059
+S184	https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033922943/	Légifrance JORFTEXT000033922943	T1	1	B3-060
+S185	https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041466290	CSP art. L2133-1	T1	1	B3-061
+S186	https://www.legifrance.gouv.fr/loda/article_lc/JORFARTI000001143058/2026-03-24	Légifrance, art. 29 Loi 2004-806	T1	1	B3-062
+S187	https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006055557	Arrêté du 27 février 2007	T1	1	B3-063
+S188	https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045764857/2022-05-07	CGI art. 1613 ter	T1	1	B3-064
+S189	https://bofip.impots.gouv.fr/bofip/11674-PGP.html/identifiant%3DBOI-TCA-BNA-10-20191230	BOFIP BOI-TCA-BNA-10	T1	1	B3-065
+S190	https://pubmed.ncbi.nlm.nih.gov/35570062/	pmid:35570062	T1 (абстракт)	1	B3-066
+S191	https://www.senato.it/show-doc?leg=19&tipodoc=DOSSIER&id=1477486&idoggetto=0&part=dossier_dossier1-sezione_sezione12	Senato, Dossier n. 580	T1	2	B3-067,B3-068
+S192	https://www.zorginstituutnederland.nl/verzekerde-zorg/g/gecombineerde-leefstijlinterventie-gli-zvw	Zorginstituut GLI	T1	2	B3-069,B3-070
+S193	https://pmc.ncbi.nlm.nih.gov/articles/PMC8819797/	PMC8819797	T1 (абстракт)	1	B3-071
+S194	https://www.zorginstituutnederland.nl/documenten/2024/07/12/gvs-advies-semaglutide-wegovy-bij-obesitas	Zorginstituut advies	T1	1	B3-072
+S195	https://www.zorginstituutnederland.nl/documenten/2022/02/24/gvs-advies-liraglutide-saxenda	Zorginstituut advies liraglutide	T1	1	B3-073
+S196	https://www.zorginstituutnederland.nl/actueel/nieuws/2025/11/06/zorginstituut-obesitasmedicijnen-eerst-beschikbaar-voor-mensen-met-hoogste-ziektelast	Zorginstituut nieuws	T1	1	B3-074
+S197	https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20200001492/T/D20201492L.pdf	ISAP Dz.U. 2020 poz. 1492	T1	1	B3-075
+S198	https://www.gov.pl/web/ijhars/podatek-cukrowy	gov.pl (IJHARS)	T1	1	B3-076
+S199	https://www.revenue.ie/en/companies-and-charities/excise-and-licences/sugar-sweetened-drinks-tax/rate-of-tax.aspx	Revenue rate of tax	T1	1	B3-077
+S200	https://www.revenue.ie/en/companies-and-charities/excise-and-licences/sugar-sweetened-drinks-tax/index.aspx	Revenue overview	T1	1	B3-078
+S201	http://aplicacions.economia.gencat.cat/ecodif/rest/export/fitxa?id=7922&lang=Ca	ECODIF Gencat	T1	1	B3-079
+S202	https://atc.gencat.cat/ca/tributs/ibee/	ATC IBEE	T1	1	B3-080
+S203	https://www.fm.gov.lv/lv/nodokla-likmes	Finanšu ministrija	T1	1	B3-081
+S204	https://m.likumi.lv/ta/id/81066-par-akcizes-nodokli	likumi.lv Par akcīzes nodokli	T1	1	B3-082
+S205	https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/56208/virvoitusjuomaver/	vero.fi	T1	1	B3-083
+S206	https://www.finlex.fi/fi/hallituksen-esitykset/2019/27	Finlex HE 27/2019	T1	1	B3-084
+S207	https://www.regjeringen.no/no/dokumenter/nou-2022-20/id2951826/?ch=16	NOU 2022:20	T1	1	B3-085
+S208	https://pmc.ncbi.nlm.nih.gov/articles/PMC7491168/	PMC7491168	T1 (абстракт)	1	B3-086
+S209	https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2010-34478675	CIEC (consolidado)	T1	1	B3-087
+S210	https://www.bag.admin.ch/dam/de/sd-web/yrUMR4ZOw9yG/kommentaraenderungenklvanhang101012021.pdf	BAG Kommentar Anhang 1 KLV	T1	1	B3-088
+S211	https://www.bag.admin.ch/dam/de/sd-web/Hrh3rYrmJn4Z/gesamtliste_anh1klv_01jan23.PDF	BAG Anhang 1 KLV gesamtliste 01.01.2023	T1	1	B3-089
+S212	https://pmc.ncbi.nlm.nih.gov/articles/PMC4498278/	PMC4498278	T1 (абстракт)	1	B3-090
+S213	https://www.bag.admin.ch/dam/de/sd-web/4UEBFvIzBFFM/wegovy-neuaufnahme-01-03-2024.pdf	BAG Neuaufnahme	T1	1	B3-091
+S214	https://www.bag.admin.ch/dam/fr/sd-web/zo5pElZKCzLb/WEGOVY%20Limitations%C3%A4nderung%2001.05.2025%20befristet.pdf	BAG Limitationsänderung 01.05.2025	T1	1	B3-092
+S215	https://www.usz.ch/fachbereich/adipositas-zentrum/multimodale-therapie-bei-adipositas/medikamentoese-therapie-von-uebergewicht/	USZ Adipositas-Zentrum	T2	1	B3-093
+S216	https://normativ.kontur.ru/document?moduleId=1&documentId=507207	Приказ 404н ; Приказ Минздрава 404н (ред. 15.06.2026) ; Приказ Минздрава РФ 404н (через normativ.kontur.ru)	T1,T2 (агрегатор правового текста)	3	B3-094,B3-095,B6-018
+S217	https://pmc.ncbi.nlm.nih.gov/articles/PMC9012158/	PMC9012158	T1 (абстракт)	1	B3-096
+S218	https://www.consultant.ru/document/cons_doc_LAW_149096/2c77bb6a026f4c82f6c03500bc2e6c6d94c79267/	ПП 565 (ред. 24.03.2026), Расписание болезней ; ПП 565 ст. 13 п. «е»	T1	2	B3-097,B3-098
+S219	https://www.dia-endojournals.ru/jour/article/view/8013	журнал «Сахарный диабет» (Дуничева)	T1	1	B3-099
+S220	https://minzdrav.gov.by/ru/novoe-na-sayte/kommentariy-k-postanovleniyam-ministerstva-zdravookhraneniya-94-i-95/	Минздрав РБ, комментарий	T1	1	B3-100
+S221	https://etalonline.by/webnpa/text.asp?RN=W22238759	etalonline.by	T1	1	B3-101
+S222	https://www.kmu.gov.ua/news/z-1-zhovtnya-paciyenti-zmozhut-otrimati-insulini-za-programoyu-dostupni-liki-nszu	КМУ / НСЗУ	T1	1	B3-102
+S223	https://moz.gov.ua/uk/preparati-dlja-likuvannja-diabetu-i-tipu-ta-necukrovogo-diabetu-vkljucheno-do-nacionalnogo-pereliku-osnovnih-likarskih-zasobiv	МОЗ	T1	1	B3-103
+S224	https://www.gov.ie/en/department-of-health/press-releases/government-welcomes-european-commission-approval-of-sugar-sweetened-drinks-tax/	gov.ie DoH press release 24.04.2018	T1	1	B3-104
+S225	https://pubmed.ncbi.nlm.nih.gov/27481150/	pmid:27481150	T1 (абстракт)	1	B3-105
+S226	https://www.congress.gov/bill/117th-congress/house-bill/5376	Congress.gov, H.R.5376, Public Law 117-169	T1	1	B4-001
+S227	https://www.ncsl.org/health/prescription-drug-policy-a-bipartisan-remedy	NCSL, "Prescription Drug Policy: A Bipartisan Remedy"	T2	1	B4-002
+S228	https://www.ncsl.org/state-legislatures-news/details/this-years-prescription-drug-bills-aim-to-reduce-consumer-costs	NCSL, "This Year's Prescription Drug Bills Aim to Reduce Consumer Costs"	T2	1	B4-003
+S229	https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XXV/subchapter-L/part-2590/subpart-B/section-2590.702	eCFR 29 CFR 2590.702 ; eCFR, 29 CFR 2590.702	T1	2	B4-004,B7-056
+S230	https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F410%2FI14319%2FEX+H1+ACA+20+7+133+through+20+7+135.pdf	arkleg.state.ar.us, статут §20-7-133 ; arkleg.state.ar.us, статут §20-7-133-135	T1	2	B4-005,B4-006
+S231	https://www.federalregister.gov/documents/2018/09/19/2018-20161/qualifications-of-drivers-diabetes-standard	Federal Register 83 FR 47486 ; Federal Register, "Qualifications of Drivers; Diabetes Standard"	T1	3	B4-007,B7-090,B7-091
+S232	https://pmc.ncbi.nlm.nih.gov/articles/PMC7511432/	PMC, статья PMC7511432	T1	1	B4-008
+S233	https://www.legislature.mi.gov/mileg.aspx%3Fpage%3DgetObject%26objectname%3Dmcl-37-2202	Michigan Legislature, MCL 37.2202	T1	1	B4-009
+S234	https://legisquebec.gouv.qc.ca/en/showdoc/cs/P-40.1	LegisQuébec, Consumer Protection Act P-40.1, art. 248	T1	1	B4-010
+S235	https://dof.gob.mx/normasOficiales/8150/seeco11_C/seeco11_C.html	DOF, модификация NOM-051-SCFI/SSA1-2010	T1	1	B4-011
+S236	https://www.bcn.cl/leychile/navegar?idNorma=1041570	BCN Ley Chile ; BCN Ley Chile, Ley 20606 ; BCN/LeyChile, Ley 20606 art. 6	T1	7	B4-012,B4-013,B4-014,B6-069,B7-039,B7-040,B7-041
+S237	https://www.boletinoficial.gob.ar/detalleAviso/primera/252728/20211112	Boletín Oficial, detalleAviso Ley 27642	T1	1	B4-015
+S238	https://rest.hcdn.gob.ar/web/proyectos/291968/adjuntos/105773	HCDN, текст законопроекта об отмене	T1	1	B4-016
+S239	https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=199883	Función Pública, Gestor Normativo, Ley 2277 de 2022 ; Función Pública, Gestor Normativo, Ley 2277 de 2022, art. 54 ; Ley 2277 de 2022	T1	4	B4-017,B4-018,B6-034,B6-035
+S240	https://www.argentina.gob.ar/normativa/nacional/norma-144033/texto	argentina.gob.ar/normativa, Ley 26396 texto original	T1	1	B4-019
+S241	https://www.cms.gov/newsroom/press-releases/coming-soon-cms-provide-50-monthly-access-glp-1-medications-medicare-beneficiaries	CMS, "Coming Soon: CMS to Provide $50 Monthly Access..."	T1	1	B4-020
+S242	https://www.medicare.gov/publications/12234-medicare-glp-1-bridge-glp-1-drugs-for-50-a-month.pdf	Medicare.gov, fact sheet PDF	T1	1	B4-021
+S243	https://www.cms.gov/newsroom/fact-sheets/contract-year-2026-policy-and-technical-changes-medicare-advantage-program-medicare-prescription	CMS, "Contract Year 2026 Policy and Technical Changes..."	T1	1	B4-022
+S244	https://laws-lois.justice.gc.ca/eng/acts/i-2.5/section-38.html	Justice Canada, IRPA s.38	T1	1	B4-023
+S245	https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1449&top=8	IRCC, официальный FAQ	T1	1	B4-024
+S246	https://www.in.gov.br/en/web/dou/-/resolucao-de-diretoria-colegiada-rdc-n-429-de-8-de-outubro-de-2020-282070599	in.gov.br (Diário Oficial da União), RDC 429/2020	T1	1	B4-025
+S247	https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/canetas-emagrecedoras-so-poderao-ser-vendidas-com-retencao-de-receita	gov.br/anvisa, новость 16.04.2025	T1	1	B4-026
+S248	https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/anvisa-esclarece-sobre-proibicao-de-ingresso-de-canetas-emagrecedoras	gov.br/anvisa, новость 20.11.2025	T1	1	B4-027
+S249	https://www.congresooaxaca.gob.mx/docs64.congresooaxaca.gob.mx/documents/dictamen/1184.pdf	Congreso de Oaxaca, dictamen 1184	T1	1	B4-028
+S250	https://www.gov.bm/articles/sugar-tax	Government of Bermuda, "The Sugar Tax"	T1	1	B4-029
+S251	https://actonncds.org/news/20220907-these-5-countries-show-how-sugar-taxes-can-cut-chronic-diseases	actonncds.org, "These 5 countries show how sugar taxes can cut chronic diseases"	T2	1	B4-030
+S252	https://www.obesityevidencehub.org.au/collections/prevention/countries-that-have-implemented-taxes-on-sugar-sweetened-beverages-ssbs	Obesity Evidence Hub, "Countries and jurisdictions that have taxes on SSBs"	T2	1	B4-031
+S253	https://especialidades.sld.cu/dermatologia/2022/03/06/aplicado-en-cuba-el-heberprot-p-a-mas-de-100-mil-pacientes-como-terapia-para-el-tratamiento-de-ulceras-por-diabetes/	especialidades.sld.cu, официальный медицинский портал Минздрава Кубы	T1	1	B4-032
+S254	https://www.researchgate.net/publication/366370391_Sanitary_Registration_of_Heberprot-PR_an_innovative_biotechnological_medicine_for_the_treatment_of_diabetic_foot_ulcers	ResearchGate, "Sanitary Registration of Heberprot-P(R)..."	T3 (зеркало T1-статьи, не первичный журнал)	1	B4-033
+S255	https://www.nyc.gov/site/cchr/media/height-and-weight.page	NYC CCHR, официальная страница ; NYC Commission on Human Rights ; NYC Commission on Human Rights, официальная страница	T1	3	B4-034,B4-035,B6-111
+S256	https://www.dof.gob.mx/nota_detalle.php?codigo=5740005&fecha=30/09/2024	DOF, ACUERDO, codigo=5740005 ; Diario Oficial de la Federación	T1	4	B4-036,B7-049,B7-050,B7-051
+S257	https://www.bcn.cl/api-leyfacil/servicio/ObtenerGuiaPublicadaHTML?uri=plan-ges-ex-auge	BCN/LeyChile, API LeyFácil "Plan GES o AUGE"	T1	1	B4-037
+S258	https://www.gob.pe/1066-ministerio-de-salud-conoce-las-advertencias-publicitarias-octogonos	gob.pe, Ministerio de Salud	T1	1	B4-038
+S259	https://www.impo.com.uy/bases/decretos/272-2018/1	IMPO, Decreto N° 272/018	T1	1	B4-039
+S260	https://www.faa.gov/newsroom/new-protocols-diabetics-seeking-air-transport-and-commercial-pilots-medical-certification	FAA, "New Protocols for Diabetics Seeking Air Transport and Commercial Pilots Medical Cert	T1	1	B4-040
+S261	https://law.justia.com/cases/washington/supreme-court/2019/96335-5.html	law.justia.com, изложение фактов дела Taylor v. BNSF ; law.justia.com, судебное решение Taylor v. Burlington N. R.R. Holdings, Inc.	T1	2	B4-041,B4-042
+S262	https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/613003_vol2.PDF	esd.whs.mil, DoDI 6130.03 Volume 2	T1	1	B4-043
+S263	https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=168029	Función Pública, Gestor Normativo, Ley 2120 de 2021	T1	1	B4-044
+S264	https://fssai.gov.in/docs/food-law/regulations/Gazette_Notification_Safe_Food_Children_07_09_2020.pdf	FSSAI Gazette Notification (Safe Food and Balanced Diets for Children in School) Regulatio	T1	1	B5-001
+S265	https://fssai.gov.in/cms/food-safety-and-standards-regulations.php	FSSAI Food Safety and Standards Regulations	T1	1	B5-002
+S266	https://pmc.ncbi.nlm.nih.gov/articles/PMC8477491/	PMC8477491 Food environment in and around schools and colleges of Delhi	T1	1	B5-003
+S267	https://foodsafetystandard.in/safe-food-and-balanced-diets-for-children-in-school/	foodsafetystandard.in (копия текста регламента)	T3	1	B5-004
+S268	https://pubmed.ncbi.nlm.nih.gov/24561969/	pmid:24561969	T1	1	B5-005
+S269	https://pubmed.ncbi.nlm.nih.gov/26078247/	pmid:26078247	T1	1	B5-006
+S270	https://pmc.ncbi.nlm.nih.gov/articles/PMC11086919/	PMC11086919	T1	2	B5-007,B7-052
+S271	https://cbseacademic.nic.in/web_material/Circulars/2025/26_Circular_2025.pdf	CBSE Circular Acad-26/2025	T1	1	B5-008
+S272	https://cbseacademic.nic.in/web_material/Circulars/2025/45_Circular_2025.pdf	CBSE Circular Acad-45/2025	T1	1	B5-009
+S273	https://www.pib.gov.in/PressReleasePage.aspx?PRID=2144885	PIB PRID=2144885	T1	1	B5-010
+S274	https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1944600	PIB PRID=1944600 Update on treatment of Diabetes	T1	1	B5-011
+S275	https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2104884	PIB PRID=2104884	T1	1	B5-012
+S276	https://pubmed.ncbi.nlm.nih.gov/41472431/	pmid:41472431	T1	1	B5-013
+S277	https://ncd.mohfw.gov.in/ncdlandingassets/aboutus.html	ncd.mohfw.gov.in	T1	1	B5-014
+S278	https://pmc.ncbi.nlm.nih.gov/articles/PMC13386696/	PMC13386696	T1	1	B5-015
+S279	https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2163555	PIB PRID=2163555	T1	2	B5-016,B5-017
+S280	https://courier.cbic.gov.in/ECCS/advisory/2025/NOTIFICATION%20NO.%209_2025-INTEGRATED%20TAX%20(RATE	CBIC Notification No. 9/2025-Integrated Tax (Rate)	T1	1	B5-018
+S281	https://www.thehindu.com/news/national/Pizzas-in-Kerala-get-a-14.5-%E2%80%98fat-tax%E2%80%99-topping/article60529763.ece	The Hindu	T2	1	B5-019
+S282	https://pmc.ncbi.nlm.nih.gov/articles/PMC10580107/	PMC10580107	T1	1	B5-020
+S283	https://effectivecooperation.org/system/files/2021-06/GDI%20Case%20Study%20on%20Fat%20Tax%20in%20Kerala.pdf	GDI Case Study on Fat Tax in Kerala (effectivecooperation.org)	T2	1	B5-021
+S284	https://pubmed.ncbi.nlm.nih.gov/41247585/	pmid:41247585 OSSI survey	T1	1	B5-022
+S285	https://irdai.gov.in/	IRDAI search listing	T1	1	B5-023
+S286	https://www.magmainsurance.com/documents/5553002/5844234/Prospectus+%E2%80%93+Double+Suraksha+%28w.e.f.+1st+Oct%2C+2024%29.pdf	Проспект Magma Insurance (ссылка на IRDAI 2019)	T3	1	B5-024
+S287	https://nppa.gov.in/1540e	NPPA 1540(E) ; NPPA order 1540(E)	T1	2	B5-025,B6-102
+S288	https://www.pib.gov.in/PressReleasePage.aspx?PRID=2154217	PIB PRID=2154217	T1	1	B5-026
+S289	https://pubmed.ncbi.nlm.nih.gov/32552127/	pmid:32552127	T1	1	B5-027
+S290	https://eohfs.health.gov.lk/food/images/2319-42_E.pdf	Gazette (файл 2319-42_E.pdf, eohfs.health.gov.lk)	T1	1	B5-028
+S291	https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=FAIRS%20Country%20Report%20Annual_Colombo_Sri%20Lanka_CE2025-0006.pdf	USDA FAIRS Country Report Annual 2025 (Sri Lanka)	T1	1	B5-029
+S292	https://pubmed.ncbi.nlm.nih.gov/34872840/	pmid:34872840 ADD-Punjab	T1	1	B5-030
+S293	https://pmc.ncbi.nlm.nih.gov/articles/PMC12351034/	PMC12351034	T1	1	B5-031
+S294	https://eohfs.health.gov.lk/food/index.php?option=com_content&view=article&id=18&Itemid=159&lang=en	eohfs.health.gov.lk Current Regulations	T1	1	B5-032
+S295	https://pmc.ncbi.nlm.nih.gov/articles/PMC10795608/	PMC10795608	T1	1	B5-033
+S296	https://pubmed.ncbi.nlm.nih.gov/28013557/	pmid:28013557	T1	1	B5-034
+S297	https://see.mv/41441	Sun (see.mv)	T2	1	B5-035
+S298	https://maldivesindependent.com/society/energy-drinks-banned-in-schools-and-hospitals-128184	Maldives Independent	T2	1	B5-036
+S299	https://www.dawn.com/news/1903373	Dawn	T2	1	B5-037
+S300	https://iris.who.int/server/api/core/bitstreams/9dc39e4a-e2ba-4ae3-b10e-579101605264/content	WHO Global report on the use of SSB taxes 2023	T1	2	B5-038,B5-040
+S301	https://taxnews.ey.com/news/2023-0484-pakistan-increases-sales-tax-and-federal-excise-tax-rates	EY Tax News 2023-0484	T2	1	B5-039
+S302	https://pubmed.ncbi.nlm.nih.gov/36988952/	pmid:36988952 JAMA Netw Open	T1	1	B5-041
+S303	https://pmc.ncbi.nlm.nih.gov/articles/PMC13386411/	PMC13386411	T1	1	B5-042
+S304	https://www.sars.gov.za/customs-and-excise/excise/health-promotion-levy-on-sugary-beverages/	SARS Health Promotion Levy on Sugary Beverages	T1	1	B5-043
+S305	https://www.sars.gov.za/media-release/sars-to-collect-sugar-tax-from-1-april-2018/	SARS media release 15.12.2017	T1	1	B5-044
+S306	https://pmc.ncbi.nlm.nih.gov/articles/PMC9617427/	PMC9617427	T1	1	B5-045
+S307	https://www.health.gov.za/wp-content/uploads/2023/05/R3337-Draft-Labelling-Regulations-21-April-2023-sc-compressed-1.pdf	NDoH R3337 Draft Labelling Regulations PDF	T1	1	B5-046
+S308	https://www.health.gov.za/food-control-regulations/	NDoH Food Control - Regulations	T1	1	B5-047
+S309	https://pubmed.ncbi.nlm.nih.gov/39041537/	pmid:39041537	T1	1	B5-048
+S310	https://www.medicalschemes.co.za/resources/pmb/	Council for Medical Schemes - PMB	T1	1	B5-049
+S311	https://www.medicalschemes.co.za/cmscript-9-of-2022-focus-on-diabetes-mellitus-type-2/	CMScript 9 of 2022	T1	1	B5-050
+S312	https://www.discovery.co.za/wcm/discoverycoza/assets/vitality/benefit-guides/82291-dhv-vitality-sales-brochure-rewards.pdf	Discovery Vitality 2026 brochure	T2	1	B5-051
+S313	https://pubmed.ncbi.nlm.nih.gov/24102989/	pmid:24102989	T1	1	B5-052
+S314	https://pmc.ncbi.nlm.nih.gov/articles/PMC11095260/	PMC11095260	T1	1	B5-053
+S315	https://www.mondaq.com/nigeria/healthcare/1279226/the-excise-duty-non-alcoholic-carbonated-and-sweetened-beverages-regulations-2022-fundamental-things-to-know	Mondaq	T2	1	B5-054
+S316	https://allafrica.com/stories/202502030222.html	allAfrica / This Day	T2	1	B5-055
+S317	https://www.mra.mu/customs1/more-topics/excise-tax-on-sugar-content-of-sugar-sweetened-non-alcoholic-beverages	MRA Excise Tax on Sugar Content	T1	2	B5-056,B5-057
+S318	https://www.mra.mu/download/AnnualReport2019_20.pdf	MRA Annual Report 2019/20	T1	1	B5-058
+S319	https://pmc.ncbi.nlm.nih.gov/articles/PMC7725882/	PMC7725882	T1	1	B5-059
+S320	https://www.afro.who.int/news/seychelles-introduces-sugary-drink-tax	WHO AFRO	T1	1	B5-060
+S321	https://dailynews.gov.bw/news-detail/60732	DailyNews (gov.bw)	T1	1	B5-061
+S322	https://www.taxathand.com/article/16146/Botswana/2021/Tax-highlights-of-202122-budget	Deloitte tax@hand	T2	1	B5-062
+S323	https://www.heraldonline.co.zw/treasury-fine-tunes-measures-on-basic-food-items/	The Herald	T2	1	B5-063
+S324	https://www.cwgh.co.zw/calls-grow-to-ring-fence-zimbabwes-sugar-tax-revenue/	CWGH	T2	1	B5-064
+S325	https://pmc.ncbi.nlm.nih.gov/articles/PMC13299423/	PMC13299423	T1	1	B5-065
+S326	https://www.ey.com/en_gl/technical/tax-alerts/ghana-s-new-laws-introduce-new-taxes-affecting-individuals-and-b	EY Ghana's new laws	T2	1	B5-066
+S327	https://orbitax.com/news/country/article/Ghana-Parliament-Passes-Excise-62824	Orbitax	T2	1	B5-067
+S328	https://www.ey.com/en_gl/technical/tax-alerts/ethiopia-issues-excise-tax--amendment--proclamation--2023	EY Ethiopia Excise Tax (Amendment) Proclamation 2023	T2	1	B5-068
+S329	https://www.scribd.com/document/959591805/Ethiopia-Excise-Tax-Proclamation-No-1186-2020	Scribd-копия Proclamation 1186/2020	T3	2	B5-069,B5-070
+S330	https://policydatabase.wcrf.org/level_one?page=nourishing-level-one	WCRF NOURISHING policy database	T2	1	B5-071
+S331	https://pmc.ncbi.nlm.nih.gov/articles/PMC8079030/	PMC8079030	T1	1	B5-072
+S332	https://pmc.ncbi.nlm.nih.gov/articles/PMC8079049/	PMC8079049	T1	1	B5-073
+S333	https://pmc.ncbi.nlm.nih.gov/articles/PMC9113088/	PMC9113088	T1	1	B5-074
+S334	https://pmc.ncbi.nlm.nih.gov/articles/PMC9950544/	PAHO policy study (PMC9950544) ; PMC9950544	T1	2	B5-075,B7-043
+S335	https://pubmed.ncbi.nlm.nih.gov/41974918/	pmid:41974918	T1	1	B5-076
+S336	https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/144033/norma.htm	InfoLEG, Ley 26.396	T1	1	B6-001
+S337	pmid:32621054	PubMed 32621054 (Obes Surg)	T1	1	B6-002
+S338	pmcid:PMC8819797	PMC8819797	T1	1	B6-003
+S339	pmid:21545019	PubMed 21545019 (Rev Med Suisse)	T1	1	B6-004
+S340	https://www.supersalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/	Superintendencia de Salud	T1	1	B6-005
+S341	https://www.g-ba.de/presse/pressemitteilungen-meldungen/1196/	G-BA Meldung 1196	T1	1	B6-006
+S342	https://www.haaretz.com/science-and-health/2026-02-20/ty-article/israels-2026-public-health-basket-cancer-treatment-leads-more-mental-health-drugs/0000019c-7a52-d2bd-a7fd-7b53cfd40000	Haaretz 2026-02-20	T2	1	B6-007
+S343	https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2025/portaria-sectics-ms-no-65-de-15-de-setembro-de-2025	Portaria SECTICS/MS nº 65/2025	T1	1	B6-008
+S344	pmcid:PMC10853087	PMC10853087	T1	1	B6-009
+S345	https://www.mhlw.go.jp/content/10900000/001231390.pdf	MHLW 標準的な健診・保健指導プログラム (PDF)	T1	1	B6-010
+S346	pmcid:PMC4008026	PMC4008026	T1	1	B6-011
+S347	https://anzeninfo.mhlw.go.jp/yougo/yougo51_1.html	MHLW 職場のあんぜんサイト; MHLW PDF 0000136750	T1	1	B6-012
+S348	https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1032088229	국가법령정보센터 국민건강보험법	T1	1	B6-013
+S349	pmid:26115907	PubMed 26115907	T1	1	B6-015
+S350	pmcid:PMC5808566	PMC5808566; PubMed 25440454	T1	1	B6-016
+S351	pmcid:PMC10195514	PMC10195514	T1	1	B6-017
+S352	https://adilet.zan.kz/rus/docs/V2200028747	Әділет	T1	1	B6-019
+S353	pmcid:PMC4499092	PMC4499092	T1	1	B6-020
+S354	pmid:20620423	PubMed 20620423	T1	1	B6-021
+S355	pmcid:PMC9871961	PMC9871961	T1	1	B6-022
+S356	https://www.worldbank.org/en/news/feature/2024/04/05/how-egypt-won-its-battle-against-hepatitis-c	World Bank feature 05.04.2024 ; World Bank feature 2024-04-05	T1	2	B6-023,B7-120
+S357	https://www.mhlw.go.jp/content/12401000/001294108.pdf	MHLW PDF 後期高齢者支援金（2017年度）の加算・減算の方法 ; MHLW 後期高齢者支援金（2017年度）の加算・減算の方法	T1	2	B6-024,B7-006
+S358	https://www.mhlw.go.jp/content/12401000/000761454.pdf	MHLW 後期高齢者支援金（2019年度）の加算について	T1	1	B6-025
+S359	pmid:26477217	PubMed 26477217; 23734399	T1	1	B6-026
+S360	pmid:22311393	PubMed 22311393	T1	1	B6-027
+S361	pmcid:PMC5341431	PMC5341431	T1	1	B6-028
+S362	https://iris.who.int/items/5d18a875-6e4a-43bb-a692-45738665a1c3	WHO IRIS good practice brief	T1	1	B6-029
+S363	https://iris.who.int/bitstreams/4e7583cd-301c-4026-87b8-010068c5a1e1/download	WHO IRIS brief PDF	T1	1	B6-030
+S364	pmid:25351647	PubMed 25351647; arXiv 2312.11481	T1	1	B6-031
+S365	pmid:31472286	PubMed 31472286	T1	1	B6-032
+S366	pmcid:PMC6357562	PMC6357562	T1	1	B6-033
+S367	pmcid:PMC11850257	PMC11850257	T1	1	B6-036
+S368	pmcid:PMC6029755	PMC6029755; PMC6029775	T1	1	B6-037
+S369	pmcid:PMC7660521	PMC7660521; PMC7012398	T1	1	B6-038
+S370	pmcid:PMC11918417	PMC11918417	T1	1	B6-039
+S371	pmid:32302767	PubMed 32302767; 42274281	T1	1	B6-040
+S372	pmcid:PMC9379233	PMC9379233; PMC9587584	T1	1	B6-041
+S373	pmcid:PMC10580107	PMC10580107	T1	1	B6-042
+S374	pmcid:PMC10200428	PMC10200428	T1	1	B6-043
+S375	pmcid:PMC12911691	PMC12911691	T1	1	B6-044
+S376	pmcid:PMC10195599	PMC10195599	T1	1	B6-046
+S377	pmcid:PMC7350205	PMC7350205	T1	1	B6-047
+S378	https://pmc.ncbi.nlm.nih.gov/articles/PMC12151437/	PMC12151437; SSRN 5365869	T1	1	B6-048
+S379	pmid:36988952	PubMed 36988952 (JAMA Netw Open 2023)	T1	1	B6-049
+S380	pmid:32471769	PubMed 32471769; PMC6354371	T1	1	B6-050
+S381	pmcid:PMC10565185	PMC10565185	T1	1	B6-051
+S382	pmid:34097355	PubMed 34097355	T1	1	B6-052
+S383	https://www.npr.org/sections/thesalt/2013/05/14/182568333/samoans-await-the-return-of-the-tasty-turkey-tail	NPR 2013-05-14 ; NPR The Salt	T2	2	B6-053,B7-016
+S384	https://www.wto.org/english/thewto_e/minist_e/min11_e/brief_samoa_e.htm	WTO briefing note MC8	T1	1	B6-054
+S385	https://www.rnz.co.nz/national/programmes/first-up/audio/2018753159/tongan-body-builder-says-banning-mutton-flaps-great-idea	RNZ ; RNZ First Up	T2	2	B6-056,B7-020
+S386	pmcid:PMC4007633	PMC4007633; PMC7050906	T1	1	B6-057
+S387	pmid:16713397	PubMed 16713397	T1	1	B6-059
+S388	https://www.who.int/news/item/24-06-2024-WHO-5-year-milestone-report-on-global-transfat-elimination-illustrates-latest-progress-up-to-2023	who.int news 2024-06-24; 2025-05-19	T1	1	B6-060
+S389	https://e-seimas.lrs.lt/portal/legalActPrint/lt?jfwid=-17i2t41wm2&documentId=TAIS.439301&category=TAK	e-seimas TAIS.439301	T1	1	B6-061
+S390	https://m.likumi.lv/ta/id/280078-energijas-dzerienu-aprites-likums	Likumi.lv	T1	1	B6-062
+S391	pmcid:PMC11960718	PMC11960718	T1	1	B6-063
+S392	https://avevrak.com/danistay/23561509/ozelde-ayriligi-soforlerinin-genelde-ambulans-din-memur-isparta-lira-inceleyen	avevrak (запись Danıştay); lexpera; Hürriyet	T3	1	B6-064
+S393	https://www.cnn.com/videos/spanish/2020/08/05/oaxaca-prohibe-venta-comida-chatarra-menores-de-edad-ninos-obesidad-salud-refrescos-congreso-perspectivas-mexico.cnn	CNN en Español 2020-08-05	T2	1	B6-066
+S394	pmid:30549191	PubMed 30549191	T1	1	B6-067
+S395	pmid:25928991	PubMed 25928991	T1	1	B6-068
+S396	https://www.bcn.cl/leychile/Navegar?idNorma=1041570&idParte=9271898&idVersion=	BCN Ley 20606; PMC6375144	T1	1	B6-070
+S397	pmcid:PMC7012389	PMC7012389	T1	1	B6-071
+S398	pmid:36913461	PubMed 36913461	T1	1	B6-072
+S399	pmcid:PMC13277477	PMC13277477	T1	1	B6-073
+S400	https://www.hpb.gov.sg/healthy-living/food-and-beverage/nutri-grade/	HPB Measures for Nutri-Grade	T1	4	B6-074,B7-034,B7-035,B7-036
+S401	https://www.regjeringen.no/no/aktuelt/nytt-markedsforingsforbud/id3126894/	Regjeringen.no (HOD) 24.10.2025	T1	1	B6-075
+S402	pmcid:PMC8356694	PMC8356694; PMC7353345	T1	1	B6-077
+S403	pmid:28013557	PubMed 28013557	T1	1	B6-078
+S404	pmcid:PMC10795608	PMC10795608	T1	1	B6-079
+S405	pmid:33355396	PubMed 33355396	T1	1	B6-080
+S406	pmcid:PMC9950544	PMC9950544	T1	1	B6-081
+S407	https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/excessive-demand-june-2018.html	Canada.ca / IRCC	T1	1	B6-084
+S408	pmid:14979266	PubMed 14979266	T1	1	B6-085
+S409	pmid:24975313	PubMed 24975313	T1	1	B6-086
+S410	https://www.gov.uk/diabetes-driving	GOV.UK	T1	1	B6-088
+S411	https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02006L0126-20180722	EUR-Lex консолид. текст 02006L0126-20180722	T1	1	B6-089
+S412	pmid:23215789	PubMed 23215789; 18421936	T1	1	B6-090
+S413	https://www.fmcsa.dot.gov/taxonomy/term/376?page=2	FMCSA	T1	1	B6-091
+S414	https://www.fmcsa.dot.gov/regulations/medical/insulin-treated-diabetes-mellitus-assessment-form-mcsa-5870	FMCSA MCSA-5870	T1	1	B6-092
+S415	https://austroads.gov.au/publications/assessing-fitness-to-drive/ap-g56/diabetes-mellitus/medical-standards-for-licensing-2	Austroads AP-G56 ; Austroads Assessing Fitness to Drive	T1	2	B6-093,B7-094
+S416	pmid:36050848	PubMed 36050848	T1	1	B6-094
+S417	pmid:31331425	PubMed 31331425; 37384853	T1	1	B6-095
+S418	pmid:28471559	PubMed 28471559	T1	1	B6-096
+S419	pmcid:PMC6134313	PMC6134313	T1	1	B6-097
+S420	pmid:16173683	PubMed 16173683	T1	1	B6-098
+S421	pmcid:PMC13242632	PMC13242632	T1	1	B6-099
+S422	pmcid:PMC11325206	PMC11325206	T1	1	B6-100
+S423	pmid:39102595	PubMed 39102595	T1	1	B6-101
+S424	pmid:42515931	PubMed 42515931	T1	1	B6-103
+S425	https://www.cr.piemonte.it/infolegint/visualizzaDocumentoSchede.do?idDocumento=15210	Consiglio regionale del Piemonte (infoleg PDF)	T2	1	B6-104
+S426	pmid:41491104	PubMed 41491104	T1 (заголовок, без абстракта)	1	B6-105
+S427	https://diariodarepublica.pt/dr/detalhe/despacho/4571-2005-2044965	Diário da República	T1	1	B6-106
+S428	pmid:36479649	PubMed 36479649	T1	1	B6-107
+S429	https://curia.europa.eu/site/jcms/qua1_5964/en/discrimination	CURIA - Discrimination	T1	1	B6-108
+S430	https://www.legislature.mi.gov/mileg.aspx?page=getObject&objectname=mcl-37-2202	Michigan Legislature	T1	1	B6-109
+S431	pmcid:PMC7511432	PMC7511432	T1	1	B6-110
+S432	https://harvardlawreview.org/print/vol-133/taylor-v-burlington-northern-railroad-holdings-inc/	Harvard Law Review vol. 133; Justia 9th Cir 16-35205	T2	1	B6-112
+S433	pmid:32557488	PubMed 32557488	T1	1	B6-113
+S434	pmcid:PMC11724133	PMC11724133; PMC12970020	T1	1	B6-114
+S435	pmcid:PMC7869520	PMC7869520	T1	1	B6-115
+S436	pmid:33259610	PubMed 33259610; 26598843	T1	1	B6-116
+S437	pmcid:PMC11349503	PMC11349503	T1	1	B6-117
+S438	pmid:28857065	PubMed 28857065	T1	1	B6-118
+S439	https://www.cnbc.com/2013/07/18/worth-their-weight-dubai-offers-dieters-gold-for-shedding-pounds.html	CNBC 2013-07-18; Gulf News	T2	1	B6-119
+S440	pmcid:PMC9238668	PMC9238668	T1	1	B6-120
+S441	pmcid:PMC13015732	PMC13015732	T1	1	B6-121
+S442	pmid:18681336	PubMed 18681336	T1	1	B6-122
+S443	pmcid:PMC5168560	PMC5168560	T1	1	B6-123
+S444	pmid:33361668	PubMed 33361668	T1	1	B6-124
+S445	pmid:21447522	PubMed 21447522	T1	1	B6-125
+S446	pmid:23921988	PubMed 23921988	T1	1	B6-126
+S447	pmcid:PMC4498278	PMC4498278	T1	1	B6-127
+S448	pmcid:PMC11695118	PMC11695118	T1	1	B6-128
+S449	pmid:41921494	PubMed 41921494	T1	1	B6-129
+S450	pmcid:PMC11086919	PMC11086919	T1	1	B6-130
+S451	pmid:39722630	PubMed 39722630	T1	1	B6-131
+S452	pmid:12074195	PubMed 9503397; 12074195	T1	1	B6-132
+S453	https://pmc.ncbi.nlm.nih.gov/articles/PMC5906184/	Tsushita et al., J Atheroscler Thromb (PMC5906184)	T1	1	B7-004
+S454	https://pubmed.ncbi.nlm.nih.gov/41790001/	pmid:41790001 (Return on investment of SHG)	T1	1	B7-005
+S455	https://www.mhlw.go.jp/stf/newpage_73524.html	MHLW 第47回保険者による健診・保健指導等に関する検討会議事録	T1	1	B7-007
+S456	https://pmc.ncbi.nlm.nih.gov/articles/PMC2769976/	PMC2769976	T1	1	B7-008
+S457	https://www.immigration.govt.nz/opsmanual/82036.htm	INZ Operational Manual A4.10	T1	1	B7-011
+S458	https://www.cnn.com/2013/07/30/health/new-zealand-visa	CNN, Chef in immigration limbo because of obesity-related problems	T2	1	B7-012
+S459	https://pmc.ncbi.nlm.nih.gov/articles/PMC5689196/	Thow et al., Bull WHO 2017 (PMC5689196)	T1	1	B7-014
+S460	https://pubmed.ncbi.nlm.nih.gov/30388231/	pmid:30388231	T1	1	B7-015
+S461	https://www.abc.net.au/news/2013-05-20/an-samoa-lifts-ban-on-high-fat-turkey-tails/4699506	ABC News	T2	1	B7-017
+S462	https://www.ovid.com/journals/obesr/fulltext/10.1111/obr.12090~trade-policy-and-obesity-prevention-challenges-and	Snowdon & Thow, Obesity Reviews 2013 (via Ovid)	T1	1	B7-018
+S463	https://pmc.ncbi.nlm.nih.gov/articles/PMC8626938/	Bell et al., Global Health 2021 (PMC8626938)	T1	1	B7-019
+S464	https://pmc.ncbi.nlm.nih.gov/articles/PMC4007633/	Thow et al., BMC Public Health 2014 (PMC4007633)	T1	1	B7-021
+S465	https://gulfnews.com/lifestyle/health-fitness/lose-your-weight-in-gold-initiative-launches-in-dubai-1.1209743	Gulf News	T2	1	B7-022
+S466	https://gulfnews.com/uae/health/dubai-municipality-campaign-uae-resident-sheds-kilos-and-gains-gold-1.1252639	Gulf News	T2	1	B7-023
+S467	https://www.bbc.com/news/business-23373186	BBC News	T2	1	B7-025
+S468	https://www.thenationalnews.com/uae/weight-loss-champions-in-dubai-cash-in-with-16-9kg-in-gold-1.655921	The National	T2	1	B7-026
+S469	https://www.khaleejtimes.com/lifestyle/health/every-kilo-of-weight-lost-will-turn-to-gold	Khaleej Times	T2	1	B7-027
+S470	https://www.nhc.gov.cn/bgt/c100023/202602/73b8afd52eff4be4980ac5431cefa190.shtml	国家卫生健康委员会	T1	1	B7-032
+S471	https://pmc.ncbi.nlm.nih.gov/articles/PMC11724133/	PMC11724133	T1	1	B7-033
+S472	https://www.moh.gov.sg/newsroom/mandatory-nutrition-labelling-and-advertising-prohibitions-for-nutri-grade-beverages-from-30-december-2022/	MOH press release 30.12.2021	T1	1	B7-037
+S473	https://pmc.ncbi.nlm.nih.gov/articles/PMC7869520/	PMC7869520	T1	1	B7-038
+S474	https://pubmed.ncbi.nlm.nih.gov/30549191/	Corvalán et al., Obes Rev 2019 (pmid:30549191)	T1	1	B7-042
+S475	https://pmc.ncbi.nlm.nih.gov/articles/PMC6615240/	PMC6615240	T1	1	B7-044
+S476	https://pmc.ncbi.nlm.nih.gov/articles/PMC13448568/	PMC13448568	T1	1	B7-045
+S477	https://pmc.ncbi.nlm.nih.gov/articles/PMC10157591/	PMC10157591	T1	1	B7-046
+S478	https://www.congresooaxaca.gob.mx/docs65.congresooaxaca.gob.mx/gaceta/20231122a/21.pdf	Congreso de Oaxaca, Gaceta 22.11.2023 (PDF)	T1	1	B7-047
+S479	https://www.courant.com/2020/08/06/un-estado-de-mxico-prohbe-la-venta-de-alimentos-chatarra/	Hartford Courant / AP (исп.)	T2	1	B7-048
+S480	https://www.cms.gov/newsroom/fact-sheets/anniversary-inflation-reduction-act-update-cms-implementation	CMS fact sheet	T1	2	B7-053,B7-054
+S481	https://pubmed.ncbi.nlm.nih.gov/42378410/	pmid:42378410	T1	1	B7-055
+S482	https://pubmed.ncbi.nlm.nih.gov/23734399/	Final rule, Fed Reg 2013 (pmid:23734399)	T1	1	B7-057
+S483	https://achi.net/publications/bmi-measurement-arkansas/	ACHI - BMI Measurement in Arkansas Schools	T2	1	B7-058
+S484	https://pubmed.ncbi.nlm.nih.gov/18076417/	pmid:18076417	T1	1	B7-059
+S485	https://pubmed.ncbi.nlm.nih.gov/25440454/	pmid:25440454	T1	1	B7-060
+S486	https://pubmed.ncbi.nlm.nih.gov/23396236/	MEDICC Review (pmid:23396236)	T1	1	B7-061
+S487	https://pubmed.ncbi.nlm.nih.gov/30531767/	pmid:30531767	T1	1	B7-062
+S488	https://humanidadesmedicas.sld.cu/index.php/hm/article/download/373/346?inline=1	Humanidades Médicas (sld.cu)	T1	1	B7-063
+S489	https://www.retsinformation.dk/api/pdf/143968	Retsinformation	T1	1	B7-065
+S490	https://pubmed.ncbi.nlm.nih.gov/25982852/	Bødker et al., Prev Med 2015 (pmid:25982852)	T1	1	B7-066
+S491	https://www.dst.dk/nytpdf/46520	Danmarks Statistik, Nationalregnskab 4. kvt. 2023	T1	1	B7-069
+S492	https://www.dst.dk/nyt/49805	Danmarks Statistik NYT 49805	T1	1	B7-071
+S493	https://www.cnbc.com/2025/11/20/weight-loss-drugmaker-novo-nordisk-helps-drive-denmarks-fastest-growth-in-years.html	CNBC 20.11.2025	T2	1	B7-072
+S494	https://www.reuters.com/markets/europe/denmark-raises-2025-gdp-outlook-benefits-novo-nordisks-growth-2024-12-05/	Reuters 05.12.2024	T2	1	B7-073
+S495	https://njt.hu/jogszabaly/2011-103-00-00.5	Nemzeti Jogszabálytár (ред. .5)	T1	1	B7-076
+S496	https://njt.hu/jogszabaly/2011-103-00-00.13	Nemzeti Jogszabálytár (ред. .13)	T1	1	B7-077
+S497	https://www.pbs.gov.au/reviews/obesity-treatments-files/OBESITY-Consumer-input-summary.PDF	PBS consumer input summary (PDF)	T1	1	B7-080
+S498	https://www.pbs.gov.au/reviews/obesity-treatments-files/PBAC-advice-on-GLP1.PDF	PBS - PBAC advice (PDF)	T1	1	B7-081
+S499	https://pubmed.ncbi.nlm.nih.gov/37185039/	pmid:37185039	T1	1	B7-085
+S500	https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02006L0126-20201101	EUR-Lex 02006L0126-20201101	T1	1	B7-086
+S501	https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:223:0031:0035:EN:PDF	EUR-Lex OJ L 223/31	T1	1	B7-087
+S502	https://www.faa.gov/ame_guide/dec_cons/disease_prot/itdm	FAA Guide for AMEs - ITDM	T1	1	B7-092
+S503	https://pubmed.ncbi.nlm.nih.gov/36050848/	pmid:36050848	T1	1	B7-093
+S504	https://www.garant.ru/products/ipo/prime/doc/70736098/	Гарант (ПП РФ № 1604)	T2	1	B7-095
+S505	https://pmc.ncbi.nlm.nih.gov/articles/PMC13190499/	PMC13190499 (ÖDG position paper 2026)	T1	1	B7-096
+S506	https://infocuria.curia.europa.eu/tabs/redirect/juris/liste.jsf?num=C-354/13	InfoCuria C-354/13	T1	1	B7-099
+S507	https://www.senato.it/export/ddl/full/59138	Senato della Repubblica	T1	1	B7-100
+S508	https://www.omceogrosseto.it/modulistica-docman/comunicati-fnomceo/842-legge-149-25.html	OMCeO Grosseto (PDF текста закона)	T2	1	B7-101
+S509	https://pubmed.ncbi.nlm.nih.gov/41138743/	pmid:41138743	T1	1	B7-102
+S510	https://pubmed.ncbi.nlm.nih.gov/41491104/	pmid:41491104	T1	1	B7-103
+S511	https://pubmed.ncbi.nlm.nih.gov/36479649/	pmid:36479649	T1	1	B7-104
+S512	https://pubmed.ncbi.nlm.nih.gov/34087168/	pmid:34087168	T1	1	B7-105
+S513	https://www.moh.gov.sa/en/ministry/mediacenter/news/pages/news-2017-02-13-004.aspx	MOH news 13.02.2017	T1	1	B7-106
+S514	https://pmc.ncbi.nlm.nih.gov/articles/PMC11218882/	PMC11218882	T1	1	B7-107
+S515	https://pmc.ncbi.nlm.nih.gov/articles/PMC8544408/	PMC8544408	T1	1	B7-108
+S516	https://pmc.ncbi.nlm.nih.gov/articles/PMC10661595/	PMC10661595	T1	1	B7-109
+S517	https://www.moh.gov.sa/en/ministry/mediacenter/news/pages/news-2021-04-13-001.aspx	MOH news 13.04.2021	T1	1	B7-110
+S518	https://mohap.gov.ae/en/assets/686b4f1a/national-school-health-screening-guideline-2024-pdf.aspx	MoHAP National School Health Screening Guideline 2024	T1	1	B7-111
+S519	https://mohap.gov.ae/en/w/mohap-hosts-two-training-workshops-on-how-to-promote-health-in-schools-manage-childhood-obesity	MoHAP news	T1	1	B7-112
+S520	https://www.moph.gov.qa/_layouts/download.aspx?SourceUrl=/Admin/Lists/ClinicalGuidelinesAttachments/Attachments/226/THE%20MANAGEMENT%20OF%20BARIATRIC%20AND%20SURGERY%20IN%20ADULTS%20NCG%20English.pdf	MoPH National Clinical Guidelines	T1	1	B7-113
+S521	https://hiap.moph.gov.qa/EN/Documents/Library/Policy%20Framework.pdf	MoPH HiAP Policy Framework	T1	1	B7-114
+S522	https://www.e-dendrite.com/news/state-of-kuwait-ministry-of-health-publishes-3rd-national-bariatric-registry-report	Dendrite Clinical Systems (news)	T3	1	B7-116
+S523	https://www.healthnz.govt.nz/health-topics/tests-and-treatments/surgery/bariatric-weight-loss-surgery	Health New Zealand	T1	1	B7-117
+S524	https://iris.who.int/server/api/core/bitstreams/74b12494-f213-4b5b-9533-18442147e1fb/content	WHO World health statistics 2024 / WHO feature	T1	1	B7-119
+S525	https://sis.gov.eg/en/media-center/news/health-ministry-over-212-million-citizens-screened-in-chronic-disease-early-detection-initiative/	SIS (State Information Service)	T1	1	B7-121
+S526	https://migrationnetwork.un.org/practice/migrant-access-100-million-healthy-lives	UN Network on Migration	T2	1	B7-124
+S527	https://pubmed.ncbi.nlm.nih.gov/27522602/	pmid:27522602	T1	1	B7-125
+S528	https://www.reddit.com/r/diabetes/comments/1j0gux2/first_ramadan_with_t1d_need_your_tips_experiences/	Reddit (r/diabetes)	T3	1	C1-001
+S529	https://healthunlocked.com/diabetesindia/posts/1238266/diabetes-and-ramadan-fasting	HealthUnlocked (Diabetes India)	T3	1	C1-002
+S530	https://www.reddit.com/r/Type1Diabetes/comments/1mzwidc/how_to_store_insulin_in_hostels_where_we_dont/	Reddit (r/Type1Diabetes)	T3	1	C1-003
+S531	https://www.quora.com/How-do-I-pack-my-insulin-to-keep-it-cold-on-a-plane	Quora	T3	1	C1-004
+S532	https://www.reddit.com/r/diabetes_t1/comments/1g3qxze/anyone_else_allergic_to_cgms_have_you_found_a/	Reddit (r/diabetes_t1)	T3	1	C1-005
+S533	https://www.diabetesdaily.com/forum/threads/allergic-skin-reaction-to-libre3-sensor-how-are-you-managing-this.144183/	Diabetes Daily Forums	T3	1	C1-006
+S534	https://www.reddit.com/r/Diabetes_A1c/comments/1eg684g/a1c_calculator/	Reddit (r/Diabetes_A1c)	T3	1	C1-007
+S535	https://www.quora.com/Can-you-calculate-a1c-from-average-blood-sugar	Quora	T3	1	C1-008
+S536	https://www.reddit.com/r/diabetes/comments/1vy36mw/are_diabetic_socks_ready_worth_it_for_neuropathy/	Reddit (r/diabetes)	T3	1	C1-009
+S537	https://www.diabetesdaily.com/forum/threads/socks-recommendations.141665/	Diabetes Daily Forums	T3	1	C1-010
+S538	https://www.reddit.com/r/GestationalDiabetes/comments/1lflknq/snacks_that_satisfy_that_dessert_craving/	Reddit (r/GestationalDiabetes)	T3	1	C1-011
+S539	https://www.quora.com/How-do-you-make-a-sugar-free-keto-cheesecake	Quora	T3	1	C1-012
+S540	https://www.reddit.com/r/PCOS/comments/1qrrg00/metformin_made_me_realize_how_much_pcos_actually/	Reddit (r/PCOS)	T3	1	C1-013
+S541	https://healthunlocked.com/verity-pcos/posts/149262180/pcos-insulin-resistance-weight-loss	HealthUnlocked	T3	1	C1-014
+S542	https://www.reddit.com/r/diabetes_t2/comments/1bxq1wk/is_the_dawn_phenomena_really_something_negative/	Reddit (r/diabetes_t2)	T3	1	C1-015
+S543	https://www.diabetesdaily.com/forum/threads/dawn-phenomenon-runs-late.92055/	Diabetes Daily Forums / Everyday Health	T3	1	C1-016
+S544	https://www.reddit.com/r/Hypoglycemia/comments/1ha15p2/whats_going_on_im_literally_so_scared_of/	Reddit (r/Hypoglycemia)	T3	1	C1-017
+S545	https://www.diabetesdaily.com/forum/threads/the-verdict-on-t1-hypos-by-my-endo-a-bit-disturbing.79606/	Diabetes Daily Forums	T3	1	C1-018
+S546	https://www.reddit.com/r/diabetes_t1/comments/1hkkryd/psa_if_you_wear_an_insulin_pump_and_fly_in_the_us/	Reddit (r/diabetes_t1)	T3	1	C1-019
+S547	https://www.diabetesdaily.com/forum/threads/airport-security-and-780g.153883/	Diabetes Daily Forums	T3	1	C1-020
+S548	https://www.reddit.com/r/diabetes/comments/bmzouy/doityourself_artificial_pancreas_systems_what/	Reddit (r/diabetes)	T3	1	C1-021
+S549	https://www.diabetesdaily.com/forum/threads/why-dont-we-have-a-better-solution-yet.125708/	Diabetes Daily Forums	T3	1	C1-022
+S550	https://www.reddit.com/r/dexcom/comments/1adljjb/dexcom_g7_vs_libre_3/	Reddit (r/dexcom)	T3	1	C1-023
+S551	https://www.diabetesdaily.com/forum/threads/3rd-part-testing-of-cgms-and-glucometers.153526/	Diabetes Daily Forums	T3	1	C1-024
+S552	https://www.reddit.com/r/diabetes_t1/comments/10qtt6o/how_to_deal_with_diabetes_burnout/	Reddit (r/diabetes_t1)	T3	1	C1-025
+S553	https://beyondtype1.org/diabetes-burnout/	Beyond Type 1	T2	1	C1-026
+S554	https://www.reddit.com/r/dexcom/comments/1cevt84/why_does_no_one_warn_about_compression_lows/	Reddit (r/dexcom)	T3	1	C1-027
+S555	https://www.diabetesdaily.com/forum/threads/sleeping-on-your-libre-sensor-can-give-a-false-reading.140874/	Diabetes Daily Forums	T3	1	C1-028
+S556	https://www.reddit.com/r/diabetes_t1/comments/1r6s14u/type_1s_cant_get_glp1s/	Reddit (r/diabetes_t1)	T3	1	C1-029
+S557	https://www.diabetesdaily.com/blog/why-we-take-ozempic-for-type-1-diabetes-730785/	Diabetes Daily / Everyday Health	T2	1	C1-030
+S558	https://www.reddit.com/r/diabetes_t2/comments/13pvo6d/blood_glucose_drops_after_drinking_alcohol/	Reddit (r/diabetes_t2)	T3	1	C1-031
+S559	https://www.diabetesdaily.com/forum/threads/alcohol-and-diabetes.83731/	Diabetes Daily Forums / Everyday Health	T3	1	C1-032
+S560	https://www.reddit.com/r/GestationalDiabetes/comments/1u4c5w1/diabetes_gestacional_y_antojos/	Reddit (r/GestationalDiabetes)	T3	1	C1-033
+S561	https://es.quora.com/Qu%C3%A9-tipo-de-postres-puede-comer-un-diab%C3%A9tico	Quora (испанский домен)	T3	1	C1-034
+S562	https://www.reddit.com/r/Type1Diabetes/comments/1fturxr/cgm_on_a_tattooed_area/	Reddit (r/Type1Diabetes)	T3	1	C1-035
+S563	https://www.diabetesdaily.com/forum/threads/gcm-glunovo-flash.145986/	Diabetes Daily Forums	T3	1	C1-036
+S564	https://www.reddit.com/r/diabetes_t1/comments/vp39p4/the_dvla_need_to_start_asking_relevant_questions/	Reddit (r/diabetes_t1)	T3	1	C1-037
+S565	https://healthunlocked.com/bhf/posts/139245426/trucker	HealthUnlocked (British Heart Foundation community)	T3	1	C1-038
+S566	https://www.reddit.com/r/diabetes_t1/comments/1ea9jyg/how_long_does_the_honeymoon_phase_last/	Reddit (r/diabetes_t1)	T3	1	C1-039
+S567	https://www.diabetesdaily.com/forum/threads/type-1-diabetes-honeymoon-or-possible-remission.86644/	Diabetes Daily Forums / Everyday Health	T3	1	C1-040
+S568	https://www.reddit.com/r/Ozempic/comments/18wd9qc/food_noise_is_back/	Reddit r/Ozempic	T3	1	C2-001
+S569	https://www.reddit.com/r/Ozempic/comments/1um8b7y/how_long_did_it_take_for_the_food_noise_to_go_away/	Reddit r/Ozempic	T3	1	C2-002
+S570	https://www.reddit.com/r/Zepbound/comments/1se8g7y/cracked_the_code_on_my_sulfur_burps/	Reddit r/Zepbound	T3	1	C2-003
+S571	https://www.reddit.com/r/Zepbound/comments/1gf9wko/do_the_sulfur_burps_mean_its_working/	Reddit r/Zepbound	T3	1	C2-004
+S572	https://www.reddit.com/r/Mounjaro/comments/1ov1yfo/missed_dose_13_days_without_mounjaro_worried/	Reddit r/Mounjaro	T3	1	C2-005
+S573	https://www.reddit.com/r/Mounjaro/comments/1nv7xce/is_it_dangerous_to_take_10mg_4_days_late/	Reddit r/Mounjaro	T3	1	C2-006
+S574	https://www.reddit.com/r/Semaglutide/comments/18hjflt/traveling_with_my_pen/	Reddit r/Semaglutide	T3	1	C2-007
+S575	https://www.reddit.com/r/Semaglutide/comments/1qx49y0/forgot_to_refrigerate_pens/	Reddit r/Semaglutide	T3	1	C2-008
+S576	https://www.reddit.com/r/mounjarouk/wiki/index/removal-of-5th-dose/	Reddit r/mounjarouk	T3	1	C2-009
+S577	https://www.reddit.com/r/mounjarouk/comments/1uknnjm/is_this_the_new_kwikpen_with_no_golden_dose/	Reddit r/mounjarouk	T3	1	C2-010
+S578	https://www.reddit.com/r/Semaglutide/comments/1i3lo7p/micro_dosing_below_25_any_experience/	Reddit r/Semaglutide	T3	1	C2-011
+S579	https://www.reddit.com/r/Semaglutide/comments/1s6w4uj/goal_weight_achieved_but_i_want_to_micro_dose_for/	Reddit r/Semaglutide	T3	1	C2-012
+S580	https://www.reddit.com/r/ProactiveHealth/comments/1svazt4/i_ran_the_math_on_grey_market_tirzepatide_vs/	Reddit r/tirzepatidecompound	T3	1	C2-013
+S581	https://www.reddit.com/r/GLP1ResearchTalk/comments/1v0d9kl/can_i_talk_about_pricing_for_grey_market_tirz/	Reddit r/GLP1ResearchTalk	T3	1	C2-014
+S582	https://www.reddit.com/r/Retatrutide/comments/1iq2ty8/dosage/	Reddit r/Retatrutide	T3	1	C2-015
+S583	https://www.reddit.com/r/Retatrutide/comments/1t4ivlu/beginners_guide_2026/	Reddit r/Retatrutide	T3	1	C2-016
+S584	https://www.reddit.com/r/Zepbound/comments/1rc7hdy/prior_authorization_ran_out_now_renewal_denied/	Reddit r/Zepbound	T3	1	C2-017
+S585	https://www.reddit.com/r/Zepbound/comments/1abk7em/i_am_a_prior_authorization_specialist_ama/	Reddit r/Zepbound	T3	1	C2-018
+S586	https://www.reddit.com/r/Mounjaro/comments/1ern73f/there_is_no_shortage/	Reddit r/Mounjaro	T3	1	C2-019
+S587	https://www.reddit.com/r/Zepbound/comments/1bjhgc5/75_shortage_what_regions/	Reddit r/Zepbound	T3	1	C2-020
+S588	https://www.reddit.com/r/Mounjaro/comments/1j947gc/stopping_mounjaro/	Reddit r/Mounjaro	T3	1	C2-021
+S589	https://www.reddit.com/r/Mounjaro/comments/1ckl3zj/any_positive_stories_of_keeping_the_weight_loss/	Reddit r/Mounjaro	T3	1	C2-022
+S590	https://www.reddit.com/r/Zepbound/comments/1n4vod5/alcohol_desire_gone/	Reddit r/Zepbound	T3	1	C2-023
+S591	https://www.reddit.com/r/Zepbound/comments/1d0hrva/my_alcoholism_has_completely_disappeared/	Reddit r/Zepbound	T3	1	C2-024
+S592	https://www.reddit.com/r/Zepbound/comments/1fmhiv5/how_the_f_are_we_coping_with_hair_loss_here/	Reddit r/Zepbound	T3	1	C2-025
+S593	https://www.reddit.com/r/Zepbound/comments/1w6ea61/hair_loss/	Reddit r/Zepbound	T3	1	C2-026
+S594	https://www.reddit.com/r/Mounjaro/comments/1mku02u/what_are_your_constipation_tips/	Reddit r/Mounjaro	T3	1	C2-027
+S595	https://www.reddit.com/r/Zepbound/comments/1vh31hz/constipation/	Reddit r/Zepbound	T3	1	C2-028
+S596	https://www.reddit.com/r/Zepbound/comments/1m109i2/asked_chatgpt_how_much_protein_i_should_consume/	Reddit r/Zepbound	T3	1	C2-029
+S597	https://www.reddit.com/r/Zepbound/comments/1kishfc/how_many_grams_of_protein_is_your_goal/	Reddit r/Zepbound	T3	1	C2-030
+S598	https://www.reddit.com/r/Zepbound/comments/1r9b6zr/can_we_be_honest_about_the_loose_skin_and_how/	Reddit r/Zepbound	T3	1	C2-031
+S599	https://www.reddit.com/r/Mounjaro/comments/1voedzw/loose_skin_is_not_the_enemy/	Reddit r/Mounjaro	T3	1	C2-032
+S600	https://www.reddit.com/r/Zepbound/comments/1v6fion/zepbound_and_anesthesiasurgery/	Reddit r/Zepbound	T3	1	C2-033
+S601	https://www.reddit.com/r/Zepbound/comments/1u6o3v0/glps_and_endoscopy_does_not_mix/	Reddit r/Zepbound	T3	1	C2-034
+S602	https://www.reddit.com/r/Zepbound/comments/1o8wone/surprise_pregnancy/	Reddit r/Zepbound	T3	1	C2-035
+S603	https://www.reddit.com/r/Zepbound/comments/1ttq47r/zepbound_birth_control/	Reddit r/Zepbound	T3	1	C2-036
+S604	https://www.reddit.com/r/Mounjaro/comments/1q78nkg/have_i_hit_a_plateau/	Reddit r/Mounjaro	T3	1	C2-037
+S605	https://www.reddit.com/r/Zepbound/comments/1n7cakr/125_mg_zepbound_plateau_go_to_15_mg_or_save_it/	Reddit r/Zepbound	T3	1	C2-038
+S606	https://www.bariatricpal.com/topic/441016-3-week-stall/	BariatricPal	T3	1	C2-039
+S607	https://www.bariatricpal.com/topic/439190-weight-loss-stall/	BariatricPal	T3	1	C2-040
+S608	https://www.reddit.com/r/GastricBypass/comments/1snemu3/question_re_dumping_syndrome/	Reddit r/GastricBypass	T3	1	C2-041
+S609	https://www.reddit.com/r/GastricBypass/comments/1e3i08h/dumping_isnt_happening/	Reddit r/GastricBypass	T3	1	C2-042
+S610	https://www.bariatricpal.com/topic/435818-alcohol-is-a-transfer-addiction/page/2/	BariatricPal	T3	1	C2-043
+S611	https://www.bariatricpal.com/forum/1205-wls-veterans-forum/	BariatricPal	T3	1	C2-044
+S612	https://www.reddit.com/r/gastricsleeve/comments/1duq67i/pouch_reset/	Reddit r/gastricsleeve	T3	1	C2-045
+S613	https://www.reddit.com/r/BariatricSurgery/comments/1miurvi/3_years_postop_vsg_and_gained_everything_back/	Reddit r/BariatricSurgery	T3	1	C2-046
+S614	https://www.reddit.com/r/GastricBypass/comments/1j0jsqi/bariatric_vitamins_or_otc/	Reddit r/GastricBypass	T3	1	C2-047
+S615	https://www.reddit.com/r/GastricBypass/comments/1jnx5yc/what_do_you_do_when_you_cant_afford_the_vitamins/	Reddit r/GastricBypass	T3	1	C2-048
+S616	https://www.reddit.com/r/PCOS/comments/1ika4er/metformin_vs_glp1_vs_dieting_for_insulin/	Reddit r/PCOS	T3	1	C2-049
+S617	https://www.reddit.com/r/PCOS/comments/1k764cl/do_not_take_inositol_if_youre_not_insulin/	Reddit r/PCOS	LOW	1	C2-050
+S618	https://www.reddit.com/r/Zepbound/comments/1vd7c8h/for_those_on_cpap_that_no_longer_needed/	Reddit r/Zepbound	T3	1	C2-051
+S619	https://www.reddit.com/r/Zepbound/comments/1m07tme/goodbye_cpap/	Reddit r/Zepbound	T3	1	C2-052
+S620	https://www.reddit.com/r/PlusSize/comments/1i3ipv3/flying_with_seatbelt_extender/	Reddit r/PlusSize	T3	1	C2-053
+S621	https://www.reddit.com/r/PlusSize/comments/1slzvny/southwest_singled_me_out_at_the_gate_for_my_size/	Reddit r/PlusSize	T3	1	C2-054
+S622	https://www.reddit.com/r/Zepbound/comments/1solvog/why_am_i_always_cold/	Reddit r/Zepbound	T3	1	C2-055
+S623	https://www.reddit.com/r/Zepbound/comments/1pd38ia/why_are_we_always_so_cold/	Reddit r/Zepbound	T3	1	C2-056
+S624	https://www.reddit.com/r/Zepbound/comments/1i6vigd/what_do_you_all_do_about_clothes_while_youre/	Reddit r/Zepbound	T3	1	C2-057
+S625	https://www.reddit.com/r/loseit/comments/153fmsj/my_closet_cant_keep_up_with_my_weight_loss/	Reddit r/loseit	T3	1	C2-058
+S626	https://www.reddit.com/r/Zepbound/comments/1qd20a5/labs_how_are_yours_doing_after_using_zepbound/	Reddit r/Zepbound	T3	1	C2-059
+S627	https://www.reddit.com/r/Zepbound/comments/1e10d60/confused_about_my_recent_labs/	Reddit r/Zepbound	T3	1	C2-060
+S628	https://www.kadinlarkulubu.com/konu/mounjaro-bilgi-takip-grubu.1583154/page-150	kadinlarkulubu.com	T3	1	C2-061
+S629	https://www.kadinlarkulubu.com/konu/mounjaro-deneyimim.1560585/	kadinlarkulubu.com	T3	1	C2-062
+S630	https://altibbi.com/اسئلة-طبية/علم-الصيدلة/ابي-استخدم-ابر-الاوزمبك-لتنزيل-الوزن-هل-فيها-خطوره-وهل-لازم-1665336	altibbi.com	T3	1	C2-063
+S631	https://altibbi.com/اسئلة-طبية/علم-الصيدلة/متى-افضل-وقت-لاخذ-ابرة-اوزمبك-لاني-اشتريت-الدواء-بهدف-خسارة-1682115	altibbi.com	T3	1	C2-064
+S632	https://www.reddit.com/r/Semaglutide/comments/11yzk1h/thoughts_ozempic_rebound_most_people_regain/?tl=es-419	Reddit r/Semaglutide	T3	1	C2-065
+S633	https://www.reddit.com/r/MounjaroSpain/comments/1ikhimm/alguien_que_haya_dejado_de_tomar_mounjaro/	Reddit r/MounjaroSpain	T3	1	C2-066
+S634	https://zhuanlan.zhihu.com/p/1907833384564167502	zhuanlan.zhihu.com	T3	1	C2-067
+S635	https://www.reddit.com/r/Semaglutide/comments/12hfbjd/did_you_get_your_weight_back_after_stopping/?tl=zh-hans	Reddit r/Semaglutide (MT zh-hans)	T3	1	C2-068
+S636	https://www.youtube.com/watch?v=cgBSZawvd3E	"Don't LOSE another Dexcom - How to Make Your CGM STAY ON"	T3	1	C3-001
+S637	https://www.amazon.com/Adhesive-Patches-Waterproof-Flexible-Continuous/dp/B0DBHF6SJS	Onida Dexcom G7 Over Patches 20PCS Waterproof CGM	T3	1	C3-002
+S638	https://apps.apple.com/us/app/dexcom-g7/id1569432518	Dexcom G7 - App Store	T3	1	C3-003
+S639	https://play.google.com/store/apps/details?id=com.abbott.adc.freestyle.libre.nz	Libre by Abbott - NZ	T3-производитель	1	C3-004
+S640	https://www.youtube.com/shorts/aP6Ef39Ej6c	"Dexcom/Libre Waking You Up at 2 A.M.? Compression Lows 101"	T3	1	C3-005
+S641	https://www.quora.com/What-are-the-limitations-of-using-a-CGM-to-optimize-your-metabolic-health	"What are the limitations of using a CGM to optimize your metabolic health"	T3	1	C3-006
+S642	https://apps.apple.com/us/app/libre-by-abbott/id6670330506	Libre by Abbott	T3	1	C3-007
+S643	https://apps.apple.com/us/app/stelo-by-dexcom/id6475610406	Stelo by Dexcom	T3	1	C3-008
+S644	https://www.quora.com/How-did-your-CGM-data-compare-to-the-data-from-your-finger-stick-glucose-meters	"How did your CGM data compare to the data from your finger-stick glucose meters"	T3	1	C3-009
+S645	https://www.youtube.com/shorts/k5s8TsWRNFU	"dexcomg7 Gooseneck and how to get a replacement through the Dexcom App"	T3	1	C3-010
+S646	https://www.youtube.com/watch?v=H7iwZ2_S8AE	"Common DEXCOM G7 ISSUES and SUGGESTED FIX"	T3	1	C3-011
+S647	https://www.quora.com/Is-it-possible-to-reinsert-the-FreeStyle-Libre-sensor-if-it-falls-off-Has-anyone-tried-it	"Is it possible to reinsert the FreeStyle Libre sensor if it falls off?"	T3	1	C3-012
+S648	https://www.quora.com/Moisture-gets-trapped-under-my-Dexcom-G6-sensor-and-makes-it-itchy-uncomfortable-and-smelly-Any-tips-on-how-to-avoid-this	"Moisture gets trapped under my Dexcom G6 sensor and makes it itchy, uncomfortable, and sm	T3	1	C3-013
+S649	https://www.amazon.com/Skin-Adhesive-Barrier-TORBOT-GROUP/dp/B01AVJB0I0	Skin Tac Adhesive Barrier Prep Wipe, 50/Box, by TORBOT	T3	1	C3-014
+S650	https://www.amazon.com/AUVON-Blood-Glucose-Monitor-Accurate/dp/B0HCBMGVK1	AUVON Blood Glucose Monitor Kit for Accurate Test, 50 Strips, No Coding	T3	1	C3-015
+S651	https://www.quora.com/Does-squeezing-my-finger-to-get-blood-for-an-at-home-glucose-monitor-cause-the-result-to-be-higher-or-lower-than-what-it-should-be	"Does squeezing my finger to get blood for an at-home glucose monitor cause the result to 	T3	1	C3-016
+S652	https://www.quora.com/Is-it-safe-to-use-expired-blood-sugar-test-strips	"Is it safe to use expired blood sugar test strips?"	T3	1	C3-017
+S653	https://www.amazon.com/Best-Sellers-Diabetic-Blood-Test-Strips/zgbs/hpc/3762031	Amazon Best Sellers: Best Diabetic Blood Test Strips	T3	1	C3-018
+S654	https://apps.apple.com/cz/app/myfitnesspal-calorie-counter/id341232718?see-all=reviews&platform=iphone	MyFitnessPal: Calorie Counter (CZ store)	T3	1	C3-019
+S655	https://apps.apple.com/us/app/calorie-counter-mynetdiary/id287529757	Calorie Counter - MyNetDiary	T3-производитель	1	C3-020
+S656	https://play.google.com/store/apps/details?id=com.myfitnesspal.android	MyFitnessPal: Calorie Counter	T3	1	C3-021
+S657	https://apps.apple.com/tr/app/noom-weight-loss-food-tracker/id634598719?see-all=reviews&platform=iphone	Noom Weight Loss, Food Tracker (TR store)	T3	1	C3-022
+S658	https://apps.apple.com/ca/app/noom-weight-loss-food-tracker/id634598719?see-all=reviews&platform=iphone	Noom Weight Loss, Food Tracker (CA store)	T3	1	C3-023
+S659	https://www.quora.com/How-do-you-cancel-a-noom-before-the-trial-ends	"How to cancel a noom before the trial ends"	T3	1	C3-024
+S660	https://www.quora.com/Why-does-sugar-free-candy-upset-my-stomach-so-much	"Why does sugar free candy upset my stomach so much?"	T3	1	C3-025
+S661	https://www.healthline.com/nutrition/allulose	"Allulose: What It Is, Benefits, Risks, and More" / "Can You Use Allulose on the Keto Diet	T2	1	C3-026
+S662	https://www.quora.com/Can-sugar-alcohols-be-subtracted-from-the-carb-count	"Can sugar alcohols be subtracted from the carb count?"	T3	1	C3-027
+S663	https://apps.apple.com/jp/app/diabetes-tracker-by-mynetdiary/id541478695?l=en-US&platform=vision	Diabetes Tracker by MyNetDiary	T3-производитель	1	C3-028
+S664	https://www.amazon.com/Insulin-Cooling-Reusable-Evaporative-Medication/dp/B0002262DA	FRIO Cooling Wallet - Insulin & GLP-1 Cooler for 45+ Hours	T3	1	C3-029
+S665	https://www.quora.com/How-long-can-ozempic-be-left-unrefrigerated	"How long can ozempic be left unrefrigerated?"	T3	1	C3-030
+S666	https://apps.apple.com/us/app/aspect-health/id1597252849	Aspect Health	T3	1	C3-031
+S667	https://apps.apple.com/gb/app/nutrisense-glucose-tracker/id1479100171	Nutrisense: Glucose Tracker (GB)	T3-производитель	1	C3-032
+S668	https://apps.apple.com/us/app/shotsy-glp-1-tracker/id6499510249	Shotsy GLP-1 Tracker	T3	1	C3-033
+S669	https://play.google.com/store/apps/details?id=com.shredapps.glp1	GLP-1 Tracker: Pep	T3	1	C3-034
+S670	https://www.quora.com/How-many-times-can-a-single-user-reuse-an-insulin-needle	"How many times can a single user reuse an insulin needle?"	T3 (со ссылкой на клиническое исследование внутри ответа, само исследование в этой сессии не открывалось отдельно)	1	C3-035
+S671	https://www.amazon.com/clp/B08G59N69N	Pip Insulin Pen Needles 32G 4mm - 100 Count, Universal Fit for All Pens	T3	1	C3-036
+S672	https://www.quora.com/What-is-the-best-way-to-dispose-of-used-lancets-when-staying-in-a-hotel	"What is the best way to dispose of used lancets when staying in a hotel?"	T3	1	C3-037
+S673	https://www.amazon.com/Mailback-PureWay-Sharps-Disposal-System/dp/B0CWQJK3CZ	PureWay 1.4 Quart MailBack Sharps Disposal Container	T3	1	C3-038
+S674	https://www.amazon.com/Best-Sellers-Diabetic-Socks-Insoles/zgbs/hpc/8622211011	Amazon Best Sellers: Best Diabetic Socks & Insoles	T3	1	C3-039
+S675	https://www.quora.com/Can-diabetic-socks-be-worn-by-non-diabetics-with-wide-feet-comfortably-Will-the-socks-slip-down	"Can diabetic socks be worn by non-diabetics with wide feet comfortably? Will the socks sl	T3	1	C3-040
+S676	https://www.quora.com/Can-people-with-diabetes-and-neuropathy-wear-Crocs	"Can people with diabetes and neuropathy wear Crocs?" / "What are the best shoes for peopl	T3	1	C3-041
+S677	https://www.amazon.com/clp/B075G34D1N	DARCO GentleStep Diabetic Extra-Depth Comfort Shoes	T3	1	C3-042
+S678	https://play.google.com/store/apps/details?id=com.dexcom.stelo	Stelo by Dexcom	T3	1	C3-043
+S679	https://play.google.com/store/apps/details?id=com.dexcom.g7	Dexcom G7	T3-производитель	1	C3-044
+S680	https://www.amazon.com/CONTOUR-Glucose-Monitoring-System-Diabetes/dp/B08FV1SVSW	CONTOUR NEXT ONE Blood Glucose Monitoring System All-in-One Kit	T3	1	C3-045
+S681	https://pmc.ncbi.nlm.nih.gov/articles/PMC9797649/	Etiology, Epidemiology, and Disparities in the Burden of Diabetic Foot Ulcers (PMC9797649)	T1	1	C4-001
+S682	https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html	CDC "Your Feet and Diabetes"	T1 (гос.)	2	C4-002,C4-003
+S683	https://pmc.ncbi.nlm.nih.gov/articles/PMC7311555/	Fundamental principles of an effective diabetic retinopathy screening program (PMC7311555)	T1	1	C4-004
+S684	https://www.diabetes.org.uk/about-diabetes/diabetes-misconceptions-and-faqs	Diabetes UK "Diabetes misconceptions and frequently asked questions"	T2	1	C4-005
+S685	https://pmc.ncbi.nlm.nih.gov/articles/PMC6755905/	Epidemiology of Peripheral Neuropathy and Lower Extremity Disease in Diabetes (PMC6755905)	T1	1	C4-006
+S686	https://pmc.ncbi.nlm.nih.gov/articles/PMC6736218/	Diabetic Gastroparesis (PMC6736218)	T1	1	C4-007
+S687	https://pmc.ncbi.nlm.nih.gov/articles/PMC6676757/	Diabetic Gastroparesis: Perspectives From a Patient and Health Care Providers (PMC6676757)	T1	1	C4-008
+S688	https://pubmed.ncbi.nlm.nih.gov/38521116/	The Global Epidemiology of NAFLD and NASH Among Patients With Type 2 Diabetes (pmid:385211	T1	1	C4-009
+S689	https://pubmed.ncbi.nlm.nih.gov/18807673/	Prevalence of sleep apnea in morbidly obese patients who presented for weight loss surgery	T1	1	C4-010
+S690	https://pubmed.ncbi.nlm.nih.gov/17320536/	Potentially life-threatening sleep apnea is unrecognized without aggressive evaluation (pm	T1	1	C4-011
+S691	https://www.obesityaction.org/resources/sleep-apnea/	Obesity Action Coalition "Breathe Easy: A Closer Look at Sleep Apnea"	T2	1	C4-012
+S692	https://pubmed.ncbi.nlm.nih.gov/9855615/	Understanding the underlying metabolic abnormalities of polycystic ovary syndrome (pmid:98	T1	1	C4-013
+S693	https://pubmed.ncbi.nlm.nih.gov/34176074/	Risk of type 2 diabetes mellitus in polycystic ovary syndrome is associated with obesity (	T1	1	C4-014
+S694	https://pubmed.ncbi.nlm.nih.gov/28799294/	The prevalence of diabetes-specific emotional distress in people with Type 2 diabetes (pmi	T1	1	C4-015
+S695	https://www.cdc.gov/pcd/issues/2025/24_0287.htm	CDC PCD "Diabetes Distress Among US Adults With Diagnosed Diabetes, 2021"	T1 (гос./рецензируемое)	1	C4-016
+S696	https://www.cdc.gov/diabetes/living-with/mental-health.html	CDC "Diabetes and Mental Health"	T1 (гос.)	1	C4-017
+S697	https://pubmed.ncbi.nlm.nih.gov/20194822/	Overweight, obesity, and depression: a systematic review and meta-analysis of longitudinal	T1	1	C4-018
+S698	https://pubmed.ncbi.nlm.nih.gov/31430566/	Diabetes mellitus and risks of cognitive impairment and dementia (pmid:31430566)	T1	1	C4-019
+S699	https://diabetes.org/about-diabetes/complications/skin-complications	ADA "Diabetes and Skin Complications"	T2	1	C4-020
+S700	https://pmc.ncbi.nlm.nih.gov/articles/PMC10999051/	Periodontitis: An often-neglected complication of diabetes (PMC10999051)	T1	1	C4-021
+S701	https://pmc.ncbi.nlm.nih.gov/articles/PMC3949699/	Diabetes and sexual dysfunction: current perspectives (PMC3949699)	T1	1	C4-022
+S702	https://pmc.ncbi.nlm.nih.gov/articles/PMC5615610/	Relationships of Sexual Dysfunction with Depression and Acceptance of Illness in Women and	T1	1	C4-023
+S703	https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/sexual-bladder-problems	NIDDK "Diabetes, Sexual, & Bladder Problems"	T1 (гос.)	1	C4-024
+S704	https://pmc.ncbi.nlm.nih.gov/articles/PMC12306871/	SGLT2 inhibitors use and the risks of genital and urinary tract infection (PMC12306871)	T1	1	C4-025
+S705	https://pubmed.ncbi.nlm.nih.gov/27930282/	Vaccination Coverage Among Adults With Diagnosed Diabetes: United States, 2015 (pmid:27930	T1	1	C4-026
+S706	https://pubmed.ncbi.nlm.nih.gov/36918326/	Excess body fatness and cancer risk: a summary of the epidemiologic evidence (pmid:3691832	T1	1	C4-027
+S707	T1	https://pmc.ncbi.nlm.nih.gov/articles/PMC5421136/	2026-09-04	1	C4-028
+S708	https://pubmed.ncbi.nlm.nih.gov/33855769/	Comparative efficacy of different weight loss treatments on knee osteoarthritis (pmid:3385	T1	1	C4-029
+S709	https://pubmed.ncbi.nlm.nih.gov/39059544/	Risk of De Novo Barrett's Esophagus Post Sleeve Gastrectomy (pmid:39059544)	T1	1	C4-030
+S710	https://pubmed.ncbi.nlm.nih.gov/30062467/	Hair Loss After Laparoscopic Sleeve Gastrectomy (pmid:30062467)	T1	1	C4-031
+S711	https://pubmed.ncbi.nlm.nih.gov/37814558/	Dumping syndrome after bariatric surgery: prevalence, pathophysiology and role in weight r	T1	1	C4-032
+S712	https://pubmed.ncbi.nlm.nih.gov/27188054/	Increased risk of alcohol use disorders after bariatric surgery (pmid:27188054)	T1	1	C4-033
+S713	https://pmc.ncbi.nlm.nih.gov/articles/PMC8986695/	Patients' Experiences of Weight Regain After Bariatric Surgery (PMC8986695)	T1	1	C4-034
+S714	https://pubmed.ncbi.nlm.nih.gov/11192327/	Gallstones in obesity and weight loss (pmid:11192327)	T1	1	C4-035
+S715	https://pmc.ncbi.nlm.nih.gov/articles/PMC9210010/	Definition and Diagnostic Criteria for Sarcopenic Obesity: ESPEN and EASO Consensus Statem	T1	1	C4-036
+S716	https://pmc.ncbi.nlm.nih.gov/articles/PMC12536186/	Preservation of lean soft tissue during weight loss induced by GLP-1 and GLP-1/GIP recepto	T1	1	C4-037
+S717	https://pmc.ncbi.nlm.nih.gov/articles/PMC13436241/	Lipedema Diagnosis, Clinical Manifestations, and Therapeutics: A Systematic Review (PMC134	T1	1	C4-038
+S718	https://pubmed.ncbi.nlm.nih.gov/26696565/	Predicting adult obesity from childhood obesity (pmid:26696565)	T1	1	C4-039
+S719	https://pmc.ncbi.nlm.nih.gov/articles/PMC7218708/	Progression to type 2 diabetes in women with a known history of gestational diabetes (PMC7	T1	1	C4-040
+S720	https://diabetes.org/living-with-diabetes/pregnancy/gestational-diabetes	ADA "Gestational Diabetes"	T2	1	C4-041
+S721	https://pubmed.ncbi.nlm.nih.gov/22978257/	Understanding weight gain at menopause (pmid:22978257)	T1	1	C4-042
+S722	https://pmc.ncbi.nlm.nih.gov/articles/PMC4911848/	Hypothyroidism and obesity: An intriguing link (PMC4911848); Obesity-related thyroid refle	T1	1	C4-043
+S723	https://pmc.ncbi.nlm.nih.gov/articles/PMC11057385/	Pharmacotherapy causing weight gain and metabolic alteration (PMC11057385)	T1	1	C4-044
+S724	https://pubmed.ncbi.nlm.nih.gov/36967046/	Glucocorticoid-induced hyperglycemia and diabetes: Practical points (pmid:36967046)	T1	1	C4-045
+S725	https://pmc.ncbi.nlm.nih.gov/articles/PMC8929179/	Consensus Report: Definition and Interpretation of Remission in Type 2 Diabetes (PMC892917	T1	1	C4-046
+S726	https://pubmed.ncbi.nlm.nih.gov/38423026/	5-year follow-up of the randomised Diabetes Remission Clinical Trial (DiRECT) (pmid:384230	T1	1	C4-047
+S727	https://pmc.ncbi.nlm.nih.gov/articles/PMC10425229/	Real-World Prevalence of Type 2 Diabetes Remission in a U.S. Insured Population (PMC104252	T1	1	C4-048
+S728	https://www.diabetes.org.uk/about-diabetes/type-2-reverse	Diabetes UK "Can you reverse type 2 diabetes?"	T2	1	C4-049
+S729	https://pmc.ncbi.nlm.nih.gov/articles/PMC8080906/	A Real-World Prospective Study of the Safety and Effectiveness of the Loop Open Source AID	T1	1	C4-050
+S730	https://www.diabetes.org.uk/tech-cant-wait/faq	Diabetes UK "Diabetes Tech Can't Wait - Frequently Asked Questions"	T2	1	C4-051
+S731	https://pmc.ncbi.nlm.nih.gov/articles/PMC7154011/	Joint international consensus statement for ending stigma of obesity (PMC7154011); EASO & 	T1 + T2	1	C4-052
+S732	https://diabetes.org/about-diabetes/diabetes-myths	ADA "Know Your Facts About Diabetes"	T2	1	C4-053
+S733	https://pubmed.ncbi.nlm.nih.gov/32720500/	Pancreatitis and pancreatic cancer in patients with type 2 diabetes treated with GLP-1 RA 	T1	1	C4-054
+S734	https://pubmed.ncbi.nlm.nih.gov/39400117/	Approach to the Patient With Thyroid Nodules: Considering GLP-1 Receptor Agonists (pmid:39	T1	1	C4-055
+S735	https://pubmed.ncbi.nlm.nih.gov/42262435/	Use of GLP-1 RA in Women with Type 2 Diabetes Before Pregnancy (pmid:42262435)	T1	1	C4-056
+S736	https://pmc.ncbi.nlm.nih.gov/articles/PMC12391755/	GLP-1 RA and Peri-Procedural Aspiration Risk (PMC12391755)	T1	1	C4-057
+S737	https://pubmed.ncbi.nlm.nih.gov/39016372/	GLP-1 RA Use Before Endoscopy Is Associated With Low Retained Gastric Contents (pmid:39016	T1	1	C4-058
+S738	https://pmc.ncbi.nlm.nih.gov/articles/PMC9542252/	Weight regain and cardiometabolic effects after withdrawal of semaglutide: STEP 1 trial ex	T1	1	C4-059
+S739	https://arxiv.org/abs/2603.12341	Self-Reported Side Effects of Semaglutide and Tirzepatide in Online Communities (arxiv:260 ; то же	T1 (ПРЕПРИНТ, не рецензирован),T1 (препринт)	2	C4-060,C4-061
+S740	https://pmc.ncbi.nlm.nih.gov/articles/PMC12289294/	Harnessing Facebook to Investigate Real-World Mentions of Adverse Events of GLP-1 RA (PMC1	T1	1	C4-062
+S741	https://pmc.ncbi.nlm.nih.gov/articles/PMC7310401/	Health information needs regarding diabetes mellitus in China (PMC7310401)	T1	1	C4-063
+S742	https://pmc.ncbi.nlm.nih.gov/articles/PMC5052557/	Social Networking Services-Based Communicative Care for Patients with Diabetes Mellitus in	T1	1	C4-064
+S743	https://pmc.ncbi.nlm.nih.gov/articles/PMC7448178/	General Public's Information-Seeking Patterns of Topics Related to Obesity (PMC7448178)	T1	1	C4-065
+S744	https://pmc.ncbi.nlm.nih.gov/articles/PMC10899289/	Popularity of Surgical and Pharmacological Obesity Treatment Methods Searched by Google Us	T1	1	C4-066
+S745	https://pubmed.ncbi.nlm.nih.gov/37434278/	Public interest in weight loss and diet-related topics in Europe (pmid:37434278)	T1	1	C4-067
+S746	https://pmc.ncbi.nlm.nih.gov/articles/PMC12574643/	Type 2 Diabetes Mellitus and Hearing Loss: A Prisma Systematic Review and Meta-Analysis (P	T1	1	C4-068
+S747	https://pubmed.ncbi.nlm.nih.gov/30383489/	Cheiroarthropathy: a common disorder in patients in the T1D Exchange (pmid:30383489)	T1	1	C4-069
+S748	https://pubmed.ncbi.nlm.nih.gov/33955687/	Weight loss with bariatric surgery or behaviour modification and female obesity-related ur	T1	1	C4-070
+S749	https://idf.org/news-and-resources/resources/	IDF Resources Archive	T1 (IDF)	1	C4-071
+S750	https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity	NIDDK "Prescription Medications to Treat Overweight & Obesity"	T1 (гос.)	1	C4-072

@@ -1,0 +1,27 @@
+file	claim	source	url	tier
+C1	C1-001	Reddit (r/diabetes)	https://www.reddit.com/r/diabetes/comments/1j0gux2/first_ramadan_with_t1d_need_your_tips_experiences/	T3
+C1	C1-002	HealthUnlocked (Diabetes India)	https://healthunlocked.com/diabetesindia/posts/1238266/diabetes-and-ramadan-fasting...	T3
+C1	C1-004	Quora	https://www.quora.com/How-do-I-pack-my-insulin-to-keep-it-cold-on-a-plane	T3
+C1	C1-006	Diabetes Daily Forums	https://www.diabetesdaily.com/forum/threads/allergic-skin-reaction-to-libre3-sensor-how-are-you-managing-this.144183/	T3
+C1	C1-026	Beyond Type 1	https://beyondtype1.org/diabetes-burnout/	T2
+C1	C1-034	Quora (испанский домен)	https://es.quora.com/Qu%C3%A9-tipo-de-postres-puede-comer-un-diab%C3%A9tico	T3
+C2	C2-001	Reddit r/Ozempic	https://www.reddit.com/r/Ozempic/comments/18wd9qc/food_noise_is_back/	T3
+C2	C2-039	BariatricPal	https://www.bariatricpal.com/topic/441016-3-week-stall/	T3
+C2	C2-061	kadinlarkulubu.com	https://www.kadinlarkulubu.com/konu/mounjaro-bilgi-takip-grubu.1583154/page-150	T3
+C2	C2-063	altibbi.com	https://altibbi.com/اسئلة-طبية/علم-الصيدلة/ابي-استخدم-ابر-الاوزمبك-لتنزيل-الوزن-هل-فيها-خطوره-وهل-لازم-1665336	T3
+C2	C2-067	zhuanlan.zhihu.com	https://zhuanlan.zhihu.com/p/1907833384564167502	T3
+C3	C3-001	Don't LOSE another Dexcom - How to Make Your CGM STAY ON	https://www.youtube.com/watch?v=cgBSZawvd3E	T3
+C3	C3-002	Onida Dexcom G7 Over Patches 20PCS Waterproof CGM	https://www.amazon.com/Adhesive-Patches-Waterproof-Flexible-Continuous/dp/B0DBHF6SJS	T3
+C3	C3-003	Dexcom G7 - App Store	https://apps.apple.com/us/app/dexcom-g7/id1569432518	T3
+C3	C3-004	Libre by Abbott - NZ	https://play.google.com/store/apps/details?id=com.abbott.adc.freestyle.libre.nz	T3-производитель
+C3	C3-006	What are the limitations of using a CGM to optimize your metabolic hea	https://www.quora.com/What-are-the-limitations-of-using-a-CGM-to-optimize-your-metabolic-health	T3
+C3	C3-026	Allulose: What It Is, Benefits, Risks, and More / "Can You Use Allulos	https://www.healthline.com/nutrition/allulose	T2
+C4	C4-001	Etiology, Epidemiology, and Disparities in the Burden of Diabetic Foot	https://pmc.ncbi.nlm.nih.gov/articles/PMC9797649/	T1
+C4	C4-002	CDC "Your Feet and Diabetes"	https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html	T1 (гос.)
+C4	C4-005	Diabetes UK "Diabetes misconceptions and frequently asked questions"	https://www.diabetes.org.uk/about-diabetes/diabetes-misconceptions-and-faqs	T2
+C4	C4-009	The Global Epidemiology of NAFLD and NASH Among Patients With Type 2 D	https://pubmed.ncbi.nlm.nih.gov/38521116/	T1
+C4	C4-012	Obesity Action Coalition "Breathe Easy: A Closer Look at Sleep Apnea"	https://www.obesityaction.org/resources/sleep-apnea/	T2
+C4	C4-020	ADA "Diabetes and Skin Complications"	https://diabetes.org/about-diabetes/complications/skin-complications	T2
+C4	C4-024	NIDDK "Diabetes, Sexual, & Bladder Problems"	https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/sexual-bladder-problems	T1 (гос.)
+C4	C4-060	Self-Reported Side Effects of Semaglutide and Tirzepatide in Online Co	https://arxiv.org/abs/2603.12341	T1 (ПРЕПРИНТ, не рецензирован)
+C4	C4-071	IDF Resources Archive	https://idf.org/news-and-resources/resources/	T1 (IDF)

@@ -1,0 +1,128 @@
+code	claim	source	url	tier
+A-JP-1	B7-001	高齢者の医療の確保に関する法律 (e-Gov)	https://laws.e-gov.go.jp/law/357AC0000000080	T1
+A-JP-1	B7-002	特定健康診査及び特定保健指導の実施に関する基準 (e-Gov)	https://laws.e-gov.go.jp/law/419M60000100157	T1
+A-JP-1	B7-003	特定健康診査及び特定保健指導の実施に関する基準 (e-Gov)	https://laws.e-gov.go.jp/law/419M60000100157	T1
+A-JP-1	B6-010	MHLW 標準的な健診・保健指導プログラム (PDF)	https://www.mhlw.go.jp/content/10900000/001231390.pdf	T1
+A-JP-1	B6-011	PMC4008026	pmcid:PMC4008026	T1
+A-JP-2	B6-024	MHLW 後期高齢者支援金（2017年度）の加算・減算の方法	https://www.mhlw.go.jp/content/12401000/001294108.pdf	T1
+A-JP-2	B6-025	MHLW 後期高齢者支援金（2019年度）の加算について	https://www.mhlw.go.jp/content/12401000/000761454.pdf	T1
+A-JP-2	B7-006	MHLW PDF 後期高齢者支援金（2017年度）の加算・減算の方法	https://www.mhlw.go.jp/content/12401000/001294108.pdf	T1
+A-JP-3	B6-012	MHLW 職場のあんぜんサイト; MHLW PDF 0000136750	https://anzeninfo.mhlw.go.jp/yougo/yougo51_1.html	T1
+A-CN-1	B7-028	国家卫生健康委员会	https://www.nhc.gov.cn/ylyjs/gzdt/202406/41c64b9fd9774352af22f5274c1e831d.shtml	T1
+A-CN-1	B7-029	国家卫生健康委员会	https://www.nhc.gov.cn/ylyjs/gzdt/202406/41c64b9fd9774352af22f5274c1e831d.shtml	T1
+A-CN-1	B7-030	国家卫生健康委员会	https://www.nhc.gov.cn/ylyjs/gzdt/202406/41c64b9fd9774352af22f5274c1e831d.shtml	T1
+A-CN-1	B7-031	国家卫生健康委员会	https://www.nhc.gov.cn/wjw/c100378/202504/f94979ff66e0418aa5d610d12a12c848.shtml	T1
+A-CN-1	B7-032	国家卫生健康委员会	https://www.nhc.gov.cn/bgt/c100023/202602/73b8afd52eff4be4980ac5431cefa190.shtml	T1
+A-SG-1	B7-034	HPB Measures for Nutri-Grade	https://www.hpb.gov.sg/healthy-living/food-and-beverage/nutri-grade/	T1
+A-SG-1	B7-035	HPB Measures for Nutri-Grade	https://www.hpb.gov.sg/healthy-living/food-and-beverage/nutri-grade/	T1
+A-SG-1	B7-036	HPB Measures for Nutri-Grade	https://www.hpb.gov.sg/healthy-living/food-and-beverage/nutri-grade/	T1
+A-SG-1	B6-074	HPB Measures for Nutri-Grade	https://www.hpb.gov.sg/healthy-living/food-and-beverage/nutri-grade/	T1
+A-SG-1	B7-037	MOH press release 30.12.2021	https://www.moh.gov.sg/newsroom/mandatory-nutrition-labelling-and-advertising-prohibitions-for-nutri-grade-beverages-from-30-december-2022/	T1
+A-DK-1	B3-001	Retsinformation, Lov nr. 247 af 30/03/2011	https://www.retsinformation.dk/eli/lta/2011/247/pdf	T1
+A-DK-1	B3-005	Retsinformation, BEK 2014/708 (ссылка)	https://www.retsinformation.dk/eli/lta/2014/708/dan/pdf	T1
+A-DK-1	B7-064	Retsinformation	https://www.retsinformation.dk/eli/lta/2011/247/pdf	T1
+A-DK-1	B7-066	Bødker et al., Prev Med 2015 (pmid:25982852)	https://pubmed.ncbi.nlm.nih.gov/25982852/	T1
+A-DK-1	B3-002	Dahl et al., Nudging Nutrition (arXiv 2312.11481)	https://arxiv.org/abs/2312.11481	T2
+A-HU-1	B3-013	Nemzeti Jogszabálytár, 2011. évi CIII. tv.	https://njt.hu/jogszabaly/2011-103-00-00	T1
+A-HU-1	B3-014	njt.hu 3. §	https://njt.hu/jogszabaly/2011-103-00-00.1	T1
+A-HU-1	B3-015	njt.hu ставки	https://njt.hu/jogszabaly/2011-103-00-00.8	T1
+A-IN-1	B5-008	CBSE Circular Acad-26/2025	https://cbseacademic.nic.in/web_material/Circulars/2025/26_Circular_2025.pdf	T1
+A-IN-1	B5-009	CBSE Circular Acad-45/2025	https://cbseacademic.nic.in/web_material/Circulars/2025/45_Circular_2025.pdf	T1
+A-IN-2	B5-001	FSSAI Gazette Notification (Safe Food and Balanced Diets for Children in School)	https://fssai.gov.in/docs/food-law/regulations/Gazette_Notification_Safe_Food_Children_07_09_2020.pdf	T1
+A-IN-2	B5-002	FSSAI Food Safety and Standards Regulations	https://fssai.gov.in/cms/food-safety-and-standards-regulations.php	T1
+A-IN-2	B5-003	PMC8477491 Food environment in and around schools and colleges of Delhi	https://pmc.ncbi.nlm.nih.gov/articles/PMC8477491/	T1
+A-IN-3	B5-022	pmid:41247585 OSSI survey	https://pubmed.ncbi.nlm.nih.gov/41247585/	T1
+A-IN-3	B5-023	IRDAI search listing	https://irdai.gov.in/ (поиск, см. раздел 5)	T1
+A-IN-3	B5-024	Проспект Magma Insurance (ссылка на IRDAI 2019)	https://www.magmainsurance.com/documents/5553002/5844234/Prospectus+%E2%80%93+Double+Suraksha+%28w.e.f.+1st+Oct%2C+2024%29.pdf	T3
+A-US-1	B7-053	CMS fact sheet	https://www.cms.gov/newsroom/fact-sheets/anniversary-inflation-reduction-act-update-cms-implementation	T1
+A-US-1	B7-054	CMS fact sheet	https://www.cms.gov/newsroom/fact-sheets/anniversary-inflation-reduction-act-update-cms-implementation	T1
+A-US-1	B7-055	pmid:42378410	https://pubmed.ncbi.nlm.nih.gov/42378410/	T1
+A-US-1	B6-099	PMC13242632	pmcid:PMC13242632	T1
+A-US-1	B6-100	PMC11325206	pmcid:PMC11325206	T1
+A-US-1	B6-101	PubMed 39102595	pmid:39102595	T1
+A-US-2	B7-056	eCFR 29 CFR 2590.702	https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XXV/subchapter-L/part-2590/subpart-B/section-2590.702	T1
+A-US-2	B7-057	Final rule, Fed Reg 2013 (pmid:23734399)	https://pubmed.ncbi.nlm.nih.gov/23734399/	T1
+A-US-2	B6-026	PubMed 26477217; 23734399	pmid:26477217	T1
+A-US-3	B6-109	Michigan Legislature	https://www.legislature.mi.gov/mileg.aspx?page=getObject&objectname=mcl-37-2202	T1
+A-US-3	B6-110	PMC7511432	pmcid:PMC7511432	T1
+A-US-3	B6-111	NYC Commission on Human Rights	https://www.nyc.gov/site/cchr/media/height-and-weight.page	T1
+A-US-3	B6-112	Harvard Law Review vol. 133; Justia 9th Cir 16-35205	https://harvardlawreview.org/print/vol-133/taylor-v-burlington-northern-railroad-holdings-inc/	T2
+A-US-4	B7-090	Federal Register 83 FR 47486	https://www.federalregister.gov/documents/2018/09/19/2018-20161/qualifications-of-drivers-diabetes-standard	T1
+A-US-4	B7-091	Federal Register 83 FR 47486	https://www.federalregister.gov/documents/2018/09/19/2018-20161/qualifications-of-drivers-diabetes-standard	T1
+A-US-4	B6-091	FMCSA	https://www.fmcsa.dot.gov/taxonomy/term/376?page=2	T1
+A-US-4	B6-092	FMCSA MCSA-5870	https://www.fmcsa.dot.gov/regulations/medical/insulin-treated-diabetes-mellitus-assessment-form-mcsa-5870	T1
+A-US-5	B7-058	ACHI - BMI Measurement in Arkansas Schools	https://achi.net/publications/bmi-measurement-arkansas/	T2
+A-US-5	B7-059	pmid:18076417	https://pubmed.ncbi.nlm.nih.gov/18076417/	T1
+A-US-5	B6-015	PubMed 26115907	pmid:26115907	T1
+A-US-5	B6-016	PMC5808566; PubMed 25440454	pmcid:PMC5808566	T1
+A-IL-1	B6-007	Haaretz 2026-02-20	https://www.haaretz.com/science-and-health/2026-02-20/ty-article/israels-2026-public-health-basket-cancer-treatment-leads-more-mental-health-drugs/000	T2
+A-IL-2	B6-077	PMC8356694; PMC7353345	pmcid:PMC8356694	T1
+A-FR-1	B3-020	HM Treasury news	https://www.gov.uk/government/news/soft-drinks-industry-levy-comes-into-effect	T1
+A-UK-2	B6-094	PubMed 36050848	pmid:36050848	T1
+A-AU-1	B7-079	PBS - PBAC advice on equitable access to GLP-1 obesity treatments	https://www.pbs.gov.au/info/reviews/PBAC-advice-equitable-access-to-GLP-1-obesity-treatments	T1
+A-AU-1	B7-080	PBS consumer input summary (PDF)	https://www.pbs.gov.au/reviews/obesity-treatments-files/OBESITY-Consumer-input-summary.PDF	T1
+A-AU-1	B7-082	TGA media release	https://www.tga.gov.au/news/media-releases/update-glucagon-peptide-1-receptor-agonists-glp-1-ras-pharmacy-compounding-changes	T1
+A-AU-1	B6-103	PubMed 42515931	pmid:42515931	T1
+A-MIG-1	B6-082	Dept of Home Affairs	https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/health/protecting-health-care-and-community-services	T1
+A-MIG-1	B6-083	Immigration New Zealand	https://www.immigration.govt.nz/about-us/news-centre/acceptable-standard-of-health/	T1
+A-MIG-1	B7-009	Immigration NZ - Acceptable Standard of Health	https://www.immigration.govt.nz/about-us/news-centre/acceptable-standard-of-health/	T1
+A-MIG-1	B7-010	Immigration NZ - Acceptable Standard of Health	https://www.immigration.govt.nz/about-us/news-centre/acceptable-standard-of-health/	T1
+A-MIG-1	B7-011	INZ Operational Manual A4.10	https://www.immigration.govt.nz/opsmanual/82036.htm	T1
+A-KR-1	B5-005	pmid:24561969	https://pubmed.ncbi.nlm.nih.gov/24561969/	T1
+A-KR-1	B5-006	pmid:26078247	https://pubmed.ncbi.nlm.nih.gov/26078247/	T1
+A-AE-1	B6-119	CNBC 2013-07-18; Gulf News	https://www.cnbc.com/2013/07/18/worth-their-weight-dubai-offers-dieters-gold-for-shedding-pounds.html	T2
+A-AE-1	B7-022	Gulf News	https://gulfnews.com/lifestyle/health-fitness/lose-your-weight-in-gold-initiative-launches-in-dubai-1.1209743	T2
+A-AE-1	B7-023	Gulf News	https://gulfnews.com/uae/health/dubai-municipality-campaign-uae-resident-sheds-kilos-and-gains-gold-1.1252639	T2
+A-AE-1	B7-025	BBC News	https://www.bbc.com/news/business-23373186	T2
+A-AE-1	B7-026	The National	https://www.thenationalnews.com/uae/weight-loss-champions-in-dubai-cash-in-with-16-9kg-in-gold-1.655921	T2
+A-AR-1	B4-019	argentina.gob.ar/normativa, Ley 26396 texto original	https://www.argentina.gob.ar/normativa/nacional/norma-144033/texto	T1
+A-AR-1	B6-001	InfoLEG, Ley 26.396	https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/144033/norma.htm	T1
+A-CL-1	B4-013	BCN/LeyChile, Ley 20606 art. 7	https://www.bcn.cl/leychile/navegar?idNorma=1041570	T1
+A-CL-1	B4-014	BCN/LeyChile, Ley 20606, история изменений	https://www.bcn.cl/leychile/navegar?idNorma=1041570	T1
+A-CL-1	B6-069	BCN Ley Chile, Ley 20606	https://www.bcn.cl/leychile/navegar?idNorma=1041570	T1
+A-CL-1	B7-039	BCN Ley Chile	https://www.bcn.cl/leychile/navegar?idNorma=1041570	T1
+A-CL-1	B7-040	BCN Ley Chile	https://www.bcn.cl/leychile/navegar?idNorma=1041570	T1
+A-MX-1	B4-011	DOF, модификация NOM-051-SCFI/SSA1-2010	https://dof.gob.mx/normasOficiales/8150/seeco11_C/seeco11_C.html	T1
+A-MX-1	B4-028	Congreso de Oaxaca, dictamen 1184	https://www.congresooaxaca.gob.mx/docs64.congresooaxaca.gob.mx/documents/dictamen/1184.pdf	T1
+A-MX-1	B4-036	DOF, ACUERDO, codigo=5740005	https://www.dof.gob.mx/nota_detalle.php?codigo=5740005&fecha=30/09/2024	T1
+A-MX-1	B7-047	Congreso de Oaxaca, Gaceta 22.11.2023 (PDF)	https://www.congresooaxaca.gob.mx/docs65.congresooaxaca.gob.mx/gaceta/20231122a/21.pdf	T1
+A-MX-1	B7-048	Hartford Courant / AP (исп.)	https://www.courant.com/2020/08/06/un-estado-de-mxico-prohbe-la-venta-de-alimentos-chatarra/	T2
+A-CO-1	B4-017	Función Pública, Gestor Normativo, Ley 2277 de 2022	https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=199883	T1
+A-CO-1	B4-018	Función Pública, Gestor Normativo, Ley 2277 de 2022, art. 54	https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=199883	T1
+A-CO-1	B6-034	Ley 2277 de 2022 (Función Pública)	https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=199883	T1
+A-CO-1	B6-035	Ley 2277 de 2022	https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=199883	T1
+A-IT-1	B6-104	Consiglio regionale del Piemonte (infoleg PDF)	https://www.cr.piemonte.it/infolegint/visualizzaDocumentoSchede.do?idDocumento=15210	T2
+A-IT-1	B6-105	PubMed 41491104	pmid:41491104	T1 (заголовок, без абстракта)
+A-IT-1	B7-102	pmid:41138743	https://pubmed.ncbi.nlm.nih.gov/41138743/	T1
+A-IT-1	B7-103	pmid:41491104	https://pubmed.ncbi.nlm.nih.gov/41491104/	T1
+A-IT-2	B3-067	Senato, Dossier n. 580	https://www.senato.it/show-doc?leg=19&tipodoc=DOSSIER&id=1477486&idoggetto=0&part=dossier_dossier1-sezione_sezione12	T1
+A-IT-2	B3-068	Senato, Dossier n. 580	https://www.senato.it/show-doc?leg=19&tipodoc=DOSSIER&id=1477486&idoggetto=0&part=dossier_dossier1-sezione_sezione12	T1
+A-RU-1	B3-097	ПП 565 (ред. 24.03.2026), Расписание болезней	https://www.consultant.ru/document/cons_doc_LAW_149096/2c77bb6a026f4c82f6c03500bc2e6c6d94c79267/	T1
+A-RU-1	B3-098	ПП 565 ст. 13 п. «е»	https://www.consultant.ru/document/cons_doc_LAW_149096/2c77bb6a026f4c82f6c03500bc2e6c6d94c79267/	T1
+A-RU-2	B3-094	Приказ Минздрава 404н (ред. 15.06.2026)	https://normativ.kontur.ru/document?moduleId=1&documentId=507207	T1
+A-RU-2	B3-095	Приказ 404н	https://normativ.kontur.ru/document?moduleId=1&documentId=507207	T1
+A-RU-2	B3-096	PMC9012158	https://pmc.ncbi.nlm.nih.gov/articles/PMC9012158/	T1 (абстракт)
+A-RU-2	B6-018	Приказ Минздрава РФ 404н (через normativ.kontur.ru)	https://normativ.kontur.ru/document?moduleId=1&documentId=507207	T2 (агрегатор правового текста)
+A-UK-1	B3-041	NICE TA875	https://www.nice.org.uk/guidance/ta875	T1
+A-UK-1	B3-042	NICE TA875 rec. 1.1	https://www.nice.org.uk/guidance/ta875/chapter/1-Recommendations	T1
+A-UK-1	B3-043	NICE TA875 PDF	https://www.nice.org.uk/guidance/ta875/resources/semaglutide-for-managing-overweight-and-obesity-pdf-82613674831813	T1
+A-UK-1	B3-044	PMC12705252	https://pmc.ncbi.nlm.nih.gov/articles/PMC12705252/	T1 (абстракт)
+A-UK-1	B3-045	NICE TA1152	https://www.nice.org.uk/guidance/ta1152	T1
+A-PAC-1	B1-007	Honolulu Civil Beat	https://www.civilbeat.org/2013/05/samoa-lifts-ban-on-tasty-turkey-tails/	T2
+A-PAC-1	B1-008	PMC10498917 (журнальная статья)	https://pmc.ncbi.nlm.nih.gov/articles/PMC10498917/	T1
+A-PAC-1	B1-009	ielp.worldtradelaw.net "Trade in Everything: Turkey Tails"	https://ielp.worldtradelaw.net/2011/11/trade-agreements-and-fatty-foods/	T2
+A-PAC-1	B6-053	NPR 2013-05-14	https://www.npr.org/sections/thesalt/2013/05/14/182568333/samoans-await-the-return-of-the-tasty-turkey-tail	T2
+A-PAC-1	B6-054	WTO briefing note MC8	https://www.wto.org/english/thewto_e/minist_e/min11_e/brief_samoa_e.htm	T1
+A-PAC-2	B1-010	PMC10498917 (журнальная статья)	https://pmc.ncbi.nlm.nih.gov/articles/PMC10498917/	T1
+A-PAC-2	B1-011	Food Policy journal (Thow et al.), FNU repository PDF	https://repository.fnu.ac.fj/3169/1/1-s2.0-S0306919210000771-main.pdf	T1
+A-PAC-2	B6-055	Food Policy 2010 (PDF, репозиторий FNU)	https://repository.fnu.ac.fj/3169/1/1-s2.0-S0306919210000771-main.pdf	T1
+A-PAC-2	B6-056	RNZ	https://www.rnz.co.nz/national/programmes/first-up/audio/2018753159/tongan-body-builder-says-banning-mutton-flaps-great-idea	T2
+A-PAC-2	B7-018	Snowdon & Thow, Obesity Reviews 2013 (via Ovid)	https://www.ovid.com/journals/obesr/fulltext/10.1111/obr.12090~trade-policy-and-obesity-prevention-challenges-and	T1
+A-PH-1	B1-031	Republic Act No. 10963 (текст закона)	https://lawyerly.ph/laws/view/l13aaf	T2/T3 (правовая база, текст закона)
+A-PH-1	B1-032	Republic Act No. 10963 (текст закона)	https://lawyerly.ph/laws/view/l13aaf	T2/T3
+A-PH-1	B1-033	dof.gov.ph, "ASEAN members cite TRAIN's sweetened beverage tax as successful pol	https://www.dof.gov.ph/asean-members-cite-trains-sweetened-beverage-tax-as-successful-policy-dof/	T1
+A-PH-1	B6-033	PMC6357562	pmcid:PMC6357562	T1
+A-TH-1	B1-034	USDA FAS GAIN report, "Thai Excise Department Implements New Sugar Tax on Bevera	https://apps.fas.usda.gov/newgainapi/api/report/downloadreportbyfilename?filename=Thai+Excise+Department+Implements+New+Sugar+Tax+on+Beverages_Bangkok	T1
+A-TH-1	B1-035	PMC8084227, "Impacts of a sugar sweetened beverage tax on body mass index"	https://pmc.ncbi.nlm.nih.gov/articles/PMC8084227/	T1
+A-TH-1	B1-036	IMF presentation, "Sugar Sweetened Beverages Tax in Thailand"	https://www.imf.org/-/media/files/news/seminars/2021/11-imfjapan-highlevel-tax-conference-for-asian-countries-day-2-presentation-mr-utensute.pdf	T1 (презентация МВФ с офиц. данными Таиланда)
+A-MN-1	B6-048	PMC12151437; SSRN 5365869	https://pmc.ncbi.nlm.nih.gov/articles/PMC12151437/	T1

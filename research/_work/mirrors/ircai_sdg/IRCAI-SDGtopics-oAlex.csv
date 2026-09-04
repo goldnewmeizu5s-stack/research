@@ -1,0 +1,188 @@
+TOPIC-id,SDG,TOPIC,oA_cat
+1.00 SDG,1,SDG 1,ALL
+SDGt002,1,Extreme Poverty,Extreme poverty
+SDGt003,1,Microfinance,Micro finance
+SDGt004,1,Child Labour,Child labour
+SDGt005,1,Social Protection,Social protection
+SDGt006,1,Financial Inclusion,Financial inclusion
+SDGt007,1,Vulnerable Population,Vulnerable adult
+SDGt008,1,Development Aid,Development aid
+SDGt009,1,Multidimensional Poverty,Culture of poverty
+SDGt010,1,Cost of Poverty,Development economics
+SDGt011,1,Poverty Line,Poverty
+SDGt012,2,SDG 2,ALL
+SDGt013,2,Food Security,Food security
+SDGt014,2,Malnutrition,Protein malnutrition
+SDGt015,2,Agricultural Productivity,Agricultural productivity
+SDGt016,2,Sustainable Farming,Sustainable Agriculture
+SDGt017,2,Food policy,Food policy
+SDGt018,2,Rural Development,Rural development
+SDGt019,2,Smallholder Farmers,Small farm
+SDGt020,2,Food Systems,Food systems
+SDGt021,2,Zero Hunger,Food supply
+SDGt022,2,Resilient Agriculture,Biofortification
+SDGt023,3,SDG 3,ALL
+SDGt024,3,Rare Diseases,Rare disease
+SDGt025,3,Communicable Diseases,Clinical epidemiology
+SDGt026,3,Non-communicable Diseases,Non-communicable disease
+SDGt027,3,Maternal Health,Maternal health
+SDGt028,3,Vaccination Policy,Vaccination policy
+SDGt029,3,Public Healthcare,Public healthcare
+SDGt030,3,Cancer Research,Cancer research
+SDGt031,3,Mental Health,Mental health
+SDGt032,3,Public Health,Public health policy
+SDGt033,3,Tropical Disease,Tropical disease
+SDGt034,4,SDG 4,ALL
+SDGt035,4,Lifelong Learning,Lifelong learning
+SDGt036,4,Education Policy,Education policy
+SDGt037,4,Digital Literacy,Digital literacy
+SDGt038,4,Inclusive Education,Multicultural education
+SDGt039,4,Teacher Training,Teacher education
+SDGt040,4,Educational Technology,Educational technology
+SDGt041,4,Open Education,Open education
+SDGt042,4,Distance education,Distance education
+SDGt043,4,Capacity Building,Capacity building
+SDGt044,4,Special Education,Special education
+SDGt045,5,SDG 5,ALL
+SDGt046,5,Women's Empowerment,Women's empowerment
+SDGt047,5,Equal Opportunities,Gender equality
+SDGt048,5,Gender Parity,Gender studies
+SDGt049,5,Gender-based Violence,Gender violence
+SDGt050,5,Women's Rights,Women's studies
+SDGt051,5,Sex Offense,Sex offense
+SDGt052,5,Pay Equity,Pay Equity
+SDGt053,5,Discrimination,Social discrimination
+SDGt054,5,Minorities,Underrepresented Minority
+SDGt055,5,Representation,Transgender
+SDGt056,6,SDG 6,ALL
+SDGt057,6,Water Access,Water supply
+SDGt058,6,Sanitation & Hygiene,Sanitation
+SDGt059,6,Water-borne Disease,Escherichia coli
+SDGt060,6,Wastewater Management,Wastewater
+SDGt061,6,Clean Drinking Water,Clean water
+SDGt062,6,Water Scarcity,Water scarcity
+SDGt063,6,Water Resource Management,Water resource management
+SDGt064,6,Water Quality,Water quality
+SDGt065,6,Water Policy,Water right
+SDGt066,6,Water Pollution,Water pollution
+SDGt067,7,SDG 7,ALL
+SDGt068,7,Renewable Energy,Renewable energy
+SDGt069,7,Energy Access,Energy poverty
+SDGt070,7,Clean Energy,Clean energy
+SDGt071,7,Energy Efficiency,Energy resources
+SDGt072,7,Energy Conservation,Energy conservation
+SDGt073,7,Energy Recycling,Energy recovery
+SDGt074,7,Sustainable Energy,Sustainable energy
+SDGt075,7,Energy Infrastructure,Energy development
+SDGt076,7,Energy Policy,Energy policy
+SDGt077,7,Nuclear Energy,Nuclear energy policy
+SDGt078,8,SDG 8,ALL
+SDGt079,8,Unemployment,Unemployment
+SDGt080,8,Economic Development,Socioeconomic development
+SDGt081,8,Sustainable Tourism,Sustainable tourism
+SDGt082,8,Entrepreneurship,Entrepreneurship
+SDGt083,8,Labor Rights,Laour law
+SDGt084,8,Decent Work,Division of labour
+SDGt085,8,Economic inclusivity,Inclusive growth
+SDGt086,8,Resource Efficiency,Resource efficiency
+SDGt087,8,Youth Employment,Youth unemployment
+SDGt088,8,Corporate Social Responsibility,Corporate social responsibility
+SDGt089,9,SDG 9,ALL
+SDGt090,9,Infrastructure,Infrastructure planning
+SDGt091,9,Industrialization,Deindustrialization
+SDGt092,9,Research & Development,Research policy
+SDGt093,9,Open Innovation,Open innovation
+SDGt094,9,Sustainable industries,Green infrastructure
+SDGt095,9,Technology Resilience,Critical infrastructure protection
+SDGt096,9,Industrial Policy,Industrial policy
+SDGt097,9,NaTech Accidents,Domino effect
+SDGt098,9,Green Economy,Green economy
+SDGt099,9,Digital Transformation,Digital transformation
+SDGt100,10,SDG 10,ALL
+SDGt101,10,Social exclusion,Social exclusion
+SDGt102,10,Discrimination,Social discrimination
+SDGt103,10,Income Inequality,Income inequality metrics
+SDGt104,10,Social Mobility,Social mobility
+SDGt105,10,Equitable Opportunities,Equal opportunity
+SDGt106,10,Migrants & Refugees,Migration studies
+SDGt107,10,Developmental disability,Disability discremination
+SDGt108,10,Global Citizenship,Global citizenship
+SDGt109,10,Fair Trade,Fair trade
+SDGt110,10,Distribution of wealth,Distribution of wealth
+SDGt111,11,SDG 11,ALL
+SDGt112,11,Green Urban Planning,Urban Planning
+SDGt113,11,Affordable Housing,Affordable Housing
+SDGt114,11,Sustainable Transport,Public Transport
+SDGt115,11,Resilient Infrastructure,Critical infrastructure
+SDGt116,11,Smart Cities,Smart city
+SDGt117,11,Waste Management,Solid waste management
+SDGt118,11,Air Quality,Air quality index
+SDGt119,11,Sustainable Communities,Sustainable community
+SDGt120,11,Disaster Preparedness,Disaster preparedness
+SDGt121,11,Sustainable Cities,Sustainable city
+SDGt122,12,SDG 12,ALL
+SDGt123,12,Waste Reduction,Waste treatment
+SDGt124,12,Recycling,Waste recycling
+SDGt125,12,Sustainable Production,Sustainable production
+SDGt126,12,Sustainable Consumption,Sustainable consumption
+SDGt127,12,Circular Economy,Circular economy
+SDGt128,12,Resource Efficiency,Environmental resource management
+SDGt129,12,Consumer Awareness,Sustainable community
+SDGt130,12,Supply Chains,Supply chain management
+SDGt131,12,Eco-friendly Products,Ecodesign
+SDGt132,12,Environmental Impact Assessment,Environmental impact assessment
+SDGt133,13,SDG 13,ALL
+SDGt134,13,Climate Change,Climate change
+SDGt135,13,Carbon Footprint,Carbon footprint
+SDGt136,13,Climate Justice,Climate justice
+SDGt137,13,Mitigation & Adaptation,Climate change adaptation
+SDGt138,13,Climate Resilience,Climate resilience
+SDGt139,13,Global Warming,Global warming
+SDGt140,13,Climate Risk,Climate risk
+SDGt141,13,Climate Crisis,Abrupt climate change
+SDGt142,13,Climate Policy,Climate policy
+SDGt143,13,Disaster Risk Reduction,Disaster risk reduction
+SDGt144,14,SDG 14,ALL
+SDGt145,14,Marine Ecosystems,Marine ecosystem
+SDGt146,14,Ocean Conservation,Marine conservation
+SDGt147,14,Fisheries,Fisheries law
+SDGt148,14,Marine Pollution,Marine pollution
+SDGt149,14,Marine Biodiversity,Marine biodiversity
+SDGt150,14,Sustainable Fishing,Fisheries management
+SDGt151,14,Ocean Acidification,Ocean acidification
+SDGt152,14,Coral Reefs,Coral reef protection
+SDGt153,14,Marine Resources,Marine biology
+SDGt154,14,Coastal Protection,Coastal zone
+SDGt155,15,SDG 15,ALL
+SDGt156,15,Deforestation,Community forestry
+SDGt157,15,Biodiversity conservation,Biodiversity conservation
+SDGt158,15,Land Degradation,Land degradation
+SDGt159,15,Reforestation,Reforestation
+SDGt160,15,Ecosystem Restoration,Ecosystem respiration
+SDGt161,15,Wildlife Conservation,Wildlife conservation
+SDGt162,15,Desertification,Desertification
+SDGt163,15,Protected Areas,Protected area
+SDGt164,15,Sustainable Forestry,Agroforestry
+SDGt165,15,Soil Health,Soil health
+SDGt166,16,SDG 16,ALL
+SDGt167,16,Rule of Law,Rule of law
+SDGt168,16,Human Rights,Human Rights
+SDGt169,16,Justice,Interactional justice
+SDGt170,16,Transparency,Political culture
+SDGt171,16,Anti-Corruption,Political corruption
+SDGt172,16,Strong Institutions,Institutional research
+SDGt173,16,Accountability,Accountability
+SDGt174,16,Conflict Resolution,Conflict resolution
+SDGt175,16,Autonomy,Personal autonomy
+SDGt176,16,Inclusivity,Inclusive growth
+SDGt177,17,SDG 17,ALL
+SDGt178,17,Global Cooperation,Cross-border cooperation
+SDGt179,17,Financial Aid,Scholarship
+SDGt180,17,Capacity Building,Capacity building
+SDGt181,17,Technology Transfer,Technology transfer
+SDGt182,17,Stakeholder Engagement,Stakeholder engagement
+SDGt183,17,Trade Policies,Trademark
+SDGt184,17,International Partnerships,International investment
+SDGt185,17,Policy Coherence,Policy transfer
+SDGt186,17,Resource Mobilization,Resource mobilization
+SDGt187,17,Multilateral Agreements,Multilateral trade negotiations

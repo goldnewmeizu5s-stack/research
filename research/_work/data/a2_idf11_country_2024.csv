@@ -1,0 +1,223 @@
+idf_region,country_idf,footnote,n_adults_1000s_2024,prev_2024_pct,age_adj_prev_2024_pct,undiagnosed_2024_pct,page
+AFR,AFR,,24600.0,4.2,5.0,73.0,107
+AFR,Angola,,688.8,4.1,4.9,68.8,107
+AFR,Benin,,466.8,7.1,8.1,89.8,107
+AFR,Botswana,,58.2,3.7,4.6,60.5,107
+AFR,Burkina Faso,,372.3,3.4,4.5,90.4,107
+AFR,Burundi,,214.1,3.6,4.3,60.2,107
+AFR,Cameroon,,774.2,5.6,6.9,73.1,107
+AFR,Cabo Verde,,22.0,5.6,6.8,30.8,107
+AFR,Central African Republic,,141.1,6.0,7.6,73.1,107
+AFR,Chad,,464.2,5.9,7.3,73.1,107
+AFR,Comoros,,39.0,8.6,10.8,47.5,107
+AFR,Democratic Republic of the Congo,,2859.8,6.3,7.7,73.1,107
+AFR,Djibouti,,41.0,5.9,6.5,60.2,107
+AFR,Equatorial Guinea,,65.6,7.2,8.2,73.1,107
+AFR,Eritrea,,70.2,3.7,4.4,46.1,107
+AFR,Eswatini,,40.8,6.1,7.9,61.3,107
+AFR,Ethiopia,,2297.3,3.6,4.4,76.4,107
+AFR,Gabon,,100.9,7.5,8.5,73.1,107
+AFR,Gambia,,54.0,4.1,5.5,78.7,107
+AFR,Ghana,,317.4,1.7,2.7,78.7,107
+AFR,Guinea,,244.6,3.5,4.6,78.7,107
+AFR,Guinea-Bissau,,39.9,3.7,4.8,78.7,107
+AFR,Côte d'Ivoire,,529.2,3.7,5.0,78.7,107
+AFR,Kenya,,813.3,2.8,3.1,53.6,107
+AFR,Lesotho,,63.3,4.8,6.2,58.2,107
+AFR,Liberia,,198.1,7.4,9.2,85.1,107
+AFR,Madagascar,,599.3,3.8,4.6,68.8,107
+AFR,Malawi,,540.1,5.5,5.7,78.7,107
+AFR,Mali,,357.4,3.6,4.8,78.7,107
+AFR,Mauritania,,95.7,4.0,5.2,78.7,107
+AFR,Mayotte,,6.4,4.1,4.6,68.8,107
+AFR,Mozambique,,404.5,2.5,3.0,88.6,107
+AFR,Namibia,,62.8,4.4,5.3,56.4,107
+AFR,Niger,,505.9,4.5,4.1,78.7,107
+AFR,Nigeria,,2988.5,2.8,3.0,78.7,107
+AFR,Congo,,213.7,7.0,8.1,73.1,107
+AFR,Rwanda,,130.8,1.8,2.1,85.6,107
+AFR,Sao Tome and Principe,,12.4,10.7,12.1,73.1,107
+AFR,Senegal,,251.6,2.9,3.8,78.7,107
+AFR,Seychelles,,7.4,9.9,9.3,39.7,107
+AFR,Sierra Leone,,170.0,3.7,4.8,78.7,107
+AFR,Somalia,,377.6,4.8,5.8,60.2,107
+AFR,South Africa,,2324.2,6.1,7.2,70.3,107
+AFR,South Sudan,,207.4,4.1,4.6,60.2,107
+AFR,Togo,,177.5,3.9,4.8,80.1,107
+AFR,Uganda,,369.1,1.7,2.2,61.2,107
+AFR,United Republic of Tanzania,,2928.0,9.2,9.8,60.2,107
+AFR,Western Sahara,,22.3,5.5,5.8,78.7,107
+AFR,Zambia,,750.4,7.6,10.3,86.0,107
+AFR,Zimbabwe,,106.5,1.28,1.5,68.8,107
+EUR,EUR,,65600.0,9.8,8.0,34.0,109
+EUR,Albania,,261.4,12.4,10.6,33.5,109
+EUR,Andorra,,7.9,12.5,10.1,28.5,109
+EUR,Armenia,,168.1,8.5,7.7,40.6,109
+EUR,Austria,,479.4,7.2,5.4,28.5,109
+EUR,Azerbaijan,,715.3,9.9,10.2,33.9,109
+EUR,Belarus,,445.4,6.3,5.1,29.1,109
+EUR,Belgium,,641.6,7.6,5.9,37.0,109
+EUR,Bosnia and Herzegovina,,316.4,12.9,10.3,33.5,109
+EUR,Bulgaria,,482.0,9.6,7.4,38.1,109
+EUR,Croatia,,409.8,13.7,10.5,28.5,109
+EUR,Cyprus,,106.1,11.1,10.0,36.6,109
+EUR,Czechia,,765.9,9.8,7.6,16.7,109
+EUR,Denmark,,354.7,8.2,6.4,22.3,109
+EUR,Estonia,,83.9,8.8,6.9,48.7,109
+EUR,Faroe Islands,,2.5,7.0,5.3,31.4,109
+EUR,Finland,,400.4,9.8,6.9,18.8,109
+EUR,France,,4107.0,9.0,6.5,24.1,109
+EUR,Georgia,,200.7,7.8,6.7,36.9,109
+EUR,Germany,,6485.3,10.6,7.8,20.4,109
+EUR,Greece,,873.8,11.4,8.0,28.5,109
+EUR,Greenland,,2.0,5.0,4.3,28.5,109
+EUR,Guernsey,,4.2,8.9,7.6,28.5,109
+EUR,Hungary,,765.0,10.1,8.3,16.7,109
+EUR,Iceland,,21.9,8.1,6.9,28.5,109
+EUR,Ireland,,158.5,4.4,3.6,31.2,109
+EUR,Isle of Man,,6.4,10.2,7.5,28.5,109
+EUR,Israel,,616.4,10.8,10.1,28.5,109
+EUR,Italy,,5018.4,11.4,7.7,28.5,109
+EUR,Jersey,,7.6,8.8,7.6,28.5,109
+EUR,Kazakhstan,,842.3,6.9,6.8,56.7,109
+EUR,Kosovo (under UNSC res.1244),,119.6,10.4,10.4,33.5,109
+EUR,Kyrgyzstan,,263.1,6.8,7.6,56.7,109
+EUR,Latvia,,126.6,9.6,7.1,28.5,109
+EUR,Liechtenstein,,2.9,9.7,7.2,28.5,109
+EUR,Lithuania,,210.6,10.6,7.5,28.5,109
+EUR,Luxembourg,,33.1,6.7,5.8,26.2,109
+EUR,Malta,,48.0,11.5,10.0,43.2,109
+EUR,Republic of Moldova,,165.5,6.8,6.3,36.9,109
+EUR,Monaco,,2.8,11.4,6.9,28.5,109
+EUR,Montenegro,,57.8,12.7,10.7,33.5,109
+EUR,Netherlands,,895.7,6.9,5.0,28.5,109
+EUR,North Macedonia,,140.8,8.9,7.4,33.5,109
+EUR,Norway,,246.2,6.1,4.8,28.5,109
+EUR,Poland,,3098.6,10.2,8.1,18.9,109
+EUR,Portugal,,1094.8,14.3,10.5,43.6,109
+EUR,Romania,,1320.0,9.1,7.5,21.4,109
+EUR,Russian Federation,,7577.6,7.1,5.9,40.5,109
+EUR,San Marino,,3.1,12.2,8.6,28.5,109
+EUR,Serbia,,718.5,13.3,10.5,33.5,109
+EUR,Slovakia,,393.6,9.1,7.1,28.5,109
+,Slovenia,,153.4,9.7,7.0,28.5,111
+,Spain,,4660.2,13.1,9.7,35.5,111
+,Sweden,,566.6,7.5,5.8,28.5,111
+,Switzerland,,433.3,6.6,5.3,28.5,111
+,Tajikistan,,383.5,6.8,8.0,56.7,111
+,Türkiye,,9603.1,16.3,16.5,45.5,111
+,Turkmenistan,,264.1,6.6,7.1,39.5,111
+,Ukraine,,2276.8,8.0,6.0,36.9,111
+,United Kingdom,,4454.6,9.2,7.4,28.7,111
+,Uzbekistan,,1501.9,6.9,7.5,74.0,111
+MENA,MENA,,84700.0,17.6,19.9,37.2,113
+MENA,Afghanistan,,1932.8,9.7,11.7,71.4,113
+MENA,Algeria,,4761.8,16.9,17.5,31.7,113
+MENA,Bahrain,,197.6,17.8,22.1,46.4,113
+MENA,Egypt,,13214.5,19.8,22.4,62.0,113
+MENA,Iraq,,2669.4,11.0,13.4,47.1,113
+MENA,Iran (Islamic Republic of),,5453.6,8.8,9.0,32.6,113
+MENA,Jordan,,1086.5,16.3,20.5,18.6,113
+MENA,Kuwait,,908.5,28.4,25.6,37.3,113
+MENA,Lebanon,,439.7,13.6,12.3,26.1,113
+MENA,Libya,,634.8,14.6,15.8,31.7,113
+MENA,Morocco,,2881.0,11.6,11.9,31.7,113
+MENA,Oman,,412.3,13.2,17.0,50.0,113
+MENA,Pakistan,,34532.4,26.5,31.4,26.9,113
+MENA,Qatar,,409.3,18.7,24.6,46.4,113
+MENA,Saudi Arabia,,5344.6,21.4,23.1,43.6,113
+MENA,State of Palestine,,315.3,11.2,15.5,30.2,113
+MENA,Sudan,,3860.6,16.0,19.0,37.3,113
+MENA,Syrian Arab Republic,,2246.1,15.7,19.0,26.1,113
+MENA,Tunisia,,1392.9,16.6,16.0,31.7,113
+MENA,United Arab Emirates,,1274.2,16.5,20.7,64.0,113
+MENA,Yemen,,720.8,4.1,5.5,22.3,113
+NAC,NAC,,56200.0,15.1,13.8,29.1,115
+NAC,Antigua and Barbuda,,8.6,12.5,11.6,24.5,115
+NAC,Aruba,,4.2,5.2,4.6,22.5,115
+NAC,Bahamas,,26.8,8.9,8.9,24.5,115
+NAC,Barbados,,34.4,16.4,13.2,23.8,115
+NAC,Belize,,31.4,12.0,14.1,41.9,115
+NAC,Bermuda,,8.1,16.7,13.4,26.4,115
+NAC,Canada,,2822.1,9.7,7.7,28.9,115
+NAC,Cayman Islands,,6.2,11.4,11.1,26.4,115
+NAC,Curaçao,,22.1,15.5,13.4,24.5,115
+NAC,Dominica,,6.7,12.8,12.9,24.5,115
+NAC,Grenada,,9.4,11.1,11.3,24.5,115
+NAC,Guyana,,75.7,14.9,16.4,36.0,115
+NAC,Haiti,,541.8,7.9,8.5,29.4,115
+NAC,Jamaica,,235.6,11.6,12.5,24.3,115
+NAC,Mexico,,13587.4,15.8,16.4,41.3,115
+NAC,Saint Kitts and Nevis,,5.0,14.5,13.8,24.5,115
+NAC,Saint Lucia,,15.2,11.3,11.4,24.5,115
+NAC,Saint Vincent and the Grenadines,,6.4,9.0,8.6,24.5,115
+NAC,Suriname,,53.2,13.2,13.8,39.6,115
+NAC,Trinidad and Tobago,,151.2,13.5,12.4,24.5,115
+NAC,United States of America,,38536.4,15.7,13.7,24.8,115
+NAC,United States Virgin Islands,,8.7,12.5,9.1,26.9,115
+SACA,SACA,,35400.0,10.0,10.1,30.4,117
+SACA,Argentina,,4342.1,14.1,14.0,29.1,117
+SACA,Bolivia (Plurinational State of),,194.0,2.6,3.4,25.5,117
+SACA,Brazil,,16621.4,10.7,10.6,31.9,117
+SACA,Chile,,1863.7,13.0,12.2,17.1,117
+SACA,Colombia,,3033.8,8.3,8.4,16.2,117
+SACA,Costa Rica,,375.7,10.0,9.8,26.4,117
+SACA,Cuba,,847.4,10.1,9.4,39.0,117
+SACA,Dominican Republic,,1203.7,16.6,17.6,42.8,117
+SACA,Ecuador,,552.8,4.6,4.9,20.0,117
+SACA,El Salvador,,463.3,11.2,12.7,23.2,117
+SACA,Guatemala,,1103.7,10.5,13.2,48.8,117
+SACA,Honduras,,259.6,4.0,5.0,51.9,117
+SACA,Nicaragua,,377.0,8.7,10.4,44.6,117
+SACA,Panama,,312.8,10.7,11.1,39.8,117
+SACA,Paraguay,,352.2,8.2,9.4,33.2,117
+SACA,Peru,,1335.8,6.0,6.4,25.5,117
+SACA,Puerto Rico,,345.8,14.1,10.9,26.9,117
+SACA,Uruguay,,201.5,8.4,7.8,48.9,117
+SACA,Venezuela (Bolivarian Republic of),,1580.7,8.5,8.6,33.6,117
+SEA,SEA,,106900.0,9.7,10.8,42.7,119
+SEA,Bangladesh,,13877.4,12.3,13.2,39.1,119
+SEA,Bhutan,,57.3,10.4,12.0,39.9,119
+SEA,India,,89826.9,9.5,10.5,43.0,119
+SEA,Maldives,,30.9,8.4,9.5,28.2,119
+SEA,Mauritius,,218.1,22.2,20.1,28.2,119
+SEA,Nepal,,1259.1,6.6,7.7,70.4,119
+SEA,Sri Lanka,,1600.5,10.7,10.2,37.7,119
+WP,WP,,215400.0,12.4,11.1,50.0,121
+WP,Australia,,1693.7,8.85,7.4,28.0,121
+WP,Brunei Darussalam,,44.6,13.85,13.7,44.7,121
+WP,Cambodia,,723.2,6.8,7.5,50.0,121
+WP,China,,147981.2,13.79,11.9,49.7,121
+WP,Dem. People's Republic of Korea,,2043.5,10.78,9.9,53.5,121
+WP,Micronesia (Fed. States of),,12.1,17.41,19.2,73.2,121
+WP,Fiji,,90.3,15.34,16.6,47.5,121
+WP,French Polynesia,,51.2,23.47,22.8,32.9,121
+WP,Guam,,24.4,21.93,20.3,32.9,121
+WP,"China, Hong Kong SAR",,706.0,11.91,8.2,54.2,121
+WP,Indonesia,,20426.4,11.0,11.3,73.2,121
+WP,Japan,,10763.5,12.0,8.1,31.3,121
+WP,Kiribati,,16.0,21.5,24.6,55.0,121
+WP,Lao People's Democratic Republic,,255.1,5.5,6.7,41.9,121
+WP,"China, Macao SAR",,52.3,9.3,8.1,54.2,121
+WP,Malaysia,,4753.9,19.9,21.1,50.4,121
+WP,Marshall Islands,,6.0,24.0,25.7,65.0,121
+WP,Mongolia,,208.5,10.0,10.3,74.7,121
+WP,Myanmar,,2365.8,6.4,6.7,49.7,121
+WP,Nauru,,1.3,19.1,21.8,32.9,121
+WP,New Caledonia,,46.1,22.8,22.0,32.9,121
+WP,New Zealand,,292.0,7.8,6.7,25.7,121
+WP,Niue,,0.3,21.1,18.1,56.3,121
+WP,Palau,,2.7,20.8,19.3,56.3,121
+WP,Papua New Guinea,,838.0,14.2,14.1,73.2,121
+WP,Philippines,,4726.3,6.6,7.5,53.5,121
+WP,Republic of Korea,,5030.1,12.2,9.6,28.3,121
+WP,Samoa,,28.2,23.7,25.4,83.9,121
+WP,Singapore,,699.1,14.1,11.4,37.3,121
+WP,Solomon Islands,,38.4,10.0,12.0,80.6,121
+WP,"Taiwan, Province of China",,2598.2,13.7,10.7,54.2,121
+WP,Thailand,,6360.8,11.7,10.2,33.3,121
+WP,Timor-Leste,,21.6,2.9,3.2,77.5,121
+WP,Tonga,,10.1,17.0,19.6,73.2,121
+WP,Tuvalu,,1.2,17.9,19.0,56.3,121
+WP,Vanuatu,,29.0,16.7,19.7,73.2,121
+WP,Viet Nam,,2499.9,3.6,3.4,37.8,121

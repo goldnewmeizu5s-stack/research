@@ -1,0 +1,62 @@
+UN members absent from NCD-RisC file: ['Liechtenstein', 'Monaco', 'San Marino', 'South Sudan']
+a2_full_table.csv rows: 200 | main ranking rows: 123
+UN members without WB 2023 population: []
+
+=== TOP-12 by absolute change (pp), UN members, pop>=5M ===
+             country     pop_2023  prev_both_2004  prev_both_2014  abs_change_pp_both  rel_change_pct_both  pp_per_year_both  prev_men_2004  prev_men_2014  prev_women_2004  prev_women_2014  rank_abs_main  rank_rel_main  rank_abs_all200
+               Egypt 114535772.00           13.43           17.90                4.47                33.29              0.45          12.02          15.99            14.85            19.82           1.00          14.00                7
+                Iraq  45074049.00           13.14           17.36                4.22                32.09              0.42          12.78          17.23            13.50            17.49           2.00          18.00                9
+        Turkmenistan   7364438.00            8.31           12.17                3.86                46.49              0.39           8.56          12.35             8.05            11.98           3.00           1.00               10
+             Lebanon   5773493.00            9.59           13.35                3.76                39.21              0.38          10.01          14.47             9.17            12.24           4.00           5.00               12
+    Papua New Guinea  10389635.00           11.38           14.84                3.46                30.35              0.35          11.85          15.36            10.91            14.32           5.00          21.00               17
+             Morocco  37712505.00           10.30           13.72                3.42                33.22              0.34          10.32          14.04            10.27            13.40           6.00          15.00               20
+               Yemen  39390799.00            7.98           11.37                3.39                42.41              0.34           8.78          12.59             7.18            10.14           7.00           3.00               22
+          Azerbaijan  10153958.00            8.92           12.30                3.38                37.85              0.34           8.28          11.57             9.56            13.03           8.00           8.00               23
+               Libya   7305659.00           12.62           15.89                3.28                25.96              0.33          11.89          15.20            13.34            16.59           9.00          32.00               24
+        Saudi Arabia  33702731.00           14.09           17.31                3.23                22.90              0.32          14.18          17.61            13.99            17.01          10.00          47.00               26
+Syrian Arab Republic  23594623.00           11.43           14.63                3.20                27.95              0.32          10.88          13.97            11.98            15.29          11.00          28.00               27
+                Iran  90608707.00            8.98           12.12                3.15                35.04              0.31           8.40          11.39             9.56            12.86          12.00          12.00               28
+
+=== TOP-12 by relative change (%), UN members, pop>=5M ===
+                 country    pop_2023  prev_both_2004  prev_both_2014  abs_change_pp_both  rel_change_pct_both  pp_per_year_both  prev_men_2004  prev_men_2014  prev_women_2004  prev_women_2014  rank_abs_main  rank_rel_main  rank_abs_all200
+            Turkmenistan  7364438.00            8.31           12.17                3.86                46.49              0.39           8.56          12.35             8.05            11.98           3.00           1.00               10
+              Tajikistan 10389799.00            6.95           10.09                3.14                45.15              0.31           7.02          10.27             6.88             9.91          13.00           2.00               29
+                   Yemen 39390799.00            7.98           11.37                3.39                42.41              0.34           8.78          12.59             7.18            10.14           7.00           3.00               22
+              Uzbekistan 35652307.00            7.47           10.59                3.12                41.82              0.31           7.43          10.48             7.51            10.70          15.00           4.00               31
+                 Lebanon  5773493.00            9.59           13.35                3.76                39.21              0.38          10.01          14.47             9.17            12.24           4.00           5.00               12
+Central African Republic  5152421.00            5.63            7.79                2.16                38.34              0.22           5.78           7.98             5.49             7.61          25.00           6.00               53
+                  Uganda 48656601.00            3.31            4.57                1.25                37.86              0.13           3.00           4.40             3.62             4.74          60.00           7.00              109
+              Azerbaijan 10153958.00            8.92           12.30                3.38                37.85              0.34           8.28          11.57             9.56            13.03           8.00           8.00               23
+                 Burundi 13689450.00            3.04            4.17                1.12                36.83              0.11           2.98           4.24             3.11             4.09          69.00           9.00              120
+                  Angola 36749906.00            6.01            8.17                2.16                36.01              0.22           6.14           8.52             5.88             7.83          24.00          10.00               52
+              Kyrgyzstan  7099750.00            7.64           10.38                2.74                35.82              0.27           7.42           9.93             7.86            10.82          17.00          11.00               37
+                    Iran 90608707.00            8.98           12.12                3.15                35.04              0.31           8.40          11.39             9.56            12.86          12.00          12.00               28
+
+=== Small states (<5M) that would be in Top-5 of UN-member ranking ===
+                         country  pop_2023  prev_both_2004  prev_both_2014  abs_change_pp_both  rel_change_pct_both  pp_per_year_both  prev_men_2004  prev_men_2014  prev_women_2004  prev_women_2014  rank_abs_main  rank_rel_main  rank_abs_all200
+                           Samoa 216663.00           19.26           24.61                5.35                27.79              0.54          17.56          22.66            20.96            26.57            NaN            NaN                2
+                     Saint Lucia 179285.00            9.44           14.44                5.00                52.95              0.50           8.51          13.74            10.37            15.14            NaN            NaN                3
+Micronesia (Federated States of) 112630.00           17.27           21.94                4.67                27.04              0.47          15.94          20.51            18.61            23.37            NaN            NaN                5
+                           Tonga 104597.00           19.56           24.14                4.57                23.37              0.46          17.92          21.91            21.21            26.36            NaN            NaN                6
+
+=== Excluded non-UN entities ===
+                       country   pop_2023  prev_both_2004  prev_both_2014  abs_change_pp_both  rel_change_pct_both  pp_per_year_both  prev_men_2004  prev_men_2014  prev_women_2004  prev_women_2014  rank_abs_main  rank_rel_main  rank_abs_all200
+                       Tokelau        NaN           20.90           26.74                5.85                27.98              0.58          20.45          26.20            21.34            27.29            NaN            NaN                1
+                          Niue        NaN           22.29           27.09                4.80                21.55              0.48          22.03          26.84            22.54            27.33            NaN            NaN                4
+Occupied Palestinian Territory 5165775.00           12.71           16.99                4.28                33.68              0.43          12.18          16.52            13.24            17.46            NaN            NaN                8
+                  Cook Islands        NaN           24.73           27.47                2.75                11.11              0.27          25.64          28.26            23.81            26.69            NaN            NaN               36
+                       Bermuda   64698.00           12.54           14.83                2.28                18.20              0.23          12.02          14.22            13.06            15.43            NaN            NaN               47
+              French Polynesia  281118.00           18.86           20.78                1.92                10.16              0.19          20.33          22.34            17.40            19.22            NaN            NaN               63
+                   Puerto Rico 3203792.00           12.12           13.20                1.08                 8.95              0.11          12.12          12.99            12.11            13.41            NaN            NaN              123
+                American Samoa   47521.00           30.89           31.84                0.95                 3.08              0.10          31.10          30.82            30.68            32.86            NaN            NaN              137
+                        Taiwan        NaN            6.39            7.00                0.61                 9.63              0.06           6.84           8.02             5.94             5.98            NaN            NaN              160
+         China (Hong Kong SAR) 7536100.00            7.65            7.55               -0.11                -1.37             -0.01           8.83           9.26             6.48             5.84            NaN            NaN              189
+                     Greenland   56865.00            5.19            5.09               -0.11                -2.07             -0.01           5.56           5.58             4.83             4.59            NaN            NaN              190
+
+World-level check (simple mean of 200 countries, unweighted): 8.48 10.06
+
+IDF 11th parsed rows: 222 | regions: ['AFR', 'EUR', 'MENA', 'NAC', 'SACA', 'SEA', 'WP']
+IDF 11th region totals sum (1000s): 588800.0
+Empty DataFrame
+Columns: [country_idf, footnote]
+Index: []

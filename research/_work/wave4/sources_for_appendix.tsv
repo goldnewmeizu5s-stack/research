@@ -1,0 +1,451 @@
+n	name	url	tier	first_claim
+S1	WHO Global Health Observatory, Prevalence of obesity among adults, BMI >= 30 (age-standardized estimate) (%), 18+, both sexes; экспорт Our World in Data	https://raw.githubusercontent.com/dominicroye/obesity/master/share-of-adults-defined-as-obese.csv	T1	база данных
+S2	NCD Risk Factor Collaboration, Worldwide trends in diabetes since 1980 (Lancet 2016), age-standardised country file	https://raw.githubusercontent.com/banerjeemdx/Data-Visualisation-with-Tableau---NCD_RisC-dataset-on-BMI-Body-Mass-index-Diabetes-and-Blood-Pre/master/NCD_RisC_Lancet_2016_DM_age_standardised_countries.csv	T1	база данных
+S3	NCD-RisC, Worldwide trends in body-mass index (Lancet 2017), age-standardised country file	https://raw.githubusercontent.com/banerjeemdx/Data-Visualisation-with-Tableau---NCD_RisC-dataset-on-BMI-Body-Mass-index-Diabetes-and-Blood-Pre/master/NCD_RisC_Lancet_2017_BMI_age_standardised_country.csv	T1	база данных
+S4	World Bank, Population total (зеркало datahub), закреплённый коммит 075cd0da	https://raw.githubusercontent.com/datasets/population/075cd0da5b7268daa466c84b3b2ff109bf3aea7e/data/population.csv	T1	база данных
+S5	Member states of the United Nations (список 193)	https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations	T3	база данных
+S6	World Obesity Federation, World Obesity Atlas 2025	https://s3-eu-west-1.amazonaws.com/wof-files/World_Obesity_Atlas_2025_rev1.pdf	T2	база данных
+S7	World Obesity Federation, World Obesity Atlas 2023	https://s3-eu-west-1.amazonaws.com/wof-files/World_Obesity_Atlas_2023_Report.pdf	T2	база данных
+S8	World Obesity Federation, World Obesity Atlas 2022	https://s3-eu-west-1.amazonaws.com/wof-files/World_Obesity_Atlas_2022.pdf	T2	база данных
+S9	World Obesity Federation, World Obesity Atlas 2024	https://s3-eu-west-1.amazonaws.com/wof-files/WOF_Obesity_Atlas_2024.pdf	T2	база данных
+S10	International Diabetes Federation, IDF Diabetes Atlas 11th edition (2025)	https://international-diabetes-federation.s3.eu-west-1.amazonaws.com/media/uploads/sites/3/2025/10/IDF_Diabetes_Atlas_11th_Edition_2025_WEB.pdf	T1	база данных
+S11	IDF Diabetes Atlas 10th edition (2021), Country summary tables, NCBI Bookshelf	https://www.ncbi.nlm.nih.gov/books/n/idfatlas10e/appendices.s1/	T1	база данных
+S12	Anthropometric Profile of Latin American Population: Results From the ELANS Study (PMC8606788)	https://pmc.ncbi.nlm.nih.gov/articles/PMC8606788/	T1	A1-065
+S13	El-Kassas M., Esmat G., Arab J Gastroenterol (pmid:41839719)	https://pubmed.ncbi.nlm.nih.gov/41839719/	T1	A1-073
+S14	CDC/NCHS Health E-Stats, Table 1	https://www.cdc.gov/nchs/data/hestat/obesity-adult-17-18/obesity-adult.htm	T1	A1-074
+S15	CDC/NCHS Data Brief 508	https://www.cdc.gov/nchs/products/databriefs/db508.htm	T1	A1-076
+S16	NCD-RisC Lancet 2016 (PMC5081106), абстракт	https://pmc.ncbi.nlm.nih.gov/articles/PMC5081106/	T1	A2-096
+S17	IDF Diabetes Atlas 10th edition (2021), Country summary tables, NCBI Bookshelf	https://www.ncbi.nlm.nih.gov/books/NBK582202/table/appendices.tu3/	T1	A2-102
+S18	IDF Diabetes Atlas 10th edition (2021), Country summary tables, NCBI Bookshelf	https://www.ncbi.nlm.nih.gov/books/n/idfatlas10e/appendices.s1/	T1	A2-110
+S19	Sun et al. 2022, PMC11057359, абстракт	https://pmc.ncbi.nlm.nih.gov/articles/PMC11057359/	T1	A2-132
+S20	IDF 10th, Chapter 3 (NBK581940) и Table 4 PMC11057359	https://www.ncbi.nlm.nih.gov/books/NBK581940/	T1	A2-136
+S21	NCD-RisC Lancet 2024 (PMC7616842), абстракт	https://pmc.ncbi.nlm.nih.gov/articles/PMC7616842/	T1	A2-142
+S22	WHO news release 13.11.2024	https://www.who.int/news/item/13-11-2024-urgent-action-needed-as-global-diabetes-cases-increase-four-fold-over-past-decades	T1	A2-143
+S23	Pengpid & Peltzer 2022, BMJ Open, PMC9684960 (абстракт)	https://pmc.ncbi.nlm.nih.gov/articles/PMC9684960/	T1	A2-147
+S24	Pengpid & Peltzer 2022, Sci Rep, PMC9515107 (абстракт)	https://pmc.ncbi.nlm.nih.gov/articles/PMC9515107/	T1	A2-148
+S25	pmid:12714863 (абстракт)	https://pubmed.ncbi.nlm.nih.gov/12714863/	T1	A2-149
+S26	Costanian et al. 2014, Diabetes Res Clin Pract, pmid:25005850 (абстракт)	https://pubmed.ncbi.nlm.nih.gov/25005850/	T1	A2-150
+S27	PMC6233908 (абстракт)	https://pmc.ncbi.nlm.nih.gov/articles/PMC6233908/	T1 (вторичная цитата)	A2-151
+S28	pmid:30056190 (абстракт)	https://pubmed.ncbi.nlm.nih.gov/30056190/	T1	A2-152
+S29	AlSawahli et al. 2021, BMJ Open, PMC8212402 (абстракт)	https://pmc.ncbi.nlm.nih.gov/articles/PMC8212402/	T1	A2-153
+S30	Hegazi et al. 2015, Ann Glob Health, pmid:27108148 (абстракт)	https://pubmed.ncbi.nlm.nih.gov/27108148/	T1 (обзор)	A2-154
+S31	Gunaid 2002, pmid:15339127 (абстракт)	https://pubmed.ncbi.nlm.nih.gov/15339127/	T1	A2-155
+S32	pmid:18557451 (абстракт)	https://pubmed.ncbi.nlm.nih.gov/18557451/	T1	A2-156
+S33	pmid:8208193 (абстракт)	https://pubmed.ncbi.nlm.nih.gov/8208193/	T1	A2-157
+S34	pmid:7000592 (абстракт)	https://pubmed.ncbi.nlm.nih.gov/7000592/	T1	A2-158
+S35	pmid:23867899 (абстракт)	https://pubmed.ncbi.nlm.nih.gov/23867899/	T1	A2-159
+S36	高齢者の医療の確保に関する法律 (e-Gov 法令検索)	https://laws.e-gov.go.jp/law/357AC0000000080	T1	B1-001
+S37	特定健康診査及び特定保健指導の実施に関する基準 (省令419M60000100157)	https://laws.e-gov.go.jp/law/419M60000100157	T1	B1-002
+S38	高齢者の医療の確保に関する法律による保険者の前期高齢者交付金等に関する政令	https://laws.e-gov.go.jp/law/419M60000100140	T1	B1-003
+S39	Immigration New Zealand, "Acceptable Standard of Health"	https://www.immigration.govt.nz/about-us/news-centre/acceptable-standard-of-health/	T1	B1-004
+S40	Library of Congress blog; ibwlaw.co.nz	https://blogs.loc.gov/law/2013/07/how-big-is-too-big-for-new-zealand/	T2/T3	B1-005
+S41	Food Regulations (Cap. 283, Rg 1), reg. 184F	https://sso.agc.gov.sg/SL/SFA1973-RG1?ProvIds=pr184A-	T1	B1-006
+S42	PMC10498917 (журнальная статья)	https://pmc.ncbi.nlm.nih.gov/articles/PMC10498917/	T1	B1-008
+S43	PMC6670018	https://pmc.ncbi.nlm.nih.gov/articles/PMC6670018/	T1	B1-014
+S44	PMC10647377	https://pmc.ncbi.nlm.nih.gov/articles/PMC10647377/	T1	B1-015
+S45	НКЗ КНР, "关于做好健康体重管理门诊设置与管理工作的通知" (国卫办医政函〔2025〕113号)	https://www.nhc.gov.cn/wjw/c100378/202504/f94979ff66e0418aa5d610d12a12c848.shtml	T1	B1-016
+S46	НКЗ КНР, "关于印发'体重管理年'活动实施方案的通知"	https://www.nhc.gov.cn/ylyjs/gzdt/202406/41c64b9fd9774352af22f5274c1e831d.shtml	T1	B1-017
+S47	労働安全衛生法 (e-Gov 法令検索), ст.66	https://laws.e-gov.go.jp/law/347AC0000000057	T1	B1-019
+S48	어린이 식생활안전관리 특별법 (국가법령정보센터)	http://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=98630	T1	B1-021
+S49	law.go.kr, разъяснение (1차 해석)	https://www.law.go.kr/LSW/cgmExpcInfoP.do?cgmExpcDatSeq=459738&mode=2&ofiClsCd=350116	T1	B1-022
+S50	어린이 식생활안전관리 특별법 시행령 (국가법령정보센터)	https://www.law.go.kr/LSW/lsInfoP.do?urlMode=lsInfoP&lsId=010937	T1	B1-023
+S51	PBS, "PBAC advice on equitable access to GLP-1 obesity treatments"	https://www.pbs.gov.au/info/reviews/PBAC-advice-equitable-access-to-GLP-1-obesity-treatments	T1	B1-024
+S52	PBS news, "PBAC advice on equitable access to GLP-1 obesity treatments"	https://www.pbs.gov.au/news/2026/03/pbac-advice-on-equitable-access-to-glp-1-obesity-treatments-17-march-2026	T1	B1-025
+S53	TGA media release	https://www.tga.gov.au/news/media-releases/your-solution-compounding-pharmacy-undertakes-comply-advertising-rules-weight-loss-medicines	T1	B1-026
+S54	TGA media release	https://www.tga.gov.au/news/media-releases/update-glucagon-peptide-1-receptor-agonists-glp-1-ras-pharmacy-compounding-changes	T1	B1-027
+S55	immi.homeaffairs.gov.au, "Protecting health care and community services"	https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/health/protecting-health-care-and-community-services	T1	B1-029
+S56	Parliament of Australia, "Chapter 3 The Migration Health Requirement"	https://www.aph.gov.au/Parliamentary_Business/Committees/Joint/Completed_Inquiries/mig/disability/chapter3	T1	B1-030
+S57	dof.gov.ph, "ASEAN members cite TRAIN's sweetened beverage tax as successful policy"	https://www.dof.gov.ph/asean-members-cite-trains-sweetened-beverage-tax-as-successful-policy-dof/	T1	B1-033
+S58	USDA FAS GAIN report, "Thai Excise Department Implements New Sugar Tax on Beverages"	https://apps.fas.usda.gov/newgainapi/api/report/downloadreportbyfilename?filename=Thai+Excise+Department+Implements+New+Sugar+Tax+on+Beverages_Bangkok_Thailand_10-17-2017.pdf	T1	B1-034
+S59	PMC8084227, "Impacts of a sugar sweetened beverage tax on body mass index"	https://pmc.ncbi.nlm.nih.gov/articles/PMC8084227/	T1	B1-035
+S60	Campaign for Tobacco-Free Kids, "Government of Viet Nam Approves Life-Saving Taxes"	https://www.tobaccofreekids.org/press-releases/2025_06_18_government-of-viet-nam-approves-life-saving-taxes-on-tobacco-and-sugar-sweetened-beverages	T2 (профильная НКО, ссылается на офиц. закон)	B1-037
+S61	moh.gov.sg, "Update on the War on Diabetes"	https://www.moh.gov.sg/newsroom/update-on-the-war-on-diabetes/	T1	B1-039
+S62	국민건강보험법 시행령 (국가법령정보센터), ст.25	https://www.law.go.kr/LSW/lumLsLinkPop.do?lspttninfSeq=69419&ancYnChk=0&chrClsCd=010202	T1	B1-040
+S63	tax.gov.ae — Federal Tax Authority	https://tax.gov.ae/en/media.centre/news/federal.tax.authority.clarifies.new.aspx	T1	B2-004
+S64	WHO EMRO, East Mediterr Health J. 2024;30(11):720-729	https://www.emro.who.int/emhj-volume-30-2024/volume-30-issue-11/situation-analysis-of-sugar-sweetened-beverages-taxation-in-eastern-mediterranean-region.html	T1	B2-005
+S65	DoH Abu Dhabi, "Thiqa reimbursement policy for obesity medications"	https://www.doh.gov.ae/-/media/9F8611EF0B7841F28E2AAE4614327F59.ashx	T1	B2-008
+S66	PMC10757599 (рецензируемая статья)	https://pmc.ncbi.nlm.nih.gov/articles/PMC10757599/	T1	B2-010
+S67	SFDA, новость №17639	https://www.sfda.gov.sa/en/news/17639	T1	B2-011
+S68	State Information Service Egypt (sis.gov.eg)	https://sis.gov.eg/en/media-center/news/health-minister-100-million-healthy-lives-initiatives-deliver-289-million-services/	T1	B2-014
+S69	aile.gov.tr — Aile ve Sosyal Hizmetler Bakanlığı	https://www.aile.gov.tr/eyhgm/mevzuat/ulusal-mevzuat/yonetmelikler/surucu-adaylari-ve-suruculerde-aranacak-saglik-sartlari-ile-muayenelerine-dair-yonetmelik/	T1	B2-015
+S70	PMC10755473, "Israel's repeal of a sweet beverages tax harms public health"	https://pmc.ncbi.nlm.nih.gov/articles/PMC10755473/	T1	B2-018
+S71	WHO Europe Health Systems and Policies Monitor (eurohealthobservatory.who.int)	https://eurohealthobservatory.who.int/monitors/health-systems-monitor/updates/hspm/israel-2015/sugar-beverage-tax-cancelled-after-one-year-of-implementation	T1	B2-019
+S72	PMC11581873, "Global overview of government-endorsed nutrition labeling policies of packaged foods"	https://pmc.ncbi.nlm.nih.gov/articles/PMC11581873/	T1	B2-021
+S73	Sağlık Bakanlığı (saglik.gov.tr)	https://www.saglik.gov.tr/TR-52851/okullarda-satisi-yapilabilecek-yiyecek-ve-icecekler-icin-logo-uygulamasi-01012019.html	T1	B2-023
+S74	Tarım ve Orman Bakanlığı (tarimorman.gov.tr), PDF	https://www.tarimorman.gov.tr/GKGM/Belgeler/DB_Gida_Isletmeleri/Okul_Gidasi_SB_Bilim_Kurulu_Karar_Tutanagi.pdf	T1	B2-024
+S75	PMC7685619, "Results from the first Kuwait National Bariatric Surgery Report"	https://pmc.ncbi.nlm.nih.gov/articles/PMC7685619/	T1	B2-026
+S76	moph.gov.qa vs pubmed.ncbi.nlm.nih.gov/40549421	https://www.moph.gov.qa/english/strategies/Supporting-Strategies-and-Frameworks/nationaldiabetesstrategy/Pages/default.aspx	T1 (оба источника T1, расхождение между ними)	B2-027
+S77	Retsinformation, Lov nr. 247 af 30/03/2011	https://www.retsinformation.dk/eli/lta/2011/247/pdf	T1	B3-001
+S78	Bødker et al., Health Policy 2015 (pmid:25840733)	https://pubmed.ncbi.nlm.nih.gov/25840733/	T1 (абстракт)	B3-003
+S79	Retsinformation, BEK 2014/708 (ссылка)	https://www.retsinformation.dk/eli/lta/2014/708/dan/pdf	T1	B3-005
+S80	Danmarks Statistik, Nationalregnskab 2021–2024	https://www.dst.dk/nytpdf/48869	T1	B3-007
+S81	Danmarks Statistik NYT 52231	https://www.dst.dk/nyt/52231	T1	B3-008
+S82	Danmarks Statistik, Nationalregnskab 2023–2025	https://www.dst.dk/nytpdf/52231	T1	B3-009
+S83	Retsinformation BEK 2015/131	https://www.retsinformation.dk/eli/lta/2015/131	T1	B3-010
+S84	Retsinformation BEK 1427/2015	https://www.retsinformation.dk/api/pdf/175931	T1	B3-011
+S85	Commission Regulation (EU) 2019/649	https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R0649	T1	B3-012
+S86	Nemzeti Jogszabálytár, 2011. évi CIII. tv.	https://njt.hu/jogszabaly/2011-103-00-00	T1	B3-013
+S87	njt.hu 3. §	https://njt.hu/jogszabaly/2011-103-00-00.1	T1	B3-014
+S88	njt.hu ставки	https://njt.hu/jogszabaly/2011-103-00-00.8	T1	B3-015
+S89	pmid:37086420	https://pubmed.ncbi.nlm.nih.gov/37086420/	T1 (абстракт)	B3-016
+S90	Smed & Jensen? (pmid:29166954)	https://pubmed.ncbi.nlm.nih.gov/29166954/	T1 (абстракт)	B3-017
+S91	Finance Act 2017 s.29	https://www.legislation.gov.uk/ukpga/2017/10/section/29/data.xht	T1	B3-018
+S92	Finance Act 2017 s.30	https://www.legislation.gov.uk/ukpga/2017/10/part/2/crossheading/charging-of-the-soft-drinks-industry-levy	T1	B3-019
+S93	HM Treasury news	https://www.gov.uk/government/news/soft-drinks-industry-levy-comes-into-effect	T1	B3-020
+S94	PMC12142870	https://pmc.ncbi.nlm.nih.gov/articles/PMC12142870/	T1 (абстракт)	B3-022
+S95	pmid:39903599	https://pubmed.ncbi.nlm.nih.gov/39903599/	T1 (абстракт)	B3-023
+S96	Calorie Labelling (OHS) (England) Regs 2021	https://www.legislation.gov.uk/ukdsi/2021/9780348223538	T1	B3-024
+S97	PMC11015320	https://pmc.ncbi.nlm.nih.gov/articles/PMC11015320/	T1 (абстракт)	B3-025
+S98	PMC7352298	https://pmc.ncbi.nlm.nih.gov/articles/PMC7352298/	T1 (абстракт)	B3-026
+S99	pmid:30261242	https://pubmed.ncbi.nlm.nih.gov/30261242/	T1 (абстракт)	B3-027
+S100	DHSC guidance	https://www.gov.uk/government/publications/restricting-advertising-of-less-healthy-food-or-drink-on-tv-and-online-products-in-scope/restricting-advertising-of-less-healthy-food-or-drink-on-tv-and-online-products-in-scope	T1	B3-028
+S101	gov.uk collection	https://www.gov.uk/government/collections/less-healthy-food-or-drink-advertising-and-promotions-restrictions	T1	B3-029
+S102	gov.uk news 16.07.2026	https://www.gov.uk/government/news/childrens-health-further-protected-with-energy-drinks-ban	T1	B3-031
+S103	DVLA guidance	https://www.gov.uk/guidance/diabetes-mellitus-assessing-fitness-to-drive	T1	B3-033
+S104	pmid:18421936	https://pubmed.ncbi.nlm.nih.gov/18421936/	T1 (абстракт)	B3-035
+S105	FeV Anlage 4 Nr. 5.4	https://www.gesetze-im-internet.de/fev_2010/anlage_4.html	T1	B3-036
+S106	pmid:34142412	https://pubmed.ncbi.nlm.nih.gov/34142412/	T1 (абстракт)	B3-039
+S107	pmid:31331425	https://pubmed.ncbi.nlm.nih.gov/31331425/	T1 (абстракт)	B3-040
+S108	NICE TA875	https://www.nice.org.uk/guidance/ta875	T1	B3-041
+S109	NICE TA875 rec. 1.1	https://www.nice.org.uk/guidance/ta875/chapter/1-Recommendations	T1	B3-042
+S110	NICE TA875 PDF	https://www.nice.org.uk/guidance/ta875/resources/semaglutide-for-managing-overweight-and-obesity-pdf-82613674831813	T1	B3-043
+S111	PMC12705252	https://pmc.ncbi.nlm.nih.gov/articles/PMC12705252/	T1 (абстракт)	B3-044
+S112	NICE TA1152	https://www.nice.org.uk/guidance/ta1152	T1	B3-045
+S113	DHSC summary	https://www.gov.uk/government/publications/better-health-rewards-summary-of-pilot-results/better-health-rewards-pilot-summary-of-results	T1	B3-047
+S114	PMC9160476	https://pmc.ncbi.nlm.nih.gov/articles/PMC9160476/	T1 (абстракт)	B3-049
+S115	PMC7115827	https://pmc.ncbi.nlm.nih.gov/articles/PMC7115827/	T1 (абстракт)	B3-050
+S116	SGB V § 34	https://www.gesetze-im-internet.de/sgb_5/__34.html	T1	B3-051
+S117	pmid:40388976	https://pubmed.ncbi.nlm.nih.gov/40388976/	T1 (абстракт)	B3-054
+S118	SGB V § 65a	https://www.gesetze-im-internet.de/sgb_5/__65a.html	T1	B3-055
+S119	InfoCuria C-354/13 § 58	https://infocuria.curia.europa.eu/tabs/redirect/juris/document/document.jsf?docid=160935&doclang=EN	T1	B3-057
+S120	InfoCuria C-354/13 (резолютивная часть)	https://infocuria.curia.europa.eu/tabs/redirect/juris/document/document_print.jsf?docid=160935&doclang=EN	T1	B3-058
+S121	CSP art. L3232-9	https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031918053	T1	B3-059
+S122	Légifrance JORFTEXT000033922943	https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033922943/	T1	B3-060
+S123	CSP art. L2133-1	https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041466290	T1	B3-061
+S124	Légifrance, art. 29 Loi 2004-806	https://www.legifrance.gouv.fr/loda/article_lc/JORFARTI000001143058/2026-03-24	T1	B3-062
+S125	Arrêté du 27 février 2007	https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006055557	T1	B3-063
+S126	CGI art. 1613 ter	https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045764857/2022-05-07	T1	B3-064
+S127	pmid:35570062	https://pubmed.ncbi.nlm.nih.gov/35570062/	T1 (абстракт)	B3-066
+S128	PMC8819797	https://pmc.ncbi.nlm.nih.gov/articles/PMC8819797/	T1 (абстракт)	B3-071
+S129	Zorginstituut advies	https://www.zorginstituutnederland.nl/documenten/2024/07/12/gvs-advies-semaglutide-wegovy-bij-obesitas	T1	B3-072
+S130	ISAP Dz.U. 2020 poz. 1492	https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20200001492/T/D20201492L.pdf	T1	B3-075
+S131	gov.pl (IJHARS)	https://www.gov.pl/web/ijhars/podatek-cukrowy	T1	B3-076
+S132	Finanšu ministrija	https://www.fm.gov.lv/lv/nodokla-likmes	T1	B3-081
+S133	likumi.lv Par akcīzes nodokli	https://m.likumi.lv/ta/id/81066-par-akcizes-nodokli	T1	B3-082
+S134	vero.fi	https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/56208/virvoitusjuomaver/	T1	B3-083
+S135	Finlex HE 27/2019	https://www.finlex.fi/fi/hallituksen-esitykset/2019/27	T1	B3-084
+S136	NOU 2022:20	https://www.regjeringen.no/no/dokumenter/nou-2022-20/id2951826/?ch=16	T1	B3-085
+S137	PMC7491168	https://pmc.ncbi.nlm.nih.gov/articles/PMC7491168/	T1 (абстракт)	B3-086
+S138	PMC4498278	https://pmc.ncbi.nlm.nih.gov/articles/PMC4498278/	T1 (абстракт)	B3-090
+S139	BAG Neuaufnahme	https://www.bag.admin.ch/dam/de/sd-web/4UEBFvIzBFFM/wegovy-neuaufnahme-01-03-2024.pdf	T1	B3-091
+S140	BAG Limitationsänderung 01.05.2025	https://www.bag.admin.ch/dam/fr/sd-web/zo5pElZKCzLb/WEGOVY%20Limitations%C3%A4nderung%2001.05.2025%20befristet.pdf	T1	B3-092
+S141	PMC9012158	https://pmc.ncbi.nlm.nih.gov/articles/PMC9012158/	T1 (абстракт)	B3-096
+S142	Минздрав РБ, комментарий	https://minzdrav.gov.by/ru/novoe-na-sayte/kommentariy-k-postanovleniyam-ministerstva-zdravookhraneniya-94-i-95/	T1	B3-100
+S143	КМУ / НСЗУ	https://www.kmu.gov.ua/news/z-1-zhovtnya-paciyenti-zmozhut-otrimati-insulini-za-programoyu-dostupni-liki-nszu	T1	B3-102
+S144	МОЗ	https://moz.gov.ua/uk/preparati-dlja-likuvannja-diabetu-i-tipu-ta-necukrovogo-diabetu-vkljucheno-do-nacionalnogo-pereliku-osnovnih-likarskih-zasobiv	T1	B3-103
+S145	gov.ie DoH press release 24.04.2018	https://www.gov.ie/en/department-of-health/press-releases/government-welcomes-european-commission-approval-of-sugar-sweetened-drinks-tax/	T1	B3-104
+S146	pmid:27481150	https://pubmed.ncbi.nlm.nih.gov/27481150/	T1 (абстракт)	B3-105
+S147	Congress.gov, H.R.5376, Public Law 117-169	https://www.congress.gov/bill/117th-congress/house-bill/5376	T1	B4-001
+S148	eCFR, 29 CFR 2590.702	https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XXV/subchapter-L/part-2590/subpart-B/section-2590.702	T1	B4-004
+S149	arkleg.state.ar.us, статут §20-7-133	https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2FMeeting+Attachments%2F410%2FI14319%2FEX+H1+ACA+20+7+133+through+20+7+135.pdf	T1	B4-005
+S150	Federal Register, "Qualifications of Drivers; Diabetes Standard"	https://www.federalregister.gov/documents/2018/09/19/2018-20161/qualifications-of-drivers-diabetes-standard	T1	B4-007
+S151	PMC, статья PMC7511432	https://pmc.ncbi.nlm.nih.gov/articles/PMC7511432/	T1	B4-008
+S152	Michigan Legislature, MCL 37.2202	https://www.legislature.mi.gov/mileg.aspx%3Fpage%3DgetObject%26objectname%3Dmcl-37-2202	T1	B4-009
+S153	DOF, модификация NOM-051-SCFI/SSA1-2010	https://dof.gob.mx/normasOficiales/8150/seeco11_C/seeco11_C.html	T1	B4-011
+S154	BCN/LeyChile, Ley 20606 art. 7	https://www.bcn.cl/leychile/navegar?idNorma=1041570	T1	B4-013
+S155	Boletín Oficial, detalleAviso Ley 27642	https://www.boletinoficial.gob.ar/detalleAviso/primera/252728/20211112	T1	B4-015
+S156	HCDN, текст законопроекта об отмене	https://rest.hcdn.gob.ar/web/proyectos/291968/adjuntos/105773	T1	B4-016
+S157	Función Pública, Gestor Normativo, Ley 2277 de 2022	https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=199883	T1	B4-017
+S158	argentina.gob.ar/normativa, Ley 26396 texto original	https://www.argentina.gob.ar/normativa/nacional/norma-144033/texto	T1	B4-019
+S159	CMS, "Coming Soon: CMS to Provide $50 Monthly Access..."	https://www.cms.gov/newsroom/press-releases/coming-soon-cms-provide-50-monthly-access-glp-1-medications-medicare-beneficiaries	T1	B4-020
+S160	Medicare.gov, fact sheet PDF	https://www.medicare.gov/publications/12234-medicare-glp-1-bridge-glp-1-drugs-for-50-a-month.pdf	T1	B4-021
+S161	CMS, "Contract Year 2026 Policy and Technical Changes..."	https://www.cms.gov/newsroom/fact-sheets/contract-year-2026-policy-and-technical-changes-medicare-advantage-program-medicare-prescription	T1	B4-022
+S162	in.gov.br (Diário Oficial da União), RDC 429/2020	https://www.in.gov.br/en/web/dou/-/resolucao-de-diretoria-colegiada-rdc-n-429-de-8-de-outubro-de-2020-282070599	T1	B4-025
+S163	gov.br/anvisa, новость 16.04.2025	https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/canetas-emagrecedoras-so-poderao-ser-vendidas-com-retencao-de-receita	T1	B4-026
+S164	gov.br/anvisa, новость 20.11.2025	https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/anvisa-esclarece-sobre-proibicao-de-ingresso-de-canetas-emagrecedoras	T1	B4-027
+S165	Congreso de Oaxaca, dictamen 1184	https://www.congresooaxaca.gob.mx/docs64.congresooaxaca.gob.mx/documents/dictamen/1184.pdf	T1	B4-028
+S166	Government of Bermuda, "The Sugar Tax"	https://www.gov.bm/articles/sugar-tax	T1	B4-029
+S167	NYC Commission on Human Rights, официальная страница	https://www.nyc.gov/site/cchr/media/height-and-weight.page	T1	B4-034
+S168	DOF, ACUERDO, codigo=5740005	https://www.dof.gob.mx/nota_detalle.php?codigo=5740005&fecha=30/09/2024	T1	B4-036
+S169	BCN/LeyChile, API LeyFácil "Plan GES o AUGE"	https://www.bcn.cl/api-leyfacil/servicio/ObtenerGuiaPublicadaHTML?uri=plan-ges-ex-auge	T1	B4-037
+S170	gob.pe, Ministerio de Salud	https://www.gob.pe/1066-ministerio-de-salud-conoce-las-advertencias-publicitarias-octogonos	T1	B4-038
+S171	FAA, "New Protocols for Diabetics Seeking Air Transport and Commercial Pilots Medical Certification"	https://www.faa.gov/newsroom/new-protocols-diabetics-seeking-air-transport-and-commercial-pilots-medical-certification	T1	B4-040
+S172	law.justia.com, судебное решение Taylor v. Burlington N. R.R. Holdings, Inc.	https://law.justia.com/cases/washington/supreme-court/2019/96335-5.html	T1	B4-041
+S173	Función Pública, Gestor Normativo, Ley 2120 de 2021	https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=168029	T1	B4-044
+S174	FSSAI Gazette Notification (Safe Food and Balanced Diets for Children in School) Regulations 2020	https://fssai.gov.in/docs/food-law/regulations/Gazette_Notification_Safe_Food_Children_07_09_2020.pdf	T1	B5-001
+S175	FSSAI Food Safety and Standards Regulations	https://fssai.gov.in/cms/food-safety-and-standards-regulations.php	T1	B5-002
+S176	PMC8477491 Food environment in and around schools and colleges of Delhi	https://pmc.ncbi.nlm.nih.gov/articles/PMC8477491/	T1	B5-003
+S177	pmid:24561969	https://pubmed.ncbi.nlm.nih.gov/24561969/	T1	B5-005
+S178	pmid:26078247	https://pubmed.ncbi.nlm.nih.gov/26078247/	T1	B5-006
+S179	PMC11086919	https://pmc.ncbi.nlm.nih.gov/articles/PMC11086919/	T1	B5-007
+S180	CBSE Circular Acad-26/2025	https://cbseacademic.nic.in/web_material/Circulars/2025/26_Circular_2025.pdf	T1	B5-008
+S181	CBSE Circular Acad-45/2025	https://cbseacademic.nic.in/web_material/Circulars/2025/45_Circular_2025.pdf	T1	B5-009
+S182	PIB PRID=2144885	https://www.pib.gov.in/PressReleasePage.aspx?PRID=2144885	T1	B5-010
+S183	PIB PRID=1944600 Update on treatment of Diabetes	https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1944600	T1	B5-011
+S184	PIB PRID=2104884	https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2104884	T1	B5-012
+S185	pmid:41472431	https://pubmed.ncbi.nlm.nih.gov/41472431/	T1	B5-013
+S186	ncd.mohfw.gov.in	https://ncd.mohfw.gov.in/ncdlandingassets/aboutus.html	T1	B5-014
+S187	PMC13386696	https://pmc.ncbi.nlm.nih.gov/articles/PMC13386696/	T1	B5-015
+S188	PIB PRID=2163555	https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2163555	T1	B5-016
+S189	CBIC Notification No. 9/2025-Integrated Tax (Rate)	https://courier.cbic.gov.in/ECCS/advisory/2025/NOTIFICATION%20NO.%209_2025-INTEGRATED%20TAX%20(RATE	T1	B5-018
+S190	PMC10580107	https://pmc.ncbi.nlm.nih.gov/articles/PMC10580107/	T1	B5-020
+S191	pmid:41247585 OSSI survey	https://pubmed.ncbi.nlm.nih.gov/41247585/	T1	B5-022
+S192	IRDAI search listing	https://irdai.gov.in/	T1	B5-023
+S193	NPPA order 1540(E)	https://nppa.gov.in/1540e	T1	B5-025
+S194	PIB PRID=2154217	https://www.pib.gov.in/PressReleasePage.aspx?PRID=2154217	T1	B5-026
+S195	pmid:32552127	https://pubmed.ncbi.nlm.nih.gov/32552127/	T1	B5-027
+S196	Gazette (файл 2319-42_E.pdf, eohfs.health.gov.lk)	https://eohfs.health.gov.lk/food/images/2319-42_E.pdf	T1	B5-028
+S197	USDA FAIRS Country Report Annual 2025 (Sri Lanka)	https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=FAIRS%20Country%20Report%20Annual_Colombo_Sri%20Lanka_CE2025-0006.pdf	T1	B5-029
+S198	pmid:34872840 ADD-Punjab	https://pubmed.ncbi.nlm.nih.gov/34872840/	T1	B5-030
+S199	PMC12351034	https://pmc.ncbi.nlm.nih.gov/articles/PMC12351034/	T1	B5-031
+S200	eohfs.health.gov.lk Current Regulations	https://eohfs.health.gov.lk/food/index.php?option=com_content&view=article&id=18&Itemid=159&lang=en	T1	B5-032
+S201	PMC10795608	https://pmc.ncbi.nlm.nih.gov/articles/PMC10795608/	T1	B5-033
+S202	pmid:28013557	https://pubmed.ncbi.nlm.nih.gov/28013557/	T1	B5-034
+S203	WHO Global report on the use of SSB taxes 2023	https://iris.who.int/server/api/core/bitstreams/9dc39e4a-e2ba-4ae3-b10e-579101605264/content	T1	B5-038
+S204	pmid:36988952 JAMA Netw Open	https://pubmed.ncbi.nlm.nih.gov/36988952/	T1	B5-041
+S205	PMC13386411	https://pmc.ncbi.nlm.nih.gov/articles/PMC13386411/	T1	B5-042
+S206	SARS Health Promotion Levy on Sugary Beverages	https://www.sars.gov.za/customs-and-excise/excise/health-promotion-levy-on-sugary-beverages/	T1	B5-043
+S207	SARS media release 15.12.2017	https://www.sars.gov.za/media-release/sars-to-collect-sugar-tax-from-1-april-2018/	T1	B5-044
+S208	PMC9617427	https://pmc.ncbi.nlm.nih.gov/articles/PMC9617427/	T1	B5-045
+S209	NDoH R3337 Draft Labelling Regulations PDF	https://www.health.gov.za/wp-content/uploads/2023/05/R3337-Draft-Labelling-Regulations-21-April-2023-sc-compressed-1.pdf	T1	B5-046
+S210	NDoH Food Control - Regulations	https://www.health.gov.za/food-control-regulations/	T1	B5-047
+S211	pmid:39041537	https://pubmed.ncbi.nlm.nih.gov/39041537/	T1	B5-048
+S212	Council for Medical Schemes - PMB	https://www.medicalschemes.co.za/resources/pmb/	T1	B5-049
+S213	CMScript 9 of 2022	https://www.medicalschemes.co.za/cmscript-9-of-2022-focus-on-diabetes-mellitus-type-2/	T1	B5-050
+S214	pmid:24102989	https://pubmed.ncbi.nlm.nih.gov/24102989/	T1	B5-052
+S215	PMC11095260	https://pmc.ncbi.nlm.nih.gov/articles/PMC11095260/	T1	B5-053
+S216	MRA Excise Tax on Sugar Content	https://www.mra.mu/customs1/more-topics/excise-tax-on-sugar-content-of-sugar-sweetened-non-alcoholic-beverages	T1	B5-056
+S217	MRA Annual Report 2019/20	https://www.mra.mu/download/AnnualReport2019_20.pdf	T1	B5-058
+S218	PMC7725882	https://pmc.ncbi.nlm.nih.gov/articles/PMC7725882/	T1	B5-059
+S219	WHO AFRO	https://www.afro.who.int/news/seychelles-introduces-sugary-drink-tax	T1	B5-060
+S220	DailyNews (gov.bw)	https://dailynews.gov.bw/news-detail/60732	T1	B5-061
+S221	PMC13299423	https://pmc.ncbi.nlm.nih.gov/articles/PMC13299423/	T1	B5-065
+S222	PMC8079030	https://pmc.ncbi.nlm.nih.gov/articles/PMC8079030/	T1	B5-072
+S223	PMC8079049	https://pmc.ncbi.nlm.nih.gov/articles/PMC8079049/	T1	B5-073
+S224	PMC9113088	https://pmc.ncbi.nlm.nih.gov/articles/PMC9113088/	T1	B5-074
+S225	PMC9950544	https://pmc.ncbi.nlm.nih.gov/articles/PMC9950544/	T1	B5-075
+S226	pmid:41974918	https://pubmed.ncbi.nlm.nih.gov/41974918/	T1	B5-076
+S227	InfoLEG, Ley 26.396	https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/144033/norma.htm	T1	B6-001
+S228	PubMed 32621054 (Obes Surg)	pmid:32621054	T1	B6-002
+S229	PMC8819797	pmcid:PMC8819797	T1	B6-003
+S230	PubMed 21545019 (Rev Med Suisse)	pmid:21545019	T1	B6-004
+S231	Superintendencia de Salud	https://www.supersalud.gob.cl/tax-temas-de-orientacion/garantias-explicitas-en-salud-ges-1962/	T1	B6-005
+S232	Portaria SECTICS/MS nº 65/2025	https://www.gov.br/conitec/pt-br/midias/relatorios/portaria/2025/portaria-sectics-ms-no-65-de-15-de-setembro-de-2025	T1	B6-008
+S233	PMC10853087	pmcid:PMC10853087	T1	B6-009
+S234	MHLW 標準的な健診・保健指導プログラム (PDF)	https://www.mhlw.go.jp/content/10900000/001231390.pdf	T1	B6-010
+S235	PMC4008026	pmcid:PMC4008026	T1	B6-011
+S236	MHLW 職場のあんぜんサイト; MHLW PDF 0000136750	https://anzeninfo.mhlw.go.jp/yougo/yougo51_1.html	T1	B6-012
+S237	국가법령정보센터 국민건강보험법	https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1032088229	T1	B6-013
+S238	PubMed 26115907	pmid:26115907	T1	B6-015
+S239	PMC5808566; PubMed 25440454	pmcid:PMC5808566	T1	B6-016
+S240	PMC10195514	pmcid:PMC10195514	T1	B6-017
+S241	Әділет	https://adilet.zan.kz/rus/docs/V2200028747	T1	B6-019
+S242	PMC4499092	pmcid:PMC4499092	T1	B6-020
+S243	PubMed 20620423	pmid:20620423	T1	B6-021
+S244	PMC9871961	pmcid:PMC9871961	T1	B6-022
+S245	MHLW 後期高齢者支援金（2017年度）の加算・減算の方法	https://www.mhlw.go.jp/content/12401000/001294108.pdf	T1	B6-024
+S246	MHLW 後期高齢者支援金（2019年度）の加算について	https://www.mhlw.go.jp/content/12401000/000761454.pdf	T1	B6-025
+S247	PubMed 26477217; 23734399	pmid:26477217	T1	B6-026
+S248	PubMed 22311393	pmid:22311393	T1	B6-027
+S249	PMC5341431	pmcid:PMC5341431	T1	B6-028
+S250	WHO IRIS good practice brief	https://iris.who.int/items/5d18a875-6e4a-43bb-a692-45738665a1c3	T1	B6-029
+S251	WHO IRIS brief PDF	https://iris.who.int/bitstreams/4e7583cd-301c-4026-87b8-010068c5a1e1/download	T1	B6-030
+S252	PubMed 25351647; arXiv 2312.11481	pmid:25351647	T1	B6-031
+S253	PubMed 31472286	pmid:31472286	T1	B6-032
+S254	PMC6357562	pmcid:PMC6357562	T1	B6-033
+S255	PMC11850257	pmcid:PMC11850257	T1	B6-036
+S256	PMC6029755; PMC6029775	pmcid:PMC6029755	T1	B6-037
+S257	PMC7660521; PMC7012398	pmcid:PMC7660521	T1	B6-038
+S258	PMC11918417	pmcid:PMC11918417	T1	B6-039
+S259	PubMed 32302767; 42274281	pmid:32302767	T1	B6-040
+S260	PMC9379233; PMC9587584	pmcid:PMC9379233	T1	B6-041
+S261	PMC10580107	pmcid:PMC10580107	T1	B6-042
+S262	PMC10200428	pmcid:PMC10200428	T1	B6-043
+S263	PMC12911691	pmcid:PMC12911691	T1	B6-044
+S264	PMC10195599	pmcid:PMC10195599	T1	B6-046
+S265	PMC7350205	pmcid:PMC7350205	T1	B6-047
+S266	PMC12151437; SSRN 5365869	https://pmc.ncbi.nlm.nih.gov/articles/PMC12151437/	T1	B6-048
+S267	PubMed 36988952 (JAMA Netw Open 2023)	pmid:36988952	T1	B6-049
+S268	PubMed 32471769; PMC6354371	pmid:32471769	T1	B6-050
+S269	PMC10565185	pmcid:PMC10565185	T1	B6-051
+S270	PubMed 34097355	pmid:34097355	T1	B6-052
+S271	WTO briefing note MC8	https://www.wto.org/english/thewto_e/minist_e/min11_e/brief_samoa_e.htm	T1	B6-054
+S272	PMC4007633; PMC7050906	pmcid:PMC4007633	T1	B6-057
+S273	PubMed 16713397	pmid:16713397	T1	B6-059
+S274	who.int news 2024-06-24; 2025-05-19	https://www.who.int/news/item/24-06-2024-WHO-5-year-milestone-report-on-global-transfat-elimination-illustrates-latest-progress-up-to-2023	T1	B6-060
+S275	e-seimas TAIS.439301	https://e-seimas.lrs.lt/portal/legalActPrint/lt?jfwid=-17i2t41wm2&documentId=TAIS.439301&category=TAK	T1	B6-061
+S276	Likumi.lv	https://m.likumi.lv/ta/id/280078-energijas-dzerienu-aprites-likums	T1	B6-062
+S277	PMC11960718	pmcid:PMC11960718	T1	B6-063
+S278	PubMed 30549191	pmid:30549191	T1	B6-067
+S279	PubMed 25928991	pmid:25928991	T1	B6-068
+S280	BCN Ley 20606; PMC6375144	https://www.bcn.cl/leychile/Navegar?idNorma=1041570&idParte=9271898&idVersion=	T1	B6-070
+S281	PMC7012389	pmcid:PMC7012389	T1	B6-071
+S282	PubMed 36913461	pmid:36913461	T1	B6-072
+S283	PMC13277477	pmcid:PMC13277477	T1	B6-073
+S284	HPB Measures for Nutri-Grade	https://www.hpb.gov.sg/healthy-living/food-and-beverage/nutri-grade/	T1	B6-074
+S285	Regjeringen.no (HOD) 24.10.2025	https://www.regjeringen.no/no/aktuelt/nytt-markedsforingsforbud/id3126894/	T1	B6-075
+S286	PMC8356694; PMC7353345	pmcid:PMC8356694	T1	B6-077
+S287	PubMed 28013557	pmid:28013557	T1	B6-078
+S288	PMC10795608	pmcid:PMC10795608	T1	B6-079
+S289	PubMed 33355396	pmid:33355396	T1	B6-080
+S290	PMC9950544	pmcid:PMC9950544	T1	B6-081
+S291	PubMed 14979266	pmid:14979266	T1	B6-085
+S292	PubMed 24975313	pmid:24975313	T1	B6-086
+S293	GOV.UK	https://www.gov.uk/diabetes-driving	T1	B6-088
+S294	EUR-Lex консолид. текст 02006L0126-20180722	https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02006L0126-20180722	T1	B6-089
+S295	PubMed 23215789; 18421936	pmid:23215789	T1	B6-090
+S296	FMCSA	https://www.fmcsa.dot.gov/taxonomy/term/376?page=2	T1	B6-091
+S297	FMCSA MCSA-5870	https://www.fmcsa.dot.gov/regulations/medical/insulin-treated-diabetes-mellitus-assessment-form-mcsa-5870	T1	B6-092
+S298	Austroads AP-G56	https://austroads.gov.au/publications/assessing-fitness-to-drive/ap-g56/diabetes-mellitus/medical-standards-for-licensing-2	T1	B6-093
+S299	PubMed 36050848	pmid:36050848	T1	B6-094
+S300	PubMed 31331425; 37384853	pmid:31331425	T1	B6-095
+S301	PubMed 28471559	pmid:28471559	T1	B6-096
+S302	PMC6134313	pmcid:PMC6134313	T1	B6-097
+S303	PubMed 16173683	pmid:16173683	T1	B6-098
+S304	PMC13242632	pmcid:PMC13242632	T1	B6-099
+S305	PMC11325206	pmcid:PMC11325206	T1	B6-100
+S306	PubMed 39102595	pmid:39102595	T1	B6-101
+S307	PubMed 42515931	pmid:42515931	T1	B6-103
+S308	Consiglio regionale del Piemonte (infoleg PDF)	https://www.cr.piemonte.it/infolegint/visualizzaDocumentoSchede.do?idDocumento=15210	T2	B6-104
+S309	PubMed 41491104	pmid:41491104	T1 (заголовок, без абстракта)	B6-105
+S310	PubMed 36479649	pmid:36479649	T1	B6-107
+S311	CURIA - Discrimination	https://curia.europa.eu/site/jcms/qua1_5964/en/discrimination	T1	B6-108
+S312	Michigan Legislature	https://www.legislature.mi.gov/mileg.aspx?page=getObject&objectname=mcl-37-2202	T1	B6-109
+S313	PMC7511432	pmcid:PMC7511432	T1	B6-110
+S314	Harvard Law Review vol. 133; Justia 9th Cir 16-35205	https://harvardlawreview.org/print/vol-133/taylor-v-burlington-northern-railroad-holdings-inc/	T2	B6-112
+S315	PubMed 32557488	pmid:32557488	T1	B6-113
+S316	PMC11724133; PMC12970020	pmcid:PMC11724133	T1	B6-114
+S317	PMC7869520	pmcid:PMC7869520	T1	B6-115
+S318	PubMed 33259610; 26598843	pmid:33259610	T1	B6-116
+S319	PMC11349503	pmcid:PMC11349503	T1	B6-117
+S320	PubMed 28857065	pmid:28857065	T1	B6-118
+S321	PMC9238668	pmcid:PMC9238668	T1	B6-120
+S322	PMC13015732	pmcid:PMC13015732	T1	B6-121
+S323	PubMed 18681336	pmid:18681336	T1	B6-122
+S324	PMC5168560	pmcid:PMC5168560	T1	B6-123
+S325	PubMed 33361668	pmid:33361668	T1	B6-124
+S326	PubMed 21447522	pmid:21447522	T1	B6-125
+S327	PubMed 23921988	pmid:23921988	T1	B6-126
+S328	PMC4498278	pmcid:PMC4498278	T1	B6-127
+S329	PMC11695118	pmcid:PMC11695118	T1	B6-128
+S330	PubMed 41921494	pmid:41921494	T1	B6-129
+S331	PMC11086919	pmcid:PMC11086919	T1	B6-130
+S332	PubMed 39722630	pmid:39722630	T1	B6-131
+S333	PubMed 9503397; 12074195	pmid:12074195	T1	B6-132
+S334	Tsushita et al., J Atheroscler Thromb (PMC5906184)	https://pmc.ncbi.nlm.nih.gov/articles/PMC5906184/	T1	B7-004
+S335	pmid:41790001 (Return on investment of SHG)	https://pubmed.ncbi.nlm.nih.gov/41790001/	T1	B7-005
+S336	MHLW 第47回保険者による健診・保健指導等に関する検討会議事録	https://www.mhlw.go.jp/stf/newpage_73524.html	T1	B7-007
+S337	PMC2769976	https://pmc.ncbi.nlm.nih.gov/articles/PMC2769976/	T1	B7-008
+S338	INZ Operational Manual A4.10	https://www.immigration.govt.nz/opsmanual/82036.htm	T1	B7-011
+S339	Thow et al., Bull WHO 2017 (PMC5689196)	https://pmc.ncbi.nlm.nih.gov/articles/PMC5689196/	T1	B7-014
+S340	pmid:30388231	https://pubmed.ncbi.nlm.nih.gov/30388231/	T1	B7-015
+S341	Bell et al., Global Health 2021 (PMC8626938)	https://pmc.ncbi.nlm.nih.gov/articles/PMC8626938/	T1	B7-019
+S342	Thow et al., BMC Public Health 2014 (PMC4007633)	https://pmc.ncbi.nlm.nih.gov/articles/PMC4007633/	T1	B7-021
+S343	国家卫生健康委员会	https://www.nhc.gov.cn/bgt/c100023/202602/73b8afd52eff4be4980ac5431cefa190.shtml	T1	B7-032
+S344	PMC11724133	https://pmc.ncbi.nlm.nih.gov/articles/PMC11724133/	T1	B7-033
+S345	MOH press release 30.12.2021	https://www.moh.gov.sg/newsroom/mandatory-nutrition-labelling-and-advertising-prohibitions-for-nutri-grade-beverages-from-30-december-2022/	T1	B7-037
+S346	PMC7869520	https://pmc.ncbi.nlm.nih.gov/articles/PMC7869520/	T1	B7-038
+S347	Corvalán et al., Obes Rev 2019 (pmid:30549191)	https://pubmed.ncbi.nlm.nih.gov/30549191/	T1	B7-042
+S348	PMC6615240	https://pmc.ncbi.nlm.nih.gov/articles/PMC6615240/	T1	B7-044
+S349	PMC13448568	https://pmc.ncbi.nlm.nih.gov/articles/PMC13448568/	T1	B7-045
+S350	PMC10157591	https://pmc.ncbi.nlm.nih.gov/articles/PMC10157591/	T1	B7-046
+S351	Congreso de Oaxaca, Gaceta 22.11.2023 (PDF)	https://www.congresooaxaca.gob.mx/docs65.congresooaxaca.gob.mx/gaceta/20231122a/21.pdf	T1	B7-047
+S352	CMS fact sheet	https://www.cms.gov/newsroom/fact-sheets/anniversary-inflation-reduction-act-update-cms-implementation	T1	B7-053
+S353	pmid:42378410	https://pubmed.ncbi.nlm.nih.gov/42378410/	T1	B7-055
+S354	Final rule, Fed Reg 2013 (pmid:23734399)	https://pubmed.ncbi.nlm.nih.gov/23734399/	T1	B7-057
+S355	pmid:18076417	https://pubmed.ncbi.nlm.nih.gov/18076417/	T1	B7-059
+S356	pmid:25440454	https://pubmed.ncbi.nlm.nih.gov/25440454/	T1	B7-060
+S357	MEDICC Review (pmid:23396236)	https://pubmed.ncbi.nlm.nih.gov/23396236/	T1	B7-061
+S358	pmid:30531767	https://pubmed.ncbi.nlm.nih.gov/30531767/	T1	B7-062
+S359	Retsinformation	https://www.retsinformation.dk/api/pdf/143968	T1	B7-065
+S360	Bødker et al., Prev Med 2015 (pmid:25982852)	https://pubmed.ncbi.nlm.nih.gov/25982852/	T1	B7-066
+S361	Danmarks Statistik, Nationalregnskab 4. kvt. 2023	https://www.dst.dk/nytpdf/46520	T1	B7-069
+S362	Danmarks Statistik NYT 49805	https://www.dst.dk/nyt/49805	T1	B7-071
+S363	Nemzeti Jogszabálytár (ред. .5)	https://njt.hu/jogszabaly/2011-103-00-00.5	T1	B7-076
+S364	Nemzeti Jogszabálytár (ред. .13)	https://njt.hu/jogszabaly/2011-103-00-00.13	T1	B7-077
+S365	PBS consumer input summary (PDF)	https://www.pbs.gov.au/reviews/obesity-treatments-files/OBESITY-Consumer-input-summary.PDF	T1	B7-080
+S366	PBS - PBAC advice (PDF)	https://www.pbs.gov.au/reviews/obesity-treatments-files/PBAC-advice-on-GLP1.PDF	T1	B7-081
+S367	pmid:37185039	https://pubmed.ncbi.nlm.nih.gov/37185039/	T1	B7-085
+S368	EUR-Lex 02006L0126-20201101	https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02006L0126-20201101	T1	B7-086
+S369	EUR-Lex OJ L 223/31	https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:223:0031:0035:EN:PDF	T1	B7-087
+S370	FAA Guide for AMEs - ITDM	https://www.faa.gov/ame_guide/dec_cons/disease_prot/itdm	T1	B7-092
+S371	pmid:36050848	https://pubmed.ncbi.nlm.nih.gov/36050848/	T1	B7-093
+S372	PMC13190499 (ÖDG position paper 2026)	https://pmc.ncbi.nlm.nih.gov/articles/PMC13190499/	T1	B7-096
+S373	InfoCuria C-354/13	https://infocuria.curia.europa.eu/tabs/redirect/juris/liste.jsf?num=C-354/13	T1	B7-099
+S374	pmid:41138743	https://pubmed.ncbi.nlm.nih.gov/41138743/	T1	B7-102
+S375	pmid:41491104	https://pubmed.ncbi.nlm.nih.gov/41491104/	T1	B7-103
+S376	pmid:36479649	https://pubmed.ncbi.nlm.nih.gov/36479649/	T1	B7-104
+S377	pmid:34087168	https://pubmed.ncbi.nlm.nih.gov/34087168/	T1	B7-105
+S378	MOH news 13.02.2017	https://www.moh.gov.sa/en/ministry/mediacenter/news/pages/news-2017-02-13-004.aspx	T1	B7-106
+S379	PMC11218882	https://pmc.ncbi.nlm.nih.gov/articles/PMC11218882/	T1	B7-107
+S380	PMC8544408	https://pmc.ncbi.nlm.nih.gov/articles/PMC8544408/	T1	B7-108
+S381	PMC10661595	https://pmc.ncbi.nlm.nih.gov/articles/PMC10661595/	T1	B7-109
+S382	MOH news 13.04.2021	https://www.moh.gov.sa/en/ministry/mediacenter/news/pages/news-2021-04-13-001.aspx	T1	B7-110
+S383	MoHAP National School Health Screening Guideline 2024	https://mohap.gov.ae/en/assets/686b4f1a/national-school-health-screening-guideline-2024-pdf.aspx	T1	B7-111
+S384	MoHAP news	https://mohap.gov.ae/en/w/mohap-hosts-two-training-workshops-on-how-to-promote-health-in-schools-manage-childhood-obesity	T1	B7-112
+S385	MoPH National Clinical Guidelines	https://www.moph.gov.qa/_layouts/download.aspx?SourceUrl=/Admin/Lists/ClinicalGuidelinesAttachments/Attachments/226/THE%20MANAGEMENT%20OF%20BARIATRIC%20AND%20SURGERY%20IN%20ADULTS%20NCG%20English.pdf	T1	B7-113
+S386	MoPH HiAP Policy Framework	https://hiap.moph.gov.qa/EN/Documents/Library/Policy%20Framework.pdf	T1	B7-114
+S387	Health New Zealand	https://www.healthnz.govt.nz/health-topics/tests-and-treatments/surgery/bariatric-weight-loss-surgery	T1	B7-117
+S388	WHO World health statistics 2024 / WHO feature	https://iris.who.int/server/api/core/bitstreams/74b12494-f213-4b5b-9533-18442147e1fb/content	T1	B7-119
+S389	SIS (State Information Service)	https://sis.gov.eg/en/media-center/news/health-ministry-over-212-million-citizens-screened-in-chronic-disease-early-detection-initiative/	T1	B7-121
+S390	pmid:27522602	https://pubmed.ncbi.nlm.nih.gov/27522602/	T1	B7-125
+S391	Etiology, Epidemiology, and Disparities in the Burden of Diabetic Foot Ulcers (PMC9797649)	https://pmc.ncbi.nlm.nih.gov/articles/PMC9797649/	T1	C4-001
+S392	CDC "Your Feet and Diabetes"	https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html	T1 (гос.)	C4-002
+S393	Fundamental principles of an effective diabetic retinopathy screening program (PMC7311555)	https://pmc.ncbi.nlm.nih.gov/articles/PMC7311555/	T1	C4-004
+S394	Epidemiology of Peripheral Neuropathy and Lower Extremity Disease in Diabetes (PMC6755905)	https://pmc.ncbi.nlm.nih.gov/articles/PMC6755905/	T1	C4-006
+S395	Diabetic Gastroparesis (PMC6736218)	https://pmc.ncbi.nlm.nih.gov/articles/PMC6736218/	T1	C4-007
+S396	Diabetic Gastroparesis: Perspectives From a Patient and Health Care Providers (PMC6676757)	https://pmc.ncbi.nlm.nih.gov/articles/PMC6676757/	T1	C4-008
+S397	The Global Epidemiology of NAFLD and NASH Among Patients With Type 2 Diabetes (pmid:38521116)	https://pubmed.ncbi.nlm.nih.gov/38521116/	T1	C4-009
+S398	Prevalence of sleep apnea in morbidly obese patients who presented for weight loss surgery evaluation (pmid:18	https://pubmed.ncbi.nlm.nih.gov/18807673/	T1	C4-010
+S399	Potentially life-threatening sleep apnea is unrecognized without aggressive evaluation (pmid:17320536)	https://pubmed.ncbi.nlm.nih.gov/17320536/	T1	C4-011
+S400	Understanding the underlying metabolic abnormalities of polycystic ovary syndrome (pmid:9855615)	https://pubmed.ncbi.nlm.nih.gov/9855615/	T1	C4-013
+S401	Risk of type 2 diabetes mellitus in polycystic ovary syndrome is associated with obesity (pmid:34176074)	https://pubmed.ncbi.nlm.nih.gov/34176074/	T1	C4-014
+S402	The prevalence of diabetes-specific emotional distress in people with Type 2 diabetes (pmid:28799294)	https://pubmed.ncbi.nlm.nih.gov/28799294/	T1	C4-015
+S403	CDC PCD "Diabetes Distress Among US Adults With Diagnosed Diabetes, 2021"	https://www.cdc.gov/pcd/issues/2025/24_0287.htm	T1 (гос./рецензируемое)	C4-016
+S404	CDC "Diabetes and Mental Health"	https://www.cdc.gov/diabetes/living-with/mental-health.html	T1 (гос.)	C4-017
+S405	Overweight, obesity, and depression: a systematic review and meta-analysis of longitudinal studies (pmid:20194	https://pubmed.ncbi.nlm.nih.gov/20194822/	T1	C4-018
+S406	Diabetes mellitus and risks of cognitive impairment and dementia (pmid:31430566)	https://pubmed.ncbi.nlm.nih.gov/31430566/	T1	C4-019
+S407	Periodontitis: An often-neglected complication of diabetes (PMC10999051)	https://pmc.ncbi.nlm.nih.gov/articles/PMC10999051/	T1	C4-021
+S408	Diabetes and sexual dysfunction: current perspectives (PMC3949699)	https://pmc.ncbi.nlm.nih.gov/articles/PMC3949699/	T1	C4-022
+S409	Relationships of Sexual Dysfunction with Depression and Acceptance of Illness in Women and Men with T2DM (PMC5	https://pmc.ncbi.nlm.nih.gov/articles/PMC5615610/	T1	C4-023
+S410	NIDDK "Diabetes, Sexual, & Bladder Problems"	https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/sexual-bladder-problems	T1 (гос.)	C4-024
+S411	SGLT2 inhibitors use and the risks of genital and urinary tract infection (PMC12306871)	https://pmc.ncbi.nlm.nih.gov/articles/PMC12306871/	T1	C4-025
+S412	Vaccination Coverage Among Adults With Diagnosed Diabetes: United States, 2015 (pmid:27930282)	https://pubmed.ncbi.nlm.nih.gov/27930282/	T1	C4-026
+S413	Excess body fatness and cancer risk: a summary of the epidemiologic evidence (pmid:36918326)	https://pubmed.ncbi.nlm.nih.gov/36918326/	T1	C4-027
+S414	Comparative efficacy of different weight loss treatments on knee osteoarthritis (pmid:33855769)	https://pubmed.ncbi.nlm.nih.gov/33855769/	T1	C4-029
+S415	Risk of De Novo Barrett's Esophagus Post Sleeve Gastrectomy (pmid:39059544)	https://pubmed.ncbi.nlm.nih.gov/39059544/	T1	C4-030
+S416	Hair Loss After Laparoscopic Sleeve Gastrectomy (pmid:30062467)	https://pubmed.ncbi.nlm.nih.gov/30062467/	T1	C4-031
+S417	Dumping syndrome after bariatric surgery: prevalence, pathophysiology and role in weight reduction (pmid:37814	https://pubmed.ncbi.nlm.nih.gov/37814558/	T1	C4-032
+S418	Increased risk of alcohol use disorders after bariatric surgery (pmid:27188054)	https://pubmed.ncbi.nlm.nih.gov/27188054/	T1	C4-033
+S419	Patients' Experiences of Weight Regain After Bariatric Surgery (PMC8986695)	https://pmc.ncbi.nlm.nih.gov/articles/PMC8986695/	T1	C4-034
+S420	Gallstones in obesity and weight loss (pmid:11192327)	https://pubmed.ncbi.nlm.nih.gov/11192327/	T1	C4-035
+S421	Definition and Diagnostic Criteria for Sarcopenic Obesity: ESPEN and EASO Consensus Statement (PMC9210010)	https://pmc.ncbi.nlm.nih.gov/articles/PMC9210010/	T1	C4-036
+S422	Preservation of lean soft tissue during weight loss induced by GLP-1 and GLP-1/GIP receptor agonists (PMC12536	https://pmc.ncbi.nlm.nih.gov/articles/PMC12536186/	T1	C4-037
+S423	Lipedema Diagnosis, Clinical Manifestations, and Therapeutics: A Systematic Review (PMC13436241)	https://pmc.ncbi.nlm.nih.gov/articles/PMC13436241/	T1	C4-038
+S424	Predicting adult obesity from childhood obesity (pmid:26696565)	https://pubmed.ncbi.nlm.nih.gov/26696565/	T1	C4-039
+S425	Progression to type 2 diabetes in women with a known history of gestational diabetes (PMC7218708)	https://pmc.ncbi.nlm.nih.gov/articles/PMC7218708/	T1	C4-040
+S426	Understanding weight gain at menopause (pmid:22978257)	https://pubmed.ncbi.nlm.nih.gov/22978257/	T1	C4-042
+S427	Hypothyroidism and obesity: An intriguing link (PMC4911848); Obesity-related thyroid reflections (PMC13386241)	https://pmc.ncbi.nlm.nih.gov/articles/PMC4911848/	T1	C4-043
+S428	Pharmacotherapy causing weight gain and metabolic alteration (PMC11057385)	https://pmc.ncbi.nlm.nih.gov/articles/PMC11057385/	T1	C4-044
+S429	Glucocorticoid-induced hyperglycemia and diabetes: Practical points (pmid:36967046)	https://pubmed.ncbi.nlm.nih.gov/36967046/	T1	C4-045
+S430	Consensus Report: Definition and Interpretation of Remission in Type 2 Diabetes (PMC8929179)	https://pmc.ncbi.nlm.nih.gov/articles/PMC8929179/	T1	C4-046
+S431	5-year follow-up of the randomised Diabetes Remission Clinical Trial (DiRECT) (pmid:38423026)	https://pubmed.ncbi.nlm.nih.gov/38423026/	T1	C4-047
+S432	Real-World Prevalence of Type 2 Diabetes Remission in a U.S. Insured Population (PMC10425229)	https://pmc.ncbi.nlm.nih.gov/articles/PMC10425229/	T1	C4-048
+S433	A Real-World Prospective Study of the Safety and Effectiveness of the Loop Open Source AID System (PMC8080906)	https://pmc.ncbi.nlm.nih.gov/articles/PMC8080906/	T1	C4-050
+S434	Joint international consensus statement for ending stigma of obesity (PMC7154011); EASO & WONCA Europe for Wor	https://pmc.ncbi.nlm.nih.gov/articles/PMC7154011/	T1 + T2	C4-052
+S435	Pancreatitis and pancreatic cancer in patients with type 2 diabetes treated with GLP-1 RA (pmid:32720500)	https://pubmed.ncbi.nlm.nih.gov/32720500/	T1	C4-054
+S436	Approach to the Patient With Thyroid Nodules: Considering GLP-1 Receptor Agonists (pmid:39400117)	https://pubmed.ncbi.nlm.nih.gov/39400117/	T1	C4-055
+S437	Use of GLP-1 RA in Women with Type 2 Diabetes Before Pregnancy (pmid:42262435)	https://pubmed.ncbi.nlm.nih.gov/42262435/	T1	C4-056
+S438	GLP-1 RA and Peri-Procedural Aspiration Risk (PMC12391755)	https://pmc.ncbi.nlm.nih.gov/articles/PMC12391755/	T1	C4-057
+S439	GLP-1 RA Use Before Endoscopy Is Associated With Low Retained Gastric Contents (pmid:39016372)	https://pubmed.ncbi.nlm.nih.gov/39016372/	T1	C4-058
+S440	Weight regain and cardiometabolic effects after withdrawal of semaglutide: STEP 1 trial extension (PMC9542252)	https://pmc.ncbi.nlm.nih.gov/articles/PMC9542252/	T1	C4-059
+S441	Harnessing Facebook to Investigate Real-World Mentions of Adverse Events of GLP-1 RA (PMC12289294)	https://pmc.ncbi.nlm.nih.gov/articles/PMC12289294/	T1	C4-062
+S442	Health information needs regarding diabetes mellitus in China (PMC7310401)	https://pmc.ncbi.nlm.nih.gov/articles/PMC7310401/	T1	C4-063
+S443	Social Networking Services-Based Communicative Care for Patients with Diabetes Mellitus in Korea (PMC5052557)	https://pmc.ncbi.nlm.nih.gov/articles/PMC5052557/	T1	C4-064
+S444	General Public's Information-Seeking Patterns of Topics Related to Obesity (PMC7448178)	https://pmc.ncbi.nlm.nih.gov/articles/PMC7448178/	T1	C4-065
+S445	Popularity of Surgical and Pharmacological Obesity Treatment Methods Searched by Google Users (PMC10899289)	https://pmc.ncbi.nlm.nih.gov/articles/PMC10899289/	T1	C4-066
+S446	Public interest in weight loss and diet-related topics in Europe (pmid:37434278)	https://pubmed.ncbi.nlm.nih.gov/37434278/	T1	C4-067
+S447	Type 2 Diabetes Mellitus and Hearing Loss: A Prisma Systematic Review and Meta-Analysis (PMC12574643)	https://pmc.ncbi.nlm.nih.gov/articles/PMC12574643/	T1	C4-068
+S448	Cheiroarthropathy: a common disorder in patients in the T1D Exchange (pmid:30383489)	https://pubmed.ncbi.nlm.nih.gov/30383489/	T1	C4-069
+S449	Weight loss with bariatric surgery or behaviour modification and female obesity-related urine incontinence (pm	https://pubmed.ncbi.nlm.nih.gov/33955687/	T1	C4-070
+S450	NIDDK "Prescription Medications to Treat Overweight & Obesity"	https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity	T1 (гос.)	C4-072
